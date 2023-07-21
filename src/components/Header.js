@@ -42,7 +42,7 @@ const Header = (props) => {
           <div class="container-fluid">
             <div class="header-col1">
               <a class="navbar-brand" href="/">
-                <img src="/IIT_Academy.jpeg" alt="" />
+                <img src="/images/IIT_Academy.jpeg" alt="" />
               </a>
             </div>
             <div class="header-col2">
@@ -51,12 +51,12 @@ const Header = (props) => {
                   href="https://wa.me/918453307045?text=Chat With IIT Academy&utm_medium=&utm_campaign=&utm_term=&utm_content=&lang=en"
                   class="navbar-brand"
                 >
-                  <img src="/chatus.gif" alt="" />
+                  <img src="/images/chatus.gif" alt="" />
                 </a>
               </div>
               <div class="header-col22">
                 <a href="tel:8453307045" class="navbar-brand">
-                  <img src="/cu4.jpeg" alt="" />
+                  <img src="/images/cu4.jpeg" alt="" />
                 </a>
               </div>
             </div>

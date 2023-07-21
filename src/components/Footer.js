@@ -58,31 +58,31 @@ const Footer = () => {
               <div className="footer-row">
                 <p className="text-center mt-3">
                   <img
-                    src="/insta.jpeg" // Replace with the actual file path for the Instagram logo
+                    src="/images/insta.jpeg" // Replace with the actual file path for the Instagram logo
                     alt="Instagram"
                     style={{ width: "20px", height: "20px" }}
                   />{" "}
                   |{" "}
                   <img
-                    src="/facebook.png" // Replace with the actual file path for the Facebook logo
+                    src="/images/facebook.png" // Replace with the actual file path for the Facebook logo
                     alt="Facebook"
                     style={{ width: "20px", height: "20px" }}
                   />{" "}
                   |{" "}
                   <img
-                    src="/link.png" // Replace with the actual file path for the Instagram logo
+                    src="/images/link.png" // Replace with the actual file path for the Instagram logo
                     alt="LinkedIn"
                     style={{ width: "20px", height: "20px" }}
                   />{" "}
                   |{" "}
                   <img
-                    src="/em.png" // Replace with the actual file path for the Facebook logo
+                    src="/images/em.png" // Replace with the actual file path for the Facebook logo
                     alt="Email"
                     style={{ width: "20px", height: "20px" }}
                   />{" "}
                   |{" "}
                   <img
-                    src="/phone.png" // Replace with the actual file path for the Facebook logo
+                    src="/images/phone.png" // Replace with the actual file path for the Facebook logo
                     alt="Phone"
                     style={{ width: "20px", height: "20px" }}
                   />{" "}
