@@ -35,7 +35,7 @@ const ContactFormAll = () => {
     <div className="lister2">
       <h2>ENQUIRY NOW</h2>
       <form
-        action="/"
+        action="https://script.google.com/macros/s/AKfycbxW05Igtjw-SGf5X4i3klSWfwXdGWtzJakhgM39GCF9iI4fd7MEvxLG-lf66ma8at0t/exec"
         name="contact_form"
         method="post"
         onSubmit={handleSubmit}

@@ -10,6 +10,36 @@ const Footer = () => {
           <div className="footer-inner-wrapper">
             <ContactFormHome />
             <div className="footer-col">
+              <h2>Quick Links</h2>
+              <p>
+                <Link to="/about-iit-academy">IIT Academy</Link>
+              </p>
+              <p>
+                <Link to="/director-message-iit-academy">
+                  Director's Message
+                </Link>
+              </p>
+              <p>
+                <Link to="/admission-process-iit-academy">
+                  Admission Process
+                </Link>
+              </p>
+              <p>
+                <Link to="/admission-enquiry-iit-academy">
+                  Admission Enquiry
+                </Link>
+              </p>
+              <p>
+                <Link to="/our-policy-iit-academy">Our Policy</Link>
+              </p>
+              <p>
+                <Link to="/"> Result</Link>
+              </p>
+              <p>
+                <Link to="/">Gallery</Link>
+              </p>
+            </div>
+            <div className="footer-col">
               <div className="footer-row">
                 <h2>Corporate Office</h2>
                 <p>
@@ -63,37 +93,6 @@ const Footer = () => {
                   <strong> ALL RIGHTS RESERVED © IIT ACADEMY </strong>{" "}
                 </p>
               </div>
-            </div>
-
-            <div className="footer-col">
-              <h2>Quick Links</h2>
-              <p>
-                <Link to="/about-iit-academy">IIT Academy</Link>
-              </p>
-              <p>
-                <Link to="/director-message-iit-academy">
-                  Director's Message
-                </Link>
-              </p>
-              <p>
-                <Link to="/admission-process-iit-academy">
-                  Admission Process
-                </Link>
-              </p>
-              <p>
-                <Link to="/admission-enquiry-iit-academy">
-                  Admission Enquiry
-                </Link>
-              </p>
-              <p>
-                <Link to="/our-policy-iit-academy">Our Policy</Link>
-              </p>
-              <p>
-                <Link to="/"> Result</Link>
-              </p>
-              <p>
-                <Link to="/">Gallery</Link>
-              </p>
             </div>
           </div>
         </div>

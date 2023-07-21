@@ -1,96 +1,68 @@
-import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-const Header = (e) => {
+// JavaScript function to toggle the mobile menu and update the triangle icon
+let isMobileMenuOpen = false; // Track the menu state
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarCollapse = document.querySelector("#navbarTogglerDemo01");
+  const menuIcon = document.querySelector(".navbar-toggler::before");
+
+  function toggleMobileMenu() {
+    if (isMobileMenuOpen) {
+      navbarCollapse.classList.add("collapsing");
+      setTimeout(() => {
+        navbarCollapse.classList.remove("show", "collapsing");
+      }, 300);
+      menuIcon.textContent = "\u2261"; // Change the menu icon back to the hamburger icon using Unicode code point
+    } else {
+      navbarCollapse.classList.add("show");
+      menuIcon.textContent = "\u25B2"; // Change the menu icon to an up triangle when the menu is open using Unicode code point
+    }
+    isMobileMenuOpen = !isMobileMenuOpen;
+  }
+
+  const menuButton = document.querySelector(".navbar-toggler");
+  menuButton.addEventListener("click", toggleMobileMenu);
+});
+
+const Header = (props) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  function toggleMobileMenu() {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  }
+
   return (
     <>
       <div className="header" style={{ backgroundColor: "blu" }}>
         <div className="row1">
-          <nav className="navbar-expand-lg bg-body-tertiary">
-            <div
-              className="container-fluid"
-              style={{
-                backgroundColor: "white",
-              }}
-            >
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon" />
-              </button>
-              <div
-                className="collapse navbar-collapse"
-                id="navbarTogglerDemo01"
-              >
-                <Link className="navbar-brand">
-                  <img
-                    src="/IIT_Academy.jpeg"
-                    style={{
-                      marginRight: "10px",
-                      marginDown: "90px",
-                      fontSize: "30px",
-                      width: "300px",
-                      height: "80px",
-                    }}
-                    alt=""
-                  />
-                  <span style={{ marginLeft: "5px" }}></span>
-                </Link>
-                <Link
-                  to="https://wa.me/918453307045?text=Chat With IIT Academy&utm_medium=&utm_campaign=&utm_term=&utm_content=&lang=en"
-                  className="navbar-brand"
+          <div class="container-fluid">
+            <div class="header-col1">
+              <a class="navbar-brand" href="/">
+                <img src="/IIT_Academy.jpeg" alt="" />
+              </a>
+            </div>
+            <div class="header-col2">
+              <div class="header-col21">
+                <a
+                  href="https://wa.me/918453307045?text=Chat With IIT Academy&utm_medium=&utm_campaign=&utm_term=&utm_content=&lang=en"
+                  class="navbar-brand"
                 >
-                  <img
-                    src="/chatus.gif"
-                    style={{
-                      marginLeft: "50px",
-                      fontSize: "30px",
-                      width: "150px",
-                      height: "50px",
-                      cursor: "pointer",
-                    }}
-                    alt=""
-                  />
-                  <span style={{ marginLeft: "5px" }}></span>
-                </Link>
-                <Link to="" className="navbar-brand">
-                  <img
-                    src="/testser.png"
-                    style={{
-                      marginLeft: "50px",
-                      fontSize: "30px",
-                      width: "200px",
-                      height: "60px",
-                    }}
-                    alt=""
-                  />
-                  <span style={{ marginLeft: "5px" }}></span>
-                </Link>
-                <Link to="tel:8453307045" className="navbar-brand">
-                  <img
-                    src="/cu2.jpg"
-                    style={{
-                      marginLeft: "250px",
-                      fontSize: "30px",
-                      width: "200px",
-                      height: "60px",
-                    }}
-                    alt=""
-                  />
-                  <span style={{ marginLeft: "5px" }}></span>
-                </Link>
+                  <img src="/chatus.gif" alt="" />
+                </a>
+              </div>
+              <div class="header-col22">
+                <a href="tel:8453307045" class="navbar-brand">
+                  <img src="/cu4.jpeg" alt="" />
+                </a>
               </div>
             </div>
-          </nav>
+          </div>
         </div>
+
         <div className="row2">
           <nav className=" navbar-expand-lg bg-body-tertiary">
             <div
@@ -105,12 +77,15 @@ const Header = (e) => {
                 aria-controls="navbarTogglerDemo01"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
-                style={{}}
+                onClick={toggleMobileMenu}
+                style={{ color: "White" }}
               >
                 <span className="navbar-toggler-icon" />
               </button>
               <div
-                className="collapse navbar-collapse"
+                className={`collapse navbar-collapse ${
+                  isMobileMenuOpen ? "show" : ""
+                }`}
                 id="navbarTogglerDemo01"
               >
                 <ul

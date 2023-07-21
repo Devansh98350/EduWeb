@@ -249,6 +249,50 @@ select,
   text-align: center;
 }
 
+/* Mobile view */
+@media (max-width: 768px) {
+  .lister3 {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .lister3 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .lister3 form {
+    display: block;
+  }
+
+  .lister3 input,
+  .lister3 select,
+  .lister3 textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .lister3 input[type="submit"] {
+    width: 50%;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .lister3 input[type="submit"]:hover {
+    background-color: #e67e11;
+    text-align: center;
+  }
+}
+
 /* ContactFormAll */
 
 .lister2 {
@@ -349,4 +393,196 @@ input[type="submit"] {
 .column2 {
   flex: 1;
   padding: 20px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column1,
+  .column2 {
+    width: 100%;
+  }
+}
+
+/* Header Components */
+
+/* Mobile view */
+
+@media (max-width: 768px) {
+  /* Reset container padding to remove horizontal padding */
+  .row2 container-fluid {
+    background-color: #fff;
+  }
+
+  /* Show the mobile menu when it's open */
+  .navbar-collapse.show {
+    display: block;
+    background-color: #f39c12;
+    width: 60%; /* Cover only half of the screen width */
+    position: absolute;
+    top: 225px; /* Adjust this value as needed to position the menu below the menu icon */
+    left: 0;
+    z-index: 0; /* Ensure the menu appears above other content */
+    padding: 10px; /* Add some padding for spacing */
+  }
+
+  /* Hide the toggle button text in mobile view */
+  .navbar-toggler {
+    color: #fff;
+    background-color: #f39c12;
+    border-color: #fff;
+    text-align: left;
+    width: fit-content; /* Adjust this value as needed */
+  }
+
+  /* Style for mobile navigation links */
+  .navbar-nav .nav-item {
+    border-bottom: 5px solid #f39c12;
+    width: 10%; /* Make each nav item full width */
+  }
+
+  /* Style for mobile dropdown menu */
+  .dropdown-menu {
+    background-color: #12f34a;
+    width: justify; /* Make the dropdown menu full width */
+    right: 0; /* Position the dropdown menu to the right */
+    left: 10;
+    /* Remove padding to adjust sub-options within the same space */
+  }
+
+  /* Style for mobile dropdown items */
+  .dropdown-menu .dropdown-item {
+    color: black;
+  }
+
+  /* Style for active links in mobile view */
+  /* .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+  } */
+
+  /* Hide the caret icon in mobile view */
+  .dropdown-toggle::after {
+    display: none;
+    width: fit-content;
+  }
+
+  /* Adjust padding for nav items in mobile view */
+  .navbar-nav {
+    padding: 0;
+  }
+
+  /* Adjust margins for nav items in mobile view */
+  .navbar-nav .nav-item {
+    margin: 0;
+  }
+
+  /* Style for mobile navigation links */
+  .navbar-nav .nav-link {
+    padding: 10px;
+    color: #f39c12;
+  }
+
+  /* Move the menu icon to the right in mobile view */
+  .navbar-toggler::before {
+    content: "\2261"; /* Unicode for the hamburger menu icon */
+    height: 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 40px; /* Adjust this value to change the size of the icon */
+    line-height: 30px; /* Adjust this value to vertically center the icon */
+    margin-right: 10px;
+    margin-top: 5px; /* Adjust this value to add space between the icon and the "Menu" text */
+  }
+
+  /* Add down arrow icon for dropdown items in mobile view */
+  .nav-link.dropdown-toggle::after {
+    content: ""; /* Unicode for the right-pointing arrow icon */
+    display: inline-block;
+    margin-left: 5px; /* Adjust this value to add space between the item text and the icon */
+  }
+
+  .navbar-collapse.collapsing {
+    display: block;
+    background-color: #f39c12;
+    width: 50%; /* Set the desired width when collapsing the menu */
+    position: absolute;
+    top: 225px;
+    left: 0;
+    z-index: 0;
+    padding: 10px;
+  }
+}
+
+/* Header row1*/
+
+.container-fluid {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-col1,
+.header-col2 {
+  display: flex;
+  align-items: center;
+}
+
+.header-col21 img {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  font-size: 30px;
+  width: 200px;
+  height: 60px;
+}
+
+.header-col22 img {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 80px;
+  font-size: 30px;
+  width: 100px;
+  height: 60px;
+}
+
+/* Styles for mobile view (screen width < 768px) */
+@media (max-width: 767px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+
+  .header-col2 {
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+
+  /* Center align header-col1 image in mobile view */
+  .header-col1 img {
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    height: 120px;
+    margin-left: 30px;
+  }
+
+  /* Styles for header-col21 image in mobile view */
+  .header-col21 img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Preserve aspect ratio */
+    margin: 10px auto; /* Center align and add spacing */
+    display: block;
+  }
+
+  /* Styles for header-col22 image in mobile view */
+  .header-col22 img {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Preserve aspect ratio */
+    margin-left: 50px; /* Center align and add spacing */
+    display: block;
+  }
 }
