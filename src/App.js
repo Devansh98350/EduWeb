@@ -23,7 +23,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Academy/" element={<HomePage />} />
+        <Route path="/EduWeb" element={<HomePage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/about-iit-academy" element={<AboutIitAcademy />} />
         <Route path="/about-director-iit-academy" element={<AboutDirector />} />
