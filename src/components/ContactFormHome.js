@@ -3,7 +3,6 @@ import React, { useState } from "react";
 const ContactFormHome = () => {
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     phone: "",
     city: "",
     classOption: "",
@@ -24,12 +23,19 @@ const ContactFormHome = () => {
     // Clear the form
     setFormData({
       name: "",
-      email: "",
       phone: "",
       city: "",
       classOption: "",
       query: "",
     });
+  };
+
+  const handleSubmitClick = (e) => {
+    e.target.style.background = "green";
+    e.target.style.color = "white";
+    e.target.disabled = true;
+    e.target.value = "Sending, Please Wait...";
+    e.target.form.submit();
   };
 
   return (
@@ -97,7 +103,7 @@ const ContactFormHome = () => {
             type="submit"
             name="Submit"
             defaultValue="SUBMIT"
-            onclick="this.style.background='green';this.style.color='white';this.disabled=true;this.value='Sending, Please Wait...';this.form.submit();"
+            onClick={handleSubmitClick}
           />
         </div>
       </form>

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import mainlogo from "../assets/homepage/IIT_Academy.jpeg";
+import whatsapp from "../assets/homepage/chatus.gif";
+import call from "../assets/homepage/cu4.jpeg";
 
 // JavaScript function to toggle the mobile menu and update the triangle icon
 let isMobileMenuOpen = false; // Track the menu state
@@ -39,24 +42,24 @@ const Header = (props) => {
     <>
       <div className="header" style={{ backgroundColor: "blu" }}>
         <div className="row1">
-          <div class="container-fluid">
-            <div class="header-col1">
-              <a class="navbar-brand" href="/">
-                <img src="/images/IIT_Academy.jpeg" alt="" />
+          <div className="container-fluid">
+            <div className="header-col1">
+              <a className="navbar-brand" href="/">
+                <img src={mainlogo} alt="" />
               </a>
             </div>
-            <div class="header-col2">
-              <div class="header-col21">
+            <div className="header-col2">
+              <div className="header-col21">
                 <a
                   href="https://wa.me/918453307045?text=Chat With IIT Academy&utm_medium=&utm_campaign=&utm_term=&utm_content=&lang=en"
-                  class="navbar-brand"
+                  className="navbar-brand"
                 >
-                  <img src="/images/chatus.gif" alt="" />
+                  <img src={whatsapp} alt="" />
                 </a>
               </div>
-              <div class="header-col22">
-                <a href="tel:8453307045" class="navbar-brand">
-                  <img src="/images/cu4.jpeg" alt="" />
+              <div className="header-col22">
+                <a href="tel:8453307045" className="navbar-brand">
+                  <img src={call} alt="" />
                 </a>
               </div>
             </div>

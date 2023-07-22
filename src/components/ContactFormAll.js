@@ -107,7 +107,7 @@ const ContactFormAll = () => {
           type="submit"
           name="Submit"
           defaultValue="SUBMIT"
-          onclick="this.style.background='green';this.style.color='white';this.disabled=true;this.value='Sending, Please Wait...';this.form.submit();"
+          onClick="this.style.background='green';this.style.color='white';this.disabled=true;this.value='Sending, Please Wait...';this.form.submit();"
         />
       </form>
     </div>

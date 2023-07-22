@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ContactFormHome from "./ContactFormHome";
+import instagram from "../assets/homepage/insta.jpeg";
+import facebook from "../assets/homepage/facebook.png";
+import linkedin from "../assets/homepage/link.png";
+import email from "../assets/homepage/em.png";
+import call from "../assets/homepage/cu4.jpeg";
 
 const Footer = () => {
   return (
@@ -58,31 +63,31 @@ const Footer = () => {
               <div className="footer-row">
                 <p className="text-center mt-3">
                   <img
-                    src="/images/insta.jpeg" // Replace with the actual file path for the Instagram logo
+                    src={instagram} // Replace with the actual file path for the Instagram logo
                     alt="Instagram"
                     style={{ width: "20px", height: "20px" }}
                   />{" "}
                   |{" "}
                   <img
-                    src="/images/facebook.png" // Replace with the actual file path for the Facebook logo
+                    src={facebook} // Replace with the actual file path for the Facebook logo
                     alt="Facebook"
                     style={{ width: "20px", height: "20px" }}
                   />{" "}
                   |{" "}
                   <img
-                    src="/images/link.png" // Replace with the actual file path for the Instagram logo
+                    src={linkedin} // Replace with the actual file path for the Instagram logo
                     alt="LinkedIn"
                     style={{ width: "20px", height: "20px" }}
                   />{" "}
                   |{" "}
                   <img
-                    src="/images/em.png" // Replace with the actual file path for the Facebook logo
+                    src={email} // Replace with the actual file path for the Facebook logo
                     alt="Email"
                     style={{ width: "20px", height: "20px" }}
                   />{" "}
                   |{" "}
                   <img
-                    src="/images/phone.png" // Replace with the actual file path for the Facebook logo
+                    src={call} // Replace with the actual file path for the Facebook logo
                     alt="Phone"
                     style={{ width: "20px", height: "20px" }}
                   />{" "}
