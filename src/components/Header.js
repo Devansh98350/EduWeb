@@ -107,7 +107,7 @@ const Header = (props) => {
                     }}
                   >
                     <NavLink
-                      to="/"
+                      to="/Academy"
                       className="nav-link"
                       activeclassname="active"
                       style={{ color: "White" }}
