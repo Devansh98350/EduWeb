@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/EduWeb/static/css/main.68d2249a.css",
-    "main.js": "/EduWeb/static/js/main.a0511251.js",
+    "main.css": "/EduWeb/static/css/main.c4e6507d.css",
+    "main.js": "/EduWeb/static/js/main.7bc6de12.js",
     "static/js/787.cda612ba.chunk.js": "/EduWeb/static/js/787.cda612ba.chunk.js",
     "static/media/chatus.gif": "/EduWeb/static/media/chatus.8123e90302ec853d779d.gif",
     "index.html": "/EduWeb/index.html",
-    "main.68d2249a.css.map": "/EduWeb/static/css/main.68d2249a.css.map",
-    "main.a0511251.js.map": "/EduWeb/static/js/main.a0511251.js.map",
+    "main.c4e6507d.css.map": "/EduWeb/static/css/main.c4e6507d.css.map",
+    "main.7bc6de12.js.map": "/EduWeb/static/js/main.7bc6de12.js.map",
     "787.cda612ba.chunk.js.map": "/EduWeb/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68d2249a.css",
-    "static/js/main.a0511251.js"
+    "static/css/main.c4e6507d.css",
+    "static/js/main.7bc6de12.js"
   ]
 }
