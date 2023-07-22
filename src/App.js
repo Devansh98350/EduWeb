@@ -24,6 +24,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/Academy/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/about-iit-academy" element={<AboutIitAcademy />} />
         <Route path="/about-director-iit-academy" element={<AboutDirector />} />
         <Route

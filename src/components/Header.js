@@ -107,7 +107,7 @@ const Header = (props) => {
                     }}
                   >
                     <NavLink
-                      to="/Academy/"
+                      to="/"
                       className="nav-link"
                       activeclassname="active"
                       style={{ color: "White" }}
@@ -320,12 +320,12 @@ const Header = (props) => {
                     </NavLink>
                     <ul className="dropdown-menu">
                       <li>
-                        <NavLink to="/Academy/" className="dropdown-item">
+                        <NavLink to="/" className="dropdown-item">
                           Students
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to="/Academy/" className="dropdown-item">
+                        <NavLink to="/" className="dropdown-item">
                           Faculty
                         </NavLink>
                       </li>
@@ -336,7 +336,7 @@ const Header = (props) => {
                     style={{ marginLeft: "25px", marginRight: "25px" }}
                   >
                     <NavLink
-                      to="/Academy/"
+                      to="/"
                       className="nav-link"
                       activeclassname="active"
                       style={{ color: "White" }}
@@ -353,7 +353,7 @@ const Header = (props) => {
                     }}
                   >
                     <NavLink
-                      to="/Academy/"
+                      to="/"
                       className="nav-link"
                       activeclassname="active"
                       style={{ color: "White" }}
