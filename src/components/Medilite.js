@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "./Layout";
 import ContactFormAll from "./ContactFormAll";
+import icon from "../assets/homepage/side-link-icon.png";
 
 const Medilite = () => {
   useEffect(() => {
@@ -11,78 +12,92 @@ const Medilite = () => {
       <Layout title="Medilite-IIT Academy">
         <div className="container">
           <div className="column1">
-            <h1> Medical Batch for 11th students</h1>
+            <div className="procedure-outer">
+              <div className="procedure-wrapper">
+                <h2 className="special">Medilite</h2>
+                <p>
+                  <strong> Medilite: Light Your Path to NEET Success!🎯</strong>
+                </p>
+                <p>
+                  <strong>About the Batch:</strong> Medilite is an exclusive
+                  batch for class 11th students aspiring to shine in the NEET
+                  exam. This batch provides comprehensive support and guidance
+                  to set you on the right track from the beginning.
+                </p>
+                <p>
+                  {" "}
+                  <strong>Why and Benefit of this Batch:</strong>Medilite's
+                  one-on-one counseling sessions offer personalized attention,
+                  helping students learn and achieve their goals with ease. With
+                  Medilite, you'll be equipped with the knowledge and confidence
+                  needed to excel in the NEET exam, fulfilling your dream of
+                  becoming a medical professional.
+                </p>
+                <p>
+                  <strong>
+                    Don't miss this incredible opportunity to unleash your
+                    potential and achieve your dreams with our dedicated
+                    institute and personalized mentoring!
+                  </strong>{" "}
+                </p>
+              </div>
+            </div>
           </div>
           <div className="column2">
             <ContactFormAll />
-            {/* <div className="sider2">
-              <h3>Courses</h3>
+            <div className="sider2">
+              <h3>Our Batches</h3>
               <ul>
                 <li>
-                  <a href="/courses/foundation/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Foundation
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/engineering/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Engineering
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/medical/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Medical
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/crash-course/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Crash Course
+                  <a
+                    href="/engineering-class-11-iit-academy"
+                    className="side-link"
+                  >
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    RiJEEing(Class-11)
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/courses/distance-learning-program-/"
+                    href="/engineering-class-12-iit-academy"
                     className="side-link"
                   >
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Distance Learning Program (DLP)
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    JEEneous(Class-12)
                   </a>
                 </li>
                 <li>
-                  <a href="/courses/neet-medical/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    NEET
+                  <a href="/medical-class-11-iit-academy" className="side-link">
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    Medilite(Class-11)
+                  </a>
+                </li>
+                <li>
+                  <a href="/medical-class-12-iit-academy" className="side-link">
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    NEETmed(Class-12)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/foundation-class-9-iit-academy"
+                    className="side-link"
+                  >
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    Foundation 2.0(Class-9)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/foundation-class-10-iit-academy"
+                    className="side-link"
+                  >
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    ExcelX(Class-10)
                   </a>
                 </li>
               </ul>
-            </div> */}
+            </div>
           </div>
         </div>
       </Layout>

@@ -48,7 +48,7 @@ const Footer = () => {
               <div className="footer-row">
                 <h2>Corporate Office</h2>
                 <p>
-                  Radhe Krishna Bhawan,
+                  Sobha Sadan,
                   <br />
                   Near Gurukul Science Coaching,
                   <br />

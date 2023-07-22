@@ -371,7 +371,7 @@ input[type="submit"] {
 
 /*for all pages*/
 
-/* Reset default margins and paddings */
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -383,16 +383,21 @@ input[type="submit"] {
   display: flex;
 }
 
-/* First column with a width of 2/3 (66.67%) of the container */
+/* First column with a width of 6/7 (85.71%) of the container */
 .column1 {
-  flex: 5;
-  padding: 20px; /* Add padding as per your requirement */
+  flex: 6;
+  padding: 10px; /* Add padding as per your requirement */
 }
 
-/* Second column with a width of 1/3 (33.33%) of the container */
+/* Second column with a width of 1/7 (14.29%) of the container */
 .column2 {
   flex: 1;
   padding: 20px;
+}
+
+/* Ensure the last column has no margin to avoid any gap */
+.column2:last-child {
+  margin-right: 0;
 }
 
 /* Mobile view */
@@ -406,6 +411,162 @@ input[type="submit"] {
   .column2 {
     width: 100%;
   }
+}
+
+/* Sider Component*/
+
+/* Style for the container div */
+.sider2 {
+  background-color: #f39c12;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* Style for the heading */
+.sider2 h3 {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #007bff;
+}
+
+/* Style for the list items */
+.sider2 li {
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+/* Style for the anchor links */
+.sider2 a {
+  font-size: medium;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Style for the image inside anchor links */
+.sider2 a img.sider-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+/* Hover effect for anchor links */
+.sider2 a:hover {
+  color: #007bff; /* Change the color as desired */
+}
+
+/* common 66% view */
+
+.custom-list {
+  list-style: disc !important;
+}
+
+.custom-list li {
+  position: relative;
+  border: 0px none;
+  padding: 10px 0 0px 0px;
+  /* display: block; */
+  margin: 10px 15px;
+  padding-right: 10px;
+}
+
+/* .custom-list li::before {
+  position: absolute;
+  left: 0px;
+  content: "•";
+  font-family: "Font Awesome 5 Free";
+  color: black;
+  margin-top: 4px;
+} */
+
+.ph-subheading {
+  font-size: 25px !important;
+}
+.procedure-outer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.procedure-wrapper {
+  width: 90%;
+  background-color: #f9f9f9;
+  padding: 20px 20px;
+  margin: 20px;
+  border: #e8ebef solid 0.2vw;
+}
+
+.procedure-wrapper h1 {
+  text-align: center;
+  margin: 20px 0;
+  margin-bottom: 35px;
+  color: black;
+}
+
+.sub-part h2 {
+  font-size: 20px !important;
+  color: #350011;
+}
+
+.sub-part p {
+  margin: 10px 0 !important;
+}
+
+.procedure-wrapper h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.sub-part h2,
+.ph-subheading {
+  font-size: 23px !important;
+  color: navy !important;
+  text-align: left !important;
+}
+
+.procedure-wrapper p {
+  margin: 20px 0;
+  color: #2b000e;
+}
+
+.policies-heading {
+  font-size: 2em;
+}
+
+.procedure-wrapper a {
+  text-decoration: none;
+  color: #3394ff;
+}
+
+.procedure-wrapper strong {
+  color: #414141;
+  font-weight: 700;
+}
+
+@media (max-width: 545px) {
+  .procedure-wrapper {
+    width: 95%;
+  }
+}
+
+.custom-hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 30px 0;
 }
 
 /* Header Components */

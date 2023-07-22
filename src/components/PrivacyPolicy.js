@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "./Layout";
 import ContactFormAll from "./ContactFormAll";
+import icon from "../assets/homepage/side-link-icon.png";
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -11,78 +12,91 @@ const PrivacyPolicy = () => {
       <Layout title="Our Policy-IIT Academy">
         <div className="container">
           <div className="column1">
-            <h1> Privacy & Policy</h1>
+            <div className="procedure-outer">
+              <div className="procedure-wrapper">
+                <h2 className="special">Privacy & Policy</h2>
+                <p>
+                  {" "}
+                  🔒 Your Privacy Matters! Our Commitment to Safeguarding Your
+                  Data 🔒
+                </p>
+                <p>
+                  At our cutting-edge institute, we are thrilled to bring you
+                  top-notch coaching in the fields of JEE, NEET, and
+                  foundations. However, we understand that with great
+                  educational opportunities comes the responsibility to protect
+                  your privacy and personal information.
+                </p>
+                <p>
+                  Your trust is paramount to us, which is why we have crafted a
+                  robust and transparent Privacy Policy to ensure your data is
+                  safe and secure. Here's what you can expect:
+                </p>
+                <p>
+                  <strong>Secure Data Storage:</strong> Your data will reside in
+                  a state-of-the-art, secure environment, shielded from
+                  unauthorized access. We employ cutting-edge encryption
+                  techniques and strict access controls to safeguard your
+                  information.
+                </p>
+                <p>
+                  <strong> Usage Limitations:</strong> Rest assured, your data
+                  will be used solely for educational and administrative
+                  purposes. We will never sell, trade, or share your information
+                  with third parties for marketing or any other unrelated
+                  activities.
+                </p>
+                <p>
+                  <strong>Data Access and Updates:</strong> You can request
+                  access to your personal information, as well as update or
+                  correct any inaccuracies. We will promptly address your
+                  requests and ensure your data remains accurate.
+                </p>
+                <p>
+                  <strong>Legal Compliance: </strong> Our Privacy Policy aligns
+                  with relevant data protection laws and regulations to ensure
+                  your rights are respected.
+                </p>
+                <p>
+                  We take pride in being entrusted with your educational journey
+                  and are fully committed to safeguarding your privacy
+                  throughout your time with us. Together, let's nurture your
+                  dreams while protecting what matters most - your privacy! 🌟
+                </p>
+              </div>
+            </div>
           </div>
           <div className="column2">
             <ContactFormAll />
-            {/* <div className="sider2">
-              <h3>Courses</h3>
+            <div className="sider2">
+              <h3>Admission</h3>
               <ul>
                 <li>
-                  <a href="/courses/foundation/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Foundation
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/engineering/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Engineering
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/medical/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Medical
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/crash-course/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Crash Course
+                  <a
+                    href="/admission-process-iit-academy"
+                    className="side-link"
+                  >
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    Admission Process
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/courses/distance-learning-program-/"
+                    href="/admission-enquiry-iit-academy"
                     className="side-link"
                   >
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Distance Learning Program (DLP)
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    Admission Enquiry
                   </a>
                 </li>
                 <li>
-                  <a href="/courses/neet-medical/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    NEET
+                  <a href="/our-policy-iit-academy" className="side-link">
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    Privacy Policy
                   </a>
                 </li>
               </ul>
-            </div> */}
+            </div>
           </div>
         </div>
       </Layout>

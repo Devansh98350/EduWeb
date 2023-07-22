@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "./Layout";
 import ContactFormAll from "./ContactFormAll";
+import icon from "../assets/homepage/side-link-icon.png";
 
 const AdmissionProcess = () => {
   useEffect(() => {
@@ -11,78 +12,64 @@ const AdmissionProcess = () => {
       <Layout title=" Admission-IIT Academy">
         <div className="container">
           <div className="column1">
-            <h1> Admission Process</h1>
+            <div className="procedure-outer">
+              <div className="procedure-wrapper">
+                <h2 className="special">Admission Process</h2>
+                <p>🎓📝 Admission Process, super Easy! 🏫🎉</p>
+                <p>
+                  📩 <strong>Apply Now:</strong> Contact us or visit our office
+                  address – whichever is convenient for you! 🏢✉️
+                </p>
+                <ol>
+                  <li>
+                    <strong>Provide Info: </strong>Share personal and
+                    educational details for the desired batch. 📋📚
+                  </li>
+                  <li>
+                    <strong>Pay Up:</strong> Complete registration and first
+                    installment fees – split according to your batch. 💰💳
+                  </li>
+                  <li>
+                    <strong>Join the Journey: </strong>Congratulations! You're
+                    all set to embark on an exciting educational adventure with
+                    us! 🚀🎓
+                  </li>
+                </ol>
+                <p>Join now and unlock your potential! 🌟✨</p>
+              </div>
+            </div>
           </div>
           <div className="column2">
             <ContactFormAll />
-            {/* <div className="sider2">
-              <h3>Courses</h3>
+            <div className="sider2">
+              <h3>Admission</h3>
               <ul>
                 <li>
-                  <a href="/courses/foundation/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Foundation
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/engineering/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Engineering
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/medical/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Medical
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/crash-course/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Crash Course
+                  <a
+                    href="/admission-process-iit-academy"
+                    className="side-link"
+                  >
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    Admission Process
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/courses/distance-learning-program-/"
+                    href="/admission-enquiry-iit-academy"
                     className="side-link"
                   >
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Distance Learning Program (DLP)
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    Admission Enquiry
                   </a>
                 </li>
                 <li>
-                  <a href="/courses/neet-medical/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    NEET
+                  <a href="/our-policy-iit-academy" className="side-link">
+                    <img src={icon} alt={icon} className="sider-icon" />
+                    Privacy Policy
                   </a>
                 </li>
               </ul>
-            </div> */}
+            </div>
           </div>
         </div>
       </Layout>
