@@ -310,7 +310,6 @@ const Header = (props) => {
                   >
                     <NavLink
                       className="nav-link dropdown-toggle"
-                      href="#"
                       role="button"
                       data-bs-toggle="dropdown"
                       style={{ border: "none", color: "White" }}
@@ -320,12 +319,18 @@ const Header = (props) => {
                     </NavLink>
                     <ul className="dropdown-menu">
                       <li>
-                        <NavLink to="/" className="dropdown-item">
+                        <NavLink
+                          to="/students-login-iit-academy"
+                          className="dropdown-item"
+                        >
                           Students
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to="/" className="dropdown-item">
+                        <NavLink
+                          to="/faculty-login-iit-academy"
+                          className="dropdown-item"
+                        >
                           Faculty
                         </NavLink>
                       </li>

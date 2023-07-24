@@ -18,6 +18,8 @@ import Medilite from "./components/Medilite";
 import NEETmed from "./components/NEETmed";
 import Foundation from "./components/Foundation";
 import ExcelX from "./components/ExcelX";
+import StudentLogin from "./components/StudentLogin";
+import FacultyLogin from "./components/FacultyLogin";
 
 function App() {
   return (
@@ -61,6 +63,8 @@ function App() {
         />
         <Route path="/our-policy-iit-academy" element={<PrivacyPolicy />} />
         <Route path="/faculty-iit-academy" element={<Faculty />} />
+        <Route path="/students-login-iit-academy" element={<StudentLogin />} />
+        <Route path="/faculty-login-iit-academy" element={<FacultyLogin />} />
         <Route path="*" element={<PagenotFound />} />
       </Routes>
     </Router>
