@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/EduWeb/static/css/main.812d65ee.css",
-    "main.js": "/EduWeb/static/js/main.eea00bfb.js",
-    "static/js/787.cda612ba.chunk.js": "/EduWeb/static/js/787.cda612ba.chunk.js",
-    "static/media/chatus.gif": "/EduWeb/static/media/chatus.8123e90302ec853d779d.gif",
-    "index.html": "/EduWeb/index.html",
-    "main.812d65ee.css.map": "/EduWeb/static/css/main.812d65ee.css.map",
-    "main.eea00bfb.js.map": "/EduWeb/static/js/main.eea00bfb.js.map",
-    "787.cda612ba.chunk.js.map": "/EduWeb/static/js/787.cda612ba.chunk.js.map"
+    "main.css": "/static/css/main.812d65ee.css",
+    "main.js": "/static/js/main.5a789063.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/chatus.gif": "/static/media/chatus.8123e90302ec853d779d.gif",
+    "index.html": "/index.html",
+    "main.812d65ee.css.map": "/static/css/main.812d65ee.css.map",
+    "main.5a789063.js.map": "/static/js/main.5a789063.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.812d65ee.css",
-    "static/js/main.eea00bfb.js"
+    "static/js/main.5a789063.js"
   ]
 }
