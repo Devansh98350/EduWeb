@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import Layout from "./Layout";
-import ContactFormAll from "./ContactFormAll";
+import { NavLink } from "react-router-dom";
+import gopal from "../assets/faculty/gopal.jpeg";
+import ranjan from "../assets/faculty/ranjan.jpeg";
+import anupam from "../assets/faculty/anupam.jpeg";
+import ayushi from "../assets/faculty/ayushi.jpeg";
+import devanshu from "../assets/faculty/100.png";
 
 const Faculty = () => {
   useEffect(() => {
@@ -9,80 +14,187 @@ const Faculty = () => {
   return (
     <>
       <Layout title="Faculty-IIT Academy">
-        <div className="container">
-          <div className="column1">
-            <h1> Faculty Section</h1>
-          </div>
-          <div className="column2">
-            <ContactFormAll />
-            {/* <div className="sider2">
-              <h3>Courses</h3>
-              <ul>
-                <li>
-                  <a href="/courses/foundation/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Foundation
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/engineering/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Engineering
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/medical/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Medical
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/crash-course/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Crash Course
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/courses/distance-learning-program-/"
-                    className="side-link"
-                  >
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    Distance Learning Program (DLP)
-                  </a>
-                </li>
-                <li>
-                  <a href="/courses/neet-medical/" className="side-link">
-                    <img
-                      src="https://www.mentorsedu.com/template/template71cms/image/side-link-icon.png"
-                      alt
-                      className="sider-icon"
-                    />
-                    NEET
-                  </a>
+        <div className="faculty">
+          <div className="blog-card">
+            <div className="meta">
+              <div
+                className="photo"
+                style={{ backgroundImage: `url(${gopal})` }}
+              />
+              <ul className="details">
+                <li className="author">Er. Gopal Chaudhary</li>
+                <li className="date">Physics-Faculty</li>
+                <li className="date">IIT Academy</li>
+                <li className="date">
+                  <strong>Experience-</strong> 8 years
                 </li>
               </ul>
-            </div> */}
+            </div>
+            <div className="description">
+              <p>
+                {" "}
+                Gopal Choudhary is an accomplished individual with a strong
+                academic background in Mechanical Engineering. He completed his
+                M.Tech from Jaipur, which honed my skills in innovative ideas
+                and problem-solving. With a passion for education and a desire
+                to share his knowledge, he have amassed seven years of valuable
+                experience as a teacher. Throughout his journey, he has been
+                dedicated to imparting knowledge and inspiring young minds to
+                explore the wonders of engineering and design. Under his
+                guidance, several students successfully got into IIT and AIIMS.{" "}
+              </p>
+            </div>
+          </div>
+
+          <div className="blog-card alt">
+            <div className="meta">
+              <div
+                className="photo"
+                style={{ backgroundImage: `url(${ranjan})` }}
+              />
+              <ul className="details">
+                <li className="author">Er. Pratyush Ranjan</li>
+                <li className="date">Chemistry-Faculty</li>
+                <li className="date">IIT Academy</li>
+                <li className="date">
+                  <strong>Experience-</strong> 5 years
+                </li>
+              </ul>
+            </div>
+            <div className="description">
+              <p>
+                Pratyush Ranjan hold a B.tech degree in Instrumentation and
+                Control Engineering from the esteemed Central Institute of
+                Technology, Assam. Over the years, he has honed expertise in the
+                field of Chemistry, having served as a subject expert for 3
+                years with a prominent Global Ed-tech Company. Additionally, he
+                worked in Kunduz, Turkey, for 2 year. Furthermore, his passion
+                for innovation led him to work as an Instrumentation Engineer in
+                the R&D division of Corrosion Intel, where he delved into
+                cutting-edge research for 5 enriching months. With a penchant
+                for continuous learning and a dedication to excellence, he is
+                eager to embark on new challenges and make a meaningful impact
+                in every endeavor he undertake.{" "}
+              </p>
+            </div>
+          </div>
+
+          <div className="blog-card">
+            <div className="meta">
+              <div
+                className="photo"
+                style={{ backgroundImage: `url(${anupam})` }}
+              />
+              <ul className="details">
+                <li className="author">Er. Anupam Chaudhary</li>
+                <li className="date">Maths-Faculty</li>
+                <li className="date">IIT Academy</li>
+                <li className="date">
+                  <strong>Experience-</strong> 7 years
+                </li>
+              </ul>
+            </div>
+            <div className="description">
+              <p>
+                Anupam Chaudhary is a dedicated professional with a strong
+                academic background and diverse teaching experience. She had
+                done her M.Tech from RTU and a B.Tech from WIT. Over the past
+                2.5 years, she had been serving as an Assistant Professor at
+                (AEIT), Jaipur, where she contributed to shaping the minds of
+                young engineering students. Additionally, she has a passion for
+                mathematics, having spent 3 years as a teacher in the subject.
+                With her knowledge and commitment to education, she strive to
+                make a positive impact on the lives of students and continue to
+                explore new avenues for them.{" "}
+              </p>
+            </div>
+          </div>
+
+          <div className="blog-card alt">
+            <div className="meta">
+              <div
+                className="photo"
+                style={{ backgroundImage: `url(${ayushi})` }}
+              />
+              <ul className="details">
+                <li className="author">Er. Ayushi Ranjan</li>
+                <li className="date">Biology-Faculty</li>
+                <li className="date">IIT Academy</li>
+                <li className="date">
+                  <strong>Experience-</strong> 4 years
+                </li>
+              </ul>
+            </div>
+            <div className="description">
+              <p>
+                Ayushi Kumari is a passionate educator with a strong academic
+                background. She pursued his graduation from Banasthali
+                Vidyapeeth in Jaipur, Rajasthan. Equipped with a solid
+                foundation in both subject expertise and pedagogy, she has honed
+                her skills over the past 4 years. During this time, she has had
+                the privilege of teaching at a reputed organization for 6
+                months, where she was able to inspire and nurture young minds.
+                Additionally, I have devoted 3 years to the role of a dedicated
+                biology teacher, fostering a love for the life sciences among
+                her students. Education has always been my calling, and she
+                eagerly continue to make a positive impact in the lives of those
+                she teach.{" "}
+              </p>
+            </div>
+          </div>
+
+          <div className="blog-card">
+            <div className="meta">
+              <div
+                className="photo"
+                style={{ backgroundImage: `url(${ayushi})` }}
+              />
+              <ul className="details">
+                <li className="author">Er. Suneel Kumar</li>
+                <li className="date">Chemistry-Faculty</li>
+                <li className="date">IIT Academy</li>
+                <li className="date">
+                  <strong>Experience-</strong> 2 years
+                </li>
+              </ul>
+            </div>
+            <div className="description">
+              <p>
+                I am delighted to address you as the Dean of Alumni and External
+                Relations for the Training and Placement department of CIT
+                Kokrajhar. It gives me immense pleasure to share with you the
+                remarkable achievements of our alumni...{" "}
+              </p>
+            </div>
+          </div>
+
+          <div className="blog-card alt">
+            <div className="meta">
+              <div
+                className="photo"
+                style={{ backgroundImage: `url(${devanshu})` }}
+              />
+              <ul className="details">
+                <li className="author">Er. Devanshu Kumar</li>
+                <li className="date">Maths-Faculty</li>
+                <li className="date">IIT Academy</li>
+                <li className="date">
+                  <strong>Experience-</strong> 2 years
+                </li>
+              </ul>
+            </div>
+            <div className="description">
+              <p>
+                Devanshu Kumar is a dynamic individual who after completed his
+                degree, emerged as a passionate mentor. With a flair for guiding
+                and inspiring others, he has successfully steered numerous
+                students towards achieving their dream college. His commitment
+                to help others for reaching their goals has earned him
+                admiration and respect within the academic community. His
+                diverse skill set and dedication to excellence make him a
+                valuable asset in any pursuit.{" "}
+              </p>
+            </div>
           </div>
         </div>
       </Layout>

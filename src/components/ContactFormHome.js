@@ -93,7 +93,7 @@ const ContactFormHome = () => {
         <div>
           <textarea
             name="query"
-            placeholder="Query"
+            placeholder="Write your Query"
             value={formData.query}
             onChange={handleChange}
           />

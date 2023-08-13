@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Layout from "./Layout";
+import OurCourses from "./OurCourses";
 // import { useAuth } from "../context/auth";
 
 const HomePage = () => {
@@ -10,8 +11,9 @@ const HomePage = () => {
   return (
     <>
       <Layout>
-        <h1> HomePage</h1>
         {/* <pre>{JSON.stringify(auth, null, 4)}</pre> */}
+
+        <OurCourses />
       </Layout>
     </>
   );

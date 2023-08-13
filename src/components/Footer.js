@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ContactFormHome from "./ContactFormHome";
-import instagram from "../assets/homepage/insta.jpeg";
+import instagram from "../assets/homepage/instagram.png";
 import facebook from "../assets/homepage/facebook.png";
-import linkedin from "../assets/homepage/link.png";
-import email from "../assets/homepage/em.png";
-import call from "../assets/homepage/cu4.jpeg";
+import linkedin from "../assets/homepage/linkedin.png";
+import email from "../assets/homepage/gmail.png";
+import call from "../assets/homepage/phone.png";
 
 const Footer = () => {
   return (
@@ -48,9 +48,9 @@ const Footer = () => {
               <div className="footer-row">
                 <h2>Corporate Office</h2>
                 <p>
-                  Sobha Sadan,
+                  Sobha Sadan
                   <br />
-                  Near Gurukul Science Coaching,
+                  Near Gurukul Science Coaching
                   <br />
                   Kashipur, Samastipur, Bihar
                   <br />
@@ -62,35 +62,41 @@ const Footer = () => {
               </div>
               <div className="footer-row">
                 <p className="text-center mt-3">
-                  <img
-                    src={instagram} // Replace with the actual file path for the Instagram logo
-                    alt="Instagram"
-                    style={{ width: "20px", height: "20px" }}
-                  />{" "}
-                  |{" "}
-                  <img
-                    src={facebook} // Replace with the actual file path for the Facebook logo
-                    alt="Facebook"
-                    style={{ width: "20px", height: "20px" }}
-                  />{" "}
-                  |{" "}
-                  <img
-                    src={linkedin} // Replace with the actual file path for the Instagram logo
-                    alt="LinkedIn"
-                    style={{ width: "20px", height: "20px" }}
-                  />{" "}
-                  |{" "}
-                  <img
-                    src={email} // Replace with the actual file path for the Facebook logo
-                    alt="Email"
-                    style={{ width: "20px", height: "20px" }}
-                  />{" "}
-                  |{" "}
-                  <img
-                    src={call} // Replace with the actual file path for the Facebook logo
-                    alt="Phone"
-                    style={{ width: "20px", height: "20px" }}
-                  />{" "}
+                  <a href="https://www.instagram.com/iit_academy2.0/">
+                    <img
+                      src={instagram} // Replace with the actual file path for the Instagram logo
+                      alt="Instagram"
+                      style={{ width: "20px", height: "20px" }}
+                    />
+                  </a>{" "}
+                  <a href="https://www.facebook.com/profile.php?id=100095357977617">
+                    <img
+                      src={facebook} // Replace with the actual file path for the Facebook logo
+                      alt="Facebook"
+                      style={{ width: "20px", height: "20px" }}
+                    />
+                  </a>{" "}
+                  <a href="https://www.linkedin.com/company/iit-aacademy/">
+                    <img
+                      src={linkedin} // Replace with the actual file path for the Instagram logo
+                      alt="LinkedIn"
+                      style={{ width: "20px", height: "20px" }}
+                    />
+                  </a>{" "}
+                  <a href="mailto:admin@iitacademy.in">
+                    <img
+                      src={email} // Replace with the actual file path for the Facebook logo
+                      alt="Email"
+                      style={{ width: "20px", height: "20px" }}
+                    />
+                  </a>{" "}
+                  <a href="tel:8453307045">
+                    <img
+                      src={call} // Replace with the actual file path for the Facebook logo
+                      alt="Phone"
+                      style={{ width: "20px", height: "20px" }}
+                    />
+                  </a>{" "}
                 </p>
               </div>
               <div className="footer-row">

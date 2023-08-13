@@ -28,7 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const menuButton = document.querySelector(".navbar-toggler");
-  menuButton.addEventListener("click", toggleMobileMenu);
+  if (menuButton) {
+    menuButton.addEventListener("click", toggleMobileMenu);
+  }
 });
 
 const Header = (props) => {
@@ -115,10 +117,10 @@ const Header = (props) => {
                       Home
                     </NavLink>
                   </li>
-                  <li className="nav-item dropdown">
+                  <li className="nav-item dropdown hover">
                     <NavLink
                       className="nav-link dropdown-toggle"
-                      href="#"
+                      href=""
                       role="button"
                       data-bs-toggle="dropdown"
                       style={{
@@ -175,7 +177,7 @@ const Header = (props) => {
                     </ul>
                   </li>
                   <li
-                    className="nav-item dropdown"
+                    className="nav-item dropdown hover"
                     style={{
                       marginLeft: "25px",
                       marginRight: "25px",
@@ -259,7 +261,7 @@ const Header = (props) => {
                     </NavLink>
                   </li>
                   <li
-                    className="nav-item dropdown"
+                    className="nav-item dropdown hover"
                     style={{ marginLeft: "25px", marginRight: "25px" }}
                   >
                     <NavLink
@@ -300,7 +302,7 @@ const Header = (props) => {
                     </ul>
                   </li>
                   <li
-                    className="nav-item dropdown"
+                    className="nav-item dropdown hover"
                     style={{
                       marginLeft: "25px",
                       marginRight: "25px",
