@@ -1,16 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.812d65ee.css",
-    "main.js": "/static/js/main.1b344518.js",
+    "main.css": "/static/css/main.a0bcefea.css",
+    "main.js": "/static/js/main.ac67bc54.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/100.png": "/static/media/100.7ee7ca0c5d5984c7adb4.png",
+    "static/media/anupam.jpeg": "/static/media/anupam.2c9fa177da1991ad2cc9.jpeg",
+    "static/media/ayushi.jpeg": "/static/media/ayushi.9a606a34fcf8d8643b87.jpeg",
+    "static/media/gopal.jpeg": "/static/media/gopal.d90e6f9d2c8267a0f5f2.jpeg",
+    "static/media/instagram.png": "/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/engg-icon-n.svg": "/static/media/engg-icon-n.2a328bee2d0a9b877f8c207dfc0089da.svg",
     "static/media/chatus.gif": "/static/media/chatus.8123e90302ec853d779d.gif",
+    "static/media/foundation-icon-n.svg": "/static/media/foundation-icon-n.5258bcdb0c9f1dfa6c4202280d922ea8.svg",
+    "static/media/medical-icon-n.svg": "/static/media/medical-icon-n.c1c1ebf08bffb56addce8bbb99d13d28.svg",
+    "static/media/phone.png": "/static/media/phone.7943f54a29a4184599e1.png",
+    "static/media/facebook.png": "/static/media/facebook.01a470d813915c298403.png",
+    "static/media/gmail.png": "/static/media/gmail.f8dfbe8b0875e9328ff2.png",
+    "static/media/ranjan.jpeg": "/static/media/ranjan.a338c576d1257909b9e7.jpeg",
+    "static/media/linkedin.png": "/static/media/linkedin.6892b3ae328c7a1e055f.png",
     "index.html": "/index.html",
-    "main.812d65ee.css.map": "/static/css/main.812d65ee.css.map",
-    "main.1b344518.js.map": "/static/js/main.1b344518.js.map",
+    "main.a0bcefea.css.map": "/static/css/main.a0bcefea.css.map",
+    "main.ac67bc54.js.map": "/static/js/main.ac67bc54.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.812d65ee.css",
-    "static/js/main.1b344518.js"
+    "static/css/main.a0bcefea.css",
+    "static/js/main.ac67bc54.js"
   ]
 }
