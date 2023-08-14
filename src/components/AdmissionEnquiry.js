@@ -41,7 +41,7 @@ const AdmissionEnquiry = () => {
               <ul>
                 <li>
                   <a
-                    href="/admission-process-iit-academy"
+                    href="https://www.iitacademy.in/admission-process-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
@@ -50,7 +50,7 @@ const AdmissionEnquiry = () => {
                 </li>
                 <li>
                   <a
-                    href="/admission-enquiry-iit-academy"
+                    href="https://www.iitacademy.in/admission-enquiry-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
@@ -58,7 +58,10 @@ const AdmissionEnquiry = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/our-policy-iit-academy" className="side-link">
+                  <a
+                    href="https://www.iitacademy.in/our-policy-iit-academy"
+                    className="side-link"
+                  >
                     <img src={icon} alt={icon} className="sider-icon" />
                     Privacy Policy
                   </a>

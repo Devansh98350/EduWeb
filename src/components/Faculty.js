@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import Layout from "./Layout";
-import { NavLink } from "react-router-dom";
 import gopal from "../assets/faculty/gopal.jpeg";
 import ranjan from "../assets/faculty/ranjan.jpeg";
 import anupam from "../assets/faculty/anupam.jpeg";
 import ayushi from "../assets/faculty/ayushi.jpeg";
-import devanshu from "../assets/faculty/100.png";
+import devanshu from "../assets/faculty/devanshu.png";
+import suneel from "../assets/faculty/suneel.jpeg";
 
 const Faculty = () => {
   useEffect(() => {
@@ -57,7 +57,7 @@ const Faculty = () => {
                 <li className="date">Chemistry-Faculty</li>
                 <li className="date">IIT Academy</li>
                 <li className="date">
-                  <strong>Experience-</strong> 5 years
+                  <strong>Experience-</strong> 3 years
                 </li>
               </ul>
             </div>
@@ -117,11 +117,11 @@ const Faculty = () => {
                 style={{ backgroundImage: `url(${ayushi})` }}
               />
               <ul className="details">
-                <li className="author">Er. Ayushi Ranjan</li>
+                <li className="author">Ms. Ayushi Ranjan</li>
                 <li className="date">Biology-Faculty</li>
                 <li className="date">IIT Academy</li>
                 <li className="date">
-                  <strong>Experience-</strong> 4 years
+                  <strong>Experience-</strong> 3 years
                 </li>
               </ul>
             </div>
@@ -147,7 +147,7 @@ const Faculty = () => {
             <div className="meta">
               <div
                 className="photo"
-                style={{ backgroundImage: `url(${ayushi})` }}
+                style={{ backgroundImage: `url(${suneel})` }}
               />
               <ul className="details">
                 <li className="author">Er. Suneel Kumar</li>
@@ -160,10 +160,16 @@ const Faculty = () => {
             </div>
             <div className="description">
               <p>
-                I am delighted to address you as the Dean of Alumni and External
-                Relations for the Training and Placement department of CIT
-                Kokrajhar. It gives me immense pleasure to share with you the
-                remarkable achievements of our alumni...{" "}
+                Suneel Kumar is a dedicated and accomplished educator who has
+                made a significant impact in the field of chemistry education.
+                With a name that resonates with excellence, Suneel holds a
+                Bachelor's degree that has provided him with a strong foundation
+                in his subject of expertise.His commitment to his students'
+                success has been truly remarkable, evident through the numerous
+                achievements under his guidance. Suneel's guidance has propelled
+                several aspiring minds to achieve remarkable milestones, with
+                numerous students triumphantly clearing prestigious examinations
+                like the IIT JEE and NEET.{" "}
               </p>
             </div>
           </div>

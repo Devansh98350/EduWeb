@@ -603,7 +603,7 @@ input[type="submit"] {
     position: absolute;
     top: 225px; /* Adjust this value as needed to position the menu below the menu icon */
     left: 0;
-    z-index: 0; /* Ensure the menu appears above other content */
+    z-index: 100; /* Ensure the menu appears above other content */
     padding: 10px; /* Add some padding for spacing */
   }
 
@@ -1038,13 +1038,11 @@ a:hover {
 
 .faculty {
   box-sizing: border-box;
-  box-width: 15000px;
+  box-width: 150px;
 }
-
 .blog-card {
   border: 1px solid #eee;
   display: flex;
-  width: 90000px;
   flex-direction: column;
   margin: 1rem auto;
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
@@ -1052,7 +1050,7 @@ a:hover {
   background: #fff;
   line-height: 1.4;
   font-family: sans-serif;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   z-index: 2;
   background-color: #f0f0f0;
@@ -1169,7 +1167,6 @@ a:hover {
 .blog-card p {
   position: relative;
   margin: 1rem 0 0;
-  text-align: justify;
 }
 .blog-card p:first-of-type {
   margin-top: 1.25rem;
@@ -1189,14 +1186,14 @@ a:hover {
 @media (min-width: 640px) {
   .blog-card {
     flex-direction: row;
-    max-width: 700px;
+    max-width: 1000px;
   }
   .blog-card .meta {
-    flex-basis: 40%;
+    flex-basis: 30%;
     height: auto;
   }
   .blog-card .description {
-    flex-basis: 60%;
+    flex-basis: 70%;
   }
   .blog-card .description:before {
     transform: skewX(-3deg);
@@ -1331,21 +1328,87 @@ a:hover {
 /* Media queries */
 @media (max-width: 767px) {
   /* Add your responsive styles for small screens here */
-  .scholarship-wrapper .image-container img {
-    width: 100%;
-    height: 238px;
+  .views-element-container {
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin-top: 20px;
   }
-  .section-aakash-advn li {
+
+  .adv-container {
+    width: 200%; /* Take full width */
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* Adjust the gap as needed */
+    /* Adjust padding for mobile */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-left: 0px;
+  }
+
+  .main-container {
+    background-color: #f7f7f7; /* Background color */
+    padding: 20px; /* Padding around the content */
+    border: 1px solid #ddd; /* Border */
+
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+  }
+
+  .why-choose-heading h6,
+  .why-choose-heading h5 {
+    font-size: 20px; /* Adjust font size for mobile */
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  /* Aakash Advantage point styles */
+  .aakash-adv-point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
   }
 
   .aakash-adv-point img {
-    margin-right: 0;
-    margin-bottom: 10px;
+    width: 30px; /* Adjust image size for mobile */
+    height: 30px;
+    margin-right: 10px;
   }
-  .adv-container {
-    width: 100%; /* Full width in mobile view */
+
+  .aakash-adv-details ul {
+    list-style: disc;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .aakash-adv-details li {
+    position: relative; /* Create a positioning context for ::before */
+    padding-left: 20px;
+  }
+
+  .aakash-adv-details li::before {
+    content: "\2022"; /* Unicode character for a dot bullet */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333; /* Color of the bullet */
+  }
+
+  /* List styles */
+  .section-aakash-advn ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap as needed */
+    justify-content: space-between;
+  }
+
+  .section-aakash-advn li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
   }
 }
 
@@ -1489,75 +1552,137 @@ a:hover {
   text-decoration: none !important; /* Remove the underline */
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
+  .contact-outer {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+
   .snip1560 {
+    top: 0;
     font-family: "Open Sans", sans-serif;
-    position: center;
-    display: inline-block;
+    position: relative;
+    display: block; /* Change to block for mobile */
     overflow: hidden;
-    min-width: auto;
-    max-width: none;
-    width: 50px;
-    border: none;
-    text-align: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    margin: 20px 0; /* Adjust margin for mobile */
+    width: 100%; /* Change width to 100% for mobile */
     background-color: white;
     color: #2b2b2b;
+    text-align: center;
+    font-size: 16px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease-out 0s;
     box-sizing: content-box;
-    border: 5px solid #fff;
+    border: 5px solid grey;
+    border-radius: 20px;
   }
 
   .snip1560 .profile-image {
-    width: 50%;
-    height: auto;
+    padding: 0;
+    width: 100%; /* Change width to 100% for mobile */
+    display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: content-box;
-    border: 2px solid grey;
   }
 
   .snip1560 .profile-image img {
-    width: 50%;
-    height: auto;
+    width: 50%; /* Change width to 100% for mobile */
+    height: auto; /* Adjust height to auto for mobile */
     object-fit: cover;
-    border-radius: 0;
-    box-sizing: content-box;
-    border: 3px solid grey;
   }
 
   .snip1560 figcaption {
-    padding: 5% 5% 5%;
+    padding: 5% 5% 4%;
   }
 
   .snip1560 h3 {
-    font-size: 18px;
-    line-height: 22px;
+    font-family: "roboto mono";
+    font-size: 22px; /* Adjust font size for mobile */
+    font-weight: 400;
+    line-height: 40px; /* Adjust line height for mobile */
+    margin: 3px;
+    font-weight: bold;
+    color: #fff;
   }
 
   .snip1560 h5 {
-    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 1px;
+    color: black;
+  }
+
+  .snip1560:hover,
+  .snip1560.active {
+    top: -4px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #88c3d0;
   }
 
   .mou-heading {
-    font-size: 24px;
-    text-align: center;
-    padding: 5px;
+    font-size: 30px; /* Adjust font size for mobile */
+    background-color: white !important;
+    color: #04020c;
+    border: none !important;
+    font-weight: bold;
   }
 
   .mou-team {
-    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+
+  .mou-coordinators {
+    width: 100%;
+    display: flex;
   }
 
   .mou-coordinators-wrapper {
+    width: 100%; /* Change width to 100% for mobile */
     display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 20px;
+    flex-direction: column; /* Change to column for mobile */
+    justify-content: center;
+    flex-flow: row wrap;
   }
 
   .mou-detail {
-    font-size: 18px;
+    line-height: 40px; /* Adjust line height for mobile */
+    font-family: "roboto mono";
+    align-items: center;
+    font-size: 25px; /* Adjust font size for mobile */
+    font-weight: bold;
+    color: #fff;
+    background-color: #f39c12;
+    border-radius: 20px;
+  }
+  .mou-detail1 {
+    line-height: 40px; /* Adjust line height for mobile */
+    font-family: "roboto mono";
+    align-items: center;
+    font-size: 20px; /* Adjust font size for mobile */
+    font-weight: bold;
+    color: #fff;
+    background-color: green;
+    border-radius: 20px;
+  }
+
+  .circle-list {
+    list-style: circle;
+    padding-left: 20px;
+    color: black;
+  }
+
+  .message {
+    text-align: left;
+  }
+
+  .course-link {
+    text-decoration: none !important;
   }
 }

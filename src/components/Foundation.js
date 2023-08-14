@@ -55,7 +55,7 @@ const Foundation = () => {
               <ul>
                 <li>
                   <a
-                    href="/engineering-class-11-iit-academy"
+                    href="https://www.iitacademy.in/engineering-class-11-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
@@ -64,7 +64,7 @@ const Foundation = () => {
                 </li>
                 <li>
                   <a
-                    href="/engineering-class-12-iit-academy"
+                    href="https://www.iitacademy.in/engineering-class-12-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
@@ -72,20 +72,26 @@ const Foundation = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/medical-class-11-iit-academy" className="side-link">
+                  <a
+                    href="https://www.iitacademy.in/medical-class-11-iit-academy"
+                    className="side-link"
+                  >
                     <img src={icon} alt={icon} className="sider-icon" />
                     Medilite(Class-11)
                   </a>
                 </li>
                 <li>
-                  <a href="/medical-class-12-iit-academy" className="side-link">
+                  <a
+                    href="https://www.iitacademy.in/medical-class-12-iit-academy"
+                    className="side-link"
+                  >
                     <img src={icon} alt={icon} className="sider-icon" />
                     NEETmed(Class-12)
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/foundation-class-9-iit-academy"
+                    href="https://www.iitacademy.in/foundation-class-9-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
@@ -94,7 +100,7 @@ const Foundation = () => {
                 </li>
                 <li>
                   <a
-                    href="/foundation-class-10-iit-academy"
+                    href="https://www.iitacademy.in/foundation-class-10-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
