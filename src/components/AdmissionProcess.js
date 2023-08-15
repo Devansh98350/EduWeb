@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Layout from "./Layout";
 import ContactFormAll from "./ContactFormAll";
 import icon from "../assets/homepage/side-link-icon.png";
@@ -45,31 +46,28 @@ const AdmissionProcess = () => {
               <h3>Admission</h3>
               <ul>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/admission-process-iit-academy"
+                  <Link
+                    to="/admission-process-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
                     Admission Process
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/admission-enquiry-iit-academy"
+                  <Link
+                    to="/admission-enquiry-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
                     Admission Enquiry
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/our-policy-iit-academy"
-                    className="side-link"
-                  >
+                  <Link to="/our-policy-iit-academy" className="side-link">
                     <img src={icon} alt={icon} className="sider-icon" />
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

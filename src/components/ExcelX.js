@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Layout from "./Layout";
 import ContactFormAll from "./ContactFormAll";
 import icon from "../assets/homepage/side-link-icon.png";
@@ -51,58 +52,58 @@ const ExcelX = () => {
               <h3>Our Batches</h3>
               <ul>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/engineering-class-11-iit-academy"
+                  <Link
+                    to="/engineering-class-11-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
                     RiJEEing(Class-11)
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/engineering-class-12-iit-academy"
+                  <Link
+                    to="/engineering-class-12-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
                     JEEneous(Class-12)
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/medical-class-11-iit-academy"
+                  <Link
+                    to="/medical-class-11-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
                     Medilite(Class-11)
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/medical-class-12-iit-academy"
+                  <Link
+                    to="/medical-class-12-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
                     NEETmed(Class-12)
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/foundation-class-9-iit-academy"
+                  <Link
+                    to="/foundation-class-9-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
                     Foundation 2.0(Class-9)
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/foundation-class-10-iit-academy"
+                  <Link
+                    to="/foundation-class-10-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
                     ExcelX(Class-10)
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

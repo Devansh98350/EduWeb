@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Layout from "./Layout";
 import ContactFormAll from "./ContactFormAll";
 import icon from "../assets/homepage/side-link-icon.png";
@@ -204,49 +205,31 @@ const WhyIitAcademy = () => {
               <h3>About</h3>
               <ul>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/about-iit-academy"
-                    className="side-link"
-                  >
+                  <Link to="/about-iit-academy" className="side-link">
                     <img src={icon} alt={icon} className="sider-icon" />
                     IIT Academy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/about-director-iit-academy"
-                    className="side-link"
-                  >
+                  <Link to="/about-director-iit-academy" className="side-link">
                     <img src={icon} alt={icon} className="sider-icon" />
                     About Director
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/director-message-iit-academy"
+                  <Link
+                    to="/director-message-iit-academy"
                     className="side-link"
                   >
                     <img src={icon} alt={icon} className="sider-icon" />
                     Director's Message
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.iitacademy.in/faculty-message-iit-academy"
-                    className="side-link"
-                  >
-                    <img src={icon} alt={icon} className="sider-icon" />
-                    Faculty Message
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.iitacademy.in/why-iit-academy"
-                    className="side-link"
-                  >
+                  <Link to="/why-iit-academy" className="side-link">
                     <img src={icon} alt={icon} className="sider-icon" />
                     Why IIT Academy
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

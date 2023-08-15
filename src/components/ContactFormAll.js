@@ -11,6 +11,7 @@ const ContactFormAll = () => {
   });
 
   const handleChange = (e) => {
+    console.log("Input value:", e.target.value);
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -31,6 +32,7 @@ const ContactFormAll = () => {
       query: "",
     });
   };
+
   return (
     <div className="lister2">
       <h2>ENQUIRY NOW</h2>
@@ -52,7 +54,7 @@ const ContactFormAll = () => {
         <div>
           <input
             type="text"
-            name="chk_data_1"
+            name="email"
             placeholder="Email ID"
             value={formData.email}
             onChange={handleChange}
@@ -103,12 +105,8 @@ const ContactFormAll = () => {
             onChange={handleChange}
           />
         </div>
-        <input
-          type="submit"
-          name="Submit"
-          defaultValue="SUBMIT"
-          onClick="this.style.background='green';this.style.color='white';this.disabled=true;this.value='Sending, Please Wait...';this.form.submit();"
-        />
+        {/* Input fields and other form elements here */}
+        <input type="submit" name="Submit" defaultValue="SUBMIT" />
       </form>
     </div>
   );
