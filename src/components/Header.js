@@ -158,14 +158,7 @@ const Header = (props) => {
                           Director's Message
                         </NavLink>
                       </li>
-                      <li>
-                        <NavLink
-                          to="/faculty-message-iit-academy"
-                          className="dropdown-item"
-                        >
-                          Faculty Message
-                        </NavLink>
-                      </li>
+
                       <li>
                         <NavLink
                           to="/why-iit-academy"

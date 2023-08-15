@@ -9,7 +9,6 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import AboutIitAcademy from "./components/AboutIitAcademy";
 import AboutDirector from "./components/AboutDirector";
 import DirectorMess from "./components/DirectorMessage";
-import FacultyMessage from "./components/FacultyMessage";
 import WhyIitAcademy from "./components/WhyIitAcademy";
 import Faculty from "./components/Faculty";
 import RiJeeing from "./components/RiJeeing";
@@ -32,10 +31,6 @@ function App() {
         <Route
           path="/director-message-iit-academy"
           element={<DirectorMess />}
-        />
-        <Route
-          path="/faculty-message-iit-academy"
-          element={<FacultyMessage />}
         />
         <Route path="/why-iit-academy" element={<WhyIitAcademy />} />
         <Route
