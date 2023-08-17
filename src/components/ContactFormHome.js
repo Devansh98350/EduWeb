@@ -31,11 +31,12 @@ const ContactFormHome = () => {
   };
 
   const handleSubmitClick = (e) => {
+    e.preventDefault();
     e.target.style.background = "green";
     e.target.style.color = "white";
     e.target.disabled = true;
     e.target.value = "Sending, Please Wait...";
-    e.target.form.submit();
+    handleSubmit(e);
   };
 
   return (
