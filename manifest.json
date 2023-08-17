@@ -1,6 +1,7 @@
 {
   "short_name": "IIT Academy",
   "name": "IIT Academy",
+  "description": "Best institute for the preparation of IIT-JEE and NEET in both online and offline mode in the country",
   "icons": [
     {
       "src": "favicon.ico",
