@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ContactFormHome from "./ContactFormHome";
-import instagram from "../assets/homepage/instagram.png";
-import facebook from "../assets/homepage/facebook.png";
-import linkedin from "../assets/homepage/linkedin.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faFacebook,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import email from "../assets/homepage/gmail.png";
 import call from "../assets/homepage/phone.png";
 
@@ -62,40 +66,52 @@ const Footer = () => {
               </div>
               <div className="footer-row">
                 <p className="text-center mt-3">
-                  <a href="https://www.instagram.com/iit_academy2.0/">
-                    <img
-                      src={instagram} // Replace with the actual file path for the Instagram logo
-                      alt="Instagram"
-                      style={{ width: "20px", height: "20px" }}
+                  <a
+                    href="https://www.instagram.com/iit_academy2.0/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faInstagram}
+                      className="linkedin-icon"
                     />
                   </a>{" "}
-                  <a href="https://www.facebook.com/profile.php?id=100095357977617">
-                    <img
-                      src={facebook} // Replace with the actual file path for the Facebook logo
-                      alt="Facebook"
-                      style={{ width: "20px", height: "20px" }}
+                  <a
+                    href="https://www.linkedin.com/company/iit-aacademy/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      className="linkedin-icon"
                     />
                   </a>{" "}
-                  <a href="https://www.linkedin.com/company/iit-aacademy/">
-                    <img
-                      src={linkedin} // Replace with the actual file path for the Instagram logo
-                      alt="LinkedIn"
-                      style={{ width: "20px", height: "20px" }}
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100095357977617"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faFacebook}
+                      className="linkedin-icon"
                     />
                   </a>{" "}
-                  <a href="mailto:admin@iitacademy.in">
-                    <img
-                      src={email} // Replace with the actual file path for the Facebook logo
-                      alt="Email"
-                      style={{ width: "20px", height: "20px" }}
+                  <a
+                    href="mailto:admin@iitacademy.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faEnvelope}
+                      className="linkedin-icon"
                     />
                   </a>{" "}
-                  <a href="tel:8453307045">
-                    <img
-                      src={call} // Replace with the actual file path for the Facebook logo
-                      alt="Phone"
-                      style={{ width: "20px", height: "20px" }}
-                    />
+                  <a
+                    href="tel:8453307045"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faPhone} className="linkedin-icon" />
                   </a>{" "}
                 </p>
               </div>

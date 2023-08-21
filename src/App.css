@@ -306,6 +306,32 @@ select {
   }
 }
 
+.linkedin-icon {
+  font-size: 32px;
+  margin-left: 10px;
+}
+
+/* Add some animation or color changes to make it more attractive */
+.linkedin-icon:hover {
+  transform: scale(1.2);
+  color: #e67e11;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .linkedin-icon {
+    font-size: 24px; /* Reduce the icon size for mobile */
+    margin-left: 5px; /* Decrease the margin for mobile */
+  }
+
+  /* Adjust the hover effect for mobile */
+  .linkedin-icon:hover {
+    transform: scale(1.2);
+    color: #e67e11;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+}
+
 /* ContactFormAll */
 
 .lister2 {
