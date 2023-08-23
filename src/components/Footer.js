@@ -8,8 +8,6 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import email from "../assets/homepage/gmail.png";
-import call from "../assets/homepage/phone.png";
 
 const Footer = () => {
   return (
