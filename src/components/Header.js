@@ -353,7 +353,7 @@ const Header = (props) => {
                     }}
                   >
                     <NavLink
-                      to="/"
+                      to="/gallery-iit-academy"
                       className="nav-link"
                       activeclassname="active"
                       style={{ color: "White" }}

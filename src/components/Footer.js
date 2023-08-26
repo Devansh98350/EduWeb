@@ -59,7 +59,7 @@ const Footer = () => {
                   India – 848101
                 </p>
                 <p>
-                  <a href="mailto:info@iitacademy.in">info@iitacademy.in</a>
+                  <a href="mailto:admin@iitacademy.in">info@iitacademy.in</a>
                 </p>
               </div>
               <div className="footer-row">

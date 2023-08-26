@@ -4,7 +4,7 @@ import gopal from "../assets/faculty/gopal.jpeg";
 import ranjan from "../assets/faculty/ranjan.jpeg";
 import anupam from "../assets/faculty/anupam.jpeg";
 import ayushi from "../assets/faculty/ayushi.jpeg";
-import devanshu from "../assets/faculty/devanshu.png";
+// import devanshu from "../assets/faculty/devanshu.png";
 import suneel from "../assets/faculty/suneel.jpeg";
 
 const Faculty = () => {
@@ -178,7 +178,7 @@ const Faculty = () => {
             <div className="meta">
               <div
                 className="photo"
-                style={{ backgroundImage: `url(${devanshu})` }}
+                style={{ backgroundImage: `url(${" "})` }}
               />
               <ul className="details">
                 <li className="author">Er. Devanshu Kumar</li>
