@@ -19,15 +19,17 @@ const ContactFormHome = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Save the form data
-    console.log(formData);
+    // console.log(formData);
     // Clear the form
-    setFormData({
-      name: "",
-      phone: "",
-      city: "",
-      classOption: "",
-      query: "",
-    });
+    // setFormData({
+    //   name: "",
+    //   phone: "",
+    //   city: "",
+    //   classOption: "",
+    //   query: "",
+    // });
+    window.location.href =
+      "https://docs.google.com/forms/d/e/1FAIpQLSf77FWM1GUYpp4wzJQEPOEXH5zc7-lhh_ybj75MfLWsUrvO9g/viewform?usp=sf_link";
   };
 
   const handleSubmitClick = (e) => {

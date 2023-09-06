@@ -4,7 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import mainlogo from "../assets/homepage/IIT_Academy.jpeg";
 import whatsapp from "../assets/homepage/chatus.gif";
-import call from "../assets/homepage/cu4.jpeg";
+import call from "../assets/homepage/cu4.gif";
+import admission from "../assets/homepage/adm.gif";
 
 // JavaScript function to toggle the mobile menu and update the triangle icon
 let isMobileMenuOpen = false; // Track the menu state
@@ -50,7 +51,16 @@ const Header = (props) => {
                 <img src={mainlogo} alt="" />
               </a>
             </div>
+
             <div className="header-col2">
+              <div className="header-col3">
+                <a
+                  className="header-col12"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdhyUZrK-2UP8DbWgEn3M4bcYCtXG5tSyNUrbFYiDgRaAX2XQ/viewform?usp=sf_link"
+                >
+                  <img src={admission} alt="" />
+                </a>
+              </div>
               <div className="header-col21">
                 <a
                   href="https://wa.me/918453307045?text=Chat With IIT Academy&utm_medium=&utm_campaign=&utm_term=&utm_content=&lang=en"
@@ -86,6 +96,7 @@ const Header = (props) => {
                 style={{ color: "White" }}
               >
                 <span className="navbar-toggler-icon" />
+                Menu
               </button>
               <div
                 className={`collapse navbar-collapse ${

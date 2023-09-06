@@ -31,17 +31,14 @@ const ContactFormAll = () => {
       classOption: "",
       query: "",
     });
+    window.location.href =
+      "https://docs.google.com/forms/d/e/1FAIpQLSf77FWM1GUYpp4wzJQEPOEXH5zc7-lhh_ybj75MfLWsUrvO9g/viewform?usp=sf_link";
   };
 
   return (
     <div className="lister2">
       <h2>ENQUIRY NOW</h2>
-      <form
-        action="https://script.google.com/macros/s/AKfycbxW05Igtjw-SGf5X4i3klSWfwXdGWtzJakhgM39GCF9iI4fd7MEvxLG-lf66ma8at0t/exec"
-        name="contact_form"
-        method="post"
-        onSubmit={handleSubmit}
-      >
+      <form name="contact_form" method="post" onSubmit={handleSubmit}>
         <div>
           <input
             type="text"
