@@ -179,20 +179,20 @@ const Header = (props) => {
                           IIT Academy
                         </NavLink>
                       </li>
-                      <li>
+                      {/* <li>
                         <NavLink
                           to="/about-director-iit-academy"
                           className="dropdown-item"
                         >
                           About Director
                         </NavLink>
-                      </li>
+                      </li> */}
                       <li>
                         <NavLink
                           to="/director-message-iit-academy"
                           className="dropdown-item"
                         >
-                          Director's Message
+                          CEO Message
                         </NavLink>
                       </li>
 
