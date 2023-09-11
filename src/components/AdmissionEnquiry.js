@@ -23,11 +23,12 @@ const AdmissionEnquiry = () => {
                   questions answered! 📱💬🏢
                 </p>
                 <p>
-                  📞 Contact us: <a href="tel:+918453307045">+91 84533 07045</a>
+                  📞 Contact us: <a href="tel:+91-8453307045">+91-8453307045</a>{" "}
+                  ,<a href="tel:+91-7366831500">+91-7366831500</a>
                 </p>
                 <p>
-                  🏢 Corporate Office: [Radhe Krishna Bhawan, Near Gurukul
-                  Science Coaching, Kashipur, Samastipur, Bihar, India – 848101]
+                  🏢 Corporate Office: [Sobha Sadan, Near Gurukul Science
+                  Coaching, Kashipur, Samastipur, Bihar, India – 848101]
                 </p>
                 <p>
                   👉 Discover the perfect educational path for your future! 🌟💼

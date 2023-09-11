@@ -57,7 +57,7 @@ const Faculty = () => {
                 <li className="date">Chemistry-Faculty</li>
                 <li className="date">IIT Academy</li>
                 <li className="date">
-                  <strong>Experience-</strong> 3 years
+                  <strong>Experience-</strong> 5 years
                 </li>
               </ul>
             </div>
@@ -117,23 +117,23 @@ const Faculty = () => {
                 style={{ backgroundImage: `url(${ayushi})` }}
               />
               <ul className="details">
-                <li className="author">Ms. Ayushi Ranjan</li>
+                <li className="author">Dr. Ayushi Ranjan</li>
                 <li className="date">Biology-Faculty</li>
                 <li className="date">IIT Academy</li>
                 <li className="date">
-                  <strong>Experience-</strong> 3 years
+                  <strong>Experience-</strong> 4 years
                 </li>
               </ul>
             </div>
             <div className="description">
               <p>
                 Ayushi Kumari is a passionate educator with a strong academic
-                background. She pursued his graduation from Banasthali
-                Vidyapeeth in Jaipur, Rajasthan. Equipped with a solid
-                foundation in both subject expertise and pedagogy, she has honed
-                her skills over the past 4 years. During this time, she has had
-                the privilege of teaching at a reputed organization for 6
-                months, where she was able to inspire and nurture young minds.
+                background. She pursued his MBBS from Saint Petersburg State
+                Pediatric Medical University. Equipped with a solid foundation
+                in both subject expertise and pedagogy, she has honed her skills
+                over the past 4 years. During this time, she has had the
+                privilege of teaching at a reputed organization for 6 months,
+                where she was able to inspire and nurture young minds.
                 Additionally, I have devoted 3 years to the role of a dedicated
                 biology teacher, fostering a love for the life sciences among
                 her students. Education has always been my calling, and she
@@ -154,7 +154,7 @@ const Faculty = () => {
                 <li className="date">Chemistry-Faculty</li>
                 <li className="date">IIT Academy</li>
                 <li className="date">
-                  <strong>Experience-</strong> 2 years
+                  <strong>Experience-</strong> 3 years
                 </li>
               </ul>
             </div>
@@ -185,7 +185,7 @@ const Faculty = () => {
                 <li className="date">Maths-Faculty</li>
                 <li className="date">IIT Academy</li>
                 <li className="date">
-                  <strong>Experience-</strong> 2 years
+                  <strong>Experience-</strong> 3 years
                 </li>
               </ul>
             </div>

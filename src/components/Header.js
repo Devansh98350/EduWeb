@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import mainlogo from "../assets/homepage/IIT_Academy.jpeg";
+import mainlogo from "../assets/homepage/IIT_Academy.jpg";
 import whatsapp from "../assets/homepage/chatus.gif";
 import call from "../assets/homepage/cu4.gif";
 import admission from "../assets/homepage/adm.gif";
 
 // JavaScript function to toggle the mobile menu and update the triangle icon
 let isMobileMenuOpen = false; // Track the menu state
+let mobileMenuTimeout; // Store a reference to the timeout
 
 document.addEventListener("DOMContentLoaded", function () {
   const navbarCollapse = document.querySelector("#navbarTogglerDemo01");
@@ -16,16 +17,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function toggleMobileMenu() {
     if (isMobileMenuOpen) {
-      navbarCollapse.classList.add("collapsing");
-      setTimeout(() => {
-        navbarCollapse.classList.remove("show", "collapsing");
-      }, 300);
-      menuIcon.textContent = "\u2261"; // Change the menu icon back to the hamburger icon using Unicode code point
+      closeMobileMenu();
     } else {
-      navbarCollapse.classList.add("show");
-      menuIcon.textContent = "\u25B2"; // Change the menu icon to an up triangle when the menu is open using Unicode code point
+      openMobileMenu();
     }
-    isMobileMenuOpen = !isMobileMenuOpen;
+  }
+
+  function openMobileMenu() {
+    navbarCollapse.classList.add("show");
+    menuIcon.textContent = "\u25B2"; // Change the menu icon to an up triangle when the menu is open using Unicode code point
+    isMobileMenuOpen = true;
+
+    // Add a mouseleave event listener to close the menu when the cursor moves away
+    navbarCollapse.addEventListener("mouseleave", closeMobileMenu);
+
+    // Clear the timeout if it's already set
+    clearTimeout(mobileMenuTimeout);
+  }
+
+  function closeMobileMenu() {
+    navbarCollapse.classList.add("collapsing");
+    setTimeout(() => {
+      navbarCollapse.classList.remove("show", "collapsing");
+    }, 300);
+    menuIcon.textContent = "\u2261"; // Change the menu icon back to the hamburger icon using Unicode code point
+    isMobileMenuOpen = false;
+
+    // Remove the mouseleave event listener
+    navbarCollapse.removeEventListener("mouseleave", closeMobileMenu);
+
+    // Set a timeout to close the menu after a delay (adjust the delay time as needed)
+    mobileMenuTimeout = setTimeout(() => {
+      navbarCollapse.classList.remove("show", "collapsing");
+      menuIcon.textContent = "\u2261"; // Change the menu icon back to the hamburger icon using Unicode code point
+      isMobileMenuOpen = false;
+    }, 2000); // Adjust the delay time (in milliseconds) as needed
   }
 
   const menuButton = document.querySelector(".navbar-toggler");

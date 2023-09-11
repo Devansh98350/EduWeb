@@ -18,6 +18,18 @@ const AdmissionProcess = () => {
                 <h2 className="special">Admission Process</h2>
                 <p>🎓📝 Admission Process, super Easy! 🏫🎉</p>
                 <p>
+                  🎓For Admission, fill out the form by clicking on the link
+                  below:-🎓
+                </p>
+                <p style={{ textAlign: "center" }}>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdhyUZrK-2UP8DbWgEn3M4bcYCtXG5tSyNUrbFYiDgRaAX2XQ/viewform?usp=sf_link"
+                    style={{ textColor: "blue", fontSize: "30px" }}
+                  >
+                    Admission Form
+                  </a>
+                </p>
+                <p>
                   📩 <strong>Apply Now:</strong> Contact us or visit our office
                   address – whichever is convenient for you! 🏢✉️
                 </p>
