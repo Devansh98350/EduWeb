@@ -77,7 +77,7 @@ const DirectorMess = () => {
               <strong>A.K. Choudhary</strong>
             </p>
             <p>
-              <strong>CEO, IIT Academy</strong>
+              <strong>Founder & CEO, IIT Academy</strong>
             </p>
           </div>
           <div className="column2">
