@@ -1,0 +1,228 @@
+.course {
+  display: flex;
+  justify-content: center;
+}
+
+.course-container {
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.course-heading {
+  color: rgb(249, 148, 23);
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.course-para {
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.course-btn {
+  margin: 1rem 0;
+}
+
+.course-btn.active-tab {
+  background-color: white;
+  color: black;
+}
+
+.course-btns {
+  background-color: rgb(249, 148, 23);
+  padding: 15px;
+  border: 1px solid green;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.course-btns:active {
+  background-color: #fff;
+  color: black;
+}
+
+.radius1 {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.radius {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+/* Card starts from here */
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.detail-box {
+  width: 80%;
+  margin: auto;
+}
+
+.card-detail {
+  height: 300px;
+  background-color: #fff;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.details-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 50px; */
+  /* padding: 16px; */
+}
+
+.details-desc {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: blue;
+}
+
+.details-desc1 {
+  text-align: center;
+  width: 95%;
+  margin-top: 0px;
+  font-size: 17px;
+}
+
+.details-btn {
+  background-color: rgb(249, 148, 23);
+  color: #fff;
+  font-size: large;
+  padding: 5px 16px;
+  border-radius: 10px;
+  border: none;
+}
+
+.details-btn:hover {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-dots li.slick-active button::before {
+  color: orange !important;
+}
+
+.slick-next {
+  background: rgb(0, 0, 0) !important;
+  height: 50px !important;
+  width: 33px !important;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.slick-prev {
+  background-color: rgb(0, 0, 0) !important;
+  height: 50px !important;
+  width: 35px !important;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+/* CSS for responsivness */
+
+@media screen and (max-width: 1200px) {
+  .card-detail {
+    height: 330px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card-detail {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .card-detail {
+    height: 320px;
+  }
+  .detail-box {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card-detail {
+    height: 280px;
+  }
+  .detail-box {
+    width: content-fit;
+  }
+  .course-btns {
+    width: 80%;
+    align: center;
+    font-size: 0.8rem; /*for class*/
+  }
+  .course-para {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card-detail {
+    height: 260px;
+  }
+  .course-btns {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-detail {
+    height: 260px;
+  }
+  .course-btns {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .detail-box {
+    width: 70%;
+  }
+  .card-detail {
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .detail-box {
+    width: 70%;
+  }
+  .card-detail {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .detail-box {
+    width: 70%;
+  }
+  .card-detail {
+    height: 270px;
+  }
+}

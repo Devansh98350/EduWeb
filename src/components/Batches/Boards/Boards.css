@@ -1,0 +1,427 @@
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+section h1 {
+  text-align: center;
+  margin: 1rem;
+  color: rgb(243, 156, 18);
+  font-size: xx-large;
+  font-weight: bolder;
+  /* border-bottom: 4px solid rgb(255, 255, 0); */
+}
+
+section p {
+  text-align: justify;
+  /* text-decoration: dotted; */
+  width: 85%;
+  position: center;
+  /* left: 130px; */
+  margin: 20px auto;
+  font-weight: bold;
+  color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.heading {
+  text-align: center;
+  margin: 3rem;
+  color: blue;
+  font-weight: bold;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.box {
+  position: relative;
+  width: calc(25% - 20px);
+  background-color: #fff;
+  /* border: 1px solid rgb(255, 217, 0); */
+  padding: 20px;
+  margin: 10px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.box img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+  color: black;
+  opacity: 100;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(transparent, transparent, transparent, blue);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    rgb(243, 156, 18)
+  );
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+h4 {
+  position: relative;
+  z-index: 2;
+  color: black;
+  font-size: 15px;
+  margin: 4px;
+  font-weight: bold;
+}
+
+img {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+}
+
+about {
+  padding: 20px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: blue;
+}
+
+.about p {
+  width: 90%;
+  font-style: arial;
+  font-size: 18px;
+  font-weight: normal;
+  position: relative;
+  text-align: justify;
+}
+
+.about i {
+  font-size: 18px;
+  vertical-align: middle;
+}
+.box span {
+  position: absolute;
+  inset: 5px;
+  border-radius: 16px;
+  background: white;
+  z-index: 1;
+}
+
+.box:hover {
+  border-color: blue;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+    /* margin: 10px 0; */
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  img {
+    max-width: 95%;
+  }
+
+  .p {
+    font-size: 16px;
+    color: black;
+  }
+
+  .detail-box {
+    width: 100%;
+  }
+
+  .fees-table {
+    font-size: 10px;
+    overflow-x: scroll;
+  }
+
+  .fees-table th,
+  .fees-table td {
+    display: row;
+    width: content-fit;
+    /* padding: 10px; */
+    border: 1px solid #ccc;
+    text-align: left;
+    overflow-x: scroll;
+  }
+
+  .fees-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+}
+
+.about-container {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* padding: 15px; */
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.about-content {
+  /* flex: 1; */
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+.details {
+  /* flex: 1; */
+  width: 90%;
+  padding: 20px;
+  border: 2px solid black;
+  margin: auto;
+}
+
+.details-para {
+  padding: 15px;
+  width: 100%;
+  font-style: arial;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.heading-details {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 1px;
+  font-size: 25px;
+}
+
+.heading-box {
+  margin: 8px;
+}
+
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin: 4px;
+}
+
+.fees-table th {
+  background-color: rgb(174, 235, 174);
+}
+
+.fees-table th,
+.fees-table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.scholar-box {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: 4px;
+}
+
+.scholars-box {
+  display: block;
+  justify-content: left;
+  /* justify-content:first baseline; */
+}
+
+.scholar-head {
+  border-bottom: 1px solid black;
+  margin-bottom: 5 px;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttn {
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  /* margin: 3px; */
+}
+
+.buttn:hover {
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+
+.apply {
+  display: flex;
+  justify-content: center;
+}
+
+.apply-btn {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 7px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.apply-btn:hover {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 20px;
+  font-family: comforta;
+  padding: 8px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+}
+
+.box-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box-ul li {
+  margin-bottom: 10px;
+}
+
+.btn-one {
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.btn-one:hover {
+  background-color: orange; /* Change to your desired hover background color */
+  color: black; /* Change to your desired hover text color */
+  font-weight: bold;
+}
+
+@media (min-width: 769px) {
+  .about-container {
+    padding: 40px;
+  }
+  .about-content,
+  .details {
+    max-width: 700px;
+    padding: 30px;
+  }
+  .fee-table th,
+  .fee-table td {
+    padding: 15px;
+  }
+  .btn {
+    margin: 15px;
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 1200px) {
+  .about-container {
+    padding: 60px;
+  }
+  .about-content,
+  .details {
+    max-width: 90%;
+    margin: auto;
+  }
+  .fee-table th,
+  .fee-table td {
+    padding: 20px;
+  }
+  .btn {
+    margin: 20px;
+  }
+}

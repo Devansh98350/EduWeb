@@ -1,0 +1,343 @@
+/* Mobile view */
+
+@media (max-width: 768px) {
+  /* Reset container padding to remove horizontal padding */
+  .row2 container-fluid {
+    background-color: #fff;
+  }
+
+  /* Show the mobile menu when it's open */
+  .navbar-collapse.show {
+    display: block;
+    background-color: #f39c12;
+    width: 60%; /* Cover only half of the screen width */
+    position: absolute;
+    top: 240.5px; /* Adjust this value as needed to position the menu below the menu icon */
+    left: 0;
+    z-index: 100; /* Ensure the menu appears above other content */
+    padding: 10px; /* Add some padding for spacing */
+  }
+
+  /* Hide the toggle button text in mobile view */
+  .navbar-toggler {
+    color: #fff;
+    background-color: #f39c12;
+    border-color: #fff;
+    width: auto;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: -200px;
+  }
+
+  /* Style for mobile navigation links */
+  .navbar-nav .nav-item {
+    border-bottom: 5px solid #f39c12;
+    width: 10%; /* Make each nav item full width */
+  }
+
+  /* Style for mobile dropdown menu */
+  .dropdown-menu,
+  .dropright-menu {
+    background-color: #12f34a;
+    width: justify; /* Make the dropdown menu full width */
+    right: 0; /* Position the dropdown menu to the right */
+    left: 10;
+    /* Remove padding to adjust sub-options within the same space */
+  }
+
+  /* Style for mobile dropdown items */
+  .dropdown-menu .dropdown-item,
+  .dropright-menu .dropright-item {
+    color: black;
+  }
+
+  .navbar-toggler-icon {
+    color: white;
+    margin-left: -40px;
+  }
+
+  /* Style for active links in mobile view */
+  /* .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+  } */
+
+  /* Hide the caret icon in mobile view */
+  .dropdown-toggle::after {
+    display: none;
+    width: fit-content;
+  }
+
+  /* Adjust padding for nav items in mobile view */
+  .navbar-nav {
+    padding: 0;
+  }
+
+  /* Adjust margins for nav items in mobile view */
+  .navbar-nav .nav-item {
+    margin: 0;
+  }
+
+  /* Style for mobile navigation links */
+  .navbar-nav .nav-link {
+    padding: 10px;
+    color: #f39c12;
+  }
+
+  /* Move the menu icon to the right in mobile view */
+  .navbar-toggler::before {
+    content: "\2261"; /* Unicode for the hamburger menu icon */
+    height: 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 40px; /* Adjust this value to change the size of the icon */
+    line-height: 30px; /* Adjust this value to vertically center the icon */
+    margin-right: 10px;
+    margin-top: 5px; /* Adjust this value to add space between the icon and the "Menu" text */
+  }
+
+  /* Add down arrow icon for dropdown items in mobile view */
+  .nav-link.dropdown-toggle::after {
+    content: ""; /* Unicode for the right-pointing arrow icon */
+    display: inline-block;
+    margin-left: 5px; /* Adjust this value to add space between the item text and the icon */
+  }
+
+  .navbar-collapse.collapsing {
+    display: block;
+    background-color: #f39c12;
+    width: 60%; /* Set the desired width when collapsing the menu */
+    position: absolute;
+    top: 300px;
+    left: 0;
+    z-index: 0;
+    padding: 10px;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-col1 {
+    order: 1; /* Display header-col1 first in the first row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .header-col2 {
+    order: 2; /* Display header-col2 and header-col3 together in the second row */
+    display: flex; /* Display header-col2 and header-col3 as a row */
+    max-width: 300px;
+  }
+
+  .header-col1,
+  .header-col2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .header-col12 img {
+    width: 90px;
+    height: auto;
+    margin-bottom: auto;
+    margin-left: -20px;
+    display: block;
+  }
+
+  .header-col21 img {
+    width: 140px;
+    height: auto;
+    margin-left: 10px;
+    display: block;
+  }
+
+  .header-col22 img {
+    width: 40px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: -10px;
+    display: block;
+  }
+}
+
+/* Header row1*/
+
+.container-fluid {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-col1,
+.header-col2,
+.header-col3 {
+  display: flex;
+  align-items: center;
+}
+
+.header-col12 img {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  width: 120px;
+  height: 72px;
+}
+
+.header-col21 img {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  font-size: 30px;
+  width: 200px;
+  height: 60px;
+}
+
+.header-col22 img {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 80px;
+  font-size: 30px;
+  width: 100px;
+  height: 60px;
+}
+
+/*Header Row 2*/
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  border: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* Background color for the dropdown menu */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Box shadow for the dropdown */
+  z-index: 100;
+  width: 1000px;
+}
+
+.hover:hover .dropdown-menu {
+  display: block;
+  width: auto;
+  text-decoration: none;
+}
+
+.nav-item.dropdown {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-link.dropdown-toggle {
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-item {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 0; /* Adjust padding as needed */
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-heading {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  text-decoration: none;
+}
+
+/*For Batches*/
+
+.column a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.column a:hover {
+  background-color: #f39c12;
+}
+
+.nav-item.dropdown .nav-link.dropdown-toggle {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-item.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  width: 1000px; /* Adjust the width as needed */
+  left: 35%;
+  transform: translateX(-35%);
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-item.dropdown .column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 400px; /* Adjust the height as needed */
+}
+
+.nav-item.dropdown .column h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.nav-item.dropdown .column a {
+  color: black;
+  font-weight: light;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-item.dropdown .column a:hover {
+  background-color: #f39c12;
+  color: white; /* Change text color to white on hover */
+}
+
+.nav-item.dropdown .column a:hover i {
+  color: #fff; /* Change text color of the icon to white on hover */
+}
+
+.nav-item.dropdown .column h3 {
+  border-bottom: 1px solid black; /* Add a white line below each h3 element */
+  padding-bottom: 5px; /* Add some padding for better visual separation */
+  margin-bottom: 0px; /* Adjust margin as needed */
+}

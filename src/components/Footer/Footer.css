@@ -1,0 +1,174 @@
+.body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+footer {
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  background-color: black;
+  color: black;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-copyright a {
+  text-decoration: underline;
+  color: white;
+}
+
+.footer {
+  background-color: blue;
+  color: white;
+}
+
+.footer p {
+  font-size: 14px !important;
+}
+
+.footer-inner-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-flow: row wrap;
+  height: 20%;
+}
+
+.footer-col-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-col-parent img {
+  margin: 20px 10px;
+}
+
+.footer-col {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-col a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  cursor: pointer;
+  color: orange;
+  transition: all 0.2s ease;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none !important; /* Remove the underline */
+}
+
+.footer-col p {
+  margin: 5px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 200px;
+  align-items: center;
+}
+
+.footer-svgs {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-svgs svg {
+  display: inline-block;
+  padding: 7px;
+  width: 35px;
+  height: 35px;
+  margin: 0 2px;
+  background: #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.footer-svgs svg:nth-child(1):hover {
+  background: #3b5998;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-svgs svg:nth-child(2):hover {
+  background: #00b6f1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-svgs svg:nth-child(3):hover {
+  background: #04669a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-img {
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.footer-row {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.footer-row p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.footer-row img {
+  width: 500px;
+  height: 500px;
+  margin: 0 5px;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.linkedin-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.linkedin-icon:hover {
+  color: orange;
+  width: 38px;
+  height: 38px;
+}
+
+@media (max-width: 418px) {
+  .footer-col {
+    margin: 20px 10px;
+  }
+}
+
+.footer-col h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}

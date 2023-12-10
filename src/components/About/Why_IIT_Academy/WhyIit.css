@@ -1,0 +1,98 @@
+.container-accordian {
+  padding: 20px;
+  max-width: 90%; /* Adjust the max width as per your design */
+  margin: 0 auto; /* Center the content */
+  background-color: white;
+  cursor: pointer; /* A light background color */
+}
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  color: blue; /* Dark text color for better readability */
+  font-weight: bold;
+  margin: 0.5rem 0.9rem; /* Slightly reduce the margin */
+}
+
+/* Question Title Styles */
+.container-accordian h2 {
+  text-align: justify;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 7px 0 2px 0;
+  color: #333; /* Dark text color */
+  cursor: pointer;
+}
+
+.accordion-para {
+  width: 95%;
+  font-weight: normal;
+  text-align: justify;
+  font-size: 16px;
+}
+
+/* Button Styles */
+.btns {
+  background-color: #f5f5f5;
+  color: black; /* White text for better contrast */
+  font-weight: bold;
+  border: none; /* Remove border */
+  border-radius: 5px;
+  font-size: 30px;
+  height: 35px;
+  width: 35px;
+  padding: -100px 0 10px 0;
+  margin: 2px;
+  cursor: pointer; /* Show a pointer cursor on hover */
+  transition: background-color 0.3s ease;
+
+  /* &:hover {
+    background-color: #e0e0e0; /* Lighten the background on hover */
+}
+
+/* Accordion Container Styles */
+#accordion-two {
+  background-color: #f5f5f5; /* Use the same background color as the container */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px; /* Add more padding for better spacing */
+  border: 1px solid #ccc; /* Add a subtle border */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight box-shadow for depth */
+  transition: background-color 0.3s; /* Smooth transition for background color change */
+
+  &:hover {
+    background-color: #f5f5f5; /* Lighten the background on hover */
+  }
+}
+
+/* Closed Accordion Styles */
+.accordion > div.closed {
+  margin-bottom: 20px;
+}
+
+/* Media Query for Responsive Design (adjust breakpoints as needed) */
+@media (max-width: 768px) {
+  .container-accordian {
+    padding: 0px; /* Reduce padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 24px; /* Reduce the font size for smaller screens */
+  }
+
+  .container-accordian h2 {
+    font-size: 12px; /* Reduce font size for question titles */
+    font-weight: bold;
+    margin-left: 0px;
+  }
+  .btns {
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    margin-right: 0px;
+    /* padding: -1000px 0 0 0;
+    margin: 2px; */
+  }
+}
