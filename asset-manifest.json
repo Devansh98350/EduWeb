@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c12d700.css",
-    "main.js": "/static/js/main.3bae5f1d.js",
+    "main.css": "/static/css/main.c0692c64.css",
+    "main.js": "/static/js/main.68d0dca1.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/adm.gif": "/static/media/adm.d7f5fe01d004700e7509.gif",
     "static/media/cu4.gif": "/static/media/cu4.0a94a8add2444658ab91.gif",
@@ -9,6 +9,7 @@
     "static/media/building.jpg": "/static/media/building.3a06a45a68c2f785828b.jpg",
     "static/media/i02.png": "/static/media/i02.c0d14e3bdc305a6cd221.png",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/IIT_Academy.png": "/static/media/IIT_Academy.0e3d37ff0138ba72a4ae.png",
     "static/media/i01.jpg": "/static/media/i01.db8cc6ec0d87b4d75f8b.jpg",
     "static/media/Swadhyaya.png": "/static/media/Swadhyaya.dee71a237973da230138.png",
     "static/media/Sudarshan.png": "/static/media/Sudarshan.761b1ca33e2636bb4328.png",
@@ -55,8 +56,6 @@
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
     "static/media/email.png": "/static/media/email.2e917f5c5fd4be220491.png",
     "static/media/call.png": "/static/media/call.a601bd7baf134ac02c1c.png",
-    "static/media/previous.png": "/static/media/previous.ada1ac61d19165080535.png",
-    "static/media/next.png": "/static/media/next.64ae55e7e58648b9778e.png",
     "static/media/Computer-Based-Test.png": "/static/media/Computer-Based-Test.445d112da4c67b88613a.png",
     "static/media/ranjan.jpeg": "/static/media/ranjan.a338c576d1257909b9e7.jpeg",
     "static/media/Board-Exam-Preparation.png": "/static/media/Board-Exam-Preparation.92503b46659b4809167a.png",
@@ -75,12 +74,12 @@
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.9c12d700.css.map": "/static/css/main.9c12d700.css.map",
-    "main.3bae5f1d.js.map": "/static/js/main.3bae5f1d.js.map",
+    "main.c0692c64.css.map": "/static/css/main.c0692c64.css.map",
+    "main.68d0dca1.js.map": "/static/js/main.68d0dca1.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c12d700.css",
-    "static/js/main.3bae5f1d.js"
+    "static/css/main.c0692c64.css",
+    "static/js/main.68d0dca1.js"
   ]
 }
