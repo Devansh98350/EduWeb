@@ -22,7 +22,7 @@
   /* padding: 10px 0; */
 }
 
-.testimonial-para {
+.testimonial1-para {
   width: 60%;
   /* padding: 20px 0; */
   /* padding-left: 250px; */
@@ -30,7 +30,7 @@
 }
 .swiper-button-prev,
 .swiper-button-next {
-  color: black;
+  color: orange;
   font-size: 24px;
   font-weight: bold;
 }
@@ -74,9 +74,9 @@
 }
 
 @media screen and (max-width: 800px) {
-  .testimonial-para {
-    padding-left: 110px;
-    width: 90%;
+  .testimonial1-para {
+    padding-left: 45px;
+    width: 88%;
     margin-left: 0px;
     /* margin-right: 20px; */
     text-align: justify;
@@ -92,9 +92,9 @@
   .mySwiper2 {
     width: 100%;
   }
-  .swiper-button-prev,
+
   .swiper-button-next {
-    font-size: 6px;
+    font-size: 100px;
   }
 }
 

@@ -19,7 +19,7 @@ export const PopularCourse = () => {
   const medicalCourse = courseData.filter(
     (course) => course.item === "medical"
   );
-  const foudations = courseData.filter(
+  const foundations = courseData.filter(
     (course) => course.item === "foundation"
   );
   const distanceLearning = courseData.filter(
@@ -33,7 +33,7 @@ export const PopularCourse = () => {
       : tab === 2
       ? medicalCourse
       : tab === 3
-      ? foudations
+      ? foundations
       : tab === 4
       ? distanceLearning
       : tab === 5
@@ -127,22 +127,22 @@ export const PopularCourse = () => {
         </div>
       </div>
 
-      <div className="detail-box">
+      <div className="detail1-box">
         <Slider {...settings}>
           {data &&
             data.map((value, index) => {
               return (
-                <div key={index} className="card-detail">
+                <div key={index} className="card1-detail">
                   <img
                     src={value.img}
                     alt={value.description}
-                    className="card-img"
+                    className="card1-img"
                   />
-                  <div className="details-btns">
-                    <p className="details-desc">{value.description}</p>
-                    <p className="details-desc1">{value.description1}</p>
+                  <div className="details1-btns">
+                    <p className="details1-desc">{value.description}</p>
+                    <p className="details1-desc1">{value.description1}</p>
                     <Link to={`/${value.to}`}>
-                      <button className="details-btn">Details</button>
+                      <button className="details1-btn">Details</button>
                     </Link>
                   </div>
                 </div>

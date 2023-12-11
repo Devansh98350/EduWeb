@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import mainlogo from "../../assets/homepage/IIT_Academy.jpg";
+import mainlogo from "../../assets/homepage/IIT_Academy.png";
 import whatsapp from "../../assets/homepage/chatus.gif";
 import call from "../../assets/homepage/cu4.gif";
 import admission from "../../assets/homepage/adm.gif";
@@ -1006,46 +1006,60 @@ const Header = (props) => {
     // Return null if the screen width is less than 768 pixels (mobile view)
     return null;
   };
-
+  const topview = () => {
+    if (windowWidth >= 768) {
+      return (
+        <div className="header-col2">
+          <div className="header-col3">
+            <a
+              className="header-col12"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdhyUZrK-2UP8DbWgEn3M4bcYCtXG5tSyNUrbFYiDgRaAX2XQ/viewform?usp=sf_link"
+            >
+              <img src={admission} alt="" />
+            </a>
+          </div>
+          <div className="header-col21">
+            <a
+              href="https://wa.me/918453307045?text=Chat With IIT Academy&utm_medium=&utm_campaign=&utm_term=&utm_content=&lang=en"
+              className="navbar-brand"
+            >
+              <img src={whatsapp} alt="" />
+            </a>
+          </div>
+          <div className="header-col22">
+            <a href="tel:8453307045" className="navbar-brand">
+              <img src={call} alt="" />
+            </a>
+          </div>
+        </div>
+      );
+    }
+    // Return null if the screen width is less than 768 pixels (mobile view)
+    return null;
+  };
+  document.addEventListener("contextmenu", function (event) {
+    var target = event.target;
+    if (target.tagName === "IMG") {
+      event.preventDefault();
+    }
+  });
   return (
     <>
       <div className="header" style={{ backgroundColor: "blue" }}>
         <div className="row1">
           <div className="container-fluid">
             <div className="header-col1">
-              <a className="navbar-brand" href="/">
+              <a className="navbar-brand" href="/" onClick={toggleMobileMenu}>
                 <img src={mainlogo} alt="" />
               </a>
             </div>
 
-            <div className="header-col2">
-              <div className="header-col3">
-                <a
-                  className="header-col12"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdhyUZrK-2UP8DbWgEn3M4bcYCtXG5tSyNUrbFYiDgRaAX2XQ/viewform?usp=sf_link"
-                >
-                  <img src={admission} alt="" />
-                </a>
-              </div>
-              <div className="header-col21">
-                <a
-                  href="https://wa.me/918453307045?text=Chat With IIT Academy&utm_medium=&utm_campaign=&utm_term=&utm_content=&lang=en"
-                  className="navbar-brand"
-                >
-                  <img src={whatsapp} alt="" />
-                </a>
-              </div>
-              <div className="header-col22">
-                <a href="tel:8453307045" className="navbar-brand">
-                  <img src={call} alt="" />
-                </a>
-              </div>
-            </div>
+            {topview()}
           </div>
         </div>
 
         <div className="row2">
-          <nav className=" navbar-expand-lg bg-body-tertiary">
+          <nav className="navbar-expand-lg bg-body-tertiary">
             <div
               className="container-fluid"
               style={{ backgroundColor: "#F39C12 " }}

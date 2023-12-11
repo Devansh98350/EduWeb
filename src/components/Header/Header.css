@@ -10,9 +10,9 @@
   .navbar-collapse.show {
     display: block;
     background-color: #f39c12;
-    width: 60%; /* Cover only half of the screen width */
+    width: 70%; /* Cover only half of the screen width */
     position: absolute;
-    top: 240.5px; /* Adjust this value as needed to position the menu below the menu icon */
+    top: 169px; /* Adjust this value as needed to position the menu below the menu icon */
     left: 0;
     z-index: 100; /* Ensure the menu appears above other content */
     padding: 10px; /* Add some padding for spacing */
@@ -26,7 +26,8 @@
     width: auto;
     font-size: 30px;
     cursor: pointer;
-    margin-left: -200px;
+    margin-left: -250px;
+    margin-up: -100px;
   }
 
   /* Style for mobile navigation links */
@@ -36,24 +37,26 @@
   }
 
   /* Style for mobile dropdown menu */
-  .dropdown-menu,
-  .dropright-menu {
+  .dropdown-menu {
     background-color: #12f34a;
     width: justify; /* Make the dropdown menu full width */
     right: 0; /* Position the dropdown menu to the right */
     left: 10;
+    width: content-fit;
     /* Remove padding to adjust sub-options within the same space */
   }
 
   /* Style for mobile dropdown items */
-  .dropdown-menu .dropdown-item,
-  .dropright-menu .dropright-item {
+  .dropdown-menu .dropdown-item {
     color: black;
+    width: content-fit;
   }
 
   .navbar-toggler-icon {
     color: white;
+    font-size: -200px;
     margin-left: -40px;
+    margin-bottom: -15px;
   }
 
   /* Style for active links in mobile view */
@@ -166,13 +169,18 @@
 }
 
 /* Header row1*/
-
+.row19 {
+  height: 72px;
+}
 .container-fluid {
   background-color: white;
   display: flex;
   justify-content: space-between;
 }
 
+.header {
+  margin-top: 0px;
+}
 .header-col1,
 .header-col2,
 .header-col3 {
@@ -205,6 +213,11 @@
   font-size: 30px;
   width: 100px;
   height: 60px;
+}
+
+.navbar-brand {
+  width: 330px;
+  height: auto;
 }
 
 /*Header Row 2*/
