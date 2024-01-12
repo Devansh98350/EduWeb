@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../../Layout";
 import { CaretDown, CaretUp } from "phosphor-react";
 import "./WhyIit.css";
@@ -15,7 +15,9 @@ function Question({ question }) {
         </React.Fragment>
       ))
     : null;
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section
       className={`accordion ${open ? "open" : "closed"}`}

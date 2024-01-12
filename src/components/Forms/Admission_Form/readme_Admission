@@ -1,0 +1,99 @@
+Code to be written in 
+    Google Sheet > Extensions > Apps script
+
+
+
+//---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+//name of the sheet
+var sheetName = 'Sheet1'
+		var scriptProp = PropertiesService.getScriptProperties()
+
+		function intialSetup () {
+		  var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+		  scriptProp.setProperty('key', activeSpreadsheet.getId())
+		}
+    
+    //whenever a post request is encountered
+		function doPost (e) {
+		  var lock = LockService.getScriptLock()
+		  lock.tryLock(10000)
+
+		  try {
+        var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+        var sheet = doc.getSheetByName(sheetName)
+
+        //Get the headers of the sheet (assumed to be in the first row)
+        var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+        var nextRow = sheet.getLastRow() + 1 ;
+        let lc = headers.indexOf("Source") +1 ; //position of the last element of the heading in the given spreadsheet
+
+        
+
+        //creating a new array which has all the values/datas corresponding to the heading
+        var newRow = headers.map(function(header) {
+          return header === 'timestamp' ? new Date() : e.parameter[header]
+        })
+
+        //updates all the datas of form in the spreadsheet except the photos
+        sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+
+
+
+        // This line parses the request data as a JSON object and assigns it to a variable called "obj"
+        let obj = JSON.parse(e.postData.contents);
+        // This line decodes the base64-encoded image data and assigns it to a variable called "dcode"
+        let dcode = Utilities.base64Decode(obj.base64);
+        let dcode2 = Utilities.base64Decode(obj.base64i);
+        // This line creates a new blob from the decoded data, with the specified MIME type and filename, and assigns it to a variable called "blob"
+        let blob = Utilities.newBlob(dcode,obj.imgType,obj.imgName);
+        let blob2 = Utilities.newBlob(dcode2,obj.imgType2,obj.imgName2);
+        // This line creates a new file in the user's Google Drive from the blob data and assigns it to a variable called "newFile"
+        let newFile = DriveApp.createFile(blob);
+        let newFile2 = DriveApp.createFile(blob2);
+        // This line sets the sharing permissions of the new file to "anyone with the link can view", and gets a URL for downloading the file, which is assigned to a variable called "link"
+        let link = newFile.setSharing(DriveApp.Access.ANYONE_WITH_LINK,DriveApp.Permission.VIEW).getDownloadUrl();
+        let link2 = newFile2.setSharing(DriveApp.Access.ANYONE_WITH_LINK,DriveApp.Permission.VIEW).getDownloadUrl();
+        // This line gets the index of the last row in the sheet and assigns it to a variable called "lr"
+        let lr = sheet.getLastRow() +1;
+      
+
+        // Set the formula in the next row after the last row to display the image using the specified URL
+        sheet.getRange(nextRow-1 , lc+1 ).setFormula(`=IMAGE("${link}")`);
+        sheet.getRange(nextRow-1 , lc+2 ).setFormula(`=IMAGE("${link2}")`);
+
+
+        //return statement of try block
+        return ContentService
+          .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))//shown in console log if successfull
+          .setMimeType(ContentService.MimeType.JSON)
+
+		  }
+
+		  catch (e) {
+        return ContentService
+          .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))//shown in console log if unsuccessfull
+          .setMimeType(ContentService.MimeType.JSON)
+      }
+
+      finally {
+        lock.releaseLock()
+      }
+}
+
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+After Writing this code,
+     Save > Run > Deploy as Web Services > Copy Link > Done
+
+
+     This link will be given to the admissionForm.js file, where it will be acting as API endpoint

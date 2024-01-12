@@ -13,6 +13,7 @@ import img from "../../assets/home_page/main.png";
 import Testimonials from "../Home_page/Testimonials";
 import { AccordionComponent } from "../Home_page/Accordian";
 import { PopularCourse } from "../Home_page/Popular_Courses/Popular_Courses.js";
+import { Query } from "../Forms/Query_Form/Query.js";
 
 const Home = () => {
   useEffect(() => {
@@ -30,7 +31,7 @@ const Home = () => {
 
         {/* Testimonial */}
         <Testimonials />
-
+        <Query />
         {/* Accordian */}
         <AccordionComponent />
       </section>

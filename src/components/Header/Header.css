@@ -12,7 +12,7 @@
     background-color: #f39c12;
     width: 70%; /* Cover only half of the screen width */
     position: absolute;
-    top: 169px; /* Adjust this value as needed to position the menu below the menu icon */
+    top: 157.3px; /* Adjust this value as needed to position the menu below the menu icon */
     left: 0;
     z-index: 100; /* Ensure the menu appears above other content */
     padding: 10px; /* Add some padding for spacing */
@@ -166,12 +166,13 @@
     margin-right: -10px;
     display: block;
   }
+  .container-fluid1 {
+    background-color: orange;
+  }
 }
 
 /* Header row1*/
-.row19 {
-  height: 72px;
-}
+
 .container-fluid {
   background-color: white;
   display: flex;
@@ -221,6 +222,23 @@
 }
 
 /*Header Row 2*/
+
+.row2 {
+  transition: all 0.1s ease;
+}
+
+.row2-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid orange;
+  /* transition: background-color 0.1s, transform 0.1s; */
+}
+
+.container-fluid1 {
+  background-color: white;
+}
 
 .nav-item {
   position: relative;

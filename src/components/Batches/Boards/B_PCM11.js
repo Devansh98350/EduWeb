@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
+import { NavLink } from "react-router-dom";
 import Layout from "../../Layout";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "./Boards.css";
@@ -143,14 +144,14 @@ const B_PCM11 = () => {
                 </div>
               </div>
               <div className="apply">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhyUZrK-2UP8DbWgEn3M4bcYCtXG5tSyNUrbFYiDgRaAX2XQ/viewform?usp=sf_link">
+                <NavLink to="/Admission-form-iit-academy">
                   <button
                     className="apply-btn btn btn-primary"
                     style={{ backgroundColor: "green" }}
                   >
                     Apply Online
                   </button>
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>

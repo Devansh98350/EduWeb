@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container21 {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: aqua;
+}
+
+h203 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Group elements in pairs on the same line */
+.form1-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.input-half {
+  flex: 0.48; /* Adjust the flex value for each element to take half space */
+}
+
+select {
+  flex: 0.48; /* Adjust the flex value for each element to take half space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input,
+select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the checkbox label */
+.agreeMsg {
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-size: 200px; /* Adjust the font size as needed */
+  color: #666; /* Lighter color */
+  display: block; /* Ensures the style is applied */
+}
+
+/* Style for the checkbox itself */
+#agree {
+  margin: 10px; /* Adjust spacing */
+  width: auto;
+}
+.call1 {
+  /* color: white;
+  background-color: white; */
+  margin-left: 40%;
+  margin-top: 5px;
+}
+
+.call1:hover {
+  color: white;
+  background-color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-left: 10px; /* Adjust the margin for smaller screens */
+    padding: 10px; /* Adjust the padding for smaller screens */
+  }
+  .call1 {
+    margin-left: 20%;
+    font-size: 5px;
+  }
+  /* Add more specific styles for smaller screens as needed */
+  .input-half {
+    width: 100%; /* Make input fields full width */
+    margin-bottom: 10px; /* Add some space between input fields */
+    font-size: 15px;
+  }
+}

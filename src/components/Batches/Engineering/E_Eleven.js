@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Layout from "../../Layout";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -149,15 +150,14 @@ const E_Eleven = () => {
                 </div>
               </div>
               <div className="apply">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhyUZrK-2UP8DbWgEn3M4bcYCtXG5tSyNUrbFYiDgRaAX2XQ/viewform?usp=sf_link">
+                <NavLink to="/Admission-form-iit-academy">
                   <button
                     className="apply-btn btn btn-primary"
                     style={{ backgroundColor: "green" }}
-                    // onmouseover="this.style.backgroundColor='red'"
                   >
                     Apply Online
                   </button>
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
