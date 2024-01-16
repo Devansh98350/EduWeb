@@ -4,7 +4,7 @@ import "./Query.css";
 
 export const Query = () => {
   // const scriptURL =
-  //  "https://script.google.com/macros/s/AKfycbzobyRpFSaQtQAWjyY-42nI9cbwoAMlXwc1faq8mJE36XplJB6UCBl0Q_NGxdZEMsFj9g/exec";
+  //  "https://script.google.com/macros/s/AKfycbx0c6H0_f-9PoKm2pe1BdleJ3J86eMf3sXcxtBlT3rhPVewbEITn3dOmFzwMItDd1EIDA/exec";
 
   //use state to handle form data whenever they are changed
   const [formData, setFormData] = useState({
@@ -31,9 +31,9 @@ export const Query = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      alert("Please wait...");
+      alert(`Please wait...${formData.fname}!`);
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxjBa4cWTd4Pl_J9DQ2VWriBIJpNV5gAuywLksyzCg9dXpANJ5KBxT4wCg-z4Hgd_nA/exec",
+        "https://script.google.com/macros/s/AKfycbx0c6H0_f-9PoKm2pe1BdleJ3J86eMf3sXcxtBlT3rhPVewbEITn3dOmFzwMItDd1EIDA/exec",
         {
           method: "POST",
           body: new FormData(e.target),

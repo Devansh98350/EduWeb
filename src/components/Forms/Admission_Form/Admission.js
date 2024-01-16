@@ -1392,7 +1392,7 @@ function Admission() {
                     accept=".jpg"
                     onChange={(event) => {
                       if (event.target.files && event.target.files[0]) {
-                        if (event.target.files[0].size > 200 * 1024) {
+                        if (event.target.files[0].size > 500 * 1024) {
                           imageSize();
                           return false;
                         }
@@ -1402,7 +1402,7 @@ function Admission() {
                   />
                   <div className="file-upload-message">
                     Image should be "jpg" only and the size should be less than
-                    200kb.
+                    500kb.
                   </div>
                   <img id="aadharphoto" src="" alt="" />
                 </div>
