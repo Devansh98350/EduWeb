@@ -779,7 +779,7 @@ const Header = (props) => {
                 <div className="column">
                   <h3>Engineering</h3>
                   <NavLink
-                    to="/engineering-class-11-iit-academy"
+                    to="/engineering-class-11"
                     className="dropright-item"
                   >
                     <i
@@ -792,7 +792,7 @@ const Header = (props) => {
                     Arjuna
                   </NavLink>
                   <NavLink
-                    to="/engineering-class-12-iit-academy"
+                    to="/engineering-class-12"
                     className="dropright-item"
                   >
                     <i
@@ -802,7 +802,7 @@ const Header = (props) => {
                     Chaitanya
                   </NavLink>
                   <NavLink
-                    to="/engineering-class-13-iit-academy"
+                    to="/engineering-class-13"
                     className="dropright-item"
                   >
                     <i
@@ -814,30 +814,21 @@ const Header = (props) => {
                 </div>
                 <div className="column">
                   <h3>Medical</h3>
-                  <NavLink
-                    to="/medical-class-11-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/medical-class-11" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Ananta
                   </NavLink>
-                  <NavLink
-                    to="/medical-class-12-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/medical-class-12" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Sudarshan
                   </NavLink>
-                  <NavLink
-                    to="/medical-class-13-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/medical-class-13" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
@@ -847,50 +838,35 @@ const Header = (props) => {
                 </div>
                 <div className="column">
                   <h3>Foundation</h3>
-                  <NavLink
-                    to="/foundation-class-06-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/foundation-class-06" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Aadhya
                   </NavLink>
-                  <NavLink
-                    to="/foundation-class-07-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/foundation-class-07" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Abhinav
                   </NavLink>
-                  <NavLink
-                    to="/foundation-class-08-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/foundation-class-08" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Abhyas
                   </NavLink>
-                  <NavLink
-                    to="/foundation-class-09-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/foundation-class-09" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Aarohan
                   </NavLink>
-                  <NavLink
-                    to="/foundation-class-10-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/foundation-class-10" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
@@ -900,10 +876,7 @@ const Header = (props) => {
                 </div>
                 <div className="column">
                   <h3>DLP</h3>
-                  <NavLink
-                    to="/distance-class-10-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/distance-class-10" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
@@ -911,7 +884,7 @@ const Header = (props) => {
                     Sankalp
                   </NavLink>
                   <NavLink
-                    to="/distance-class-11-engg-iit-academy"
+                    to="/distance-class-11-engineering"
                     className="dropright-item"
                   >
                     <i
@@ -921,7 +894,7 @@ const Header = (props) => {
                     Utkarsh
                   </NavLink>
                   <NavLink
-                    to="/distance-class-12-engg-iit-academy"
+                    to="/distance-class-12-engineering"
                     className="dropright-item"
                   >
                     <i
@@ -931,7 +904,7 @@ const Header = (props) => {
                     Lakshya
                   </NavLink>
                   <NavLink
-                    to="/distance-class-13-engg-iit-academy"
+                    to="/distance-class-13-engineering"
                     className="dropright-item"
                   >
                     <i
@@ -941,7 +914,7 @@ const Header = (props) => {
                     Abhiyaan
                   </NavLink>
                   <NavLink
-                    to="/distance-class-11-med-iit-academy"
+                    to="/distance-class-11-medical"
                     className="dropright-item"
                   >
                     <i
@@ -951,7 +924,7 @@ const Header = (props) => {
                     Yukti
                   </NavLink>
                   <NavLink
-                    to="/distance-class-12-med-iit-academy"
+                    to="/distance-class-12-medical"
                     className="dropright-item"
                   >
                     <i
@@ -961,7 +934,7 @@ const Header = (props) => {
                     Sarthak
                   </NavLink>
                   <NavLink
-                    to="/distance-class-13-med-iit-academy"
+                    to="/distance-class-13-medical"
                     className="dropright-item"
                   >
                     <i
@@ -973,40 +946,28 @@ const Header = (props) => {
                 </div>
                 <div className="column">
                   <h3>Boards</h3>
-                  <NavLink
-                    to="/boards-class-11-pcm-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/boards-class-11-pcm" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Sammarsa
                   </NavLink>
-                  <NavLink
-                    to="/boards-class-12-pcm-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/boards-class-12-pcm" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Vikash
                   </NavLink>
-                  <NavLink
-                    to="/boards-class-11-pcb-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/boards-class-11-pcb" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Daksh
                   </NavLink>
-                  <NavLink
-                    to="/boards-class-12-pcb-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/boards-class-12-pcb" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1052,7 +1013,7 @@ const Header = (props) => {
                 <div className="column">
                   <h3>Engineering</h3>
                   <NavLink
-                    to="/engineering-class-11-iit-academy"
+                    to="/engineering-class-11"
                     className="dropright-item"
                   >
                     <i
@@ -1065,7 +1026,7 @@ const Header = (props) => {
                     Arjuna
                   </NavLink>
                   <NavLink
-                    to="/engineering-class-12-iit-academy"
+                    to="/engineering-class-12"
                     className="dropright-item"
                   >
                     <i
@@ -1075,7 +1036,7 @@ const Header = (props) => {
                     Chaitanya
                   </NavLink>
                   <NavLink
-                    to="/engineering-class-13-iit-academy"
+                    to="/engineering-class-13"
                     className="dropright-item"
                   >
                     <i
@@ -1087,30 +1048,21 @@ const Header = (props) => {
                 </div>
                 <div className="column">
                   <h3>Medical</h3>
-                  <NavLink
-                    to="/medical-class-11-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/medical-class-11" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Ananta
                   </NavLink>
-                  <NavLink
-                    to="/medical-class-12-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/medical-class-12" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Sudarshan
                   </NavLink>
-                  <NavLink
-                    to="/medical-class-13-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/medical-class-13" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1120,50 +1072,35 @@ const Header = (props) => {
                 </div>
                 <div className="column">
                   <h3>Foundation</h3>
-                  <NavLink
-                    to="/foundation-class-06-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/foundation-class-06" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Aadhya
                   </NavLink>
-                  <NavLink
-                    to="/foundation-class-07-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/foundation-class-07" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Abhinav
                   </NavLink>
-                  <NavLink
-                    to="/foundation-class-08-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/foundation-class-08" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Abhyas
                   </NavLink>
-                  <NavLink
-                    to="/foundation-class-09-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/foundation-class-09" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Aarohan
                   </NavLink>
-                  <NavLink
-                    to="/foundation-class-10-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/foundation-class-10" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1173,10 +1110,7 @@ const Header = (props) => {
                 </div>
                 <div className="column">
                   <h3>DLP</h3>
-                  <NavLink
-                    to="/distance-class-10-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/distance-class-10" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1184,7 +1118,7 @@ const Header = (props) => {
                     Sankalp
                   </NavLink>
                   <NavLink
-                    to="/distance-class-11-engg-iit-academy"
+                    to="/distance-class-11-engineering"
                     className="dropright-item"
                   >
                     <i
@@ -1194,7 +1128,7 @@ const Header = (props) => {
                     Utkarsh
                   </NavLink>
                   <NavLink
-                    to="/distance-class-12-engg-iit-academy"
+                    to="/distance-class-12-engineering"
                     className="dropright-item"
                   >
                     <i
@@ -1204,7 +1138,7 @@ const Header = (props) => {
                     Lakshya
                   </NavLink>
                   <NavLink
-                    to="/distance-class-13-engg-iit-academy"
+                    to="/distance-class-13-engineering"
                     className="dropright-item"
                   >
                     <i
@@ -1214,7 +1148,7 @@ const Header = (props) => {
                     Abhiyaan
                   </NavLink>
                   <NavLink
-                    to="/distance-class-11-med-iit-academy"
+                    to="/distance-class-11-medical"
                     className="dropright-item"
                   >
                     <i
@@ -1224,7 +1158,7 @@ const Header = (props) => {
                     Yukti
                   </NavLink>
                   <NavLink
-                    to="/distance-class-12-med-iit-academy"
+                    to="/distance-class-12-medical"
                     className="dropright-item"
                   >
                     <i
@@ -1234,7 +1168,7 @@ const Header = (props) => {
                     Sarthak
                   </NavLink>
                   <NavLink
-                    to="/distance-class-13-med-iit-academy"
+                    to="/distance-class-13-medical"
                     className="dropright-item"
                   >
                     <i
@@ -1246,40 +1180,28 @@ const Header = (props) => {
                 </div>
                 <div className="column">
                   <h3>Boards</h3>
-                  <NavLink
-                    to="/boards-class-11-pcm-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/boards-class-11-pcm" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Sammarsa
                   </NavLink>
-                  <NavLink
-                    to="/boards-class-12-pcm-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/boards-class-12-pcm" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Vikash
                   </NavLink>
-                  <NavLink
-                    to="/boards-class-11-pcb-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/boards-class-11-pcb" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>
                     Daksh
                   </NavLink>
-                  <NavLink
-                    to="/boards-class-12-pcb-iit-academy"
-                    className="dropright-item"
-                  >
+                  <NavLink to="/boards-class-12-pcb" className="dropright-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1308,10 +1230,7 @@ const Header = (props) => {
               <img src={admission} alt="" />
             </a> */}
             <li>
-              <NavLink
-                to="/Admission-form-iit-academy"
-                className="header-col12"
-              >
+              <NavLink to="/Admission-form" className="header-col12">
                 <img src={admission} alt="" />
               </NavLink>
             </li>
@@ -1436,10 +1355,7 @@ const Header = (props) => {
                       </NavLink>
                       <ul className="dropdown-menu">
                         <li>
-                          <NavLink
-                            to="/about-iit-academy"
-                            className="dropdown-item"
-                          >
+                          <NavLink to="/about" className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1449,7 +1365,7 @@ const Header = (props) => {
                         </li>
                         <li>
                           <NavLink
-                            to="/director-message-iit-academy"
+                            to="/director-message"
                             className="dropdown-item"
                           >
                             <i
@@ -1461,10 +1377,7 @@ const Header = (props) => {
                         </li>
 
                         <li>
-                          <NavLink
-                            to="/why-iit-academy"
-                            className="dropdown-item"
-                          >
+                          <NavLink to="/why-us" className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1473,10 +1386,7 @@ const Header = (props) => {
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink
-                            to="/faculty-iit-academy"
-                            className="dropdown-item"
-                          >
+                          <NavLink to="/our-faculty" className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1486,7 +1396,7 @@ const Header = (props) => {
                         </li>
                         <li>
                           <NavLink
-                            to="/frequently-asked-questions-iit-academy"
+                            to="/frequently-asked-questions"
                             className="dropdown-item"
                           >
                             <i
@@ -1497,10 +1407,7 @@ const Header = (props) => {
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink
-                            to="/gallery-iit-academy"
-                            className="dropdown-item"
-                          >
+                          <NavLink to="/gallery" className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1549,7 +1456,7 @@ const Header = (props) => {
                         </li>
                         <li>
                           <NavLink
-                            to="/admission-process-iit-academy"
+                            to="/admission-process"
                             className="dropdown-item"
                           >
                             <i
@@ -1582,7 +1489,7 @@ const Header = (props) => {
                         </li>
                         <li>
                           <NavLink
-                            to="/admission-enquiry-iit-academy"
+                            to="/admission-enquiry"
                             className="dropdown-item"
                           >
                             <i
@@ -1593,10 +1500,7 @@ const Header = (props) => {
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink
-                            to="/our-policy-iit-academy"
-                            className="dropdown-item"
-                          >
+                          <NavLink to="/our-policy" className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1632,7 +1536,7 @@ const Header = (props) => {
                       <ul className="dropdown-menu">
                         <li>
                           <NavLink
-                            to="/students-login-iit-academy"
+                            to="/students-login"
                             className="dropdown-item"
                           >
                             <i
@@ -1644,7 +1548,7 @@ const Header = (props) => {
                         </li>
                         <li>
                           <NavLink
-                            to="/faculty-login-iit-academy"
+                            to="/faculty-login"
                             className="dropdown-item"
                           >
                             <i
@@ -1657,24 +1561,45 @@ const Header = (props) => {
                       </ul>
                     </li>
                     <li
-                      className="nav-item"
-                      style={{
-                        marginLeft: "25px",
-                        fontWeight: "bold",
-                      }}
+                      className="nav-item dropdown hover"
+                      style={{ marginLeft: "25px", marginRight: "25px" }}
                     >
-                      <div
-                        className="nav-link"
-                        activeclassname="active"
+                      <NavLink
+                        className="nav-link dropdown-toggle"
+                        role="button"
+                        data-bs-toggle="dropdown"
                         style={{
+                          border: "none",
                           color: "black",
                           fontSize: "20px",
                           backgroundColor: "white",
+                          fontWeight: "bold",
                           textDecoration: "none",
                         }}
+                        aria-expanded="false"
                       >
                         Contact Us
-                      </div>
+                      </NavLink>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <NavLink to="/careers" className="dropdown-item">
+                            <i
+                              className="fas fa-angle-double-right"
+                              style={{ color: "#f39c12", marginRight: "5px" }}
+                            ></i>
+                            Careers
+                          </NavLink>
+                        </li>
+                        <li>
+                          <div className="dropdown-item">
+                            <i
+                              className="fas fa-angle-double-right"
+                              style={{ color: "#f39c12", marginRight: "5px" }}
+                            ></i>
+                            Contact Us
+                          </div>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
@@ -1752,10 +1677,7 @@ const Header = (props) => {
                       </NavLink>
                       <ul className="dropdown-menu">
                         <li>
-                          <NavLink
-                            to="/about-iit-academy"
-                            className="dropdown-item"
-                          >
+                          <NavLink to="/about" className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1765,7 +1687,7 @@ const Header = (props) => {
                         </li>
                         <li>
                           <NavLink
-                            to="/director-message-iit-academy"
+                            to="/director-message"
                             className="dropdown-item"
                           >
                             <i
@@ -1777,10 +1699,7 @@ const Header = (props) => {
                         </li>
 
                         <li>
-                          <NavLink
-                            to="/why-iit-academy"
-                            className="dropdown-item"
-                          >
+                          <NavLink to="/why-us" className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1789,10 +1708,7 @@ const Header = (props) => {
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink
-                            to="/faculty-iit-academy"
-                            className="dropdown-item"
-                          >
+                          <NavLink to="/our-faculty" className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1802,7 +1718,7 @@ const Header = (props) => {
                         </li>
                         <li>
                           <NavLink
-                            to="/frequently-asked-questions-iit-academy"
+                            to="/frequently-asked-questions"
                             className="dropdown-item"
                           >
                             <i
@@ -1813,10 +1729,7 @@ const Header = (props) => {
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink
-                            to="/gallery-iit-academy"
-                            className="dropdown-item"
-                          >
+                          <NavLink to="/gallery" className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1856,7 +1769,7 @@ const Header = (props) => {
                         </li>
                         <li>
                           <NavLink
-                            to="/admission-process-iit-academy"
+                            to="/admission-process"
                             className="dropdown-item"
                           >
                             <i
@@ -1889,7 +1802,7 @@ const Header = (props) => {
                         </li>
                         <li>
                           <NavLink
-                            to="/admission-enquiry-iit-academy"
+                            to="/admission-enquiry"
                             className="dropdown-item"
                           >
                             <i
@@ -1900,10 +1813,7 @@ const Header = (props) => {
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink
-                            to="/our-policy-iit-academy"
-                            className="dropdown-item"
-                          >
+                          <NavLink to="/our-policy" className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1934,7 +1844,7 @@ const Header = (props) => {
                       <ul className="dropdown-menu">
                         <li>
                           <NavLink
-                            to="/students-login-iit-academy"
+                            to="/students-login"
                             className="dropdown-item"
                           >
                             <i
@@ -1946,7 +1856,7 @@ const Header = (props) => {
                         </li>
                         <li>
                           <NavLink
-                            to="/faculty-login-iit-academy"
+                            to="/faculty-login"
                             className="dropdown-item"
                           >
                             <i
@@ -2022,19 +1932,39 @@ const Header = (props) => {
                       </ul>
                     </li>
                     <li
-                      className="nav-item"
-                      style={{
-                        marginLeft: "25px",
-                        fontWeight: "bold",
-                      }}
+                      className="nav-item dropdown hover"
+                      style={{ marginLeft: "25px", marginRight: "25px" }}
                     >
-                      <div
-                        className="nav-link"
-                        activeclassname="active"
-                        style={{ color: "White" }}
+                      <NavLink
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        style={{ border: "none", color: "White" }}
+                        aria-expanded="false"
                       >
                         Contact Us
-                      </div>
+                      </NavLink>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <NavLink to="/careers" className="dropdown-item">
+                            <i
+                              className="fas fa-angle-double-right"
+                              style={{ color: "#f39c12", marginRight: "5px" }}
+                            ></i>
+                            Careers
+                          </NavLink>
+                        </li>
+                        <li>
+                          <div className="dropdown-item">
+                            <i
+                              className="fas fa-angle-double-right"
+                              style={{ color: "#f39c12", marginRight: "5px" }}
+                            ></i>
+                            Contact Us
+                          </div>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>

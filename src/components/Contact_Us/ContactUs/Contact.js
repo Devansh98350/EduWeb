@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "./../Layout";
 import "./Contact.css";
-import building from "../../assets/contact_us/building.jpg";
+import building from "../../../assets/contact_us/building.jpg";
 import call from "../../assets/contact_us/call.png";
 import email from "../../assets/contact_us/email.png";
 import location from "../../assets/contact_us/location.png";

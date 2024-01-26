@@ -1,0 +1,54 @@
+.career-main {
+  margin-top: 3%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.career-heading {
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.career-description {
+  color: black;
+  /* margin-bottom: 15px; */
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+}
+
+.apply1-now-button {
+  background-color: orange;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto; /* Center-align the button */
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.apply1-now-button:hover {
+  background-color: green;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .career-main {
+    font-weight: bold;
+    font-size: 1.7em;
+  }
+  .career-heading {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+}

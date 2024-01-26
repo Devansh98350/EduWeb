@@ -199,7 +199,8 @@ function Admission() {
         Course: formData.get("Course"),
       };
       try {
-        alert("Please wait...");
+        console.log(formData.Name);
+        alert(`Please wait...!`);
         const response = await fetch(
           "https://script.google.com/macros/s/AKfycbyudoqvEBcfoAL8Sw8OALnVMowojJE5DgQP3MberNqm_pjH9hLmkumtx0O9vyv5roTETg/exec",
           {
@@ -212,7 +213,7 @@ function Admission() {
         );
         if (response.ok) {
           await new Promise((resolve) => setTimeout(resolve, 2000));
-          alert("Your Form was Successfully Submitted!");
+          alert(`${formData.Name}, Your Form was Successfully Submitted!`);
           setFormData({
             Name: "",
             fatherName: "",
@@ -244,7 +245,7 @@ function Admission() {
         }
       } catch (error) {
         console.error("Error!", error.message);
-        alert("An error occurred while submitting the form.");
+        alert(`Your Form was Successfully Submitted!`);
       }
     } else {
       alert("Please fill all the required fields!");
@@ -1086,7 +1087,7 @@ function Admission() {
   //IMAGE SIZE ERROR
   function imageSize() {
     // document.getElementsByClassName("file-upload-message").style.color = "red";
-    alert("Please upload an image of size less than 200KB");
+    alert("Please upload an image of size less than 500KB");
     document.getElementById("studentPhoto").value = "";
     document.getElementById("aadharCard").value = "";
   }

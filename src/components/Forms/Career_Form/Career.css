@@ -11,16 +11,17 @@ body {
   margin-bottom: 20px;
 }
 
-.container23 {
+.container234 {
   /* max-width: 900px; */
-  width: 60%;
+  width: 80%;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
   border: 2px solid green;
   box-shadow: 0 0 10px green;
   margin-bottom: 20px;
-  margin-left: 300px;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 10px;
 }
 
@@ -53,7 +54,9 @@ form {
   margin-top: 10px;
 }
 
-.input-half,
+.input-half {
+  flex: 0.48; /* Adjust the flex value for each element to take half space */
+}
 .input-two {
   flex: 0.48; /* Adjust the flex value for each element to take half space */
 }

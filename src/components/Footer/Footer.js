@@ -109,18 +109,18 @@ const Footer = () => {
               </p>
               <p>Pay Fees Online</p>
               <p>
-                <Link to="/why-iit-academy">Why IIT Academy</Link>
+                <Link to="/why-us">Why IIT Academy</Link>
               </p>
               <p>
-                <Link to="/admission-process-iit-academy">
-                  Admission Process
-                </Link>
+                <Link to="/admission-process">Admission Process</Link>
               </p>
               <p>
-                <Link to="/our-policy-iit-academy">Privacy & Policy</Link>
+                <Link to="/our-policy">Privacy & Policy</Link>
               </p>
-              <p>Articles & Blogs</p>
               <p>Resources</p>
+              <p>
+                <Link to="/careers">Careers</Link>
+              </p>
             </div>
           </div>
           <div
