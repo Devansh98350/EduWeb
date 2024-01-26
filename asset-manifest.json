@@ -1,12 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce499a58.css",
-    "main.js": "/static/js/main.911b9fcc.js",
+    "main.css": "/static/css/main.2e849998.css",
+    "main.js": "/static/js/main.1a2888ac.js",
     "static/js/27.206f39f5.chunk.js": "/static/js/27.206f39f5.chunk.js",
     "static/media/adm.gif": "/static/media/adm.d7f5fe01d004700e7509.gif",
     "static/media/cu4.gif": "/static/media/cu4.0a94a8add2444658ab91.gif",
-    "static/media/buildings.jpg": "/static/media/buildings.4539945efc7c09b1b3b7.jpg",
-    "static/media/building.jpg": "/static/media/building.3a06a45a68c2f785828b.jpg",
     "static/media/Admission_bg.png": "/static/media/Admission_bg.2fedf8216722951d7e4c.png",
     "static/media/i02.png": "/static/media/i02.c0d14e3bdc305a6cd221.png",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
@@ -49,14 +47,11 @@
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
     "static/media/i06.jpg": "/static/media/i06.c808aeb830138c1c9ebc.jpg",
     "static/media/i03.jpg": "/static/media/i03.d92f7b0fad2cbfc300f0.jpg",
-    "static/media/location.png": "/static/media/location.a7f905b7c3e33454a0a2.png",
     "static/media/04.png": "/static/media/04.cff15df428d7ddb00f5b.png",
     "static/media/i05.jpg": "/static/media/i05.c40b698410a89d8fc743.jpg",
     "static/media/suneel.jpeg": "/static/media/suneel.0f5e55dfa71c22ec58c2.jpeg",
     "static/media/chatus.gif": "/static/media/chatus.8123e90302ec853d779d.gif",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
-    "static/media/email.png": "/static/media/email.2e917f5c5fd4be220491.png",
-    "static/media/call.png": "/static/media/call.a601bd7baf134ac02c1c.png",
     "static/media/Computer-Based-Test.png": "/static/media/Computer-Based-Test.445d112da4c67b88613a.png",
     "static/media/ranjan.jpeg": "/static/media/ranjan.a338c576d1257909b9e7.jpeg",
     "static/media/Board-Exam-Preparation.png": "/static/media/Board-Exam-Preparation.92503b46659b4809167a.png",
@@ -78,7 +73,7 @@
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs"
   },
   "entrypoints": [
-    "static/css/main.ce499a58.css",
-    "static/js/main.911b9fcc.js"
+    "static/css/main.2e849998.css",
+    "static/js/main.1a2888ac.js"
   ]
 }
