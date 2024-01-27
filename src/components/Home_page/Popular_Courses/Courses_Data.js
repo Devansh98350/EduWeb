@@ -28,7 +28,7 @@ export const courseData = [
     img: arjuna,
     description: "ARJUNA Course ",
     description1: "(For students moving from class 10 to 11)",
-    to: "engineering-class-11-iit-academy",
+    to: "engineering-class-11",
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const courseData = [
     img: chaitanya,
     description: "CHAITANYA Course",
     description1: "(For students moving from class 11 to 12)",
-    to: "engineering-class-12-iit-academy",
+    to: "engineering-class-12",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const courseData = [
     img: eklavya,
     description: "EKLAVYA Course",
     description1: "(For 12th passed students)",
-    to: "engineering-class-13-iit-academy",
+    to: "engineering-class-13",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ export const courseData = [
     img: ananta,
     description: "ANANTA Course",
     description1: "(For students moving from class 10 to 11)",
-    to: "medical-class-11-iit-academy",
+    to: "medical-class-11",
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ export const courseData = [
     img: sudarshan,
     description: "SUDARSHAN Course",
     description1: "(For students moving from class 11 to 12)",
-    to: "medical-class-12-iit-academy",
+    to: "medical-class-12",
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ export const courseData = [
     img: swadhyaya,
     description: "SWADHYAYA Course",
     description1: "(For 12th passed students)",
-    to: "medical-class-13-iit-academy",
+    to: "medical-class-13",
   },
   {
     id: 7,
@@ -76,7 +76,7 @@ export const courseData = [
     img: atal,
     description: "ATAL Course",
     description1: "(For students moving from class 9 to 10)",
-    to: "foundation-class-10-iit-academy",
+    to: "foundation-class-10",
   },
   {
     id: 8,
@@ -84,7 +84,7 @@ export const courseData = [
     img: aarohan,
     description: "AAROHAN Course",
     description1: "(For students moving from class 8 to 9)",
-    to: "foundation-class-09-iit-academy",
+    to: "foundation-class-09",
   },
   {
     id: 9,
@@ -92,7 +92,7 @@ export const courseData = [
     img: abhyas,
     description: "ABHYAS Course",
     description1: "(For students moving from class 7 to 8)",
-    to: "foundation-class-08-iit-academy",
+    to: "foundation-class-08",
   },
   {
     id: 10,
@@ -100,7 +100,7 @@ export const courseData = [
     img: abhinav,
     description: "ABHINAV Course",
     description1: "(For students moving from class 6 to 7)",
-    to: "foundation-class-07-iit-academy",
+    to: "foundation-class-07",
   },
   {
     id: 11,
@@ -108,7 +108,7 @@ export const courseData = [
     img: aadhya,
     description: "AADHYA Course",
     description1: "(For students moving from class 5 to 6)",
-    to: "foundation-class-06-iit-academy",
+    to: "foundation-class-06",
   },
   {
     id: 12,
@@ -116,7 +116,7 @@ export const courseData = [
     img: utkarsh,
     description: "UTKARSH Course",
     description1: "(For students moving from class 10 to 11)",
-    to: "distance-class-11-engg-iit-academy",
+    to: "distance-class-11-engineering",
   },
   {
     id: 15,
@@ -124,7 +124,7 @@ export const courseData = [
     img: yukti,
     description: "YUKTI Course",
     description1: "(For students moving from class 10 to 11)",
-    to: "distance-class-11-med-iit-academy",
+    to: "distance-class-11-medical",
   },
   {
     id: 13,
@@ -132,7 +132,7 @@ export const courseData = [
     img: lakshya,
     description: "LAKSHYA Course",
     description1: "(For students moving from class 11 to 12)",
-    to: "distance-class-12-engg-iit-academy",
+    to: "distance-class-12-engineering",
   },
   {
     id: 16,
@@ -140,7 +140,7 @@ export const courseData = [
     img: sarthak,
     description: "SARTHAK Course",
     description1: "(For students moving from class 11 to 12)",
-    to: "distance-class-12-med-iit-academy",
+    to: "distance-class-12-medical",
   },
   {
     id: 14,
@@ -148,7 +148,7 @@ export const courseData = [
     img: abhiyaan,
     description: "ABHIYAAN Course",
     description1: "(For 12th passed students)",
-    to: "distance-class-13-engg-iit-academy",
+    to: "distance-class-13-engineering",
   },
   {
     id: 17,
@@ -156,7 +156,7 @@ export const courseData = [
     img: pragya,
     description: "PRAGYA Course",
     description1: "(For 12th passed students)",
-    to: "distance-class-13-med-iit-academy",
+    to: "distance-class-13-medical",
   },
   {
     id: 18,
@@ -164,7 +164,7 @@ export const courseData = [
     img: sankalp,
     description: "SANKALP Course",
     description1: "(For students moving from class 9 to 10)",
-    to: "distance-class-10-iit-academy",
+    to: "distance-class-10",
   },
   {
     id: 19,
@@ -172,7 +172,7 @@ export const courseData = [
     img: sammarsa,
     description: "SAMMARSA Course",
     description1: "(For students moving from class 10 to 11)",
-    to: "boards-class-11-pcm-iit-academy",
+    to: "boards-class-11-pcm",
   },
   {
     id: 20,
@@ -180,7 +180,7 @@ export const courseData = [
     img: vikash,
     description: "VIKASH Course",
     description1: "(For students moving from class 11 to 12)",
-    to: "boards-class-12-pcm-iit-academy",
+    to: "boards-class-12-pcm",
   },
   {
     id: 21,
@@ -188,7 +188,7 @@ export const courseData = [
     img: daksh,
     description: "DAKSH Course",
     description1: "(For students moving from class 10 to 11)",
-    to: "boards-class-11-pcb-iit-academy",
+    to: "boards-class-11-pcb",
   },
   {
     id: 22,
@@ -196,6 +196,6 @@ export const courseData = [
     img: samridhi,
     description: "SAMRIDHI Course",
     description1: "(For students moving from class 11 to 12)",
-    to: "boards-class-12-pcb-iit-academy",
+    to: "boards-class-12-pcb",
   },
 ];

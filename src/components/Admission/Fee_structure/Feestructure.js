@@ -29,7 +29,7 @@ function Feestructure() {
                   <td>
                     <HashLink
                       smooth
-                      to="/engineering-class-11-iit-academy#details"
+                      to="/engineering-class-11#details"
                       className="view"
                     >
                       view
@@ -41,7 +41,7 @@ function Feestructure() {
                   <td>11th to 12th moving</td>
                   <td>
                     <HashLink
-                      to="/engineering-class-12-iit-academy#details"
+                      to="/engineering-class-12#details"
                       className="view"
                     >
                       view
@@ -53,7 +53,7 @@ function Feestructure() {
                   <td>12th passed</td>
                   <td>
                     <HashLink
-                      to="/engineering-class-13-iit-academy#details"
+                      to="/engineering-class-13#details"
                       className="view"
                     >
                       view
@@ -78,10 +78,7 @@ function Feestructure() {
                   <td>Ananta (MA)</td>
                   <td>10th to 11th moving</td>
                   <td>
-                    <HashLink
-                      to="/medical-class-11-iit-academy#details"
-                      className="view"
-                    >
+                    <HashLink to="/medical-class-11#details" className="view">
                       view
                     </HashLink>
                   </td>
@@ -90,10 +87,7 @@ function Feestructure() {
                   <td>Sudarshan (MD)</td>
                   <td>11th to 12th moving</td>
                   <td>
-                    <HashLink
-                      to="/medical-class-12-iit-academy#details"
-                      className="view"
-                    >
+                    <HashLink to="/medical-class-12#details" className="view">
                       view
                     </HashLink>
                   </td>
@@ -102,10 +96,7 @@ function Feestructure() {
                   <td>Swadhyaya (MS)</td>
                   <td>12th passed</td>
                   <td>
-                    <HashLink
-                      to="/medical-class-13-iit-academy#details"
-                      className="view"
-                    >
+                    <HashLink to="/medical-class-13#details" className="view">
                       view
                     </HashLink>
                   </td>
@@ -129,7 +120,7 @@ function Feestructure() {
                   <td>5th to 6th moving</td>
                   <td>
                     <HashLink
-                      to="/foundation-class-06-iit-academy#details"
+                      to="/foundation-class-06#details"
                       className="view"
                     >
                       view
@@ -141,7 +132,7 @@ function Feestructure() {
                   <td>6th to 7th moving</td>
                   <td>
                     <HashLink
-                      to="/foundation-class-07-iit-academy#details"
+                      to="/foundation-class-07#details"
                       className="view"
                     >
                       view
@@ -153,7 +144,7 @@ function Feestructure() {
                   <td>7th to 8th moving</td>
                   <td>
                     <HashLink
-                      to="/foundation-class-08-iit-academy#details"
+                      to="/foundation-class-08#details"
                       className="view"
                     >
                       view
@@ -165,7 +156,7 @@ function Feestructure() {
                   <td>8th to 9th moving</td>
                   <td>
                     <HashLink
-                      to="/foundation-class-09-iit-academy#details"
+                      to="/foundation-class-09#details"
                       className="view"
                     >
                       view
@@ -177,7 +168,7 @@ function Feestructure() {
                   <td>9th to 10th moving</td>
                   <td>
                     <HashLink
-                      to="/foundation-class-10-iit-academy#details"
+                      to="/foundation-class-10#details"
                       className="view"
                     >
                       view
@@ -202,10 +193,7 @@ function Feestructure() {
                   <td>Sankalp (DA)</td>
                   <td>9th to 10th moving</td>
                   <td>
-                    <HashLink
-                      to="/distance-class-10-iit-academy#details"
-                      className="view"
-                    >
+                    <HashLink to="/distance-class-10#details" className="view">
                       view
                     </HashLink>
                   </td>
@@ -215,7 +203,7 @@ function Feestructure() {
                   <td>10th to 11th moving (Engg.)</td>
                   <td>
                     <HashLink
-                      to="/distance-class-11-engg-iit-academy#details"
+                      to="/distance-class-11-engineering#details"
                       className="view"
                     >
                       view
@@ -227,7 +215,7 @@ function Feestructure() {
                   <td>11th to 12th moving (Engg.)</td>
                   <td>
                     <HashLink
-                      to="/distance-class-12-engg-iit-academy#details"
+                      to="/distance-class-12-engineering#details"
                       className="view"
                     >
                       view
@@ -239,7 +227,7 @@ function Feestructure() {
                   <td>12th passed (Engg.)</td>
                   <td>
                     <HashLink
-                      to="/distance-class-13-engg-iit-academy#details"
+                      to="/distance-class-13-engineering#details"
                       className="view"
                     >
                       view
@@ -251,7 +239,7 @@ function Feestructure() {
                   <td>10th to 11th moving (Medical)</td>
                   <td>
                     <HashLink
-                      to="/distance-class-11-med-iit-academy#details"
+                      to="/distance-class-11-medical#details"
                       className="view"
                     >
                       view
@@ -263,7 +251,7 @@ function Feestructure() {
                   <td>11th to 12th moving (Medical)</td>
                   <td>
                     <HashLink
-                      to="/distance-class-12-med-iit-academy#details"
+                      to="/distance-class-12-medical#details"
                       className="view"
                     >
                       view
@@ -275,7 +263,7 @@ function Feestructure() {
                   <td>12th passed (Medical)</td>
                   <td>
                     <HashLink
-                      to="/distance-class-13-med-iit-academy#details"
+                      to="/distance-class-13-medical#details"
                       className="view"
                     >
                       view
@@ -301,7 +289,7 @@ function Feestructure() {
                   <td>10th to 11th moving (PCM)</td>
                   <td>
                     <HashLink
-                      to="/boards-class-11-pcm-iit-academy#details"
+                      to="/boards-class-11-pcm#details"
                       className="view"
                     >
                       view
@@ -313,7 +301,7 @@ function Feestructure() {
                   <td>11th to 12th moving (PCM)</td>
                   <td>
                     <HashLink
-                      to="/boards-class-12-pcm-iit-academy#details"
+                      to="/boards-class-12-pcm#details"
                       className="view"
                     >
                       view
@@ -325,7 +313,7 @@ function Feestructure() {
                   <td>10th to 11th moving (PCB)</td>
                   <td>
                     <HashLink
-                      to="/boards-class-11-pcb-iit-academy#details"
+                      to="/boards-class-11-pcb#details"
                       className="view"
                     >
                       view
@@ -337,7 +325,7 @@ function Feestructure() {
                   <td>11th to 12th moving (PCB)</td>
                   <td>
                     <HashLink
-                      to="/boards-class-12-pcb-iit-academy#details"
+                      to="/boards-class-12-pcb#details"
                       className="view"
                     >
                       view

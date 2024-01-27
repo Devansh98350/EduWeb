@@ -156,7 +156,7 @@ const F_Nine = () => {
                 </div>
               </div>
               <div className="apply">
-                <NavLink to="/Admission-form-iit-academy">
+                <NavLink to="/Admission-form">
                   <button
                     className="apply-btn btn btn-primary"
                     style={{ backgroundColor: "green" }}
@@ -304,7 +304,7 @@ const F_Nine = () => {
               }}
             >
               Orientation classes are conducted for students to motivate them
-              and make them familiar with the insitute.
+              and make them familiar with the institute.
             </h4>
           </div>
           <div className="box">

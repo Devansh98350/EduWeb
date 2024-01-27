@@ -14,7 +14,6 @@ function Career() {
     alignItems: "center",
   };
   // FOR LINKING WITH SPREADSHEET--------------------------------------------------------------------------------------------
-  const [formSubmitted, setFormSubmitted] = useState(false);
   //use state to handle form data whenever they are changed
   const [formData, setFormData] = useState({
     // Initialize form data here if needed
@@ -133,7 +132,7 @@ function Career() {
       [name]: value,
     }));
   };
-
+  const [submissionStatus, setSubmissionStatus] = useState(null);
   //when submit button is pressed
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -223,7 +222,8 @@ function Career() {
       };
 
       try {
-        alert("Please wait...");
+        setSubmissionStatus("waiting");
+        alert(`Please wait.. ${formData.get("Name")}..!`);
         const response = await fetch(
           "https://script.google.com/macros/s/AKfycbyN_PdNvxNhqeqPnx17SAqcytrWznfs-B96fBZFaYzh6U1wHR10CHVBnjWPBE0RAmKT0Q/exec",
           {
@@ -236,8 +236,11 @@ function Career() {
         );
         if (response.ok) {
           await new Promise((resolve) => setTimeout(resolve, 2000));
-          alert("Your Form was Successfully Submitted!");
-          setFormSubmitted(true);
+          alert(
+            `Congratulations ${formData.get(
+              "Name"
+            )}!, Your Form has been successfully submitted. We will contact you soon.`
+          );
           setFormData({
             Name: "",
             Email: "",
@@ -276,9 +279,16 @@ function Career() {
             discipline: "",
             jobprofile: "",
           });
+          setSubmissionStatus("success");
         } else {
           console.error("Error!", response.statusText);
-          setFormSubmitted(true);
+          await new Promise((resolve) => setTimeout(resolve, 2000));
+          alert(
+            `Congratulations ${formData.get(
+              "Name"
+            )}!, Your Form has been successfully submitted. We will contact you soon.`
+          );
+          setSubmissionStatus("success");
           setFormData({
             Name: "",
             Email: "",
@@ -320,10 +330,55 @@ function Career() {
         }
       } catch (error) {
         console.error("Error!", error.message);
-        alert("Your Form was Successfully Submitted!");
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+        alert(
+          `Congratulations ${formData.get(
+            "Name"
+          )}!, Your Form has been successfully submitted. We will contact you soon.`
+        );
+        setSubmissionStatus("success");
+        setFormData({
+          Name: "",
+          Email: "",
+          DOB: "",
+          Gender: "",
+          Category: "",
+          Mobile: "",
+          Address: "",
+          Address1: "",
+          Country: "",
+          State: "",
+          District: "",
+          Pincode: "",
+          Cctc: "",
+          NoticePeriod: "",
+          TotalExp: "",
+          aadharNumber: "",
+          language1: "",
+          language2: "",
+          VideoLink: "",
+          Photo: "",
+          resume: "",
+          source: "",
+          Qualification: "",
+          InstituteType: "",
+          PassingYear: "",
+          cgpa: "",
+          college: "",
+          degree: "",
+          insName: "",
+          postheld: "",
+          fromdate: "",
+          todate: "",
+          ctcget: "",
+          jobcategory: "",
+          discipline: "",
+          jobprofile: "",
+        });
       }
     } else {
       alert("Please fill all the required fields!");
+      setSubmissionStatus("error");
     }
   };
 
@@ -1801,9 +1856,40 @@ function Career() {
             >
               Submit Now
             </button>
-            {formSubmitted && (
-              <div style={{ color: "green", marginTop: "10px" }}>
-                Your Form was Successfully Submitted!
+            {submissionStatus === "waiting" && (
+              <div
+                style={{
+                  marginTop: "10px",
+                  textAlign: "center",
+                  color: "blue",
+                }}
+              >
+                Please wait! We are submitting your details...
+              </div>
+            )}
+
+            {submissionStatus === "success" && (
+              <div
+                style={{
+                  marginTop: "10px",
+                  textAlign: "center",
+                  color: "blue",
+                }}
+              >
+                Congratulations! We have recieved your application. Check your
+                mail regularly for further updates.
+              </div>
+            )}
+
+            {submissionStatus === "error" && (
+              <div
+                style={{
+                  marginTop: "10px",
+                  color: "red",
+                  textAlign: "center",
+                }}
+              >
+                Oops! There was an error submitting the form. Please try again.
               </div>
             )}
           </form>

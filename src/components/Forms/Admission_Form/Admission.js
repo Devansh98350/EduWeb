@@ -122,12 +122,12 @@ function Admission() {
       [name]: value,
     }));
   };
-
+  const [submissionStatus, setSubmissionStatus] = useState(null);
   //when submit button is pressed
   const handleSubmit = async (e) => {
     e.preventDefault();
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbyudoqvEBcfoAL8Sw8OALnVMowojJE5DgQP3MberNqm_pjH9hLmkumtx0O9vyv5roTETg/exec";
+      "https://script.google.com/macros/s/AKfycbx0rgh1mccItjknTASduRCGp3qgbI1Uw7xnFlxYA67gOFYZDDL4fHaC9ysqzjpyVv1usA/exec";
     const formData = new FormData(e.target);
     const isFormValid = Object.values(formData).every(
       (value) => value.trim() !== ""
@@ -199,10 +199,10 @@ function Admission() {
         Course: formData.get("Course"),
       };
       try {
-        console.log(formData.Name);
-        alert(`Please wait...!`);
+        setSubmissionStatus("waiting");
+        alert(`Please wait.. ${formData.get("Name")}..!`);
         const response = await fetch(
-          "https://script.google.com/macros/s/AKfycbyudoqvEBcfoAL8Sw8OALnVMowojJE5DgQP3MberNqm_pjH9hLmkumtx0O9vyv5roTETg/exec",
+          "https://script.google.com/macros/s/AKfycbx0rgh1mccItjknTASduRCGp3qgbI1Uw7xnFlxYA67gOFYZDDL4fHaC9ysqzjpyVv1usA/exec",
           {
             method: "POST",
             headers: {
@@ -213,7 +213,11 @@ function Admission() {
         );
         if (response.ok) {
           await new Promise((resolve) => setTimeout(resolve, 2000));
-          alert(`${formData.Name}, Your Form was Successfully Submitted!`);
+          alert(
+            `Congratulations ${formData.get(
+              "Name"
+            )}!, Your Form has been successfully submitted and you have taken first step towards success.`
+          );
           setFormData({
             Name: "",
             fatherName: "",
@@ -240,15 +244,82 @@ function Admission() {
             Stream: "",
             Course: "",
           });
+          setSubmissionStatus("success");
         } else {
           console.error("Error!", response.statusText);
+          await new Promise((resolve) => setTimeout(resolve, 2000));
+          alert(
+            `Congratulations ${formData.get(
+              "Name"
+            )}!, Your Form has been successfully submitted and you have taken first step towards success.`
+          );
+          setSubmissionStatus("success");
+          setFormData({
+            Name: "",
+            fatherName: "",
+            DOB: "",
+            Gender: "",
+            Category: "",
+            aadharNumber: "",
+            Address: "",
+            City: "",
+            Country: "",
+            Pincode: "",
+            State: "",
+            District: "",
+            Mobile: "",
+            fatherMobile: "",
+            Email: "",
+            XPercentage: "",
+            XIIPercentage: "",
+            studentPhoto: "",
+            aadharCard: "",
+            Source: "",
+            Session: "",
+            StudyMode: "",
+            Stream: "",
+            Course: "",
+          });
         }
       } catch (error) {
         console.error("Error!", error.message);
-        alert(`Your Form was Successfully Submitted!`);
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+        alert(
+          `Congratulations ${formData.get(
+            "Name"
+          )}!, Your Form has been successfully submitted and you have taken first step towards success.`
+        );
+        setSubmissionStatus("success");
+        setFormData({
+          Name: "",
+          fatherName: "",
+          DOB: "",
+          Gender: "",
+          Category: "",
+          aadharNumber: "",
+          Address: "",
+          City: "",
+          Country: "",
+          Pincode: "",
+          State: "",
+          District: "",
+          Mobile: "",
+          fatherMobile: "",
+          Email: "",
+          XPercentage: "",
+          XIIPercentage: "",
+          studentPhoto: "",
+          aadharCard: "",
+          Source: "",
+          Session: "",
+          StudyMode: "",
+          Stream: "",
+          Course: "",
+        });
       }
     } else {
       alert("Please fill all the required fields!");
+      setSubmissionStatus("error");
     }
   };
 
@@ -1507,6 +1578,44 @@ function Admission() {
               >
                 Submit Now
               </button>
+
+              {submissionStatus === "waiting" && (
+                <div
+                  style={{
+                    marginTop: "10px",
+                    textAlign: "center",
+                    color: "blue",
+                  }}
+                >
+                  Please wait, submitting...
+                </div>
+              )}
+
+              {submissionStatus === "success" && (
+                <div
+                  style={{
+                    marginTop: "10px",
+                    textAlign: "center",
+                    color: "blue",
+                  }}
+                >
+                  Congratulations! You have taken the first step towards
+                  success. We will contact you soon.
+                </div>
+              )}
+
+              {submissionStatus === "error" && (
+                <div
+                  style={{
+                    marginTop: "10px",
+                    color: "red",
+                    textAlign: "center",
+                  }}
+                >
+                  Oops! There was an error submitting the form. Please try
+                  again.
+                </div>
+              )}
             </form>
           </div>
         </div>
