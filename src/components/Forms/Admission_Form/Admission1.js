@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Career.css";
+import "./Admission.css";
 import bg from "../../../assets/home_page/Admission_bg.png";
 
-function Career() {
+function Admission1() {
   const containerStyle = {
     backgroundImage: `url(${bg})`,
     backgroundSize: "cover",
@@ -11,45 +11,34 @@ function Career() {
     alignItems: "center",
   };
   // FOR LINKING WITH SPREADSHEET--------------------------------------------------------------------------------------------
+
   //use state to handle form data whenever they are changed
   const [formData, setFormData] = useState({
     // Initialize form data here if needed
     Name: "",
-    Email: "",
+    fatherName: "",
     DOB: "",
     Gender: "",
     Category: "",
-    Mobile: "",
+    aadharNumber: "",
     Address: "",
-    Address1: "",
+    City: "",
     Country: "",
+    Pincode: "",
     State: "",
     District: "",
-    Pincode: "",
-    Cctc: "",
-    NoticePeriod: "",
-    TotalExp: "",
-    aadharNumber: "",
-    language1: "",
-    language2: "",
-    VideoLink: "",
-    Photo: "",
-    resume: "",
-    source: "",
-    Qualification: "",
-    InstituteType: "",
-    PassingYear: "",
-    cgpa: "",
-    college: "",
-    degree: "",
-    insName: "",
-    postheld: "",
-    fromdate: "",
-    todate: "",
-    ctcget: "",
-    jobcategory: "",
-    discipline: "",
-    jobprofile: "",
+    Mobile: "",
+    fatherMobile: "",
+    Email: "",
+    XPercentage: "",
+    XIIPercentage: "",
+    studentPhoto: "",
+    aadharCard: "",
+    Source: "",
+    Session: "",
+    StudyMode: "",
+    Stream: "",
+    Course: "",
   });
 
   //handles any input field change of the form
@@ -134,7 +123,7 @@ function Career() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbyN_PdNvxNhqeqPnx17SAqcytrWznfs-B96fBZFaYzh6U1wHR10CHVBnjWPBE0RAmKT0Q/exec";
+      "https://script.google.com/macros/s/AKfycbx0rgh1mccItjknTASduRCGp3qgbI1Uw7xnFlxYA67gOFYZDDL4fHaC9ysqzjpyVv1usA/exec";
     const formData = new FormData(e.target);
     const isFormValid = Object.values(formData).every(
       (value) => value.trim() !== ""
@@ -144,7 +133,7 @@ function Career() {
       let obj = {};
 
       // This block checks if there's a file in the "studentPhoto" input
-      let file = formData.get("Photo");
+      let file = formData.get("studentPhoto");
       if (file instanceof File) {
         let fr = new FileReader();
         fr.addEventListener("loadend", () => {
@@ -157,7 +146,7 @@ function Career() {
         fr.readAsDataURL(file);
       }
       // This block checks if there's a file in the "aadharCard" input
-      let file2 = formData.get("resume");
+      let file2 = formData.get("aadharCard");
       if (file2 instanceof File) {
         let fr = new FileReader();
         fr.addEventListener("loadend", () => {
@@ -177,52 +166,39 @@ function Career() {
         });
         fr.readAsDataURL(file2);
       }
-      const photoBase64 = await getBase64(formData.get("Photo"));
-      const resumeBase64 = await getBase64(formData.get("resume"));
+      const photoBase64 = await getBase64(formData.get("studentPhoto"));
+      const aadharBase64 = await getBase64(formData.get("aadharCard"));
       const payload = {
         Name: formData.get("Name"),
-        Email: formData.get("Email"),
+        fatherName: formData.get("fatherName"),
         DOB: formData.get("DOB"),
         Gender: formData.get("Gender"),
         Category: formData.get("Category"),
-        Mobile: formData.get("Mobile"),
+        aadharNumber: formData.get("aadharNumber"),
         Address: formData.get("Address"),
-        Address1: formData.get("Address1"),
+        City: formData.get("City"),
         Country: formData.get("Country"),
+        Pincode: formData.get("Pincode"),
         State: formData.get("State"),
         District: formData.get("District"),
-        Pincode: formData.get("Pincode"),
-        Cctc: formData.get("Cctc"),
-        NoticePeriod: formData.get("NoticePeriod"),
-        TotalExp: formData.get("TotalExp"),
-        aadharNumber: formData.get("aadharNumber"),
-        language1: formData.get("language1"),
-        language2: formData.get("language2"),
-        VideoLink: formData.get("VideoLink"),
-        Photo: photoBase64,
-        resume: resumeBase64,
-        source: formData.get("source"),
-        Qualification: formData.get("Qualification"),
-        InstituteType: formData.get("InstituteType"),
-        PassingYear: formData.get("PassingYear"),
-        cgpa: formData.get("cgpa"),
-        college: formData.get("college"),
-        degree: formData.get("degree"),
-        insName: formData.get("insName"),
-        postheld: formData.get("postheld"),
-        fromdate: formData.get("fromdate"),
-        todate: formData.get("todate"),
-        ctcget: formData.get("ctcget"),
-        jobcategory: formData.get("jobcategory"), // Assuming you have a variable named category
-        discipline: formData.get("discipline"), // Assuming you have a variable named discipline
-        jobprofile: formData.get("jobprofile"), // Assuming you have a variable named jobprofile
+        Mobile: formData.get("Mobile"),
+        fatherMobile: formData.get("fatherMobile"),
+        Email: formData.get("Email"),
+        XPercentage: formData.get("XPercentage"),
+        XIIPercentage: formData.get("XIIPercentage"),
+        studentPhoto: photoBase64,
+        aadharCard: aadharBase64,
+        Source: formData.get("Source"),
+        Session: formData.get("Session"),
+        StudyMode: formData.get("StudyMode"),
+        Stream: formData.get("Stream"),
+        Course: formData.get("Course"),
       };
-
       try {
         setSubmissionStatus("waiting");
         alert(`Please wait.. ${formData.get("Name")}..!`);
         const response = await fetch(
-          "https://script.google.com/macros/s/AKfycbyN_PdNvxNhqeqPnx17SAqcytrWznfs-B96fBZFaYzh6U1wHR10CHVBnjWPBE0RAmKT0Q/exec",
+          "https://script.google.com/macros/s/AKfycbx0rgh1mccItjknTASduRCGp3qgbI1Uw7xnFlxYA67gOFYZDDL4fHaC9ysqzjpyVv1usA/exec",
           {
             method: "POST",
             headers: {
@@ -236,45 +212,33 @@ function Career() {
           alert(
             `Congratulations ${formData.get(
               "Name"
-            )}!, Your Form has been successfully submitted. We will contact you soon.`
+            )}!, Your Form has been successfully submitted and you have taken first step towards success.`
           );
           setFormData({
             Name: "",
-            Email: "",
+            fatherName: "",
             DOB: "",
             Gender: "",
             Category: "",
-            Mobile: "",
+            aadharNumber: "",
             Address: "",
-            Address1: "",
+            City: "",
             Country: "",
+            Pincode: "",
             State: "",
             District: "",
-            Pincode: "",
-            Cctc: "",
-            NoticePeriod: "",
-            TotalExp: "",
-            aadharNumber: "",
-            language1: "",
-            language2: "",
-            VideoLink: "",
-            Photo: "",
-            resume: "",
-            source: "",
-            Qualification: "",
-            InstituteType: "",
-            PassingYear: "",
-            cgpa: "",
-            college: "",
-            degree: "",
-            insName: "",
-            postheld: "",
-            fromdate: "",
-            todate: "",
-            ctcget: "",
-            jobcategory: "",
-            discipline: "",
-            jobprofile: "",
+            Mobile: "",
+            fatherMobile: "",
+            Email: "",
+            XPercentage: "",
+            XIIPercentage: "",
+            studentPhoto: "",
+            aadharCard: "",
+            Source: "",
+            Session: "",
+            StudyMode: "",
+            Stream: "",
+            Course: "",
           });
           setSubmissionStatus("success");
         } else {
@@ -283,46 +247,34 @@ function Career() {
           alert(
             `Congratulations ${formData.get(
               "Name"
-            )}!, Your Form has been successfully submitted. We will contact you soon.`
+            )}!, Your Form has been successfully submitted and you have taken first step towards success.`
           );
           setSubmissionStatus("success");
           setFormData({
             Name: "",
-            Email: "",
+            fatherName: "",
             DOB: "",
             Gender: "",
             Category: "",
-            Mobile: "",
+            aadharNumber: "",
             Address: "",
-            Address1: "",
+            City: "",
             Country: "",
+            Pincode: "",
             State: "",
             District: "",
-            Pincode: "",
-            Cctc: "",
-            NoticePeriod: "",
-            TotalExp: "",
-            aadharNumber: "",
-            language1: "",
-            language2: "",
-            VideoLink: "",
-            Photo: "",
-            resume: "",
-            source: "",
-            Qualification: "",
-            InstituteType: "",
-            PassingYear: "",
-            cgpa: "",
-            college: "",
-            degree: "",
-            insName: "",
-            postheld: "",
-            fromdate: "",
-            todate: "",
-            ctcget: "",
-            jobcategory: "",
-            discipline: "",
-            jobprofile: "",
+            Mobile: "",
+            fatherMobile: "",
+            Email: "",
+            XPercentage: "",
+            XIIPercentage: "",
+            studentPhoto: "",
+            aadharCard: "",
+            Source: "",
+            Session: "",
+            StudyMode: "",
+            Stream: "",
+            Course: "",
           });
         }
       } catch (error) {
@@ -331,46 +283,34 @@ function Career() {
         alert(
           `Congratulations ${formData.get(
             "Name"
-          )}!, Your Form has been successfully submitted. We will contact you soon.`
+          )}!, Your Form has been successfully submitted and you have taken first step towards success.`
         );
         setSubmissionStatus("success");
         setFormData({
           Name: "",
-          Email: "",
+          fatherName: "",
           DOB: "",
           Gender: "",
           Category: "",
-          Mobile: "",
+          aadharNumber: "",
           Address: "",
-          Address1: "",
+          City: "",
           Country: "",
+          Pincode: "",
           State: "",
           District: "",
-          Pincode: "",
-          Cctc: "",
-          NoticePeriod: "",
-          TotalExp: "",
-          aadharNumber: "",
-          language1: "",
-          language2: "",
-          VideoLink: "",
-          Photo: "",
-          resume: "",
-          source: "",
-          Qualification: "",
-          InstituteType: "",
-          PassingYear: "",
-          cgpa: "",
-          college: "",
-          degree: "",
-          insName: "",
-          postheld: "",
-          fromdate: "",
-          todate: "",
-          ctcget: "",
-          jobcategory: "",
-          discipline: "",
-          jobprofile: "",
+          Mobile: "",
+          fatherMobile: "",
+          Email: "",
+          XPercentage: "",
+          XIIPercentage: "",
+          studentPhoto: "",
+          aadharCard: "",
+          Source: "",
+          Session: "",
+          StudyMode: "",
+          Stream: "",
+          Course: "",
         });
       }
     } else {
@@ -1168,129 +1108,45 @@ function Career() {
     }
   }
 
-  // FOR JOB CATEGORY AND CORRESPONDING JOB PROFILE OPTION----------------------------------------------------------------------------------
+  // FOR STREAM AND CORRESPONDING COURSES OPTION----------------------------------------------------------------------------------
 
-  function updateCategory(e) {
-    const selectedCategory = e.target.value;
-    setFormData((prevData) => ({
-      ...prevData,
-      [e.target.name]: selectedCategory,
-    }));
-
-    const disciplineSelect = document.getElementById("discipline");
-    const jobProfileSelect = document.getElementById("jobprofile");
-
-    if (!disciplineSelect || !jobProfileSelect) {
-      console.error("Select elements not found");
-      return;
-    }
+  function updateCourse(e) {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+    const streamSelect = document.getElementById("Stream");
+    const courseSelect = document.getElementById("Course");
 
     // Clear existing options
-    disciplineSelect.innerHTML = '<option value="">Select Discipline*</option>';
-    jobProfileSelect.innerHTML =
-      '<option value="">Select Job Profile*</option>';
+    courseSelect.innerHTML = '<option value="">Select Course</option>';
 
-    // Define options for each category within the function scope
-    const categoryOptions = {
-      Academic: {
-        Disciplines: [
-          "JEE Advanced",
-          "JEE Main / NEET",
-          "Foundation (Class 6-10)",
-          "Trainee Faculty",
-        ],
-        JobProfiles: {
-          "JEE Advanced": [
-            "JEE Advanced Mathematics Faculty",
-            "JEE Advanced Physics Faculty",
-            "JEE Advanced Chemistry Faculty",
-          ],
-          "JEE Main / NEET": [
-            "JEE Main/NEET Physics Faculty",
-            "JEE Main/NEET Chemistry Faculty",
-            "JEE Main Mathematics Faculty",
-            "NEET Biology Faculty",
-          ],
-          "Foundation (Class 6-10)": [
-            "Foundation Faculty Mathematics",
-            "Foundation Faculty Physics",
-            "Foundation Faculty Chemistry",
-            "Foundation Faculty Biology",
-            "Foundation Faculty Social Science",
-            "Foundation Faculty English",
-            "Foundation Faculty Hindi",
-          ],
-          "Trainee Faculty": [
-            "Trainee / Content Expert (Mathematics)",
-            "Trainee / Content Expert (Physics)",
-            "Trainee / Content Expert (Chemistry) ",
-            "Trainee / Content Expert (Biology)",
-            "Trainee / Content Expert (Social Science)",
-            "Trainee / Content Expert (English)",
-            "Trainee / Content Expert (Hindi)",
-          ],
-        },
-      },
-      "Non-Academic / Management": {
-        JobProfiles: [
-          "Business Development Executive",
-          "Full Stack Developer",
-          "Video Editor & Animator",
-          "Content Expert",
-          "Digital Marketing Expert & Social Media Executive",
-          "DTP Operator",
-          "Academic and Center Manager",
-          "Web and App Developer",
-          "Studio Managers",
-          "Academic Counselor (Student Mentor)",
-          "Human Resource Executive",
-          "Developer",
-          "Accounts",
-          "Content Writer",
-          "Offline Marketing Manager",
-        ],
-      },
+    // Define districts for each state
+    const Course = {
+      Engineering: ["Arjuna", "Chaitanya", "Eklavya"],
+      Medical: ["Ananta", "Sudarshan", "Swadhyaya"],
+      Foundation: ["Aadhya", "Abhinav", "Abhyas", "Aarohan", "Atal"],
+      DLP: [
+        "Sankalp",
+        "Utkarsh",
+        "Lakshya",
+        "Abhiyaan",
+        "Yukti",
+        "Sarthak",
+        "Pragya",
+      ],
+      Boards: ["Sammarsa", "Vikash", "Daksh", "Samridhi"],
     };
-    disciplineSelect.disabled =
-      selectedCategory === "Non-Academic / Management";
-    // If Non-Academic / Management category, populate job profiles directly
-    if (selectedCategory === "Non-Academic / Management") {
-      const selectedJobProfiles =
-        categoryOptions[selectedCategory]?.JobProfiles || [];
-      selectedJobProfiles.forEach((jobProfile) => {
+
+    const selectedStream = streamSelect.value;
+
+    // Populate districts for the selected state
+    if (Course[selectedStream]) {
+      Course[selectedStream].forEach((Course) => {
         const option = document.createElement("option");
-        option.value = jobProfile;
-        option.text = jobProfile;
-        jobProfileSelect.add(option);
-      });
-    } else if (selectedCategory === "Academic") {
-      // If Academic category, populate disciplines based on the selected category
-      const selectedDisciplines =
-        categoryOptions[selectedCategory]?.Disciplines || [];
-      selectedDisciplines.forEach((discipline) => {
-        const option = document.createElement("option");
-        option.value = discipline;
-        option.text = discipline;
-        disciplineSelect.add(option);
-      });
-
-      // If Academic category, populate job profiles based on the selected discipline
-      disciplineSelect.addEventListener("change", function () {
-        const selectedDiscipline = disciplineSelect.value;
-        const selectedJobProfiles =
-          categoryOptions[selectedCategory]?.JobProfiles[selectedDiscipline] ||
-          [];
-
-        // Clear existing options
-        jobProfileSelect.innerHTML =
-          '<option value="">Select Job Profile*</option>';
-
-        selectedJobProfiles.forEach((jobProfile) => {
-          const option = document.createElement("option");
-          option.value = jobProfile;
-          option.text = jobProfile;
-          jobProfileSelect.add(option);
-        });
+        option.value = Course;
+        option.text = Course;
+        courseSelect.add(option);
       });
     }
   }
@@ -1299,12 +1155,8 @@ function Career() {
   function imageSize() {
     // document.getElementsByClassName("file-upload-message").style.color = "red";
     alert("Please upload an image of size less than 500KB");
-    document.getElementById("Photo").value = "";
-  }
-
-  function pdfSize() {
-    alert("Please upload a resume of size less than 1 MB");
-    document.getElementById("resume").value = "";
+    document.getElementById("studentPhoto").value = "";
+    document.getElementById("aadharCard").value = "";
   }
 
   //hover effect
@@ -1320,7 +1172,10 @@ function Career() {
   return (
     <>
       <div className="body1" style={containerStyle}>
-        <div className="container234">
+        <div className="container23">
+          <h100>Admission Form</h100>
+        </div>
+        <div className="container23">
           <h201>Section-01: Personal Information</h201>
           <form
             id="admissionForm"
@@ -1340,12 +1195,12 @@ function Career() {
                 required
               />
               <input
-                type="email"
-                id="Email"
-                name="Email"
-                placeholder="Email Id*"
+                type="text"
+                id="fatherName"
+                name="fatherName"
+                placeholder="Father's Name*"
                 onChange={handleChange}
-                value={formData.Email}
+                value={formData.fatherName}
                 className="input-three"
                 required
               />
@@ -1377,7 +1232,6 @@ function Career() {
               </select>
               <select
                 placeholder="Category"
-                id="Category"
                 name="Category"
                 onChange={handleChange}
                 value={formData.Category}
@@ -1392,12 +1246,12 @@ function Career() {
                 <option value="ST">ST</option>
               </select>
               <input
-                type="tel"
-                id="Mobile"
-                name="Mobile"
-                placeholder="Mobile No. (Whatsapp)*"
+                type="text"
+                id="aadharNumber"
+                name="aadharNumber"
+                placeholder="Aadhar Number*"
                 onChange={handleChange}
-                value={formData.Mobile}
+                value={formData.aadharNumber}
                 className="input-three"
                 required
               />
@@ -1415,15 +1269,16 @@ function Career() {
               />
               <input
                 type="text"
-                id="Address1"
-                name="Address1"
-                placeholder="Current Address*"
+                id="City"
+                name="City"
+                placeholder="City/town/village*"
                 onChange={handleChange}
-                value={formData.Address1}
+                value={formData.City}
                 className="input-two"
                 required
               />
             </div>
+
             <div className="form-group">
               <select
                 placeholder="Country"
@@ -1437,6 +1292,20 @@ function Career() {
                 <option value="">Select Country</option>
                 <option value="India">India</option>
               </select>
+
+              <input
+                type="number"
+                id="Pincode"
+                name="Pincode"
+                placeholder="Pin Code*"
+                onChange={handleChange}
+                value={formData.Pincode}
+                className="input-four"
+                min="100000"
+                max="999999"
+                required
+              />
+
               <select
                 id="State"
                 name="State"
@@ -1498,102 +1367,71 @@ function Career() {
                 <option value="">Select District</option>
                 {/* <!-- Options will be dynamically populated using JavaScript --> */}
               </select>
-              <input
-                type="tel"
-                id="Pincode"
-                name="Pincode"
-                placeholder="Pin Code*"
-                onChange={handleChange}
-                value={formData.Pincode}
-                className="input-four"
-                min="100000"
-                max="999999"
-                required
-              />
             </div>
-            <div className="form-group">
-              <input
-                type="tel"
-                id="Cctc"
-                name="Cctc"
-                placeholder="Current CTC"
-                onChange={handleChange}
-                value={formData.Cctc}
-                className="input-four"
-              />
-              <input
-                type="tel"
-                id="NoticePeriod"
-                name="NoticePeriod"
-                placeholder="Notice Period (in Days)*"
-                onChange={handleChange}
-                value={formData.NoticePeriod}
-                className="input-four"
-                required
-              />
 
+            <div className="form-group">
               <input
                 type="tel"
-                id="TotalExp"
-                name="TotalExp"
-                placeholder="Total Experience*"
+                id="Mobile"
+                name="Mobile"
+                placeholder="Mobile (self)*"
                 onChange={handleChange}
-                value={formData.TotalExp}
-                className="input-four"
+                value={formData.Mobile}
+                className="input-three"
                 required
               />
               <input
-                type="text"
-                id="aadharNumber"
-                name="aadharNumber"
-                placeholder="Aadhar Number*"
+                type="tel"
+                id="fatherMobile"
+                name="fatherMobile"
+                placeholder="Mobile (father)*"
                 onChange={handleChange}
-                value={formData.aadharNumber}
-                className="input-four"
+                value={formData.fatherMobile}
+                className="input-three"
                 required
+              />
+              <input
+                type="email"
+                id="Email"
+                name="Email"
+                placeholder="Email Id"
+                onChange={handleChange}
+                value={formData.Email}
+                className="input-three"
               />
             </div>
             <div className="form-group">
               <input
-                type="text"
-                id="language1"
-                name="language1"
-                placeholder="Preferred Language 1*"
+                type="tel"
+                id="XPercentage"
+                name="XPercentage"
+                placeholder="10th Percentage"
                 onChange={handleChange}
-                value={formData.language1}
-                className="input-four"
+                value={formData.XPercentage}
+                className="input-half"
                 min="0"
                 max="100"
               />
               <input
-                type="text"
-                id="language2"
-                name="language2"
-                placeholder="Preferred Language 2*"
+                type="tel"
+                id="XIIPercentage"
+                name="XIIPercentage"
+                placeholder="12th Percentage"
                 onChange={handleChange}
-                value={formData.language2}
-                className="input-four"
-                required
-              />
-              <input
-                type="text"
-                id="VideoLink"
-                name="VideoLink"
-                placeholder="Video Link (Upload your teaching video on google drive and share the link)*"
-                onChange={handleChange}
-                value={formData.VideoLink}
+                value={formData.XIIPercentage}
                 className="input-half"
                 min="0"
                 max="100"
               />
             </div>
+
             <div className="form-group">
               <div className="file-upload">
-                <label htmlFor="Photo">Upload Photo:</label>
+                <label htmlFor="studentPhoto">Student Photo:</label>
                 <input
                   type="file"
-                  id="Photo"
-                  name="Photo"
+                  id="studentPhoto"
+                  name="studentPhoto"
                   accept=".jpg, .png, .jpg"
                   onChange={(event) => {
                     if (event.target.files && event.target.files[0]) {
@@ -1603,228 +1441,109 @@ function Career() {
                       }
                     }
                   }}
-                  className="input-half"
                   required
                 />
                 <div className="file-upload-message">
                   Image should be "jpg, png or jpeg" only and the size should be
                   less than 500kb.
                 </div>
-                <img id="Photo" src="" alt="" />
+                <img id="photo" src="" alt="" />
               </div>
 
               <div className="file-upload">
-                <label htmlFor="resume">Upload Resume:</label>
+                <label htmlFor="aadharCard">Aadhar Card:</label>
                 <input
                   type="file"
-                  id="resume"
-                  name="resume"
-                  accept=".pdf"
+                  id="aadharCard"
+                  name="aadharCard"
+                  accept=".jpg"
                   onChange={(event) => {
                     if (event.target.files && event.target.files[0]) {
-                      if (event.target.files[0].size > 1000 * 1024) {
-                        pdfSize();
+                      if (event.target.files[0].size > 500 * 1024) {
+                        imageSize();
                         return false;
                       }
                     }
                   }}
-                  className="input-half"
                   required
                 />
                 <div className="file-upload-message">
-                  Resume should be "pdf" only and the size should be less than 1
-                  MB.
+                  Image should be "jpg" only and the size should be less than
+                  500kb.
                 </div>
+                <img id="aadharphoto" src="" alt="" />
               </div>
             </div>
             <div className="form-group">
               <input
                 type="text"
                 id="source"
-                name="source"
+                name="Source"
                 placeholder="How did you come to know about IIT Academy?*"
                 onChange={handleChange}
-                value={formData.source}
+                value={formData.Source}
                 className="input-source"
                 required
               />
             </div>
-            <h201>Section-02: Educational Qualification</h201>
+            <h201>Section-02: Course Information</h201>
+
             <div className="form-group">
               <select
-                placeholder="Qualification"
-                id="Qualification"
-                name="Qualification"
+                placeholder="Session"
+                name="Session"
                 onChange={handleChange}
-                value={formData.Qualification}
-                className="input-four"
+                value={formData.Session}
+                className="input-half"
                 required
               >
-                <option value="">Qualification</option>
-                <option value="10th">10th</option>
-                <option value="12th">12th</option>
-                <option value="Graduate">Graduate</option>
-                <option value="Post-Graduate">Post-Graduate</option>
-                <option value="PhD">PhD</option>
+                <option value="">Select Session</option>
+                <option value="2024-25">2024-25</option>
+                <option value="2024-26">2024-26</option>
               </select>
               <select
-                placeholder="Institute Type"
-                id="InstituteType"
-                name="InstituteType"
+                placeholder="Study Mode"
+                name="StudyMode"
                 onChange={handleChange}
-                value={formData.InstituteType}
-                className="input-four"
+                value={formData.StudyMode}
+                className="input-half"
                 required
               >
-                <option value="">Institute Type</option>
-                <option value="IIT">IIT</option>
-                <option value="NIT">NIT</option>
-                <option value="AIIMS">AIIMS</option>
-                <option value="BDS">BDS</option>
-                <option value="Others">Others</option>
+                <option value="">Select Study Mode</option>
+                <option value="Offline">Offline</option>
+                <option value="Online">Online</option>
               </select>
-              <select
-                placeholder="Passing Year"
-                name="PassingYear"
-                onChange={handleChange}
-                value={formData.PassingYear}
-                className="input-four"
-                required
-              >
-                <option value="">Passing Year</option>
-                {Array.from(
-                  { length: 2024 - 1980 + 1 },
-                  (_, index) => 2024 - index
-                ).map((year) => (
-                  <option key={year} value={year}>
-                    {year}
-                  </option>
-                ))}
-              </select>
-              <input
-                type="tel"
-                id="cgpa"
-                name="cgpa"
-                placeholder="CGPA/Percentage Obtained(%)*"
-                onChange={handleChange}
-                value={formData.cgpa}
-                className="input-four"
-                required
-              />
             </div>
             <div className="form-group">
-              <input
-                type="text"
-                id="college"
-                name="college"
-                placeholder="Enter College Name*"
-                onChange={handleChange}
-                value={formData.college}
-                className="input-two"
-                required
-              />
-              <input
-                type="text"
-                id="degree"
-                name="degree"
-                placeholder="Enter Degree Obtained*"
-                onChange={handleChange}
-                value={formData.degree}
-                className="input-two"
-                required
-              />
-            </div>
-            <h201>Section-03: Teaching Experience</h201>
-            <div className="form-group">
-              <input
-                type="text"
-                id="insName"
-                name="insName"
-                placeholder="Enter Institute Name*"
-                onChange={handleChange}
-                value={formData.insName}
-                className="input-two"
-                required
-              />
-              <input
-                type="text"
-                id="postheld"
-                name="postheld"
-                placeholder="Enter Post Held*"
-                onChange={handleChange}
-                value={formData.postheld}
-                className="input-two"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="text"
-                id="fromdate"
-                name="fromdate"
-                placeholder="Duration (From)*"
-                onChange={handleChange}
-                value={formData.fromdate}
-                className="input-three"
-                required
-              />
-              <input
-                type="text"
-                id="todate"
-                name="todate"
-                placeholder="Duration (To)*"
-                onChange={handleChange}
-                value={formData.todate}
-                className="input-three"
-                required
-              />
-              <input
-                type="text"
-                id="ctcget"
-                name="ctcget"
-                placeholder="Enter CTC (In LPA)"
-                onChange={handleChange}
-                value={formData.ctcget}
-                className="input-three"
-              />
-            </div>
-            <h201>Section-04: Post Applying For</h201>
-            <div className="form-group">
               <select
-                id="jobcategory"
-                name="jobcategory"
-                onChange={updateCategory}
-                value={formData.jobcategory}
-                className="input-three"
+                placeholder="Stream"
+                id="Stream"
+                name="Stream"
+                onChange={updateCourse}
+                value={formData.Stream}
+                className="input-half"
                 required
               >
-                <option value="">Job Category*</option>
-                <option value="Academic">Academic</option>
-                <option value="Non-Academic / Management">
-                  Non-Academic / Management
-                </option>
+                <option value="">Select Stream</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Medical">Medical</option>
+                <option value="Foundation">Foundation</option>
+                <option value="DLP">DLP</option>
+                <option value="Boards">Boards</option>
               </select>
               <select
-                id="discipline"
-                name="discipline"
+                placeholder="Course"
+                id="Course"
+                name="Course"
                 onChange={handleChange}
-                value={formData.discipline}
-                className="input-three"
-                required={formData.jobcategory === "Academic"}
-              >
-                <option value="">Select Discipline</option>
-              </select>
-              <select
-                id="jobprofile"
-                name="jobprofile"
-                onChange={handleChange}
-                value={formData.jobprofile}
-                className="input-three"
+                value={formData.Course}
+                className="input-half"
                 required
               >
-                <option value="">Select Job Profile*</option>
+                <option value="">Select Course</option>
               </select>
             </div>
+
             <label>
               <input type="checkbox" id="agree" name="agree" required />I agree
             </label>
@@ -1833,6 +1552,7 @@ function Career() {
               communication on my registered mobile number and agreeing to terms
               of Use and Privacy Policy.
             </p>
+
             <button
               type="submit"
               style={{
@@ -1852,6 +1572,7 @@ function Career() {
             >
               Submit Now
             </button>
+
             {submissionStatus === "waiting" && (
               <div
                 style={{
@@ -1860,9 +1581,10 @@ function Career() {
                   color: "blue",
                 }}
               >
-                Please wait! We are submitting your details...
+                Please wait, submitting...
               </div>
             )}
+
             {submissionStatus === "success" && (
               <div
                 style={{
@@ -1871,10 +1593,11 @@ function Career() {
                   color: "blue",
                 }}
               >
-                Congratulations! We have recieved your application. Check your
-                mail regularly for further updates.
+                Congratulations! You have taken the first step towards success.
+                We will contact you soon.
               </div>
             )}
+
             {submissionStatus === "error" && (
               <div
                 style={{
@@ -1893,4 +1616,4 @@ function Career() {
   );
 }
 
-export default Career;
+export default Admission1;

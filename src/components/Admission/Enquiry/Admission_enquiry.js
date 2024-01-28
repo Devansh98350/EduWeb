@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Layout from "../../Layout";
+import { Query } from "../../Forms/Query_Form/Query";
 import "./Admission_enquiry.css";
 
 const Admission_enquiry = () => {
@@ -8,27 +9,48 @@ const Admission_enquiry = () => {
   }, []);
   return (
     <>
-      <Layout title="Admission-IIT Academy">
+      <Layout title="Admission Enquiry-IIT Academy">
         <div className="container">
           <div className="procedure-outer">
             <div className="procedure-wrapper">
               <h2 className="special">Admission Enquiry</h2>
-              <p>🎓📞 Get Enrolled with Ease! 🏢👋</p>
               <p>
-                🤔 Curious about admission? No worries! Reach out to us via
-                WhatsApp or visit our corporate office to get all your questions
-                answered! 📱💬🏢
+                Welcome to IIT Academy, where we are dedicated to
+                revolutionizing the education sector and guiding students
+                towards a brighter future. If you have any questions or would
+                like to inquire about the admission process, our team is here to
+                assist you.
+              </p>
+              <p style={{ color: "orange", fontSize: "20px" }}>
+                <strong>How to Make an Admission Inquiry:</strong>
               </p>
               <p>
-                📞 Contact us: <a href="tel:+91-8453307045">+91-8453307045</a> ,
-                <a href="tel:+91-7366831500">+91-7366831500</a>
+                <strong>1. Fill out the Inquiry Form:</strong> Complete the
+                admission inquiry form below with your details and any specific
+                questions you may have. This will help us understand your needs
+                better.
+              </p>
+              <p>
+                <strong>2. Contact Our Admissions Team:</strong> If you prefer
+                direct communication, feel free to reach out to our admissions
+                team at <a href="tel:+91-7366831500">+91-7366831500</a> ,{" "}
+                <a href="tel:8453307045">+91-8453307045</a>. We are here to
+                answer your queries and provide the information you need.
+              </p>
+              <p>
+                <strong>3. Visit our Campus:</strong> Interested in seeing our
+                facilities in person? Schedule a visit to our campus, and our
+                staff will be delighted to show you around and address any
+                concerns you may have.
               </p>
               <p>
                 🏢 Corporate Office: [Sobha Sadan, Veer Kunwar Singh Colony,
                 Kashipur, Samastipur, Bihar, India – 848101]
               </p>
+              <Query />
               <p>
-                👉 Discover the perfect educational path for your future! 🌟💼
+                We appreciate your interest in IIT Academy and look forward to
+                assisting you on your educational journey.
               </p>
             </div>
           </div>

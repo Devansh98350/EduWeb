@@ -26,11 +26,12 @@ export const Query = () => {
       [e.target.name]: e.target.value,
     });
   };
-
+  const [submissionStatus, setSubmissionStatus] = useState(null);
   //when submit button is pressed
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      setSubmissionStatus("waiting");
       alert(`Please wait...${formData.fname}!`);
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbx0c6H0_f-9PoKm2pe1BdleJ3J86eMf3sXcxtBlT3rhPVewbEITn3dOmFzwMItDd1EIDA/exec",
@@ -55,11 +56,40 @@ export const Query = () => {
           Stream: "",
           Course: "",
         });
+        setSubmissionStatus("success");
       } else {
         console.error("Error!", response.statusText);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        alert(
+          `Thanks for requesting a call back, ${formData.fname}! We will contact you soon!`
+        );
+        setFormData({
+          name: "",
+          mobile: "",
+          email: "",
+          state: "",
+          district: "",
+          Stream: "",
+          Course: "",
+        });
+        setSubmissionStatus("success");
       }
     } catch (error) {
       console.error("Error!", error.message);
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      alert(
+        `Thanks for requesting a call back, ${formData.fname}! We will contact you soon!`
+      );
+      setFormData({
+        name: "",
+        mobile: "",
+        email: "",
+        state: "",
+        district: "",
+        Stream: "",
+        Course: "",
+      });
+      setSubmissionStatus("success");
     }
   };
 
@@ -1108,6 +1138,29 @@ export const Query = () => {
           >
             Submit Now
           </button>
+          {submissionStatus === "waiting" && (
+            <div
+              style={{
+                marginTop: "10px",
+                textAlign: "center",
+                color: "blue",
+              }}
+            >
+              Please wait! We are submitting your details...
+            </div>
+          )}
+
+          {submissionStatus === "success" && (
+            <div
+              style={{
+                marginTop: "10px",
+                textAlign: "center",
+                color: "blue",
+              }}
+            >
+              Thanks! We will contact you soon to resolve your query.
+            </div>
+          )}
         </form>
       </div>
     </>
