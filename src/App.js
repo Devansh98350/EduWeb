@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./components/i18n";
 
@@ -56,7 +56,7 @@ function App() {
       {" "}
       <Router>
         <Routes>
-          <Route path=" " element={<HomePage />} />
+          {/*<Route path=" " element={<HomePage />} />*/}
           <Route path="/" element={<HomePage />} />
           {/* About */}
           <Route path="/about" element={<AboutIitAcademy />} />
