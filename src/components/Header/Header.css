@@ -145,7 +145,7 @@
   }
 
   .header-col12 img {
-    width: 90px;
+    width: auto;
     height: auto;
     margin-bottom: auto;
     margin-left: -20px;

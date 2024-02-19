@@ -1237,14 +1237,14 @@ const Header = (props) => {
           </div>
           <div className="header-col21">
             <a
-              href="https://wa.me/918453307045?text=Chat With IIT Academy&utm_medium=&utm_campaign=&utm_term=&utm_content=&lang=en"
+              href="https://wa.me/919205704041?text=I have a query.&utm_medium=&utm_campaign=&utm_term=&utm_content=&lang=en"
               className="navbar-brand"
             >
               <img src={whatsapp} alt="" />
             </a>
           </div>
           <div className="header-col22">
-            <a href="tel:8453307045" className="navbar-brand">
+            <a href="tel:9205704041" className="navbar-brand">
               <img src={call} alt="" />
             </a>
           </div>

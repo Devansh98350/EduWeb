@@ -943,7 +943,7 @@ export const Query = () => {
           }}
         >
           <a
-            href="tel:7366831500"
+            href="tel:9205704041"
             style={{
               color: "black",
               fontWeight: "bold",

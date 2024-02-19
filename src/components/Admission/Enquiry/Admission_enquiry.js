@@ -33,8 +33,8 @@ const Admission_enquiry = () => {
               <p>
                 <strong>2. Contact Our Admissions Team:</strong> If you prefer
                 direct communication, feel free to reach out to our admissions
-                team at <a href="tel:+91-7366831500">+91-7366831500</a> ,{" "}
-                <a href="tel:8453307045">+91-8453307045</a>. We are here to
+                team at <a href="tel:9205704041">+91-9205704041</a> ,{" "}
+                <a href="tel:9472008599">+91-9472008599</a>. We are here to
                 answer your queries and provide the information you need.
               </p>
               <p>

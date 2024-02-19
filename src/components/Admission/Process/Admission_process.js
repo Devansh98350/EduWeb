@@ -70,8 +70,9 @@ const Admission_process = () => {
               </p>
               <p style={{ marginLeft: "5%", marginRight: "5%" }}>
                 <strong>Phone: </strong>
-                <a href="tel:7366831500">+91-7366831500</a> <strong>,</strong>
-                <a href="tel:8453307045">+91-8453307045</a>
+                <a href="tel:9205704041">+91-9205704041</a>
+                <strong>,</strong>
+                <a href="tel:9472008599">+91-9472008599</a>
               </p>
               <p style={{ marginLeft: "5%", marginRight: "5%" }}>
                 <strong>Email:</strong>

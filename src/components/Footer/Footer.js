@@ -33,7 +33,7 @@ const Footer = () => {
                 </p>
                 <p>
                   Ph:-
-                  <a href="tel:7366831500">+91-7366831500</a>
+                  <a href="tel:9205704041">+91-9205704041</a>
                 </p>
               </div>
               <div className="footer-row">
@@ -79,7 +79,7 @@ const Footer = () => {
                     />
                   </a>{" "}
                   <a
-                    href="tel:7366831500"
+                    href="tel:9205704041"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

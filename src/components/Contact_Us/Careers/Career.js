@@ -55,6 +55,14 @@ const Careers = () => {
             comfortable, and the best place to work, where every motivated and
             self-driven individual will bring in extraordinary results.
           </p>
+          <p className="career-heading">Current Openings</p>
+          <p className="career-description">
+            i) Faculty for Foundation Division (Maths, Science, Social Science
+            and English)
+          </p>
+          <p className="career-description">
+            ii) Business Development Executive
+          </p>
           <button className="apply1-now-button" onClick={handleApplyNowClick}>
             Apply Now
           </button>
@@ -62,7 +70,7 @@ const Careers = () => {
           <p className="career-description" style={{ fontSize: "1.2em" }}>
             For any issues, mail us at{" "}
             <a href="mailto:info@iitacademy.in">info@iitacademy.in</a> or call
-            us at <a href="tel:7366831500">7366831500</a>.
+            us at <a href="tel:9205704041">9205704041</a>.
           </p>
         </div>
       </Layout>
