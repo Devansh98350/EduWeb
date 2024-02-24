@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.28c0b87b.css",
-    "main.js": "/static/js/main.b4a3b96a.js",
+    "main.css": "/static/css/main.5453e1d9.css",
+    "main.js": "/static/js/main.dd9ca1d6.js",
     "static/js/27.206f39f5.chunk.js": "/static/js/27.206f39f5.chunk.js",
     "static/media/adm.gif": "/static/media/adm.d7f5fe01d004700e7509.gif",
     "static/media/cu4.gif": "/static/media/cu4.0a94a8add2444658ab91.gif",
@@ -52,6 +52,7 @@
     "static/media/suneel.jpeg": "/static/media/suneel.0f5e55dfa71c22ec58c2.jpeg",
     "static/media/chatus.gif": "/static/media/chatus.8123e90302ec853d779d.gif",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "index.html": "/index.html",
     "static/media/Computer-Based-Test.png": "/static/media/Computer-Based-Test.445d112da4c67b88613a.png",
     "static/media/ranjan.jpeg": "/static/media/ranjan.a338c576d1257909b9e7.jpeg",
     "static/media/Board-Exam-Preparation.png": "/static/media/Board-Exam-Preparation.92503b46659b4809167a.png",
@@ -62,7 +63,6 @@
     "static/media/Excellent-Faculty.png": "/static/media/Excellent-Faculty.6e262662d399341fb295.png",
     "static/media/Doubt-Classes.png": "/static/media/Doubt-Classes.d7b0cf08eae16c712a95.png",
     "static/media/Periodic-Tests.png": "/static/media/Periodic-Tests.bc8599f581fc66dd8329.png",
-    "index.html": "/index.html",
     "static/media/Study-Material.png": "/static/media/Study-Material.67bff90a438db9df7ede.png",
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
@@ -73,7 +73,7 @@
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs"
   },
   "entrypoints": [
-    "static/css/main.28c0b87b.css",
-    "static/js/main.b4a3b96a.js"
+    "static/css/main.5453e1d9.css",
+    "static/js/main.dd9ca1d6.js"
   ]
 }
