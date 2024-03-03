@@ -5,7 +5,7 @@ import ranjan from "../../../assets/faculty/ranjan.jpeg";
 import anupam from "../../../assets/faculty/anupam.jpeg";
 import ayushi from "../../../assets/faculty/ayushi.jpeg";
 // import devanshu from "../assets/faculty/devanshu.png";
-import suneel from "../../../assets/faculty/suneel.jpeg";
+// import suneel from "../../../assets/faculty/suneel.jpeg";
 import "./Our_Faculty.css";
 
 const Our_Faculty = () => {
@@ -148,29 +148,29 @@ const Our_Faculty = () => {
             <div className="meta">
               <div
                 className="photo"
-                style={{ backgroundImage: `url(${suneel})` }}
+                style={{ backgroundImage: `url(${" "})` }}
               />
               <ul className="details">
-                <li className="author">Er. Suneel Kumar</li>
+                <li className="author">Prof. S.K. Singh</li>
                 <li className="date">Chemistry-Faculty</li>
                 <li className="date">IIT Academy</li>
                 <li className="date">
-                  <strong>Experience-</strong> 3 years
+                  <strong>Experience-</strong> 8 years
                 </li>
               </ul>
             </div>
             <div className="description">
               <p>
-                Suneel Kumar is a dedicated and accomplished educator who has
-                made a significant impact in the field of chemistry education.
-                With a name that resonates with excellence, Suneel holds a
-                Bachelor's degree that has provided him with a strong foundation
-                in his subject of expertise.His commitment to his students'
-                success has been truly remarkable, evident through the numerous
-                achievements under his guidance. Suneel's guidance has propelled
-                several aspiring minds to achieve remarkable milestones, with
-                numerous students triumphantly clearing prestigious examinations
-                like the IIT JEE and NEET.{" "}
+                Prof. S.K. Singh is a dedicated and accomplished educator who
+                has made a significant impact in the field of chemistry
+                education. With a name that resonates with excellence, Suneel
+                holds a Bachelor's degree that has provided him with a strong
+                foundation in his subject of expertise.His commitment to his
+                students' success has been truly remarkable, evident through the
+                numerous achievements under his guidance. Suneel's guidance has
+                propelled several aspiring minds to achieve remarkable
+                milestones, with numerous students triumphantly clearing
+                prestigious examinations like the IIT JEE and NEET.{" "}
               </p>
             </div>
           </div>
@@ -182,24 +182,24 @@ const Our_Faculty = () => {
                 style={{ backgroundImage: `url(${" "})` }}
               />
               <ul className="details">
-                <li className="author">Er. DK Singh</li>
+                <li className="author">Prof. DK Singh</li>
                 <li className="date">Maths-Faculty</li>
                 <li className="date">IIT Academy</li>
                 <li className="date">
-                  <strong>Experience-</strong> 3 years
+                  <strong>Experience-</strong> 8 years
                 </li>
               </ul>
             </div>
             <div className="description">
               <p>
-                DK Singh is a dynamic individual who after completed his degree,
-                emerged as a passionate mentor. With a flair for guiding and
-                inspiring others, he has successfully steered numerous students
-                towards achieving their dream college. His commitment to help
-                others for reaching their goals has earned him admiration and
-                respect within the academic community. His diverse skill set and
-                dedication to excellence make him a valuable asset in any
-                pursuit.{" "}
+                Prof. DK Singh is a dynamic individual who after completed his
+                degree, emerged as a passionate mentor. With a flair for guiding
+                and inspiring others, he has successfully steered numerous
+                students towards achieving their dream college. His commitment
+                to help others for reaching their goals has earned him
+                admiration and respect within the academic community. His
+                diverse skill set and dedication to excellence make him a
+                valuable asset in any pursuit.{" "}
               </p>
             </div>
           </div>
