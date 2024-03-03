@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5453e1d9.css",
-    "main.js": "/static/js/main.dd9ca1d6.js",
+    "main.js": "/static/js/main.d87a34fb.js",
     "static/js/27.206f39f5.chunk.js": "/static/js/27.206f39f5.chunk.js",
     "static/media/adm.gif": "/static/media/adm.d7f5fe01d004700e7509.gif",
     "static/media/cu4.gif": "/static/media/cu4.0a94a8add2444658ab91.gif",
@@ -25,7 +25,6 @@
     "static/media/Lakshya.png": "/static/media/Lakshya.76f1d81a6d875690dee6.png",
     "static/media/Arjuna.png": "/static/media/Arjuna.9b2f89225083d0d9e431.png",
     "static/media/Eklavya.png": "/static/media/Eklavya.7f95aff2a2cdbf114457.png",
-    "static/media/02.png": "/static/media/02.7a6a02d9528587939749.png",
     "static/media/01.png": "/static/media/01.111c9a661e39b0b13118.png",
     "static/media/03.png": "/static/media/03.c3073a84c1668e6d52e2.png",
     "static/media/Aarohan.png": "/static/media/Aarohan.8fd8c8fbfa390eba54c7.png",
@@ -47,9 +46,7 @@
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
     "static/media/i06.jpg": "/static/media/i06.c808aeb830138c1c9ebc.jpg",
     "static/media/i03.jpg": "/static/media/i03.d92f7b0fad2cbfc300f0.jpg",
-    "static/media/04.png": "/static/media/04.cff15df428d7ddb00f5b.png",
     "static/media/i05.jpg": "/static/media/i05.c40b698410a89d8fc743.jpg",
-    "static/media/suneel.jpeg": "/static/media/suneel.0f5e55dfa71c22ec58c2.jpeg",
     "static/media/chatus.gif": "/static/media/chatus.8123e90302ec853d779d.gif",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
     "index.html": "/index.html",
@@ -74,6 +71,6 @@
   },
   "entrypoints": [
     "static/css/main.5453e1d9.css",
-    "static/js/main.dd9ca1d6.js"
+    "static/js/main.d87a34fb.js"
   ]
 }
