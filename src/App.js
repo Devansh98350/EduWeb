@@ -48,6 +48,7 @@ import FacultyLogin from "./components/Login/Faculty/Faculty_Login";
 import Admissionform from "./components/Forms/Admission_Form/Admission";
 // import Contact from "./components/Contact_Us/ContactUs/Contact";
 import Career from "./components/Contact_Us/Careers/Career";
+import Internship from "./components/Contact_Us/Internship/Internship";
 import PagenotFound from "./components/PagenotFound";
 
 function App() {
@@ -100,6 +101,7 @@ function App() {
           <Route path="/admission-form" element={<Admissionform />} />
           {/*<Route path="/contact-us" element={<Contact />} />*/}
           <Route path="/careers" element={<Career />} />
+          <Route path="/internship" element={<Internship />} />
           <Route path="*" element={<PagenotFound />} />
         </Routes>
       </Router>
