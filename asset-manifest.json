@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5453e1d9.css",
-    "main.js": "/static/js/main.d87a34fb.js",
+    "main.css": "/static/css/main.a979442f.css",
+    "main.js": "/static/js/main.f4752dd4.js",
     "static/js/27.206f39f5.chunk.js": "/static/js/27.206f39f5.chunk.js",
     "static/media/adm.gif": "/static/media/adm.d7f5fe01d004700e7509.gif",
     "static/media/cu4.gif": "/static/media/cu4.0a94a8add2444658ab91.gif",
     "static/media/Admission_bg.png": "/static/media/Admission_bg.2fedf8216722951d7e4c.png",
+    "static/media/IIT_Academy.png": "/static/media/IIT_Academy.c71f03aaf6a0b3e15f78.png",
     "static/media/i02.png": "/static/media/i02.c0d14e3bdc305a6cd221.png",
+    "static/media/mono.png": "/static/media/mono.1e0d60119955464fa9e7.png",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
     "static/media/i01.jpg": "/static/media/i01.db8cc6ec0d87b4d75f8b.jpg",
     "static/media/Swadhyaya.png": "/static/media/Swadhyaya.dee71a237973da230138.png",
@@ -40,7 +42,6 @@
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
     "static/media/anupam.jpeg": "/static/media/anupam.2c9fa177da1991ad2cc9.jpeg",
     "static/media/i00.jpeg": "/static/media/i00.5669fd3b057be76d6a50.jpeg",
-    "static/media/IIT_Academy.jpg": "/static/media/IIT_Academy.5029b7054d016987b775.jpg",
     "static/media/ayushi.jpeg": "/static/media/ayushi.9a606a34fcf8d8643b87.jpeg",
     "static/media/gopal.jpeg": "/static/media/gopal.d90e6f9d2c8267a0f5f2.jpeg",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
@@ -70,7 +71,7 @@
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs"
   },
   "entrypoints": [
-    "static/css/main.5453e1d9.css",
-    "static/js/main.d87a34fb.js"
+    "static/css/main.a979442f.css",
+    "static/js/main.f4752dd4.js"
   ]
 }
