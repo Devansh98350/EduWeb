@@ -45,7 +45,7 @@ const StyledDiv10 = styled.div`
     align-items: center;
     font-size: 30px;
     width: 120px;
-    height: 50px;
+    height: 60px;
   }
 
   .header-col21 img {

@@ -57,6 +57,11 @@ const StyledSidebarContainer = styled.div`
       font-size: 18px;
     }
   }
+  @media screen and (max-width: 475px) {
+    .sidenav {
+      width: 80%;
+    }
+  }
 `;
 const MenuButton = styled.button`
   background: none;
