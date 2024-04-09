@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.05245eb7.css",
-    "main.js": "/static/js/main.8568b74e.js",
+    "main.css": "/static/css/main.eb5ec981.css",
+    "main.js": "/static/js/main.c79ff5c5.js",
     "static/js/27.206f39f5.chunk.js": "/static/js/27.206f39f5.chunk.js",
     "static/media/adm.gif": "/static/media/adm.d7f5fe01d004700e7509.gif",
     "static/media/cu4.gif": "/static/media/cu4.0a94a8add2444658ab91.gif",
@@ -47,6 +47,7 @@
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
     "static/media/i06.jpg": "/static/media/i06.c808aeb830138c1c9ebc.jpg",
     "static/media/i03.jpg": "/static/media/i03.d92f7b0fad2cbfc300f0.jpg",
+    "static/media/pay.png": "/static/media/pay.97cb4bc9e1c68de7fb71.png",
     "static/media/i05.jpg": "/static/media/i05.c40b698410a89d8fc743.jpg",
     "static/media/chatus.gif": "/static/media/chatus.8123e90302ec853d779d.gif",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
@@ -71,7 +72,7 @@
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs"
   },
   "entrypoints": [
-    "static/css/main.05245eb7.css",
-    "static/js/main.8568b74e.js"
+    "static/css/main.eb5ec981.css",
+    "static/js/main.c79ff5c5.js"
   ]
 }
