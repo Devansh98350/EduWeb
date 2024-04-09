@@ -222,7 +222,7 @@ const StyledDiv10 = styled.div`
   }
 
   .nav-item.dropdown .column a:hover,
-  .nav-item.dropdown .column:active {
+  .nav-item.dropdown .column a .active {
     background-color: #2904F9;
     color:white;
     border-radius:20px; 
