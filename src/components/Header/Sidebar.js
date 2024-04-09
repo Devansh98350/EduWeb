@@ -62,6 +62,21 @@ const StyledSidebarContainer = styled.div`
       width: 80%;
     }
   }
+  @media screen and (max-width: 400px) {
+    .sidenav {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    .sidenav {
+      width: 95%;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .sidenav {
+      width: 100%;
+    }
+  }
 `;
 const MenuButton = styled.button`
   background: none;
@@ -809,7 +824,7 @@ const Sidebar = () => {
                   </StyledNavLink>
                 </DropdownItem>
                 <DropdownItem>
-                  <StyledNavLink to=" " className="dropdown-item">
+                  <StyledNavLink to="/internship" className="dropdown-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}

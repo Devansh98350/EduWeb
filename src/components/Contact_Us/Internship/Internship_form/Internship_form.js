@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Internship.css";
+import pay from "../../../../assets/home_page/pay.png";
 import bg from "../../../../assets/home_page/Admission_bg.png";
 
-function Internship_form() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+function Internshipform() {
   const containerStyle = {
     backgroundImage: `url(${bg})`,
     backgroundSize: "cover",
@@ -19,29 +17,22 @@ function Internship_form() {
   const [formData, setFormData] = useState({
     // Initialize form data here if needed
     Name: "",
-    fatherName: "",
-    DOB: "",
-    Gender: "",
-    Category: "",
-    aadharNumber: "",
+    emailid: "",
+    Mobile: "",
     Address: "",
-    City: "",
     Country: "",
     Pincode: "",
     State: "",
     District: "",
-    Mobile: "",
-    fatherMobile: "",
-    Email: "",
-    XPercentage: "",
-    XIIPercentage: "",
-    studentPhoto: "",
-    aadharCard: "",
-    Source: "",
-    Session: "",
-    StudyMode: "",
-    Stream: "",
-    Course: "",
+    Resume: "",
+    College: "",
+    PassingYear: "",
+    Degree: "",
+    Branch: "",
+    Domain: "",
+    source: "",
+    paymentReceipt: "",
+    query: "",
   });
 
   //handles any input field change of the form
@@ -52,48 +43,14 @@ function Internship_form() {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return emailRegex.test(email);
     };
-    if (name === "aadharNumber") {
-      // Validate for a 12-digit number
-      const isValidAadhar = /^\d{12}$/.test(value);
-
-      if (!isValidAadhar && value.length === 12) {
-        // Display an error message or handle the validation error
-        alert("Invalid Aadhar number format. Please enter a 12-digit number.");
-        return;
-      }
-    }
-    if (name === "DOB") {
-      // Check if the entered date is before the present date
-      const enteredDate = new Date(value);
-      const currentDate = new Date();
-
-      // Set the time part of both dates to midnight
-      enteredDate.setHours(0, 0, 0, 0);
-      currentDate.setHours(0, 0, 0, 0);
-
-      if (enteredDate > currentDate) {
-        alert("Date of Birth should be before today's date.");
-        return;
-      }
-    }
     // Validate for numeric input only
-    if (
-      (name === "Mobile" ||
-        name === "fatherMobile" ||
-        name === "XIIPercentage" ||
-        name === "XPercentage" ||
-        name === "aadharNumber") &&
-      !/^\d*$/.test(value)
-    ) {
+    if (name === "Mobile" && !/^\d*$/.test(value)) {
       // Display an error message or handle the validation error
       alert("Please enter only numeric characters.");
       return;
     }
     // Validate for 10 digits or 13 digits (including +91 at the beginning) when a complete number is entered
-    if (
-      (name === "Mobile" || name === "fatherMobile") &&
-      (value.length === 10 || value.length === 13)
-    ) {
+    if (name === "Mobile" && (value.length === 10 || value.length === 13)) {
       const isValidMobile = /^[0-9]{10}$|^\+91[0-9]{12}$/.test(value);
 
       if (!isValidMobile) {
@@ -103,14 +60,6 @@ function Internship_form() {
       }
     }
     //Valid for Percentage
-    if (
-      (name === "XPercentage" || name === "XIIPercentage") &&
-      (value < 0 || value > 100)
-    ) {
-      // Display an error message or handle the validation error
-      alert("Percentage value must be between 0 and 100.");
-      return;
-    }
     if (name === "Email" && !isValidEmail(value)) {
       // Display an error message or handle the validation error
       alert("Invalid email format.");
@@ -126,7 +75,7 @@ function Internship_form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbx0rgh1mccItjknTASduRCGp3qgbI1Uw7xnFlxYA67gOFYZDDL4fHaC9ysqzjpyVv1usA/exec";
+      "https://script.google.com/macros/s/AKfycbwLZLtNPHDeqFtcssB2ldONKlX7W_PLo41aakI1p6oGboNjfgpiMNoeBNrqad-9u6MtLw/exec";
     const formData = new FormData(e.target);
     const isFormValid = Object.values(formData).every(
       (value) => value.trim() !== ""
@@ -136,7 +85,7 @@ function Internship_form() {
       let obj = {};
 
       // This block checks if there's a file in the "studentPhoto" input
-      let file = formData.get("studentPhoto");
+      let file = formData.get("Resume");
       if (file instanceof File) {
         let fr = new FileReader();
         fr.addEventListener("loadend", () => {
@@ -149,7 +98,7 @@ function Internship_form() {
         fr.readAsDataURL(file);
       }
       // This block checks if there's a file in the "aadharCard" input
-      let file2 = formData.get("aadharCard");
+      let file2 = formData.get("paymentReceipt");
       if (file2 instanceof File) {
         let fr = new FileReader();
         fr.addEventListener("loadend", () => {
@@ -169,39 +118,32 @@ function Internship_form() {
         });
         fr.readAsDataURL(file2);
       }
-      const photoBase64 = await getBase64(formData.get("studentPhoto"));
-      const aadharBase64 = await getBase64(formData.get("aadharCard"));
+      const resumeBase64 = await getBase64(formData.get("Resume"));
+      const paymentBase64 = await getBase64(formData.get("paymentReceipt"));
       const payload = {
         Name: formData.get("Name"),
-        fatherName: formData.get("fatherName"),
-        DOB: formData.get("DOB"),
-        Gender: formData.get("Gender"),
-        Category: formData.get("Category"),
-        aadharNumber: formData.get("aadharNumber"),
+        emailid: formData.get("emailid"),
+        Mobile: formData.get("Mobile"),
         Address: formData.get("Address"),
-        City: formData.get("City"),
         Country: formData.get("Country"),
         Pincode: formData.get("Pincode"),
         State: formData.get("State"),
         District: formData.get("District"),
-        Mobile: formData.get("Mobile"),
-        fatherMobile: formData.get("fatherMobile"),
-        Email: formData.get("Email"),
-        XPercentage: formData.get("XPercentage"),
-        XIIPercentage: formData.get("XIIPercentage"),
-        studentPhoto: photoBase64,
-        aadharCard: aadharBase64,
-        Source: formData.get("Source"),
-        Session: formData.get("Session"),
-        StudyMode: formData.get("StudyMode"),
-        Stream: formData.get("Stream"),
-        Course: formData.get("Course"),
+        Resume: resumeBase64,
+        College: formData.get("College"),
+        PassingYear: formData.get("PassingYear"),
+        Degree: formData.get("Degree"),
+        Branch: formData.get("Branch"),
+        Domain: formData.get("Domain"),
+        source: formData.get("source"),
+        paymentReceipt: paymentBase64,
+        query: formData.get("query"),
       };
       try {
         setSubmissionStatus("waiting");
         alert(`Please wait.. ${formData.get("Name")}..!`);
         const response = await fetch(
-          "https://script.google.com/macros/s/AKfycbx0rgh1mccItjknTASduRCGp3qgbI1Uw7xnFlxYA67gOFYZDDL4fHaC9ysqzjpyVv1usA/exec",
+          "https://script.google.com/macros/s/AKfycbwLZLtNPHDeqFtcssB2ldONKlX7W_PLo41aakI1p6oGboNjfgpiMNoeBNrqad-9u6MtLw/exec",
           {
             method: "POST",
             headers: {
@@ -215,33 +157,26 @@ function Internship_form() {
           alert(
             `Congratulations ${formData.get(
               "Name"
-            )}!, Your Form has been successfully submitted and you have taken first step towards success.`
+            )}!, Your Application has been successfully submitted.Check your email for further updates.`
           );
           setFormData({
             Name: "",
-            fatherName: "",
-            DOB: "",
-            Gender: "",
-            Category: "",
-            aadharNumber: "",
+            emailid: "",
+            Mobile: "",
             Address: "",
-            City: "",
             Country: "",
             Pincode: "",
             State: "",
             District: "",
-            Mobile: "",
-            fatherMobile: "",
-            Email: "",
-            XPercentage: "",
-            XIIPercentage: "",
-            studentPhoto: "",
-            aadharCard: "",
-            Source: "",
-            Session: "",
-            StudyMode: "",
-            Stream: "",
-            Course: "",
+            Resume: "",
+            College: "",
+            PassingYear: "",
+            Degree: "",
+            Branch: "",
+            Domain: "",
+            source: "",
+            paymentReceipt: "",
+            query: "",
           });
           setSubmissionStatus("success");
         } else {
@@ -250,34 +185,27 @@ function Internship_form() {
           alert(
             `Congratulations ${formData.get(
               "Name"
-            )}!, Your Form has been successfully submitted and you have taken first step towards success.`
+            )}!, Your Application has been successfully submitted.Check your email for further updates.`
           );
           setSubmissionStatus("success");
           setFormData({
             Name: "",
-            fatherName: "",
-            DOB: "",
-            Gender: "",
-            Category: "",
-            aadharNumber: "",
+            emailid: "",
+            Mobile: "",
             Address: "",
-            City: "",
             Country: "",
             Pincode: "",
             State: "",
             District: "",
-            Mobile: "",
-            fatherMobile: "",
-            Email: "",
-            XPercentage: "",
-            XIIPercentage: "",
-            studentPhoto: "",
-            aadharCard: "",
-            Source: "",
-            Session: "",
-            StudyMode: "",
-            Stream: "",
-            Course: "",
+            Resume: "",
+            College: "",
+            PassingYear: "",
+            Degree: "",
+            Branch: "",
+            Domain: "",
+            source: "",
+            paymentReceipt: "",
+            query: "",
           });
         }
       } catch (error) {
@@ -286,34 +214,27 @@ function Internship_form() {
         alert(
           `Congratulations ${formData.get(
             "Name"
-          )}!, Your Form has been successfully submitted and you have taken first step towards success.`
+          )}!, Your Application has been successfully submitted.Check your email for further updates.`
         );
         setSubmissionStatus("success");
         setFormData({
           Name: "",
-          fatherName: "",
-          DOB: "",
-          Gender: "",
-          Category: "",
-          aadharNumber: "",
+          emailid: "",
+          Mobile: "",
           Address: "",
-          City: "",
           Country: "",
           Pincode: "",
           State: "",
           District: "",
-          Mobile: "",
-          fatherMobile: "",
-          Email: "",
-          XPercentage: "",
-          XIIPercentage: "",
-          studentPhoto: "",
-          aadharCard: "",
-          Source: "",
-          Session: "",
-          StudyMode: "",
-          Stream: "",
-          Course: "",
+          Resume: "",
+          College: "",
+          PassingYear: "",
+          Degree: "",
+          Branch: "",
+          Domain: "",
+          source: "",
+          paymentReceipt: "",
+          query: "",
         });
       }
     } else {
@@ -1113,62 +1034,16 @@ function Internship_form() {
 
   // FOR STREAM AND CORRESPONDING COURSES OPTION----------------------------------------------------------------------------------
 
-  function updateType(e) {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-    const streamSelect = document.getElementById("Domain");
-    const courseSelect = document.getElementById("Intern");
-
-    // Clear existing options
-    courseSelect.innerHTML = '<option value="">Select Internship Type</option>';
-
-    // Define districts for each state
-    const Intern = {
-      Technical: [
-        "Frontend Web Devlopment",
-        "Full Stack Web Devlopment",
-        "Java Devlopment",
-        "Python Devlopment",
-        "Machine Learning",
-        "Android Devlopment",
-        "UI/UX Design",
-        "Artificial Intelligence",
-        "Data Science",
-        "C++ Programming",
-        "Data Analytics",
-        "Cyber Security",
-        "Cloud Computing",
-        "Transfer Learning",
-      ],
-      "Non-Technical": [
-        "Digital Marketing",
-        "Graphic Designer",
-        "Content-Writer",
-        "Human Resources(HR)",
-      ],
-    };
-
-    const selectedStream = streamSelect.value;
-
-    // Populate districts for the selected state
-    if (Intern[selectedStream]) {
-      Intern[selectedStream].forEach((Course) => {
-        const option = document.createElement("option");
-        option.value = Course;
-        option.text = Course;
-        courseSelect.add(option);
-      });
-    }
-  }
-
   //IMAGE SIZE ERROR
   function imageSize() {
     // document.getElementsByClassName("file-upload-message").style.color = "red";
     alert("Please upload an image of size less than 500KB");
-    document.getElementById("studentPhoto").value = "";
-    document.getElementById("aadharCard").value = "";
+    document.getElementById("paymentReceipt").value = "";
+  }
+  function pdfSize() {
+    // document.getElementsByClassName("file-upload-message").style.color = "red";
+    alert("Please upload an image of size less than 5MB");
+    document.getElementById("Resume").value = "";
   }
 
   //hover effect
@@ -1211,42 +1086,6 @@ function Internship_form() {
                 onChange={handleChange}
                 value={formData.emailid}
                 className="input-two"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="date"
-                id="DOB"
-                placeholder="Date of Birth (DOB)*"
-                onChange={handleChange}
-                value={formData.DOB}
-                className="input-three"
-                name="DOB"
-                required
-              />
-              <select
-                placeholder="Gender"
-                id="Gender"
-                name="Gender"
-                onChange={handleChange}
-                value={formData.Gender}
-                className="input-three"
-                required
-              >
-                <option value="">Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-              </select>
-              <input
-                type="text"
-                id="aadharNumber"
-                name="aadharNumber"
-                placeholder="Aadhar Number*"
-                onChange={handleChange}
-                value={formData.aadharNumber}
-                className="input-three"
                 required
               />
             </div>
@@ -1360,50 +1199,26 @@ function Internship_form() {
                 required
               />
             </div>
-            <div className="form-group">
-              <input
-                type="tel"
-                id="linkedin"
-                name="linkedin"
-                placeholder="Your LinkedIn Profile Link*"
-                onChange={handleChange}
-                value={formData.linkedin}
-                className="input-half"
-                min="0"
-                max="100"
-              />
-              <input
-                type="tel"
-                id="githublink"
-                name="githublink"
-                placeholder="Your GitHub Profile Link*"
-                onChange={handleChange}
-                value={formData.githublink}
-                className="input-half"
-                min="0"
-                max="100"
-              />
-            </div>
 
             <div className="form-group">
               <div className="file-upload">
-                <label htmlFor="aadharCard">Upload Your Resume:&nbsp;</label>
+                <label htmlFor="Resume">Upload Your Resume:&nbsp;</label>
                 <input
                   type="file"
-                  id="aadharCard"
-                  name="aadharCard"
-                  accept=".jpg"
+                  id="Resume"
+                  name="Resume"
+                  accept=".pdf"
                   onChange={(event) => {
                     if (event.target.files && event.target.files[0]) {
-                      if (event.target.files[0].size > 500 * 1024) {
-                        imageSize();
+                      if (event.target.files[0].size > 5 * 1024 * 1024) {
+                        pdfSize();
                         return false;
                       }
                     }
                   }}
                   required
                 />
-                <img id="aadharphoto" src="" alt="" />
+                <img id="Resume" src="" alt="" />
               </div>
             </div>
 
@@ -1430,6 +1245,7 @@ function Internship_form() {
                 required
               >
                 <option value="">Passing Year</option>
+                <option value="2025">2024</option>
                 <option value="2025">2025</option>
                 <option value="2026">2026</option>
                 <option value="2027">2027</option>
@@ -1441,21 +1257,21 @@ function Internship_form() {
             <div className="form-group">
               <input
                 type="text"
-                id="College"
-                name="College"
+                id="Degree"
+                name="Degree"
                 placeholder="Degree (Currently Pursuing/Last Pursued)*"
                 onChange={handleChange}
-                value={formData.College}
+                value={formData.Degree}
                 className="input-two"
                 required
               />
               <input
                 type="text"
-                id="College"
-                name="College"
+                id="Branch"
+                name="Branch"
                 placeholder="Branch (Currently Pursuing/Last Pursued)*"
                 onChange={handleChange}
-                value={formData.College}
+                value={formData.Branch}
                 className="input-two"
                 required
               />
@@ -1466,31 +1282,23 @@ function Internship_form() {
             </h201>
             <div className="form-group">
               <select
+                placeholder="InternshipDomain"
                 id="Domain"
                 name="Domain"
-                onChange={updateType}
+                onChange={handleChange}
                 value={formData.Domain}
                 className="input-two"
                 required
               >
                 <option value="">Select Internship Domain</option>
-                <option value="Technical">Technical</option>
-                <option value="Non-Technical">Non-Technical</option>
+                <option value="Web Development">Web Development</option>
+                <option value="DSA using C/C++">DSA using C/C++</option>
+                <option value="OOP's using C++">OOP's using C++</option>
+                <option value="Introduction to SQL Database">
+                  Introduction to SQL Database
+                </option>
+                <option value="Python Programming">Python Programming</option>
               </select>
-
-              <select
-                id="Intern"
-                name="Intern"
-                onChange={handleChange}
-                value={formData.Intern}
-                className="input-two"
-                required
-              >
-                <option value="">Select Internship Type</option>
-                {/* <!-- Options will be dynamically populated using JavaScript --> */}
-              </select>
-            </div>
-            <div className="form-group">
               <select
                 placeholder="How did you hear about us?*"
                 name="source"
@@ -1507,6 +1315,44 @@ function Internship_form() {
                 <option value="2029">Whatsapp</option>
                 <option value="2030">Others</option>
               </select>
+            </div>
+            <h201 style={{ textAlign: "left" }}>Section-03: Payment</h201>
+            <div className="image-preview">
+              <img id="uploadedImage" src={pay} alt="Uploaded Receipt" />
+            </div>
+            <div className="pay-details">
+              <p>
+                <strong>UPI No:</strong> 9262676870
+              </p>{" "}
+              <p>
+                <strong>UPI Id:</strong> iitacademy@axl
+              </p>
+            </div>
+            <div className="form-group">
+              <div className="file-upload">
+                <label htmlFor="paymentReceipt">
+                  Upload Payment Receipt (₹499):&nbsp;
+                </label>
+                <input
+                  type="file"
+                  id="paymentReceipt"
+                  name="paymentReceipt"
+                  accept=".jpg"
+                  className="input-four"
+                  onChange={(event) => {
+                    if (event.target.files && event.target.files[0]) {
+                      if (event.target.files[0].size > 500 * 1024) {
+                        imageSize();
+                        return false;
+                      }
+                    }
+                  }}
+                  required
+                />
+                <img id="paymentReceipt" src="" alt="" />
+              </div>
+            </div>
+            <div className="form-group">
               <input
                 type="text"
                 id="query"
@@ -1567,8 +1413,8 @@ function Internship_form() {
                   color: "blue",
                 }}
               >
-                Congratulations! You have taken the first step towards success.
-                We will contact you soon.
+                Congratulations! Your Application has been submitted
+                successfully. Do check our Email for further updates.
               </div>
             )}
 
@@ -1590,4 +1436,4 @@ function Internship_form() {
   );
 }
 
-export default Internship_form;
+export default Internshipform;

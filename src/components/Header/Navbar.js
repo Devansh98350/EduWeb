@@ -80,7 +80,7 @@ const StyledDiv10 = styled.div`
     top: 0;
     width: 100%;
     z-index: 1000;
-    border-bottom: 2px solid red;
+    border-bottom: 4px solid #F39C12;
     /* transition: background-color 0.1s, transform 0.1s; */
   }
  
@@ -1391,7 +1391,7 @@ const Navbar = (props) => {
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink to=" " className="dropdown-item">
+                          <NavLink to="/internship" className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}

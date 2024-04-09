@@ -18,6 +18,29 @@
   margin-top: 10px;
 }
 
+.image-preview {
+  margin-left: 35%;
+  width: 30%;
+  height: auto;
+}
+.pay-details {
+  margin-left: -3%;
+}
+.pay-details p {
+  line-height: 0.8;
+  text-align: center;
+}
+.file-upload input {
+  max-width: 90%;
+  text-align: left; /* Optional: Center the element horizontally */
+}
+
+/* Optional: Styling for the image inside the file-upload div */
+.file-upload img {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the image respects its container's space */
+}
 h100 {
   text-align: center;
   color: blue;
@@ -138,7 +161,20 @@ select {
     margin-left: 10px; /* Adjust the margin for smaller screens */
     padding: 10px; /* Adjust the padding for smaller screens */
   }
-
+  .image-preview {
+    margin-left: 25%;
+    width: 50%;
+    height: auto;
+    text-align: center;
+  }
+  .pay-details {
+    margin-top: 5px;
+    margin-left: 0%;
+  }
+  .pay-details p {
+    line-height: 0.8;
+    text-align: center;
+  }
   /* Add more specific styles for smaller screens as needed */
   .input-source,
   .input-two,
