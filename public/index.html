@@ -334,5 +334,34 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      // Prevent right-clicking on the entire document
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+      document.addEventListener("copy", function (event) {
+        event.preventDefault();
+      });
+      // Disable text selection
+      document.addEventListener("selectstart", function (event) {
+        event.preventDefault();
+      });
+      document.addEventListener("contextmenu", function (e) {
+        if (e.target.nodeName === "IMG") {
+          e.preventDefault();
+        }
+      });
+      document.addEventListener("keydown", function (event) {
+        if (event.ctrlKey && event.key === "u") {
+          event.preventDefault();
+        }
+      });
+      document.addEventListener("keydown", function (event) {
+        if (event.ctrlKey && event.shiftKey && event.key === "i") {
+          event.preventDefault();
+          // Add your custom logic here if needed
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1316,7 +1316,7 @@ function Internshipform() {
                 <option value="2030">Others</option>
               </select>
             </div>
-            <h201 style={{ textAlign: "left" }}>Section-03: Payment</h201>
+            <h201 style={{ textAlign: "left" }}>Section-04: Payment</h201>
             <div className="image-preview">
               <img id="uploadedImage" src={pay} alt="Uploaded Receipt" />
             </div>
