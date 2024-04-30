@@ -1,0 +1,29 @@
+.all_batches {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.details4-btn {
+  background-color: rgb(249, 148, 23);
+  color: #fff;
+  font-size: large;
+  padding: 4px 12px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+}
+
+.details4-btn:hover {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .all_batches {
+    margin-bottom: 15px;
+  }
+  .details4-btn {
+    margin-bottom: 10px;
+  }
+}

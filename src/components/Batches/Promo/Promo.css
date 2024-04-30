@@ -1,0 +1,125 @@
+.course3 {
+  width: 90%;
+  margin: auto;
+}
+.course-row {
+  display: flex;
+  justify-content: center;
+  width: 96%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.course1-container {
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+/* Card starts from here */
+
+.card2-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.detail2-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card2-detail {
+  width: 30%;
+  height: auto;
+  background-color: #fff;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+.card2-detail {
+  width: calc(33.33% - 10px); /* Set width for each card (minus margins) */
+  margin-bottom: 10px; /* Add margin between cards */
+}
+.details2-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  /* gap: 50px; */
+  /* padding: 16px; */
+}
+
+.details2-desc {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: blue;
+}
+
+.details2-desc1 {
+  text-align: center;
+  width: 95%;
+  margin-top: 0px;
+  font-size: 17px;
+}
+
+.details2-btn {
+  background-color: rgb(249, 148, 23);
+  color: #fff;
+  font-size: large;
+  padding: 5px 16px;
+  border-radius: 10px;
+  border: none;
+}
+
+.details2-btn:hover {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.details3-btn {
+  background-color: blue;
+  color: #fff;
+  font-size: medium;
+  padding: 4px 12px;
+  border-radius: 10px;
+  border: none;
+}
+
+.details3-btn:hover {
+  background-color: rgb(249, 148, 23);
+  color: white;
+  font-weight: bold;
+}
+
+.hello {
+  font-size: 28px;
+}
+/* CSS for responsivness */
+
+@media (max-width: 900px) {
+  .card2-detail {
+    margin-bottom: 20px; /* Add spacing between cards */
+  }
+  .course-row {
+    display: block;
+  }
+  .card2-detail {
+    width: 98%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .hello {
+    font-size: 24px;
+  }
+}

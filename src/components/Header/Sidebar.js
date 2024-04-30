@@ -844,6 +844,13 @@ const Sidebar = () => {
                 </DropdownItem>
               </DropdownMenu>
             )}
+            <StyledNavLink
+              to="https://drive.google.com/file/d/1KEbgiKjF3quvUXWp8hM0KlDqeqZiL0LL/view?usp=sharing"
+              target="_blank"
+              exact
+            >
+              Brochure
+            </StyledNavLink>
           </div>
         </SidebarContent>
       )}

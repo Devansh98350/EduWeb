@@ -35,6 +35,10 @@ import Sammarsa from "./components/Batches/Boards/B_PCM11";
 import Vikash from "./components/Batches/Boards/B_PCM12";
 import Daksh from "./components/Batches/Boards/B_PCB11";
 import Samridhi from "./components/Batches/Boards/B_PCB12";
+/*Promo Batches*/
+import Eng from "./components/Batches/Promo/Eng.js";
+import Med from "./components/Batches/Promo/Med.js";
+import Found from "./components/Batches/Promo/Found.js";
 /*Admission*/
 import Feestructure from "./components/Admission/Fee_structure/Feestructure";
 import AdmissionProcess from "./components/Admission/Process/Admission_process";
@@ -49,6 +53,7 @@ import Admissionform from "./components/Forms/Admission_Form/Admission";
 // import Contact from "./components/Contact_Us/ContactUs/Contact";
 import Career from "./components/Contact_Us/Careers/Career";
 import Internship from "./components/Contact_Us/Internship/Internship";
+import Brochure from "./components/Contact_Us/Brochure/Brochure.js";
 import PagenotFound from "./components/PagenotFound";
 
 function App() {
@@ -89,6 +94,10 @@ function App() {
           <Route path="/boards-class-12-pcm" element={<Vikash />} />
           <Route path="/boards-class-11-pcb" element={<Daksh />} />
           <Route path="/boards-class-12-pcb" element={<Samridhi />} />
+          {/*Promo Batches */}
+          <Route path="/engineering-courses" element={<Eng />} />
+          <Route path="/medical-courses" element={<Med />} />
+          <Route path="/foundation-courses" element={<Found />} />
           {/* Admission */}
           <Route path="/fees-structure" element={<Feestructure />} />
           <Route path="/admission-process" element={<AdmissionProcess />} />
@@ -102,6 +111,7 @@ function App() {
           {/*<Route path="/contact-us" element={<Contact />} />*/}
           <Route path="/careers" element={<Career />} />
           <Route path="/internship" element={<Internship />} />
+          <Route path="/brochure" element={<Brochure />} />
           <Route path="*" element={<PagenotFound />} />
         </Routes>
       </Router>

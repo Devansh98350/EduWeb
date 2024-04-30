@@ -5,6 +5,7 @@ import {
   faLinkedin,
   faFacebook,
   faInstagram,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.css";
@@ -85,6 +86,16 @@ const Footer = () => {
                   >
                     <FontAwesomeIcon icon={faPhone} className="linkedin-icon" />
                   </a>{" "}
+                  <a
+                    href="https://wa.me/919205704041?text=I have a query.&utm_medium=&utm_campaign=&utm_term=&utm_content=&lang=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faWhatsapp}
+                      className="whatsapp-icon"
+                    />
+                  </a>
                 </p>
               </div>
             </div>
@@ -97,29 +108,36 @@ const Footer = () => {
               <p>JEE-Main 2023 Question Paper</p>
               <p>JEE-Advanced 2023 Question Paper</p>
               <p>NEET 2023 Question Paper</p>
-              <p>KVPY 2023 Question Paper</p>
               <p>NTSE 2023 Question Paper</p>
               <p>Boards 2023 Question Paper</p>
               <p>NCERT Solutions</p>
+              <p>
+                <Link to="/careers">Careers</Link>
+              </p>
             </div>
             <div className="footer-col">
               <h2>Quick Links</h2>
               <p>
                 <Link to="/fees-structure">Fee Structure</Link>
               </p>
-              <p>Pay Fees Online</p>
               <p>
                 <Link to="/why-us">Why IIT Academy</Link>
+              </p>
+              <p>
+                <Link to="/foundation-courses">Foundation Batches</Link>
+              </p>
+              <p>
+                <Link to="/engineering-courses">Engineering Batches</Link>
               </p>
               <p>
                 <Link to="/admission-process">Admission Process</Link>
               </p>
               <p>
-                <Link to="/our-policy">Privacy & Policy</Link>
+                <Link to="/medical-courses">Medical Batches</Link>
               </p>
-              <p>Resources</p>
+
               <p>
-                <Link to="/careers">Careers</Link>
+                <Link to="/our-policy">Privacy & Policy</Link>
               </p>
             </div>
           </div>

@@ -1047,6 +1047,19 @@ const Navbar = (props) => {
                             Contact Us
                           </div>
                         </li>
+                        <li>
+                          <NavLink
+                            to="https://drive.google.com/file/d/1KEbgiKjF3quvUXWp8hM0KlDqeqZiL0LL/view?usp=sharing"
+                            className="dropdown-item"
+                            target="_blank"
+                          >
+                            <i
+                              className="fas fa-angle-double-right"
+                              style={{ color: "#f39c12", marginRight: "5px" }}
+                            ></i>
+                            Brochure
+                          </NavLink>
+                        </li>
                       </ul>
                     </li>
                   </ul>
@@ -1407,6 +1420,19 @@ const Navbar = (props) => {
                             ></i>
                             Contact Us
                           </div>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="https://drive.google.com/file/d/1KEbgiKjF3quvUXWp8hM0KlDqeqZiL0LL/view?usp=sharing"
+                            className="dropdown-item"
+                            target="_blank"
+                          >
+                            <i
+                              className="fas fa-angle-double-right"
+                              style={{ color: "#f39c12", marginRight: "5px" }}
+                            ></i>
+                            Brochure
+                          </NavLink>
                         </li>
                       </ul>
                     </li>

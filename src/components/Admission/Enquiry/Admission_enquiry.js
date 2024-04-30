@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Layout from "../../Layout";
 import { Query } from "../../Forms/Query_Form/Query";
 import "./Admission_enquiry.css";
@@ -47,6 +48,31 @@ const Admission_enquiry = () => {
                 🏢 Corporate Office: [Sobha Sadan, Veer Kunwar Singh Colony,
                 Kashipur, Samastipur, Bihar, India – 848101]
               </p>
+              <p>
+                <i
+                  className="fas fa-angle-double-right"
+                  style={{
+                    color: "#f39c12",
+                    marginRight: "5px",
+                  }}
+                ></i>{" "}
+                Explore More about different batches offered by IIT Academy.
+              </p>
+              <div className="all_batches">
+                {" "}
+                <Link to="/engineering-courses">
+                  <button className="details4-btn">Engineering Batches</button>
+                </Link>
+                <Link to="/medical-courses">
+                  <button className="details4-btn">Medical Batches</button>
+                </Link>
+                <Link to="/foundation-courses">
+                  <button className="details4-btn">Foundation Batches</button>
+                </Link>
+                <Link to=" ">
+                  <button className="details4-btn">Boards Batches</button>
+                </Link>
+              </div>
               <Query />
               <p>
                 We appreciate your interest in IIT Academy and look forward to
