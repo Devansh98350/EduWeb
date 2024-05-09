@@ -44,11 +44,6 @@ function Admission1() {
   //handles any input field change of the form
   const handleChange = (e) => {
     const { name, value } = e.target;
-    const isValidEmail = (email) => {
-      // Regular expression for basic email validation
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(email);
-    };
     if (name === "aadharNumber") {
       // Validate for a 12-digit number
       const isValidAadhar = /^\d{12}$/.test(value);
@@ -106,11 +101,6 @@ function Admission1() {
     ) {
       // Display an error message or handle the validation error
       alert("Percentage value must be between 0 and 100.");
-      return;
-    }
-    if (name === "Email" && !isValidEmail(value)) {
-      // Display an error message or handle the validation error
-      alert("Invalid email format.");
       return;
     }
     setFormData((prevData) => ({
