@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.337fbb2b.css",
-    "main.js": "/static/js/main.fe56e8f4.js",
+    "main.js": "/static/js/main.9b0c7d0f.js",
     "static/js/27.206f39f5.chunk.js": "/static/js/27.206f39f5.chunk.js",
     "static/media/adm.gif": "/static/media/adm.d7f5fe01d004700e7509.gif",
     "static/media/cu4.gif": "/static/media/cu4.0a94a8add2444658ab91.gif",
@@ -61,9 +61,9 @@
     "static/media/Excellent-Faculty.png": "/static/media/Excellent-Faculty.6e262662d399341fb295.png",
     "static/media/Doubt-Classes.png": "/static/media/Doubt-Classes.d7b0cf08eae16c712a95.png",
     "static/media/Periodic-Tests.png": "/static/media/Periodic-Tests.bc8599f581fc66dd8329.png",
-    "index.html": "/index.html",
     "static/media/Study-Material.png": "/static/media/Study-Material.67bff90a438db9df7ede.png",
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "index.html": "/index.html",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -73,6 +73,6 @@
   },
   "entrypoints": [
     "static/css/main.337fbb2b.css",
-    "static/js/main.fe56e8f4.js"
+    "static/js/main.9b0c7d0f.js"
   ]
 }
