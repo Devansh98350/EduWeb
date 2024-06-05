@@ -66,6 +66,9 @@ const Found = () => {
               </Link>
             </div>
           </div>
+        </div>
+
+        <div className="course-row">
           <div className="card2-detail">
             <img src={abhinav} alt="" className="card2-img" />
             <div className="details2-btns">
