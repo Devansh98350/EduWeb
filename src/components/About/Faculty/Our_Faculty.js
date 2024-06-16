@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import Layout from "../../Layout";
-import gopal from "../../../assets/faculty/gopal.jpeg";
-import ranjan from "../../../assets/faculty/ranjan.jpeg";
-import anupam from "../../../assets/faculty/anupam.jpeg";
-import ayushi from "../../../assets/faculty/ayushi.jpeg";
+import gopal from "../../../assets/faculty/gopal.webp";
+import ranjan from "../../../assets/faculty/ranjan.webp";
+import anupam from "../../../assets/faculty/anupam.webp";
+import ayushi from "../../../assets/faculty/ayushi.webp";
 // import devanshu from "../assets/faculty/devanshu.png";
-// import suneel from "../../../assets/faculty/suneel.jpeg";
+// import suneel from "../../../assets/faculty/suneel.webp";
 import "./Our_Faculty.css";
 
 const Our_Faculty = () => {

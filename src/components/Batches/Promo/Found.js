@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../Layout";
 import "./Promo.css";
-import atal from "../../../assets/popular_courses/Atal.png";
-import aarohan from "../../../assets/popular_courses/Aarohan.png";
-import abhyas from "../../../assets/popular_courses/Abhyas.png";
-import abhinav from "../../../assets/popular_courses/Abhinav.png";
-import aadhya from "../../../assets/popular_courses/Aadhya.png";
-import sankalp from "../../../assets/popular_courses/Sankalp.png";
+import atal from "../../../assets/popular_courses/Atal.webp";
+import aarohan from "../../../assets/popular_courses/Aarohan.webp";
+import abhyas from "../../../assets/popular_courses/Abhyas.webp";
+import abhinav from "../../../assets/popular_courses/Abhinav.webp";
+import aadhya from "../../../assets/popular_courses/Aadhya.webp";
+import sankalp from "../../../assets/popular_courses/Sankalp.webp";
 
 const Found = () => {
   useEffect(() => {

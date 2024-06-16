@@ -4,19 +4,19 @@ import { HashLink } from "react-router-hash-link";
 import Layout from "../../Layout";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "./Boards.css";
-import img from "../../../assets/batches/Daksh.png";
-import excellence from "../../../assets/cbenefits/Excellent-Faculty.png";
-import computerbased from "../../../assets/cbenefits/Computer-Based-Test.png";
-import doubt from "../../../assets/cbenefits/Doubt-Classes.png";
-import improve from "../../../assets/cbenefits/Board-Exam-Preparation.png";
-import exam from "../../../assets/cbenefits/Competitive-Exam-Support.png";
-import dpp from "../../../assets/cbenefits/Daily-Practice-Problems.png";
-import periodic from "../../../assets/cbenefits/Periodic-Tests.png";
-import worksheet from "../../../assets/cbenefits/Board-Worksheets.png";
-import orientation from "../../../assets/cbenefits/Orientation-Classes.png";
-import performance from "../../../assets/cbenefits/Performance-Tracker.png";
-import feedback from "../../../assets/cbenefits/Feedback-System.png";
-import studymaterial from "../../../assets/cbenefits/Study-Material.png";
+import img from "../../../assets/batches/Daksh.webp";
+import excellence from "../../../assets/cbenefits/Excellent-Faculty.webp";
+import computerbased from "../../../assets/cbenefits/Computer-Based-Test.webp";
+import doubt from "../../../assets/cbenefits/Doubt-Classes.webp";
+import improve from "../../../assets/cbenefits/Board-Exam-Preparation.webp";
+import exam from "../../../assets/cbenefits/Competitive-Exam-Support.webp";
+import dpp from "../../../assets/cbenefits/Daily-Practice-Problems.webp";
+import periodic from "../../../assets/cbenefits/Periodic-Tests.webp";
+import worksheet from "../../../assets/cbenefits/Board-Worksheets.webp";
+import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
+import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
+import feedback from "../../../assets/cbenefits/Feedback-System.webp";
+import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
 
 const B_PCB11 = () => {
   useEffect(() => {

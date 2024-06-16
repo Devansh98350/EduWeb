@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../Layout";
 import "./Promo.css";
-import ananta from "../../../assets/popular_courses/Ananta.png";
-import sudarshan from "../../../assets/popular_courses/Sudarshan.png";
-import swadhyaya from "../../../assets/popular_courses/Swadhyaya.png";
-import yukti from "../../../assets/popular_courses/Yukti.png";
-import sarthak from "../../../assets/popular_courses/Sarthak.png";
-import pragya from "../../../assets/popular_courses/Pragya.png";
+import ananta from "../../../assets/popular_courses/Ananta.webp";
+import sudarshan from "../../../assets/popular_courses/Sudarshan.webp";
+import swadhyaya from "../../../assets/popular_courses/Swadhyaya.webp";
+import yukti from "../../../assets/popular_courses/Yukti.webp";
+import sarthak from "../../../assets/popular_courses/Sarthak.webp";
+import pragya from "../../../assets/popular_courses/Pragya.webp";
 
 const Med = () => {
   useEffect(() => {

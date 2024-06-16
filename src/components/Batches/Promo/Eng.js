@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../Layout";
 import "./Promo.css";
-import arjuna from "../../../assets/popular_courses/Arjuna.png";
-import chaitanya from "../../../assets/popular_courses/Chaitanya.png";
-import eklavya from "../../../assets/popular_courses/Eklavya.png";
-import utkarsh from "../../../assets/popular_courses/Utkarsh.png";
-import lakshya from "../../../assets/popular_courses/Lakshya.png";
-import abhiyaan from "../../../assets/popular_courses/Abhiyaan.png";
+import arjuna from "../../../assets/popular_courses/Arjuna.webp";
+import chaitanya from "../../../assets/popular_courses/Chaitanya.webp";
+import eklavya from "../../../assets/popular_courses/Eklavya.webp";
+import utkarsh from "../../../assets/popular_courses/Utkarsh.webp";
+import lakshya from "../../../assets/popular_courses/Lakshya.webp";
+import abhiyaan from "../../../assets/popular_courses/Abhiyaan.webp";
 
 const Eng = () => {
   useEffect(() => {
