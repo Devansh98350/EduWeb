@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./Home.css";
-import img from "../../assets/home_page/main.png";
+import img from "../../assets/home_page/main.webp";
 import Testimonials from "../Home_page/Testimonials";
 import { AccordionComponent } from "../Home_page/Accordian";
 import { PopularCourse } from "../Home_page/Popular_Courses/Popular_Courses.js";

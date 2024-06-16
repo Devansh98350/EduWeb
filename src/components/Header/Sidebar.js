@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import mainlogo from "../../assets/homepage/IIT_Academy.png";
+import mainlogo from "../../assets/homepage/IIT_Academy.webp";
 
 const StyledSidebarContainer = styled.div`
   display: flex;
