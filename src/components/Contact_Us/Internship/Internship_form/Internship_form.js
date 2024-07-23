@@ -1331,7 +1331,7 @@ function Internshipform() {
             <div className="form-group">
               <div className="file-upload">
                 <label htmlFor="paymentReceipt">
-                  Upload Payment Receipt (₹499):&nbsp;
+                  Upload Payment Receipt (₹1999):&nbsp;
                 </label>
                 <input
                   type="file"

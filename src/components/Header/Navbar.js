@@ -7,6 +7,8 @@ import styled from "styled-components";
 import mono from "../../assets/homepage/mono.webp";
 import mainlogo from "../../assets/homepage/IIT_Academy.webp";
 import whatsapp from "../../assets/homepage/chatus.gif";
+// import call from "../../assets/homepage/call_now.gif";
+// import admission from "../../assets/homepage/Admission.gif";
 import call from "../../assets/homepage/cu4.gif";
 import admission from "../../assets/homepage/adm.gif";
 
@@ -44,8 +46,8 @@ const StyledDiv10 = styled.div`
     display: flex;
     align-items: center;
     font-size: 30px;
-    width: 120px;
-    height: 60px;
+    width: auto;
+    height: 100px;
   }
 
   .header-col21 img {
@@ -60,10 +62,10 @@ const StyledDiv10 = styled.div`
   .header-col22 img {
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 15px;
     margin-right: 80px;
     font-size: 30px;
-    width: 100px;
+    width: auto;
     height: 50px;
   }
 
@@ -712,11 +714,9 @@ const Navbar = (props) => {
           </div>
           <div className="header-col2">
             <div className="header-col3">
-              <li>
-                <NavLink to="/Admission-form" className="header-col12">
-                  <img src={admission} alt="" />
-                </NavLink>
-              </li>
+              <NavLink to="/Admission-form" className="header-col12">
+                <img src={admission} alt="" />
+              </NavLink>
             </div>
             <div className="header-col21">
               <a
