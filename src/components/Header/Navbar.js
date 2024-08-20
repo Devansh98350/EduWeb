@@ -9,8 +9,8 @@ import mainlogo from "../../assets/homepage/IIT_Academy.webp";
 import whatsapp from "../../assets/homepage/chatus.gif";
 // import call from "../../assets/homepage/call_now.gif";
 // import admission from "../../assets/homepage/Admission.gif";
-import call from "../../assets/homepage/cu4.gif";
-import admission from "../../assets/homepage/adm.gif";
+import call from "../../assets/homepage/call_now.gif";
+// import admission from "../../assets/homepage/adm.gif";
 
 const StyledDiv10 = styled.div`
   /* Header row1*/
@@ -713,11 +713,11 @@ const Navbar = (props) => {
             </a>
           </div>
           <div className="header-col2">
-            <div className="header-col3">
+            {/*<div className="header-col3">
               <NavLink to="/Admission-form" className="header-col12">
                 <img src={admission} alt="" />
               </NavLink>
-            </div>
+            </div>*/}
             <div className="header-col21">
               <a
                 href="https://wa.me/919205704041?text=I have a query.&utm_medium=&utm_campaign=&utm_term=&utm_content=&lang=en"
