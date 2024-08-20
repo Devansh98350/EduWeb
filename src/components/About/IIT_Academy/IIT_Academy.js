@@ -12,7 +12,11 @@ const IIT_Academy = () => {
 
   return (
     <>
-      <Layout title="About IIT Academy">
+      <Layout
+        title="About IIT Academy"
+        description="About IIT Academy"
+        keywords="About IIT Academy, About Us"
+      >
         <div className="container">
           <div className="procedure-outer">
             <div className="procedure-wrapper">

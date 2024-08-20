@@ -1,40 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://www.iitacademy.in/</loc> </url>
-<url> <loc>https://www.iitacademy.in/admission-form</loc> </url>
-<url> <loc>https://www.iitacademy.in/careers</loc> </url>
-<url> <loc>https://www.iitacademy.in/about</loc> </url>
-<url> <loc>https://www.iitacademy.in/director-message</loc> </url>
-<url> <loc>https://www.iitacademy.in/why-us</loc> </url>
-<url> <loc>https://www.iitacademy.in/our-faculty</loc> </url>
-<url> <loc>https://www.iitacademy.in/frequently-asked-questions</loc> </url>
-<url> <loc>https://www.iitacademy.in/gallery</loc> </url>
-<url> <loc>https://www.iitacademy.in/engineering-class-11</loc> </url>
-<url> <loc>https://www.iitacademy.in/engineering-class-12</loc> </url>
-<url> <loc>https://www.iitacademy.in/engineering-class-13</loc> </url>
-<url> <loc>https://www.iitacademy.in/medical-class-11</loc> </url>
-<url> <loc>https://www.iitacademy.in/medical-class-12</loc> </url>
-<url> <loc>https://www.iitacademy.in/medical-class-13</loc> </url>
-<url> <loc>https://www.iitacademy.in/foundation-class-06</loc> </url>
-<url> <loc>https://www.iitacademy.in/foundation-class-07</loc> </url>
-<url> <loc>https://www.iitacademy.in/foundation-class-08</loc> </url>
-<url> <loc>https://www.iitacademy.in/foundation-class-09</loc> </url>
-<url> <loc>https://www.iitacademy.in/foundation-class-10</loc> </url>
-<url> <loc>https://www.iitacademy.in/distance-class-10</loc> </url>
-<url> <loc>https://www.iitacademy.in/distance-class-11-engineering</loc> </url>
-<url> <loc>https://www.iitacademy.in/distance-class-12-engineering</loc> </url>
-<url> <loc>https://www.iitacademy.in/distance-class-13-engineering</loc> </url>
-<url> <loc>https://www.iitacademy.in/distance-class-11-medical</loc> </url>
-<url> <loc>https://www.iitacademy.in/distance-class-12-medical</loc> </url>
-<url> <loc>https://www.iitacademy.in/distance-class-13-medical</loc> </url>
-<url> <loc>https://www.iitacademy.in/boards-class-11-pcm</loc> </url>
-<url> <loc>https://www.iitacademy.in/boards-class-12-pcm</loc> </url>
-<url> <loc>https://www.iitacademy.in/boards-class-11-pcb</loc> </url>
-<url> <loc>https://www.iitacademy.in/boards-class-12-pcb</loc> </url>
-<url> <loc>https://www.iitacademy.in/fees-structure</loc> </url>
-<url> <loc>https://www.iitacademy.in/admission-process</loc> </url>
-<url> <loc>https://www.iitacademy.in/admission-enquiry</loc> </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+<url>
+  <loc>https://www.iitacademy.in/</loc>
+  <lastmod>2024-08-20</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/admission-form</loc>
+  <lastmod>2024-08-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/careers</loc>
+  <lastmod>2024-08-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/about</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/director-message</loc>
+  <lastmod>2024-08-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/why-us</loc>
+  <lastmod>2024-08-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/our-faculty</loc>
+  <lastmod>2024-08-17</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/frequently-asked-questions</loc>
+  <lastmod>2024-08-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/gallery</loc>
+  <lastmod>2024-08-19</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/engineering-class-11</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/engineering-class-12</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/engineering-class-13</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/medical-class-11</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/medical-class-12</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/medical-class-13</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/foundation-class-06</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/foundation-class-07</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/foundation-class-08</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/foundation-class-09</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/foundation-class-10</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/distance-class-10</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/distance-class-11-engineering</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/distance-class-12-engineering</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/distance-class-13-engineering</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/distance-class-11-medical</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/distance-class-12-medical</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/distance-class-13-medical</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/boards-class-11-pcm</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/boards-class-12-pcm</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/boards-class-11-pcb</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/boards-class-12-pcb</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/fees-structure</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<url>
+ <loc>https://www.iitacademy.in/admission-process</loc> 
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<url>
+ <loc>https://www.iitacademy.in/admission-enquiry</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<url>
 <url> <loc>https://www.iitacademy.in/our-policy</loc> </url>
-<url> <loc>https://www.iitacademy.in/students-login</loc> </url>
-<url> <loc>https://www.iitacademy.in/faculty-login</loc> </url>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<url>
+ <loc>https://www.iitacademy.in/students-login</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<url>
+  <loc>https://www.iitacademy.in/faculty-login</loc>
+  <lastmod>2024-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
 </urlset>
