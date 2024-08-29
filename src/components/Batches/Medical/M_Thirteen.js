@@ -30,7 +30,11 @@ const M_Thirteen = () => {
   });
   return (
     <>
-      <Layout title="Swadhyaya(MS)-IIT Academy">
+      <Layout
+        title="Swadhyaya(MS)-IIT Academy"
+        description="Swadhyaya Course offers a specialized one-year program designed for 12th passout students, providing comprehensive coaching for NEET 2025 with expert faculty, computer-based tests, and extensive study material, ensuring focused preparation for achieving top ranks."
+        keywords="Swadhyaya, Swadhyaya Batch NEET Preparation IIT Academy, 12th Passed Students NEET Preparation, NEET Coaching for 12th Passout Students, Best Offline NEET Classes for 12th Passout Students, Top Medical Exam Prep Courses"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

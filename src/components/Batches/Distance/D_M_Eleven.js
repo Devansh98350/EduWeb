@@ -30,7 +30,11 @@ const D_M_Eleven = () => {
   });
   return (
     <>
-      <Layout title="Yukti(DU)-IIT Academy">
+      <Layout
+        title="Yukti(DU)-IIT Academy"
+        description="Yukti Course is the premier program for class 11 medical students, offering early NEET preparation with expert faculty, comprehensive study materials, and personalized support to ensure success in competitive exams."
+        keywords="Yukti , Yukti Batch IIT Academy, Online Class for class 11 NEET, 10th to 11th Moving Students NEET online, Online Batches for NEET Preparation, Online NEET Classes for 11th, Best Medical Coaching Online, Top NEET Online Prep Courses"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

@@ -14,8 +14,8 @@ const IIT_Academy = () => {
     <>
       <Layout
         title="About IIT Academy"
-        description="About IIT Academy"
-        keywords="About IIT Academy, About Us"
+        description="Know more about IIT Academy"
+        keywords="About IIT Academy"
       >
         <div className="container">
           <div className="procedure-outer">

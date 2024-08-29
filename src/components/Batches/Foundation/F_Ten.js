@@ -30,7 +30,11 @@ const F_Ten = () => {
   });
   return (
     <>
-      <Layout title="Atal(AT)-IIT Academy">
+      <Layout
+        title="Atal(AT)-IIT Academy"
+        description="Atal Course is designed specifically for Class 10 students to excel in board exams and competitive tests with top-tier faculty, tailored support, and strategic preparation."
+        keywords="Atal, Atal Batch Board Exam Preparation IIT Academy, 9th 10th Moving Students Boards, Best 10th Board Exam Coaching, CBSE Board Exam Prep Class 10, Top 10th Board Coaching"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

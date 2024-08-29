@@ -14,7 +14,11 @@ const Careers = () => {
   };
   return (
     <div>
-      <Layout title="Careers-IIT Academy">
+      <Layout
+        title="Careers-IIT Academy"
+        description="Join IIT Academy and be a part of India's premier educational team, shaping the future of tomorrow's emerging leaders"
+        keywords="Careers IIT Academy, Opportunities at IIT Academy, Full-time Role at IIT Academy, Employment IIT Academy"
+      >
         <div className="career-page">
           <p className="career-main">Careers at IIT Academy</p>
           <p className="career-heading">Working at IIT Academy</p>

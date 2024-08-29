@@ -30,7 +30,11 @@ const B_PCM11 = () => {
   });
   return (
     <>
-      <Layout title="Sammarsa(BS)-IIT Academy">
+      <Layout
+        title="Sammarsa(BS)-IIT Academy"
+        description="Sammarsa batch is designed for Class 11 students preparing for PCM board exams, offering exceptional support and resources to build a strong foundation."
+        keywords="Sammarsa, Sammarsa Batch IIT Academy, Best Batch for class 11 Boards Exam, 10th to 11th Moving Students Board Batch, PCM Board Exam Coaching Class 11, Best Physics Chemistry Math Preparation class 11 Boards, Top Board Classes for PCM class 11"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

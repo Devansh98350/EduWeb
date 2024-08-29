@@ -9,7 +9,11 @@ function Feestructure() {
   }, []);
   return (
     <>
-      <Layout title="Fees Structure">
+      <Layout
+        title="Fees Structure"
+        description="Explore the fee structures for every course at IIT Academy, designed to support your journey to academic excellence"
+        keywords="Fees Structure IIT Academy, Course Fees IIT Academy, How much IIT Academy Courses Costs"
+      >
         <section className="fee-section">
           <h1>FEE Structure</h1>
           <div className="fee-table">

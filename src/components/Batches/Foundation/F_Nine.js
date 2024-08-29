@@ -30,7 +30,11 @@ const F_Nine = () => {
   });
   return (
     <>
-      <Layout title="Aarohan(AR)-IIT Academy">
+      <Layout
+        title="Aarohan(AR)-IIT Academy"
+        description="Aarohan Course is designed specifically for Class 9 students to enhance their productivity and excel in both board exams and competitive exams through a structured and supportive curriculum."
+        keywords="Aarohan, Aarohan Batch IIT Academy, 8th to 9th Moving Students Offline Batch, Olympiad Coaching for NTSE PRMO, Best Olympiad Classes for Class 9, Top Olympiad NTSE Prep Courses"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

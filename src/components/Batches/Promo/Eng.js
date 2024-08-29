@@ -14,7 +14,11 @@ const Eng = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <Layout title="Engineering Course-IIT Academy">
+    <Layout
+      title="Engineering Course-IIT Academy"
+      description="Explore IIT Academy's comprehensive engineering courses tailored to ace your engineering exams with expert guidance and unmatched preparation."
+      keywords="Engineering Courses IIT Academy, JEE Main Courses, JEE Advanced Courses"
+    >
       <div className="course3">
         <h1 style={{ marginBottom: "10px" }}>Engineering Batches</h1>
         <p>

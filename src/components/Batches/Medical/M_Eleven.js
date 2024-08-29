@@ -30,7 +30,11 @@ const M_Eleven = () => {
   });
   return (
     <>
-      <Layout title="Ananta(MA)-IIT Academy">
+      <Layout
+        title="Ananta(MA)-IIT Academy"
+        description="Ananta Course is the premier program for class 11 medical students, offering early NEET preparation with expert faculty, comprehensive study materials, and personalized support to ensure success in competitive exams."
+        keywords="Ananta, Ananta Batch NEET Preparation IIT Academy, 10th to 11th Moving NEET Preparation, NEET 2026 Preparation Courses, Top NEET Coaching for 11th Class Students, Medical Entrance Coaching"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

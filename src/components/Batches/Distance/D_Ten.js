@@ -30,7 +30,11 @@ const D_Ten = () => {
   });
   return (
     <>
-      <Layout title="Sankalp(DA)-IIT Academy">
+      <Layout
+        title="Sankalp(DA)-IIT Academy"
+        description="Vikash Batch is designed for class 10 students preparing for board exams and competitive exams, offering the best online course with comprehensive benefits and support."
+        keywords="Sankalp, Sankalp Batch IIT Academy, 9th to 10th Moving Students Boards Online, Online Class 10 Board Coaching, Best Online Board Exam Classes, Top 10th Board Online Courses"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

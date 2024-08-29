@@ -30,7 +30,11 @@ const B_PCB11 = () => {
   });
   return (
     <>
-      <Layout title="Daksh(BD)-IIT Academy">
+      <Layout
+        title="Daksh(BD)-IIT Academy"
+        description="Daksh batch is designed for Class 11 students preparing for PCB board exams, offering exceptional support and resources to build a strong foundation and excel in their studies."
+        keywords="Daksh, Daksh Board Exam Prep IIT Academy, Best Batch for class 11 Boards Exam, 10th to 11th Moving Students Board Batch, PCB Board Exam Coaching Class 11, Best Physics Chemistry Biology Preparation class 11 Boards, Top Board Classes for PCB class 11, Offline PCB Board Classes"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

@@ -30,7 +30,11 @@ const E_Thirteen = () => {
   }, []);
   return (
     <>
-      <Layout title="Eklavya(JE)-IIT Academy">
+      <Layout
+        title="Eklavya(JE)-IIT Academy"
+        description="Eklavya Course offers a specialized one-year program designed for 12th passout students, providing comprehensive coaching for JEE Advanced 2025 with expert faculty, computer-based tests, and extensive study material, ensuring focused preparation for achieving top ranks."
+        keywords="Eklavya ,Eklavya Batch JEE Main Advanced IIT Academy, 12th Passed Students JEE Preparation, Best JEE Coaching for Droppers, IIT JEE 2025 Advanced Coaching for Repeaters, JEE Preparation Courses for 12th Pass"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

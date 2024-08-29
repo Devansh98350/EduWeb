@@ -10,7 +10,11 @@ const Admission_enquiry = () => {
   }, []);
   return (
     <>
-      <Layout title="Admission Enquiry-IIT Academy">
+      <Layout
+        title="Admission Enquiry-IIT Academy"
+        description="Get personalized guidance and answers to all your queries about joining IIT Academy – your pathway to a brighter future!"
+        keywords="Contact IIT Academy, Admission Enquiry IIT Academy, Helpline IIT Academy"
+      >
         <div className="container">
           <div className="procedure-outer">
             <div className="procedure-wrapper">

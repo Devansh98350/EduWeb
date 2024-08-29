@@ -30,7 +30,11 @@ const F_Eight = () => {
   });
   return (
     <>
-      <Layout title="Abhyas(AH)-IIT Academy">
+      <Layout
+        title="Abhyas(AH)-IIT Academy"
+        description="Abhyas course is designed to offers a comprehensive curriculum for 8th grade students focusing on Olympiad preparation, board exams, and competitive test support"
+        keywords="Abhyas, Abhyas Batch Class 8 IIT Academy, 7th to 8th Moving Students Offline Batches, Olympiad NTSE Coaching Classes, Best Olympiad Classes for 8th, Top NTSE Olympiad Preparation"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

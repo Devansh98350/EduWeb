@@ -18,7 +18,11 @@ const Admission_process = () => {
   };
   return (
     <>
-      <Layout title=" Admission Process-IIT Academy">
+      <Layout
+        title=" Admission Process-IIT Academy"
+        description="Explore the simple and transparent admission process at IIT Academy, where your journey towards academic excellence begins with just a few easy steps."
+        keywords="Admission Process IIT Academy, How to take admission in IIT Academy, How to Enroll in IIT Academy Batches"
+      >
         <div className="container2">
           <div className="procedure-outer2">
             <div className="procedure-wrapper2" style={{ width: "100%" }}>

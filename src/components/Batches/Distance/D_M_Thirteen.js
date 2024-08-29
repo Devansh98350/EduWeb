@@ -30,7 +30,11 @@ const D_M_Thirteen = () => {
   });
   return (
     <>
-      <Layout title="Pragya(DY)-IIT Academy">
+      <Layout
+        title="Pragya(DY)-IIT Academy"
+        description="Pragya is designed for 12th passout students preparing for NEET offering top-notch online coaching at the comfort of their home with comprehensive benefits for effective preparation"
+        keywords="Pragya, Pragya Batch IIT Academy, Online Class for Repeaters NEET, 12th Passed Students NEET Preparation Online, Online NEET Coaching fot 12th passout, Best Online NEET Classes, Top NEET Prep Online 2025"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

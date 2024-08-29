@@ -30,7 +30,11 @@ const F_Six = () => {
   });
   return (
     <>
-      <Layout title="Aadhya(AA)-IIT Academy">
+      <Layout
+        title="Aadhya(AA)-IIT Academy"
+        description="Aadhya course is designed to build a solid foundation for class 6 students, featuring exceptional faculty and comprehensive support to excel in school and competitive exams."
+        keywords="Aadhya, Aadhya Batch Olympiad Prep IIT Academy, 5th to 6th Moving Students Olympiad, Olympiad Coaching Classes for Juniors, Best NTSE Preparation Classes, Top Olympiad Batches"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

@@ -30,7 +30,11 @@ const E_Twelve = () => {
   }, []);
   return (
     <>
-      <Layout title="Chaitanya(JC)-IIT Academy">
+      <Layout
+        title="Chaitanya(JC)-IIT Academy"
+        description="Chaitanya Course is designed for students moving to 12th class, offering comprehensive JEE (Main+Advanced) preparation, board exam support, and extensive practice with the best faculty and resources."
+        keywords="Chaitanya, Chaitanya Batch JEE Main Advanced IIT Academy, 11th to 12th Moving Students JEE Preparation, JEE (Main+Advanced)Coaching 2025, JEE Advanced Courses for 12th Students, Top IIT JEE Coaching Classes for class 12"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

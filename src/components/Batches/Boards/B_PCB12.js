@@ -30,7 +30,11 @@ const B_PCB12 = () => {
   });
   return (
     <>
-      <Layout title="Samridhi(BM)-IIT Academy">
+      <Layout
+        title="Samridhi(BM)-IIT Academy"
+        description="Samridhi batch is designed for Class 12 students preparing for PCB board exams, offering comprehensive support and resources to maximize their marks and excel in their studies."
+        keywords="Samridhi, Samridhi Batch IIT Academy, Best Batch for class 12 Boards Exam, 11th to 12th Moving Students PCB Board Batch, PCB Board Exam Coaching Class 12, Best Physics Chemistry Biology Preparation class 12 Boards, Top Board Classes for PCB class 12, Offline PCB Coaching Classes"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

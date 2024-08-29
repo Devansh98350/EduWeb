@@ -31,7 +31,11 @@ const E_Eleven = () => {
 
   return (
     <>
-      <Layout title="Arjuna(JA)-IIT Academy">
+      <Layout
+        title="Arjuna(JA)-IIT Academy"
+        description="Arjuna Course is the premier program for class 11 engineering students, offering early JEE (Main + Advanced) preparation with expert faculty, comprehensive study materials, and personalized support to ensure success in competitive exams."
+        keywords="Arjuna, Arjuna Batch IIT Academy, 11th Moving Students Online JEE Preparation, JEE 2026 Preparation, Best JEE Coaching for 10th to 11th, Top IIT JEE Classes 2026"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

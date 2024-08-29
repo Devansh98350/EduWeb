@@ -30,7 +30,11 @@ const F_Seven = () => {
   });
   return (
     <>
-      <Layout title="Abhinav(AB)-IIT Academy">
+      <Layout
+        title="Abhinav(AB)-IIT Academy"
+        description="Abhinav Course is designed for class 7 students to build a solid foundation with expert faculty, computer-based tests, and personalized support, ensuring a strong start to their academic journey."
+        keywords="Abhinav, Abhinav Batch Olympiad Preparation IIT Academy, 6th to 7th Moving Students Olympiad, Olympiad Prep for Class 7, Top Olympiad Coaching, Best Junior Olympiad Courses"
+      >
         <section>
           <div className="image" id="section">
             <img src={img} alt="Loading..." />

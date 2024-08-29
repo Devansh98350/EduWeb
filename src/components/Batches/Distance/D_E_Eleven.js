@@ -30,7 +30,11 @@ const D_E_Eleven = () => {
   });
   return (
     <>
-      <Layout title="Utkarsh(DK)-IIT Academy">
+      <Layout
+        title="Utkarsh(DK)-IIT Academy"
+        description="Utkarsh Course is designed for class 11 students preparing for JEE (Mains+Advanced) in online medium ensuring effective preparation at the comfort of their home."
+        keywords="Utkarsh, Utkarsh Batch IIT Academy, Online Class for class 11 JEE,  10th to 11th Moving Students JEE Preparation online, Online JEE Coaching for 11th, Best Online JEE Classes 2026, Top IIT JEE Prep Course Online"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

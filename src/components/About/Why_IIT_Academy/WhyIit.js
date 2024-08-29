@@ -136,7 +136,7 @@ function WhyIit() {
 
   return (
     <>
-      <Layout title="Why IIT Academy">
+      <Layout title="Why IIT Academy" keywords="Why IIT Academy">
         <div className="container-accordian">
           <h1>Why IIT Academy?</h1>
           <div className="questions">

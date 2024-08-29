@@ -14,7 +14,11 @@ const Med = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <Layout title="Medical Course-IIT Academy">
+    <Layout
+      title="Medical Course-IIT Academy"
+      description="Discover our comprehensive NEET preparation courses, meticulously designed to guide aspiring medical students towards success with expert faculty and top-notch resources."
+      keywords="Medical Courses IIT Academy, NEET Courses IIT Academy"
+    >
       <div className="course3">
         <h1 style={{ marginBottom: "10px" }}>Medical Batches</h1>
         <p>

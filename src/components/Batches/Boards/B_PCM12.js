@@ -30,7 +30,11 @@ const B_PCM12 = () => {
   });
   return (
     <>
-      <Layout title="Vikash(BV)-IIT Academy">
+      <Layout
+        title="Vikash(BV)-IIT Academy"
+        description="Vikash batch is designed for Class 12 students preparing for PCM board exams, offering comprehensive support and resources to maximize their marks and excel in their studies."
+        keywords="Vikash, Vikash Batch IIT Academy, Best Batch for class 11 Boards Exam, 11th to 12th Moving Students Board Batch, PCM Board Exam Coaching Class 12, Best Physics Chemistry Math Preparation class 12 Boards, Top Board Classes for PCM class 12"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

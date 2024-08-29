@@ -14,7 +14,11 @@ const Found = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <Layout title="Foundation Course-IIT Academy">
+    <Layout
+      title="Foundation Course-IIT Academy"
+      description="Explore IIT Academy's comprehensive foundation courses, designed to lay a strong educational base for future aspirants with detailed guidance and expert insights"
+      keywords="Foundation Courses IIT Academy, Class-6, Class-7,Class-8, Class-9, Class-10, NTSE , Olympiad, 10th Boards"
+    >
       <div className="course3">
         <h1 style={{ marginBottom: "10px" }}>Foundation Batches</h1>
         <p>

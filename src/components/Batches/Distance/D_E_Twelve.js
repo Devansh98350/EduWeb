@@ -30,7 +30,11 @@ const D_E_Twelve = () => {
   });
   return (
     <>
-      <Layout title="Lakshya(DL)-IIT Academy">
+      <Layout
+        title="Lakshya(DL)-IIT Academy"
+        description="Lakshya Course is designed for class 12 students preparing for JEE (Main+Advanced) and board exams in online mode with comprehensive support and guidance at the comfort of their home."
+        keywords="Lakshya, Lakshya Batch IIT Academy, Online Class for class 12 JEE, 11th to 12th Moving Students JEE Preparation online, Best Online JEE Classes, IIT JEE Online Coaching for class 12, Top JEE Prep Online Classes"
+      >
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

@@ -10,7 +10,11 @@ const Message = () => {
 
   return (
     <>
-      <Layout title="Welcome Message-IIT Academy">
+      <Layout
+        title="Welcome Message-IIT Academy"
+        description="Founder & CEO - IIT Academy"
+        keywords="CEO IIT Academy, Aditya Chaudhary, IIT Academy CEO, Founder IIT Academy, Director IIT Academy"
+      >
         <div className="container">
           <div
             className="column1"
