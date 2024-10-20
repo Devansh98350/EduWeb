@@ -608,7 +608,7 @@ const posts = [
       <p><strong>IIT Academy</strong> stands out as the premier institution for IIT JEE coaching in India, offering a comprehensive and innovative approach to prepare students for success. With our expert faculty, cutting-edge teaching methods, and personalized attention, we empower students to achieve their dreams and secure a bright future.</p>
       <p> At <strong>IIT Academy</strong>, we are committed to fostering a culture of excellence, and our results speak for themselves. Join us on this journey to success, and let’s unlock your potential together!</p>
         `,
-    link: "/blogs/best-iit-zee-coaching",
+    link: "/blogs/best-iit-jee-coaching",
   },
 ];
 
