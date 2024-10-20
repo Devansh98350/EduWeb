@@ -844,11 +844,10 @@ const Sidebar = () => {
                 </DropdownItem>
               </DropdownMenu>
             )}
-            <StyledNavLink
-              to="https://drive.google.com/file/d/1KEbgiKjF3quvUXWp8hM0KlDqeqZiL0LL/view?usp=sharing"
-              target="_blank"
-              exact
-            >
+
+            <DropdownToggle to="/blogs">Blogs</DropdownToggle>
+
+            <StyledNavLink to="https://drive.google.com/file/d/1KEbgiKjF3quvUXWp8hM0KlDqeqZiL0LL/view?usp=sharing">
               Brochure
             </StyledNavLink>
           </div>

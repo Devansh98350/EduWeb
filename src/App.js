@@ -54,7 +54,8 @@ import Admissionform from "./components/Forms/Admission_Form/Admission";
 import Career from "./components/Contact_Us/Careers/Career";
 import Internship from "./components/Contact_Us/Internship/Internship";
 import Brochure from "./components/Contact_Us/Brochure/Brochure.js";
-import Blogmain from "./components/Contact_Us/Blogs/Blog_main";
+import Blog from "./components/Contact_Us/Blogs/Blog";
+import FullBlog from "./components/Contact_Us/Blogs/Separate/FullBlog";
 import PagenotFound from "./components/PagenotFound";
 
 function App() {
@@ -113,7 +114,8 @@ function App() {
           <Route path="/careers" element={<Career />} />
           <Route path="/internship" element={<Internship />} />
           <Route path="/brochure" element={<Brochure />} />
-          <Route path="/blogs" element={<Blogmain />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/blogs/:link" element={<FullBlog />} />
           <Route path="*" element={<PagenotFound />} />
         </Routes>
       </Router>

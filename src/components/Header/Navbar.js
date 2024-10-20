@@ -1039,6 +1039,15 @@ const Navbar = (props) => {
                           </NavLink>
                         </li>
                         <li>
+                          <NavLink to="/blogs" className="dropdown-item">
+                            <i
+                              className="fas fa-angle-double-right"
+                              style={{ color: "#f39c12", marginRight: "5px" }}
+                            ></i>
+                            Blogs
+                          </NavLink>
+                        </li>
+                        <li>
                           <div className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
@@ -1410,6 +1419,15 @@ const Navbar = (props) => {
                               style={{ color: "#f39c12", marginRight: "5px" }}
                             ></i>
                             Internship
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/blogs" className="dropdown-item">
+                            <i
+                              className="fas fa-angle-double-right"
+                              style={{ color: "#f39c12", marginRight: "5px" }}
+                            ></i>
+                            Blogs
                           </NavLink>
                         </li>
                         <li>
