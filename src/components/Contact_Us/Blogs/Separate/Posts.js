@@ -45,27 +45,23 @@ const posts = [
             <li>And a few simple tips.</li>
      
         </section>
-        <section>
           <h3>Start Early: Don’t Wait for the Last Minute</h3>
           <p>Starting your preparation early is essential. It keeps you ahead, builds your confidence, and reduces stress. Imagine having an entire year to learn and practice instead of just a few months. Begin early, and you’ll be amazed at how much you can achieve! Join <strong>IIT Academy </strong> for a great experience. Let’s crack it!</p>
   
           <h3>Set Goals: Break Them Down into Smaller Targets</h3>
           <p>Setting goals is vital, but breaking them down into smaller, achievable targets is equally important. This keeps you focused, motivated, and helps you track your progress. For example, if you want to master a subject, divide it into smaller topics and tackle each one step by step. At <strong> IIT Academy </strong>, our teachers are always here to guide you through this process.</p>
-        </section>
-        <section>
+      
           <h3>Practice Consistently: Build Confidence and Strength</h3>
           <p>Regular practice is key to success. It builds confidence, helps you improve weak areas, and develops problem-solving skills. Try to practice a little every day. You’ll be surprised at how much you can improve! <strong>IIT Academy </strong>provides regular mock tests and quizzes to keep you on track.</p>
-        </section>
-        <section>
+       
           <h3>Analyze and Improve: Review and Refine Your Strategy</h3>
           <p>Reviewing your performance is crucial. It helps you identify areas for improvement, adjust your strategy, and stay on course. Don’t be afraid to ask for help, seek feedback, and learn from your mistakes. <strong>IIT Academy </strong>teachers are always available to assist you.</p>
-        </section>     
-        <section> 
+        
             <h3>Stay Positive: Believe in Yourself and Stay Motivated</h3>
             <p>Believing in yourself is half the battle! Stay positive, even when faced with challenges. Remind yourself of your strengths, celebrate your achievements, and keep moving forward.</p>
             <p>Success in exams requires a mix of hard work, smart work, and the right mindset. By following these tips, you’ll be well on your way to excelling in your exams!</p>
             <p>At <strong>IIT Academy</strong>, we are dedicated to helping students unlock their potential. Our expert faculty, comprehensive curriculum, and supportive environment are designed to help you succeed. Stay tuned for more tips, guidance, and resources to help you achieve your goals!</p>
-        </section>
+        
         `,
     link: "/blogs/ace-your-exams",
   },
