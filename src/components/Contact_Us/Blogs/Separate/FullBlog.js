@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Layout from "./../../../Layout";
 import { FaRegKeyboard } from "react-icons/fa6";
 import { FaHeadphones } from "react-icons/fa";
@@ -73,14 +74,45 @@ const FullBlog = () => {
             from the best teachers of India
           </p>
           <div className="button-container">
-            <button className="btn">
-              <FaRegKeyboard className="icon" />
-              Enroll Now
-            </button>
-            <button className="btn">
-              <FaHeadphones className="icon" />
-              Contact Us
-            </button>
+            <Link to="/Admission-form">
+              <button className="btn">
+                <FaRegKeyboard className="icon" />
+                Enroll Now
+              </button>
+            </Link>
+            <a href="tel:9205704041">
+              <button className="btn">
+                <FaHeadphones className="icon" />
+                Contact Us
+              </button>
+            </a>
+          </div>
+        </div>
+        <div className="aders">
+          <p>
+            <i
+              className="fas fa-angle-double-right"
+              style={{
+                color: "#f39c12",
+                marginRight: "5px",
+              }}
+            ></i>{" "}
+            Explore More about different batches offered by IIT Academy.
+          </p>
+          <div className="all_batches">
+            {" "}
+            <Link to="/engineering-courses">
+              <button className="details4-btn">Engineering Batches</button>
+            </Link>
+            <Link to="/medical-courses">
+              <button className="details4-btn">Medical Batches</button>
+            </Link>
+            <Link to="/foundation-courses">
+              <button className="details4-btn">Foundation Batches</button>
+            </Link>
+            <Link to=" ">
+              <button className="details4-btn">Boards Batches</button>
+            </Link>
           </div>
         </div>
       </>

@@ -1,4 +1,4 @@
-import demoBlogImage from "../../../../assets/home_page/demo-blog-1.jpg";
+import demoBlogImage from "../../../../assets/home_page/main.png";
 
 // const todayDate = new Date(new Date().setDate(new Date().getDate()))
 //   .toLocaleDateString("en-GB")
