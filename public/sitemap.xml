@@ -277,12 +277,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.iitacademy.in/blogs/effective-time-management-tips-gtse</loc>
-    <lastmod>2024-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://www.iitacademy.in/blogs/medical-exam-preparations</loc>
     <lastmod>2024-10-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -300,11 +294,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
-  <url>
-    <loc></loc>
-    <lastmod>2024-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
 </urlset>
