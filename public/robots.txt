@@ -1,3 +1,16 @@
-# https://www.robotstxt.org/robotstxt.html
+# Allow all search engines to access all content
 User-agent: *
 Disallow:
+
+# Sitemap to help search engines index pages more effectively
+Sitemap: https://www.iitacademy.in/sitemap.xml
+
+# Allow specific content types (useful if your site has images, videos, etc.)
+User-agent: Googlebot-Image
+Allow: /*
+
+User-agent: Googlebot-Video
+Allow: /*
+
+User-agent: Googlebot-News
+Allow: /
