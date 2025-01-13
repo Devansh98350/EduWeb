@@ -81,7 +81,7 @@ const StyledDiv10 = styled.div`
       padding-top: 50 px;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
     border-bottom: 4px solid #F39C12;
     /* transition: background-color 0.1s, transform 0.1s; */
   }
@@ -706,13 +706,17 @@ const Navbar = (props) => {
   return (
     <StyledDiv10>
       <div className="row1" style={{ display: "row" }}>
-        <div className="container-fluid">
-          <div className="header-col1">
+        <div className="bg-white flex justify-between">
+          <div className="flex items-center">
             <a className="navbar-brand" href="/">
-              <img src={mainlogo} alt="" />
+              <img
+                src={mainlogo}
+                alt=""
+                style={{ height: "75px", width: "auto", marginLeft: "1vw" }}
+              />
             </a>
           </div>
-          <div className="header-col2">
+          <div className="flex items-center">
             {/*<div className="header-col3">
               <NavLink to="/Admission-form" className="header-col12">
                 <img src={admission} alt="" />
@@ -742,16 +746,15 @@ const Navbar = (props) => {
                 className="container-fluid1"
                 // style={{ backgroundColor: "white " }}
               >
-                <div
-                  className="navbarTogglerDemo01"
-                  class="collapse navbar-collapse"
-                >
+                <div className="navbarTogglerDemo01" class="navbar-collapse">
                   <ul
                     className="navbar-nav mx-auto mb-2 mb-lg-0 "
                     style={{
                       fontSize: "20px",
                       fontFamily: "comforta",
                       fontWeight: "bold",
+                      color: "black",
+                      zIndex: "1000",
                     }}
                   >
                     <li
@@ -825,7 +828,7 @@ const Navbar = (props) => {
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink to="/our-faculty" className="dropdown-item">
+                          <NavLink to=" " className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -846,7 +849,7 @@ const Navbar = (props) => {
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink to="/gallery" className="dropdown-item">
+                          <NavLink to=" " className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1085,10 +1088,7 @@ const Navbar = (props) => {
                 className="container-fluid"
                 style={{ backgroundColor: "#F39C12" }}
               >
-                <div
-                  className="navbarTogglerDemo01"
-                  class="collapse navbar-collapse"
-                >
+                <div className="navbarTogglerDemo01" class=" navbar-collapse">
                   <ul
                     className="navbar-nav mx-auto mb-2 mb-lg-0 "
                     style={{
@@ -1127,6 +1127,7 @@ const Navbar = (props) => {
                           marginLeft: "25px",
                           marginRight: "25px",
                           color: "White",
+                          zIndex: "1000",
                         }}
                         aria-expanded="false"
                       >
@@ -1165,7 +1166,7 @@ const Navbar = (props) => {
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink to="/our-faculty" className="dropdown-item">
+                          <NavLink to=" " className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1186,7 +1187,7 @@ const Navbar = (props) => {
                           </NavLink>
                         </li>
                         <li>
-                          <NavLink to="/gallery" className="dropdown-item">
+                          <NavLink to=" " className="dropdown-item">
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}

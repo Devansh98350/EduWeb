@@ -52,6 +52,8 @@ import FacultyLogin from "./components/Login/Faculty/Faculty_Login";
 import Admissionform from "./components/Forms/Admission_Form/Admission";
 // import Contact from "./components/Contact_Us/ContactUs/Contact";
 import Career from "./components/Contact_Us/Careers/Career";
+import JobListing from "./components/Contact_Us/Careers/components/Listing/JobListing";
+import JobApplication from "./components/Contact_Us/Careers/components/Apply/JobApplication";
 import Internship from "./components/Contact_Us/Internship/Internship";
 import Brochure from "./components/Contact_Us/Brochure/Brochure.js";
 import Blog from "./components/Contact_Us/Blogs/Blog";
@@ -112,6 +114,8 @@ function App() {
           <Route path="/admission-form" element={<Admissionform />} />
           {/*<Route path="/contact-us" element={<Contact />} />*/}
           <Route path="/careers" element={<Career />} />
+          <Route path="/job-description/:domain" element={<JobListing />} />
+          <Route path="/job-application/:domain" element={<JobApplication />} />
           <Route path="/internship" element={<Internship />} />
           <Route path="/brochure" element={<Brochure />} />
           <Route path="/blogs" element={<Blog />} />

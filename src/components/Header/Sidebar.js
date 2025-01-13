@@ -291,7 +291,7 @@ const Sidebar = () => {
                   </StyledNavLink>
                 </DropdownItem>
                 <DropdownItem>
-                  <StyledNavLink to="/our-faculty" className="dropdown-item">
+                  <StyledNavLink to=" " className="dropdown-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
@@ -312,7 +312,7 @@ const Sidebar = () => {
                   </StyledNavLink>
                 </DropdownItem>
                 <DropdownItem>
-                  <StyledNavLink to="/gallery" className="dropdown-item">
+                  <StyledNavLink to=" " className="dropdown-item">
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}

@@ -26,7 +26,16 @@ function Testimonials() {
       >
         <SwiperSlide className="swiper-slide2">
           <div className="testimonial">
-            <img src={first} alt="Loading.." className="testimonial-img" />
+            <img
+              src={first}
+              alt="Loading.."
+              className="testimonial-img"
+              style={{
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            />
             <p className="testimonial1-para">
               " Choosing IIT Academy for my NEET preparation was a wise
               decision. The teachers are not only experts in their fields but
@@ -39,7 +48,16 @@ function Testimonials() {
         </SwiperSlide>
         <SwiperSlide className="swiper-slide2">
           <div className="testimonial">
-            <img src={third} alt="Loading.." className="testimonial-img" />
+            <img
+              src={third}
+              alt="Loading.."
+              className="testimonial-img"
+              style={{
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            />
             <p className="testimonial1-para">
               " The faculty at IIT Academy are highly experienced and passionate
               about teaching. They make complex concepts easy to understand and
@@ -51,7 +69,16 @@ function Testimonials() {
         </SwiperSlide>
         <SwiperSlide className="swiper-slide2">
           <div className="testimonial">
-            <img src={zero} alt="Loading.." className="testimonial-img" />
+            <img
+              src={zero}
+              alt="Loading.."
+              className="testimonial-img"
+              style={{
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            />
             <p className="testimonial1-para">
               " As a JEE aspirant, I was looking for a course that could provide
               me with proper guidance and support throughout my preparation
@@ -64,7 +91,16 @@ function Testimonials() {
         </SwiperSlide>
         <SwiperSlide className="swiper-slide2">
           <div className="testimonial">
-            <img src={second} alt="Loading.." className="testimonial-img" />
+            <img
+              src={second}
+              alt="Loading.."
+              className="testimonial-img"
+              style={{
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            />
             <p className="testimonial1-para">
               " IIT Academy's NEET program exceeded my expectations. The faculty
               members are passionate about teaching, and the emphasis on

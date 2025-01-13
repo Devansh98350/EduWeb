@@ -8,7 +8,7 @@
     "@emotion/styled": "^11.13.0",
     "@fortawesome/fontawesome-free": "^6.4.2",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@heroicons/react": "^2.1.1",
@@ -46,6 +46,7 @@
     "serve": "^14.2.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8",
+    "sweetalert2": "^11.15.3",
     "swiper": "^11.0.5",
     "web-vitals": "^2.1.4"
   },
@@ -75,6 +76,9 @@
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.6",
-    "postcss-nesting": "^12.0.2"
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-nesting": "^12.0.2",
+    "tailwindcss": "^3.4.15"
   }
 }

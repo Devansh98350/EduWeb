@@ -1,17 +1,52 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../../Layout";
-import Career from "./../../Forms/Career_Form/Career";
+import academicJobs from "./components/Academic";
+import nonAcademicJobs from "./components/NonAcademic";
+import JobFilter from "./components/JobFilter";
 import "./Career.css";
 
 const Careers = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [showForm, setShowForm] = useState(false);
-
-  const handleApplyNowClick = () => {
-    setShowForm(true);
+  const [jobType, setJobType] = useState("ACADEMIC");
+  const [division, setDivision] = useState("ALL");
+  const [subject, setSubject] = useState("ALL");
+  const [filteredJobs, setFilteredJobs] = useState([]);
+  useEffect(() => {
+    const initialJobs = jobType === "ACADEMIC" ? academicJobs : nonAcademicJobs;
+    setFilteredJobs(applyFilters(initialJobs));
+  }, [jobType]);
+  const applyFilters = (jobs) => {
+    return jobs.filter((job) => {
+      return (
+        (jobType === "ALL" || job.type === jobType) &&
+        (division === "ALL" || job.division === division) &&
+        (subject === "ALL" || job.subject === subject)
+      );
+    });
   };
+  const handleFilterChange = (e) => {
+    const { name, value } = e.target;
+    switch (name) {
+      case "jobType":
+        setJobType(value);
+        break;
+      case "division":
+        setDivision(value);
+        break;
+      case "subject":
+        setSubject(value);
+        break;
+      default:
+        break;
+    }
+  };
+  const handleSearch = () => {
+    const jobs = jobType === "ACADEMIC" ? academicJobs : nonAcademicJobs;
+    setFilteredJobs(applyFilters(jobs));
+  };
+  const jobsToDisplay = jobType === "ACADEMIC" ? academicJobs : nonAcademicJobs;
   return (
     <div>
       <Layout
@@ -60,17 +95,34 @@ const Careers = () => {
             self-driven individual will bring in extraordinary results.
           </p>
           <p className="career-heading">Current Openings</p>
-          <p className="career-description">
-            i) Faculty for Foundation Division (Maths, Science, Social Science
-            and English)
-          </p>
-          <p className="career-description">
-            ii) Business Development Executive
-          </p>
-          <button className="apply1-now-button" onClick={handleApplyNowClick}>
-            Apply Now
-          </button>
-          {showForm && <Career />}
+          <div className="w-[90%] mx-auto">
+            <JobFilter
+              jobType={jobType}
+              Division={division}
+              Subject={subject}
+              onChange={handleFilterChange}
+              onSearch={handleSearch}
+            />
+
+            {/*} <h1 className="mb-6 text-3xl font-bold text-center">
+          Job Openings for{" "}
+          {jobType === "ACADEMIC" ? "Academic" : "Non-Academic"} Jobs
+        </h1>
+        <div
+          id="job-listings"
+          className="flex flex-col items-center justify-center w-full space-y-4"
+        >
+          {filteredJobs.map((job) => (
+            <SubjectCard
+              key={job.id}
+              title={job.title}
+              division={job.Division}
+              position={job.Position}
+            />
+          ))}
+        </div>*/}
+          </div>
+          ;
           <p className="career-description" style={{ fontSize: "1.2em" }}>
             For any issues, mail us at{" "}
             <a href="mailto:info@iitacademy.in">info@iitacademy.in</a> or call
@@ -83,3 +135,5 @@ const Careers = () => {
 };
 
 export default Careers;
+
+// import SubjectCard from "./components/JobCard";
