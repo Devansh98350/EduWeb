@@ -80,6 +80,24 @@ function Faq() {
       title: "Q-8:- Can I prepare for JEE/NEET from my home?",
       content: `Yes, you can prepare for JEE/NEET from your home with IIT Academy easily. With the help of digital technology & advance animation , you will be able to visualize and understand even toughest concepts easily at the comfort of your home.`,
     },
+    {
+      id: 9,
+      title:
+        "Q-9:- Does IIT Academy run courses for examinations like State level Engineering and Medical Exams and BITSAT?",
+      content: `Yes, IIT Academy runs courses for examinations like State-level Engineering and Medical Exams and BITSAT. While our primary focus remains on preparing students for IIT-JEE/NEET, we also provide dedicated programs for these examinations. Our comprehensive teaching methodology ensures that students are well-prepared to excel in exams such as IIT-JEE (Main + Advanced), BITSAT, Bihar Combined Exams, WBJEE, Comedk, and other state-level engineering and medical entrance exams.`,
+    },
+    {
+      id: 10,
+      title:
+        "Q-10:- Do I have to simultaneously enroll in any other institute which prepares me for my CLASS XII board examinations?",
+      content: `No, we strictly advice all our prospective students not to enroll at any other institute for any purpose whatsoever. You will simply overload yourself with classes leaving no time for self studies and extra-curriculars. Over the years we have seen students who did not pay heed to our advice ends up confused and not performing to their optimum level.`,
+    },
+    {
+      id: 11,
+      title:
+        "Q-11:- What about English-Core paper for which I'll be appearing in my BOARDS? Does IIT Academy prepare me for that as well?",
+      content: `Yes, IIT Academy provides preparation support for the English-Core paper for your BOARDS as well. Along with our focus on competitive exams like IIT-JEE/NEET, we understand the importance of excelling in board examinations. Our experienced faculty ensures that students are well-prepared for their English-Core syllabus through detailed guidance, practice sessions, and mock tests, helping you achieve excellent results in your board exams.`,
+    },
   ];
 
   return (

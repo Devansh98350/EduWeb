@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Layout from "../../Layout";
+import Layout from "../../../Layout";
 import "./PrivacyPolicy.css";
 
 const PrivacyPolicy = () => {

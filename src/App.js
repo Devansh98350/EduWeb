@@ -44,7 +44,10 @@ import Feestructure from "./components/Admission/Fee_structure/Feestructure";
 import AdmissionProcess from "./components/Admission/Process/Admission_process";
 // Pay Fee Online
 import AdmissionEnquiry from "./components/Admission/Enquiry/Admission_enquiry";
-import PrivacyPolicy from "./components/Admission/Privacy_policy/PrivacyPolicy";
+import PrivacyPolicy from "./components/Admission/Quick_links/Privacy_policy/PrivacyPolicy";
+import TermsAndCondition from "./components/Admission/Quick_links/TermsOfServices/TermsOfServices";
+import RefundCancellation from "./components/Admission/Quick_links/RefundCancellation/RefundCancellation";
+import FeedbackGrievances from "./components/Admission/Quick_links/Feedback/Feedback";
 /*Login*/
 import StudentLogin from "./components/Login/Student/Student_Login";
 import FacultyLogin from "./components/Login/Faculty/Faculty_Login";
@@ -107,6 +110,9 @@ function App() {
           <Route path="/admission-process" element={<AdmissionProcess />} />
           <Route path="/admission-enquiry" element={<AdmissionEnquiry />} />
           <Route path="/our-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
+          <Route path="/refund-rules" element={<RefundCancellation />} />
+          <Route path="/feedback-grievances" element={<FeedbackGrievances />} />
           {/* Login Section */}
           <Route path="/students-login" element={<StudentLogin />} />
           <Route path="/faculty-login" element={<FacultyLogin />} />
