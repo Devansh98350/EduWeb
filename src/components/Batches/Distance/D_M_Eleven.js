@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const D_M_Eleven = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const D_M_Eleven = () => {
         description="Yukti Course is the premier program for class 11 medical students, offering early NEET preparation with expert faculty, comprehensive study materials, and personalized support to ensure success in competitive exams."
         keywords="Yukti , Yukti Batch IIT Academy, Online Class for class 11 NEET, 10th to 11th Moving Students NEET online, Online Batches for NEET Preparation, Online NEET Classes for 11th, Best Medical Coaching Online, Top NEET Online Prep Courses"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

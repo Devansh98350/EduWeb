@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const F_Seven = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const F_Seven = () => {
         description="Abhinav Course is designed for class 7 students to build a solid foundation with expert faculty, computer-based tests, and personalized support, ensuring a strong start to their academic journey."
         keywords="Abhinav, Abhinav Batch Olympiad Preparation IIT Academy, 6th to 7th Moving Students Olympiad, Olympiad Prep for Class 7, Top Olympiad Coaching, Best Junior Olympiad Courses"
       >
+        <Breadcrumbs />
         <section>
           <div className="image" id="section">
             <img src={img} alt="Loading..." />

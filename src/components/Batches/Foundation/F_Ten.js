@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const F_Ten = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const F_Ten = () => {
         description="Atal Course is designed specifically for Class 10 students to excel in board exams and competitive tests with top-tier faculty, tailored support, and strategic preparation."
         keywords="Atal, Atal Batch Board Exam Preparation IIT Academy, 9th 10th Moving Students Boards, Best 10th Board Exam Coaching, CBSE Board Exam Prep Class 10, Top 10th Board Coaching"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

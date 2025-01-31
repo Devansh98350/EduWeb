@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const D_M_Twelve = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const D_M_Twelve = () => {
         description="Sarthak Course is designed for class 12 students preparing for NEET and board exams in online mode with comprehensive support and guidance at the comfort of their home."
         keywords="Sarthak, Sarthak Batch IIT Academy, Online Class for class 12 NEET, 11th to 12th Moving Students NEET Preparation online, Best Online NEET Classes, NEET Online Coaching for class 12, Top NEET Prep Online Classes"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

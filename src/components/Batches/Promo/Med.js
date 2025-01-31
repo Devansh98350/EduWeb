@@ -8,6 +8,7 @@ import swadhyaya from "../../../assets/popular_courses/Swadhyaya.webp";
 import yukti from "../../../assets/popular_courses/Yukti.webp";
 import sarthak from "../../../assets/popular_courses/Sarthak.webp";
 import pragya from "../../../assets/popular_courses/Pragya.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const Med = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const Med = () => {
       description="Discover our comprehensive NEET preparation courses, meticulously designed to guide aspiring medical students towards success with expert faculty and top-notch resources."
       keywords="Medical Courses IIT Academy, NEET Courses IIT Academy"
     >
+      <Breadcrumbs />
       <div className="course3">
         <h1 style={{ marginBottom: "10px" }}>Medical Batches</h1>
         <p>
@@ -42,7 +44,7 @@ const Med = () => {
               <p className="details2-desc1">
                 (For students moving from class 10 to 11)
               </p>
-              <Link to="/medical-class-11">
+              <Link to="/medical-courses/medical-class-11">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -54,7 +56,7 @@ const Med = () => {
               <p className="details2-desc1">
                 (For students moving from class 11 to 12)
               </p>
-              <Link to="/medical-class-12">
+              <Link to="/medical-courses/medical-class-12">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -64,7 +66,7 @@ const Med = () => {
             <div className="details2-btns">
               <p className="details2-desc">SWADHYAYA Course</p>
               <p className="details2-desc1">(For 12th passed students)</p>
-              <Link to="/medical-class-13">
+              <Link to="/medical-courses/medical-class-13">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -94,7 +96,7 @@ const Med = () => {
               <p className="details2-desc1">
                 (For students moving from class 10 to 11)
               </p>
-              <Link to="/distance-class-11-medical">
+              <Link to="/medical-courses/distance-class-11">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -106,7 +108,7 @@ const Med = () => {
               <p className="details2-desc1">
                 (For students moving from class 11 to 12)
               </p>
-              <Link to="/distance-class-12-medical">
+              <Link to="/medical-courses/distance-class-12">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -116,7 +118,7 @@ const Med = () => {
             <div className="details2-btns">
               <p className="details2-desc">PRAGYA Course</p>
               <p className="details2-desc1">(For 12th passed students)</p>
-              <Link to="/distance-class-13-medical">
+              <Link to="/medical-courses/distance-class-13">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>

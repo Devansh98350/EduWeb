@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const F_Eight = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const F_Eight = () => {
         description="Abhyas course is designed to offers a comprehensive curriculum for 8th grade students focusing on Olympiad preparation, board exams, and competitive test support"
         keywords="Abhyas, Abhyas Batch Class 8 IIT Academy, 7th to 8th Moving Students Offline Batches, Olympiad NTSE Coaching Classes, Best Olympiad Classes for 8th, Top NTSE Olympiad Preparation"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

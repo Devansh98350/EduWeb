@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const M_Thirteen = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const M_Thirteen = () => {
         description="Swadhyaya Course offers a specialized one-year program designed for 12th passout students, providing comprehensive coaching for NEET 2025 with expert faculty, computer-based tests, and extensive study material, ensuring focused preparation for achieving top ranks."
         keywords="Swadhyaya, Swadhyaya Batch NEET Preparation IIT Academy, 12th Passed Students NEET Preparation, NEET Coaching for 12th Passout Students, Best Offline NEET Classes for 12th Passout Students, Top Medical Exam Prep Courses"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

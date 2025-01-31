@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const E_Twelve = () => {
   document.addEventListener("contextmenu", function (event) {
@@ -35,6 +36,7 @@ const E_Twelve = () => {
         description="Chaitanya Course is designed for students moving to 12th class, offering comprehensive JEE (Main+Advanced) preparation, board exam support, and extensive practice with the best faculty and resources."
         keywords="Chaitanya, Chaitanya Batch JEE Main Advanced IIT Academy, 11th to 12th Moving Students JEE Preparation, JEE (Main+Advanced)Coaching 2025, JEE Advanced Courses for 12th Students, Top IIT JEE Coaching Classes for class 12"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

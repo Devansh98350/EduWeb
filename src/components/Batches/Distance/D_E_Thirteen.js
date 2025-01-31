@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const D_E_Thirteen = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const D_E_Thirteen = () => {
         description="Abhiyaan is designed for 12th passout students preparing for JEE (Mains + Advanced), offering top-notch online coaching at the comfort of their home with comprehensive benefits for effective preparation"
         keywords="Abhiyaan, Abhiyaan Batch IIT Academy, Online Class for Repeaters JEE(Main+Advanced), 12th Passed Students JEE Preparation Online, Online JEE Coaching fot 12th passout, Best Online IIT JEE Classes, Top JEE Prep Online 2025"
       >
+        <Breadcrumbs />
         <section>
           <div className="image">
             <img src={img} alt="Loading..." />

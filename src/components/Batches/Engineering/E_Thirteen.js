@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const E_Thirteen = () => {
   document.addEventListener("contextmenu", function (event) {
@@ -35,6 +36,7 @@ const E_Thirteen = () => {
         description="Eklavya Course offers a specialized one-year program designed for 12th passout students, providing comprehensive coaching for JEE Advanced 2025 with expert faculty, computer-based tests, and extensive study material, ensuring focused preparation for achieving top ranks."
         keywords="Eklavya ,Eklavya Batch JEE Main Advanced IIT Academy, 12th Passed Students JEE Preparation, Best JEE Coaching for Droppers, IIT JEE 2025 Advanced Coaching for Repeaters, JEE Preparation Courses for 12th Pass"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

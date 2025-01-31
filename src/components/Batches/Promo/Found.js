@@ -8,6 +8,7 @@ import abhyas from "../../../assets/popular_courses/Abhyas.webp";
 import abhinav from "../../../assets/popular_courses/Abhinav.webp";
 import aadhya from "../../../assets/popular_courses/Aadhya.webp";
 import sankalp from "../../../assets/popular_courses/Sankalp.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const Found = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const Found = () => {
       description="Explore IIT Academy's comprehensive foundation courses, designed to lay a strong educational base for future aspirants with detailed guidance and expert insights"
       keywords="Foundation Courses IIT Academy, Class-6, Class-7,Class-8, Class-9, Class-10, NTSE , Olympiad, 10th Boards"
     >
+      <Breadcrumbs />
       <div className="course3">
         <h1 style={{ marginBottom: "10px" }}>Foundation Batches</h1>
         <p>
@@ -41,7 +43,7 @@ const Found = () => {
               <p className="details2-desc1">
                 (For students moving from class 9 to 10)
               </p>
-              <Link to="/foundation-class-10">
+              <Link to="/foundation-courses/class-10">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -53,7 +55,7 @@ const Found = () => {
               <p className="details2-desc1">
                 (For students moving from class 8 to 9)
               </p>
-              <Link to="/foundation-class-09">
+              <Link to="/foundation-courses/class-09">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -65,7 +67,7 @@ const Found = () => {
               <p className="details2-desc1">
                 (For students moving from class 7 to 8)
               </p>
-              <Link to="/foundation-class-08">
+              <Link to="/foundation-courses/class-08">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -80,7 +82,7 @@ const Found = () => {
               <p className="details2-desc1">
                 (For students moving from class 6 to 7)
               </p>
-              <Link to="/foundation-class-07">
+              <Link to="/foundation-courses/class-07">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -92,7 +94,7 @@ const Found = () => {
               <p className="details2-desc1">
                 (For students moving from class 5 to 6)
               </p>
-              <Link to="/foundation-class-06">
+              <Link to="/foundation-courses/class-06">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -122,7 +124,7 @@ const Found = () => {
               <p className="details2-desc1">
                 (For students moving from class 9 to 10)
               </p>
-              <Link to="/distance-class-10">
+              <Link to="/foundation-courses/distance-class-10">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>

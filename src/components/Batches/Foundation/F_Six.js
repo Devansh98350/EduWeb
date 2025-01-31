@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const F_Six = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const F_Six = () => {
         description="Aadhya course is designed to build a solid foundation for class 6 students, featuring exceptional faculty and comprehensive support to excel in school and competitive exams."
         keywords="Aadhya, Aadhya Batch Olympiad Prep IIT Academy, 5th to 6th Moving Students Olympiad, Olympiad Coaching Classes for Juniors, Best NTSE Preparation Classes, Top Olympiad Batches"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

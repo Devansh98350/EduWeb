@@ -404,7 +404,7 @@ const Sidebar = () => {
                   <DropdownMenu>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/engineering-class-11"
+                        to="/engineering-courses/engineering-class-11"
                         className="dropdown-item"
                       >
                         <i
@@ -416,7 +416,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/engineering-class-12"
+                        to="/engineering-courses/engineering-class-12"
                         className="dropdown-item"
                       >
                         <i
@@ -428,7 +428,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/engineering-class-13"
+                        to="/engineering-courses/engineering-class-13"
                         className="dropdown-item"
                       >
                         <i
@@ -451,7 +451,7 @@ const Sidebar = () => {
                   <DropdownMenu>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/medical-class-11"
+                        to="/medical-courses/medical-class-11"
                         className="dropdown-item"
                       >
                         <i
@@ -463,7 +463,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/medical-class-12"
+                        to="/medical-courses/medical-class-12"
                         className="dropdown-item"
                       >
                         <i
@@ -475,7 +475,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/medical-class-13"
+                        to="/medical-courses/medical-class-13"
                         className="dropdown-item"
                       >
                         <i
@@ -498,7 +498,7 @@ const Sidebar = () => {
                   <DropdownMenu>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/foundation-class-06"
+                        to="/foundation-courses/class-06"
                         className="dropdown-item"
                       >
                         <i
@@ -510,7 +510,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/foundation-class-07"
+                        to="/foundation-courses/class-07"
                         className="dropdown-item"
                       >
                         <i
@@ -522,7 +522,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/foundation-class-08"
+                        to="/foundation-courses/class-08"
                         className="dropdown-item"
                       >
                         <i
@@ -534,7 +534,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/foundation-class-09"
+                        to="/foundation-courses/class-09"
                         className="dropdown-item"
                       >
                         <i
@@ -546,7 +546,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/foundation-class-10"
+                        to="/foundation-courses/class-10"
                         className="dropdown-item"
                       >
                         <i
@@ -569,7 +569,7 @@ const Sidebar = () => {
                   <DropdownMenu>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/distance-class-10"
+                        to="/foundation-courses/distance-class-10"
                         className="dropdown-item"
                       >
                         <i
@@ -581,7 +581,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/distance-class-11-engineering"
+                        to="/engineering-courses/distance-class-11"
                         className="dropdown-item"
                       >
                         <i
@@ -593,7 +593,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/distance-class-12-engineering"
+                        to="/engineering-courses/distance-class-12"
                         className="dropdown-item"
                       >
                         <i
@@ -605,7 +605,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/distance-class-13-engineering"
+                        to="/engineering-courses/distance-class-13"
                         className="dropdown-item"
                       >
                         <i
@@ -617,7 +617,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/distance-class-11-medical"
+                        to="/medical-courses/distance-class-11"
                         className="dropdown-item"
                       >
                         <i
@@ -629,7 +629,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/distance-class-12-medical"
+                        to="/medical-courses/distance-class-12"
                         className="dropdown-item"
                       >
                         <i
@@ -641,7 +641,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/distance-class-13-medical"
+                        to="/medical-courses/distance-class-13"
                         className="dropdown-item"
                       >
                         <i

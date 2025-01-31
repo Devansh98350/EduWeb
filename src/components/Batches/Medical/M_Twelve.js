@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const M_Twelve = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const M_Twelve = () => {
         description="Sudarshan Course is designed for students moving to 12th class, offering comprehensive NEET preparation, board exam support, and extensive practice with the best faculty and resources."
         keywords="Sudarshan, Sudarshan Batch NEET Preparation IIT Academy, 11th to 12th Moving Students NEET Preparation, Best NEET Coaching Classes for class 12, NEET 2025 Preparation Courses for class 12, Top Medical Entrance Preparation Classes"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

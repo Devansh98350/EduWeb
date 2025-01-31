@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const D_E_Eleven = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const D_E_Eleven = () => {
         description="Utkarsh Course is designed for class 11 students preparing for JEE (Mains+Advanced) in online medium ensuring effective preparation at the comfort of their home."
         keywords="Utkarsh, Utkarsh Batch IIT Academy, Online Class for class 11 JEE,  10th to 11th Moving Students JEE Preparation online, Online JEE Coaching for 11th, Best Online JEE Classes 2026, Top IIT JEE Prep Course Online"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const D_Ten = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const D_Ten = () => {
         description="Vikash Batch is designed for class 10 students preparing for board exams and competitive exams, offering the best online course with comprehensive benefits and support."
         keywords="Sankalp, Sankalp Batch IIT Academy, 9th to 10th Moving Students Boards Online, Online Class 10 Board Coaching, Best Online Board Exam Classes, Top 10th Board Online Courses"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

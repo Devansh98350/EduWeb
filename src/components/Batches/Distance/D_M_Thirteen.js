@@ -17,6 +17,7 @@ import orientation from "../../../assets/cbenefits/Orientation-Classes.webp";
 import performance from "../../../assets/cbenefits/Performance-Tracker.webp";
 import feedback from "../../../assets/cbenefits/Feedback-System.webp";
 import studymaterial from "../../../assets/cbenefits/Study-Material.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const D_M_Thirteen = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const D_M_Thirteen = () => {
         description="Pragya is designed for 12th passout students preparing for NEET offering top-notch online coaching at the comfort of their home with comprehensive benefits for effective preparation"
         keywords="Pragya, Pragya Batch IIT Academy, Online Class for Repeaters NEET, 12th Passed Students NEET Preparation Online, Online NEET Coaching fot 12th passout, Best Online NEET Classes, Top NEET Prep Online 2025"
       >
+        <Breadcrumbs />
         <section id="section">
           <div className="image">
             <img src={img} alt="Loading..." />

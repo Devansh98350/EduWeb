@@ -288,7 +288,10 @@ const Navbar = (props) => {
             <div className="row">
               <div className="column">
                 <h3>Engineering</h3>
-                <NavLink to="/engineering-class-11" className="dropright-item">
+                <NavLink
+                  to="/engineering-courses/engineering-class-11"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{
@@ -298,14 +301,20 @@ const Navbar = (props) => {
                   ></i>
                   Arjuna
                 </NavLink>
-                <NavLink to="/engineering-class-12" className="dropright-item">
+                <NavLink
+                  to="/engineering-courses/engineering-class-12"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Chaitanya
                 </NavLink>
-                <NavLink to="/engineering-class-13" className="dropright-item">
+                <NavLink
+                  to="/engineering-courses/engineering-class-13"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
@@ -315,21 +324,30 @@ const Navbar = (props) => {
               </div>
               <div className="column">
                 <h3>Medical</h3>
-                <NavLink to="/medical-class-11" className="dropright-item">
+                <NavLink
+                  to="/medical-courses/medical-class-11"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Ananta
                 </NavLink>
-                <NavLink to="/medical-class-12" className="dropright-item">
+                <NavLink
+                  to="/medical-courses/medical-class-12"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Sudarshan
                 </NavLink>
-                <NavLink to="/medical-class-13" className="dropright-item">
+                <NavLink
+                  to="/medical-courses/medical-class-13"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
@@ -339,35 +357,50 @@ const Navbar = (props) => {
               </div>
               <div className="column">
                 <h3>Foundation</h3>
-                <NavLink to="/foundation-class-06" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/class-06"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Aadhya
                 </NavLink>
-                <NavLink to="/foundation-class-07" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/class-07"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Abhinav
                 </NavLink>
-                <NavLink to="/foundation-class-08" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/class-08"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Abhyas
                 </NavLink>
-                <NavLink to="/foundation-class-09" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/class-09"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Aarohan
                 </NavLink>
-                <NavLink to="/foundation-class-10" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/class-10"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
@@ -377,7 +410,10 @@ const Navbar = (props) => {
               </div>
               <div className="column">
                 <h3>DLP</h3>
-                <NavLink to="/distance-class-10" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/distance-class-10"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
@@ -385,7 +421,7 @@ const Navbar = (props) => {
                   Sankalp
                 </NavLink>
                 <NavLink
-                  to="/distance-class-11-engineering"
+                  to="/engineering-courses/distance-class-11"
                   className="dropright-item"
                 >
                   <i
@@ -395,7 +431,7 @@ const Navbar = (props) => {
                   Utkarsh
                 </NavLink>
                 <NavLink
-                  to="/distance-class-12-engineering"
+                  to="/engineering-courses/distance-class-12"
                   className="dropright-item"
                 >
                   <i
@@ -405,7 +441,7 @@ const Navbar = (props) => {
                   Lakshya
                 </NavLink>
                 <NavLink
-                  to="/distance-class-13-engineering"
+                  to="/engineering-courses/distance-class-13"
                   className="dropright-item"
                 >
                   <i
@@ -415,7 +451,7 @@ const Navbar = (props) => {
                   Abhiyaan
                 </NavLink>
                 <NavLink
-                  to="/distance-class-11-medical"
+                  to="/medical-courses/distance-class-11"
                   className="dropright-item"
                 >
                   <i
@@ -425,7 +461,7 @@ const Navbar = (props) => {
                   Yukti
                 </NavLink>
                 <NavLink
-                  to="/distance-class-12-medical"
+                  to="/medical-courses/distance-class-12"
                   className="dropright-item"
                 >
                   <i
@@ -435,7 +471,7 @@ const Navbar = (props) => {
                   Sarthak
                 </NavLink>
                 <NavLink
-                  to="/distance-class-13-medical"
+                  to="/medical-courses/distance-class-13"
                   className="dropright-item"
                 >
                   <i
@@ -509,7 +545,10 @@ const Navbar = (props) => {
             <div className="row">
               <div className="column">
                 <h3>Engineering</h3>
-                <NavLink to="/engineering-class-11" className="dropright-item">
+                <NavLink
+                  to="/engineering-courses/engineering-class-11"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{
@@ -519,14 +558,20 @@ const Navbar = (props) => {
                   ></i>
                   Arjuna
                 </NavLink>
-                <NavLink to="/engineering-class-12" className="dropright-item">
+                <NavLink
+                  to="/engineering-courses/engineering-class-12"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Chaitanya
                 </NavLink>
-                <NavLink to="/engineering-class-13" className="dropright-item">
+                <NavLink
+                  to="/engineering-courses/engineering-class-13"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
@@ -536,21 +581,30 @@ const Navbar = (props) => {
               </div>
               <div className="column">
                 <h3>Medical</h3>
-                <NavLink to="/medical-class-11" className="dropright-item">
+                <NavLink
+                  to="/medical-courses/medical-class-11"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Ananta
                 </NavLink>
-                <NavLink to="/medical-class-12" className="dropright-item">
+                <NavLink
+                  to="/medical-courses/medical-class-12"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Sudarshan
                 </NavLink>
-                <NavLink to="/medical-class-13" className="dropright-item">
+                <NavLink
+                  to="/medical-courses/medical-class-13"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
@@ -560,35 +614,50 @@ const Navbar = (props) => {
               </div>
               <div className="column">
                 <h3>Foundation</h3>
-                <NavLink to="/foundation-class-06" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/class-06"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Aadhya
                 </NavLink>
-                <NavLink to="/foundation-class-07" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/class-07"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Abhinav
                 </NavLink>
-                <NavLink to="/foundation-class-08" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/class-08"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Abhyas
                 </NavLink>
-                <NavLink to="/foundation-class-09" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/class-09"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Aarohan
                 </NavLink>
-                <NavLink to="/foundation-class-10" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/class-10"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
@@ -598,7 +667,10 @@ const Navbar = (props) => {
               </div>
               <div className="column">
                 <h3>DLP</h3>
-                <NavLink to="/distance-class-10" className="dropright-item">
+                <NavLink
+                  to="/foundation-courses/distance-class-10"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
@@ -606,7 +678,7 @@ const Navbar = (props) => {
                   Sankalp
                 </NavLink>
                 <NavLink
-                  to="/distance-class-11-engineering"
+                  to="/engineering-courses/distance-class-11"
                   className="dropright-item"
                 >
                   <i
@@ -616,7 +688,7 @@ const Navbar = (props) => {
                   Utkarsh
                 </NavLink>
                 <NavLink
-                  to="/distance-class-12-engineering"
+                  to="/engineering-courses/distance-class-12"
                   className="dropright-item"
                 >
                   <i
@@ -626,7 +698,7 @@ const Navbar = (props) => {
                   Lakshya
                 </NavLink>
                 <NavLink
-                  to="/distance-class-13-engineering"
+                  to="/engineering-courses/distance-class-13"
                   className="dropright-item"
                 >
                   <i
@@ -636,7 +708,7 @@ const Navbar = (props) => {
                   Abhiyaan
                 </NavLink>
                 <NavLink
-                  to="/distance-class-11-medical"
+                  to="/medical-courses/distance-class-11"
                   className="dropright-item"
                 >
                   <i
@@ -646,7 +718,7 @@ const Navbar = (props) => {
                   Yukti
                 </NavLink>
                 <NavLink
-                  to="/distance-class-12-medical"
+                  to="/medical-courses/distance-class-12"
                   className="dropright-item"
                 >
                   <i
@@ -656,7 +728,7 @@ const Navbar = (props) => {
                   Sarthak
                 </NavLink>
                 <NavLink
-                  to="/distance-class-13-medical"
+                  to="/medical-courses/distance-class-13"
                   className="dropright-item"
                 >
                   <i

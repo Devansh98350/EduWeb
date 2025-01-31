@@ -78,33 +78,72 @@ function App() {
           <Route path="/our-faculty" element={<Faculty />} />
           <Route path="/frequently-asked-questions" element={<FAQ />} />
           <Route path="/gallery" element={<Gallery />} />
-          {/* Batches */}
-          <Route path="/engineering-class-11" element={<Arjuna />} />
-          <Route path="/engineering-class-12" element={<Chaitanya />} />
-          <Route path="/engineering-class-13" element={<Eklavya />} />
-          <Route path="/medical-class-11" element={<Ananta />} />
-          <Route path="/medical-class-12" element={<Sudarshan />} />
-          <Route path="/medical-class-13" element={<Swadhyaya />} />
-          <Route path="/foundation-class-06" element={<Aadhya />} />
-          <Route path="/foundation-class-07" element={<Abhinav />} />
-          <Route path="/foundation-class-08" element={<Abhyas />} />
-          <Route path="/foundation-class-09" element={<Aarohan />} />
-          <Route path="/foundation-class-10" element={<Atal />} />
-          <Route path="/distance-class-10" element={<Sankalp />} />
-          <Route path="/distance-class-11-engineering" element={<Utkarsh />} />
-          <Route path="/distance-class-12-engineering" element={<Lakshya />} />
-          <Route path="/distance-class-13-engineering" element={<Abhiyaan />} />
-          <Route path="/distance-class-11-medical" element={<Yukti />} />
-          <Route path="/distance-class-12-medical" element={<Sarthak />} />
-          <Route path="/distance-class-13-medical" element={<Pragya />} />
-          <Route path="/boards-class-11-pcm" element={<Sammarsa />} />
-          <Route path="/boards-class-12-pcm" element={<Vikash />} />
-          <Route path="/boards-class-11-pcb" element={<Daksh />} />
-          <Route path="/boards-class-12-pcb" element={<Samridhi />} />
           {/*Promo Batches */}
           <Route path="/engineering-courses" element={<Eng />} />
           <Route path="/medical-courses" element={<Med />} />
           <Route path="/foundation-courses" element={<Found />} />
+          {/* Batches */}
+          <Route
+            path="/engineering-courses/engineering-class-11"
+            element={<Arjuna />}
+          />
+          <Route
+            path="/engineering-courses/engineering-class-12"
+            element={<Chaitanya />}
+          />
+          <Route
+            path="/engineering-courses/engineering-class-13"
+            element={<Eklavya />}
+          />
+          <Route
+            path="/medical-courses/medical-class-11"
+            element={<Ananta />}
+          />
+          <Route
+            path="/medical-courses/medical-class-12"
+            element={<Sudarshan />}
+          />
+          <Route
+            path="/medical-courses/medical-class-13"
+            element={<Swadhyaya />}
+          />
+          <Route path="/foundation-courses/class-06" element={<Aadhya />} />
+          <Route path="/foundation-courses/class-07" element={<Abhinav />} />
+          <Route path="/foundation-courses/class-08" element={<Abhyas />} />
+          <Route path="/foundation-courses/class-09" element={<Aarohan />} />
+          <Route path="/foundation-courses/class-10" element={<Atal />} />
+          <Route
+            path="/foundation-courses/distance-class-10"
+            element={<Sankalp />}
+          />
+          <Route
+            path="/engineering-courses/distance-class-11"
+            element={<Utkarsh />}
+          />
+          <Route
+            path="/engineering-courses/distance-class-12"
+            element={<Lakshya />}
+          />
+          <Route
+            path="/engineering-courses/distance-class-13"
+            element={<Abhiyaan />}
+          />
+          <Route
+            path="/medical-courses/distance-class-11"
+            element={<Yukti />}
+          />
+          <Route
+            path="/medical-courses/distance-class-12"
+            element={<Sarthak />}
+          />
+          <Route
+            path="/medical-courses/distance-class-13"
+            element={<Pragya />}
+          />
+          <Route path="/boards-class-11-pcm" element={<Sammarsa />} />
+          <Route path="/boards-class-12-pcm" element={<Vikash />} />
+          <Route path="/boards-class-11-pcb" element={<Daksh />} />
+          <Route path="/boards-class-12-pcb" element={<Samridhi />} />
           {/* Admission */}
           <Route path="/fees-structure" element={<Feestructure />} />
           <Route path="/admission-process" element={<AdmissionProcess />} />

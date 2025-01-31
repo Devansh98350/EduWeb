@@ -8,6 +8,7 @@ import eklavya from "../../../assets/popular_courses/Eklavya.webp";
 import utkarsh from "../../../assets/popular_courses/Utkarsh.webp";
 import lakshya from "../../../assets/popular_courses/Lakshya.webp";
 import abhiyaan from "../../../assets/popular_courses/Abhiyaan.webp";
+import Breadcrumbs from "../../Breadcrumbs";
 
 const Eng = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const Eng = () => {
       description="Explore IIT Academy's comprehensive engineering courses tailored to ace your engineering exams with expert guidance and unmatched preparation."
       keywords="Engineering Courses IIT Academy, JEE Main Courses, JEE Advanced Courses"
     >
+      <Breadcrumbs />
       <div className="course3">
         <h1 style={{ marginBottom: "10px" }}>Engineering Batches</h1>
         <p>
@@ -44,7 +46,7 @@ const Eng = () => {
               <p className="details2-desc1">
                 (For students moving from class 10 to 11)
               </p>
-              <Link to="/engineering-class-11">
+              <Link to="/engineering-courses/engineering-class-11">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -56,7 +58,7 @@ const Eng = () => {
               <p className="details2-desc1">
                 (For students moving from class 11 to 12)
               </p>
-              <Link to="/engineering-class-12">
+              <Link to="/engineering-courses/engineering-class-12">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -66,7 +68,7 @@ const Eng = () => {
             <div className="details2-btns">
               <p className="details2-desc">EKLAVYA Course</p>
               <p className="details2-desc1">(For 12th passed students)</p>
-              <Link to="/engineering-class-13">
+              <Link to="/engineering-courses/engineering-class-13">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -96,7 +98,7 @@ const Eng = () => {
               <p className="details2-desc1">
                 (For students moving from class 10 to 11)
               </p>
-              <Link to="/distance-class-11-engineering">
+              <Link to="/engineering-courses/distance-class-11">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -108,7 +110,7 @@ const Eng = () => {
               <p className="details2-desc1">
                 (For students moving from class 11 to 12)
               </p>
-              <Link to="/distance-class-12-engineering">
+              <Link to="/engineering-courses/distance-class-12">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -118,7 +120,7 @@ const Eng = () => {
             <div className="details2-btns">
               <p className="details2-desc">ABHIYAAN Course</p>
               <p className="details2-desc1">(For 12th passed students)</p>
-              <Link to="/distance-class-13-engineering">
+              <Link to="/engineering-courses/distance-class-13">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
