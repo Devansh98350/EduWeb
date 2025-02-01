@@ -16,7 +16,7 @@ const Med = () => {
   }, []);
   return (
     <Layout
-      title="Medical Course-IIT Academy"
+      title="Medical Batches-IIT Academy"
       description="Discover our comprehensive NEET preparation courses, meticulously designed to guide aspiring medical students towards success with expert faculty and top-notch resources."
       keywords="Medical Courses IIT Academy, NEET Courses IIT Academy"
     >
@@ -44,7 +44,7 @@ const Med = () => {
               <p className="details2-desc1">
                 (For students moving from class 10 to 11)
               </p>
-              <Link to="/medical-courses/medical-class-11">
+              <Link to="/medical-batches/ananta-class-11">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -56,7 +56,7 @@ const Med = () => {
               <p className="details2-desc1">
                 (For students moving from class 11 to 12)
               </p>
-              <Link to="/medical-courses/medical-class-12">
+              <Link to="/medical-batches/sudarshan-class-12">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -66,7 +66,7 @@ const Med = () => {
             <div className="details2-btns">
               <p className="details2-desc">SWADHYAYA Course</p>
               <p className="details2-desc1">(For 12th passed students)</p>
-              <Link to="/medical-courses/medical-class-13">
+              <Link to="/medical-batches/swadhyaya-class-13">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -96,7 +96,7 @@ const Med = () => {
               <p className="details2-desc1">
                 (For students moving from class 10 to 11)
               </p>
-              <Link to="/medical-courses/distance-class-11">
+              <Link to="/medical-batches/yukti-class-11-distance">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -108,7 +108,7 @@ const Med = () => {
               <p className="details2-desc1">
                 (For students moving from class 11 to 12)
               </p>
-              <Link to="/medical-courses/distance-class-12">
+              <Link to="/medical-batches/sarthak-class-12-distance">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -118,7 +118,7 @@ const Med = () => {
             <div className="details2-btns">
               <p className="details2-desc">PRAGYA Course</p>
               <p className="details2-desc1">(For 12th passed students)</p>
-              <Link to="/medical-courses/distance-class-13">
+              <Link to="/medical-batches/pragya-class-13-distance">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>

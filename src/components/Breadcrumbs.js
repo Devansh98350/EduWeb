@@ -1,15 +1,21 @@
 import { Link, useLocation } from "react-router-dom";
 
-// Function to convert URL segment to a readable format
 const formatBreadcrumb = (segment) => {
+  const specialCases = ["pcb", "pcm"];
+
   return segment
-    .replace(/-/g, " ") // Replace hyphens with spaces
-    .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize each word
+    .split("-")
+    .map((word) =>
+      specialCases.includes(word.toLowerCase())
+        ? word.toUpperCase()
+        : word.charAt(0).toUpperCase() + word.slice(1)
+    )
+    .join(" ");
 };
 
 const Breadcrumbs = () => {
   const location = useLocation();
-  const pathSegments = location.pathname.split("/").filter(Boolean); // Get path segments
+  const pathSegments = location.pathname.split("/").filter(Boolean);
 
   const styles = {
     breadcrumbs: {

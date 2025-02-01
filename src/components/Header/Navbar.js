@@ -289,7 +289,7 @@ const Navbar = (props) => {
               <div className="column">
                 <h3>Engineering</h3>
                 <NavLink
-                  to="/engineering-courses/engineering-class-11"
+                  to="/engineering-batches/arjuna-class-11"
                   className="dropright-item"
                 >
                   <i
@@ -302,7 +302,7 @@ const Navbar = (props) => {
                   Arjuna
                 </NavLink>
                 <NavLink
-                  to="/engineering-courses/engineering-class-12"
+                  to="/engineering-batches/chaitanya-class-12"
                   className="dropright-item"
                 >
                   <i
@@ -312,7 +312,7 @@ const Navbar = (props) => {
                   Chaitanya
                 </NavLink>
                 <NavLink
-                  to="/engineering-courses/engineering-class-13"
+                  to="/engineering-batches/eklavya-class-13"
                   className="dropright-item"
                 >
                   <i
@@ -325,7 +325,7 @@ const Navbar = (props) => {
               <div className="column">
                 <h3>Medical</h3>
                 <NavLink
-                  to="/medical-courses/medical-class-11"
+                  to="/medical-batches/ananta-class-11"
                   className="dropright-item"
                 >
                   <i
@@ -335,7 +335,7 @@ const Navbar = (props) => {
                   Ananta
                 </NavLink>
                 <NavLink
-                  to="/medical-courses/medical-class-12"
+                  to="/medical-batches/sudarshan-class-12"
                   className="dropright-item"
                 >
                   <i
@@ -345,7 +345,7 @@ const Navbar = (props) => {
                   Sudarshan
                 </NavLink>
                 <NavLink
-                  to="/medical-courses/medical-class-13"
+                  to="/medical-batches/swadhyaya-class-13"
                   className="dropright-item"
                 >
                   <i
@@ -358,7 +358,7 @@ const Navbar = (props) => {
               <div className="column">
                 <h3>Foundation</h3>
                 <NavLink
-                  to="/foundation-courses/class-06"
+                  to="/foundation-batches/aadhya-class-06"
                   className="dropright-item"
                 >
                   <i
@@ -368,7 +368,7 @@ const Navbar = (props) => {
                   Aadhya
                 </NavLink>
                 <NavLink
-                  to="/foundation-courses/class-07"
+                  to="/foundation-batches/abhinav-class-07"
                   className="dropright-item"
                 >
                   <i
@@ -378,7 +378,7 @@ const Navbar = (props) => {
                   Abhinav
                 </NavLink>
                 <NavLink
-                  to="/foundation-courses/class-08"
+                  to="/foundation-batches/abhyas-class-08"
                   className="dropright-item"
                 >
                   <i
@@ -388,7 +388,7 @@ const Navbar = (props) => {
                   Abhyas
                 </NavLink>
                 <NavLink
-                  to="/foundation-courses/class-09"
+                  to="/foundation-batches/aarohan-class-09"
                   className="dropright-item"
                 >
                   <i
@@ -398,7 +398,7 @@ const Navbar = (props) => {
                   Aarohan
                 </NavLink>
                 <NavLink
-                  to="/foundation-courses/class-10"
+                  to="/foundation-batches/atal-class-10"
                   className="dropright-item"
                 >
                   <i
@@ -411,7 +411,7 @@ const Navbar = (props) => {
               <div className="column">
                 <h3>DLP</h3>
                 <NavLink
-                  to="/foundation-courses/distance-class-10"
+                  to="/foundation-batches/sankalp-class-10-distance"
                   className="dropright-item"
                 >
                   <i
@@ -421,7 +421,7 @@ const Navbar = (props) => {
                   Sankalp
                 </NavLink>
                 <NavLink
-                  to="/engineering-courses/distance-class-11"
+                  to="/engineering-batches/utkarsh-class-11-distance"
                   className="dropright-item"
                 >
                   <i
@@ -441,7 +441,7 @@ const Navbar = (props) => {
                   Lakshya
                 </NavLink>
                 <NavLink
-                  to="/engineering-courses/distance-class-13"
+                  to="/engineering-batches/abhiyaan-class-13-distance"
                   className="dropright-item"
                 >
                   <i
@@ -451,7 +451,7 @@ const Navbar = (props) => {
                   Abhiyaan
                 </NavLink>
                 <NavLink
-                  to="/medical-courses/distance-class-11"
+                  to="/medical-batches/yukti-class-11-distance"
                   className="dropright-item"
                 >
                   <i
@@ -461,7 +461,7 @@ const Navbar = (props) => {
                   Yukti
                 </NavLink>
                 <NavLink
-                  to="/medical-courses/distance-class-12"
+                  to="/medical-batches/sarthak-class-12-distance"
                   className="dropright-item"
                 >
                   <i
@@ -471,7 +471,7 @@ const Navbar = (props) => {
                   Sarthak
                 </NavLink>
                 <NavLink
-                  to="/medical-courses/distance-class-13"
+                  to="/medical-batches/pragya-class-13-distance"
                   className="dropright-item"
                 >
                   <i
@@ -483,28 +483,40 @@ const Navbar = (props) => {
               </div>
               <div className="column">
                 <h3>Boards</h3>
-                <NavLink to="/boards-class-11-pcm" className="dropright-item">
+                <NavLink
+                  to="/board-batches/sammarsa-class-11-pcm"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Sammarsa
                 </NavLink>
-                <NavLink to="/boards-class-12-pcm" className="dropright-item">
+                <NavLink
+                  to="/board-batches/vikash-class-12-pcm"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Vikash
                 </NavLink>
-                <NavLink to="/boards-class-11-pcb" className="dropright-item">
+                <NavLink
+                  to="/board-batches/daksh-class-11-pcb"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Daksh
                 </NavLink>
-                <NavLink to="/boards-class-12-pcb" className="dropright-item">
+                <NavLink
+                  to="/board-batches/samridhi-class-12-pcb"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
@@ -546,7 +558,7 @@ const Navbar = (props) => {
               <div className="column">
                 <h3>Engineering</h3>
                 <NavLink
-                  to="/engineering-courses/engineering-class-11"
+                  to="/engineering-batches/arjuna-class-11"
                   className="dropright-item"
                 >
                   <i
@@ -559,7 +571,7 @@ const Navbar = (props) => {
                   Arjuna
                 </NavLink>
                 <NavLink
-                  to="/engineering-courses/engineering-class-12"
+                  to="/engineering-batches/chaitanya-class-12"
                   className="dropright-item"
                 >
                   <i
@@ -569,7 +581,7 @@ const Navbar = (props) => {
                   Chaitanya
                 </NavLink>
                 <NavLink
-                  to="/engineering-courses/engineering-class-13"
+                  to="/engineering-batches/eklavya-class-13"
                   className="dropright-item"
                 >
                   <i
@@ -582,7 +594,7 @@ const Navbar = (props) => {
               <div className="column">
                 <h3>Medical</h3>
                 <NavLink
-                  to="/medical-courses/medical-class-11"
+                  to="/medical-batches/ananta-class-11"
                   className="dropright-item"
                 >
                   <i
@@ -592,7 +604,7 @@ const Navbar = (props) => {
                   Ananta
                 </NavLink>
                 <NavLink
-                  to="/medical-courses/medical-class-12"
+                  to="/medical-batches/sudarshan-class-12"
                   className="dropright-item"
                 >
                   <i
@@ -602,7 +614,7 @@ const Navbar = (props) => {
                   Sudarshan
                 </NavLink>
                 <NavLink
-                  to="/medical-courses/medical-class-13"
+                  to="/medical-batches/swadhyaya-class-13"
                   className="dropright-item"
                 >
                   <i
@@ -615,7 +627,7 @@ const Navbar = (props) => {
               <div className="column">
                 <h3>Foundation</h3>
                 <NavLink
-                  to="/foundation-courses/class-06"
+                  to="/foundation-batches/aadhya-class-06"
                   className="dropright-item"
                 >
                   <i
@@ -625,7 +637,7 @@ const Navbar = (props) => {
                   Aadhya
                 </NavLink>
                 <NavLink
-                  to="/foundation-courses/class-07"
+                  to="/foundation-batches/abhinav-class-07"
                   className="dropright-item"
                 >
                   <i
@@ -635,7 +647,7 @@ const Navbar = (props) => {
                   Abhinav
                 </NavLink>
                 <NavLink
-                  to="/foundation-courses/class-08"
+                  to="/foundation-batches/abhyas-class-08"
                   className="dropright-item"
                 >
                   <i
@@ -645,7 +657,7 @@ const Navbar = (props) => {
                   Abhyas
                 </NavLink>
                 <NavLink
-                  to="/foundation-courses/class-09"
+                  to="/foundation-batches/aarohan-class-09"
                   className="dropright-item"
                 >
                   <i
@@ -655,7 +667,7 @@ const Navbar = (props) => {
                   Aarohan
                 </NavLink>
                 <NavLink
-                  to="/foundation-courses/class-10"
+                  to="/foundation-batches/atal-class-10"
                   className="dropright-item"
                 >
                   <i
@@ -668,7 +680,7 @@ const Navbar = (props) => {
               <div className="column">
                 <h3>DLP</h3>
                 <NavLink
-                  to="/foundation-courses/distance-class-10"
+                  to="/foundation-batches/sankalp-class-10-distance"
                   className="dropright-item"
                 >
                   <i
@@ -678,7 +690,7 @@ const Navbar = (props) => {
                   Sankalp
                 </NavLink>
                 <NavLink
-                  to="/engineering-courses/distance-class-11"
+                  to="/engineering-batches/utkarsh-class-11-distance"
                   className="dropright-item"
                 >
                   <i
@@ -688,7 +700,7 @@ const Navbar = (props) => {
                   Utkarsh
                 </NavLink>
                 <NavLink
-                  to="/engineering-courses/distance-class-12"
+                  to="/engineering-batches/lakshya-class-12-distance"
                   className="dropright-item"
                 >
                   <i
@@ -698,7 +710,7 @@ const Navbar = (props) => {
                   Lakshya
                 </NavLink>
                 <NavLink
-                  to="/engineering-courses/distance-class-13"
+                  to="/engineering-batches/abhiyaan-class-13-distance"
                   className="dropright-item"
                 >
                   <i
@@ -708,7 +720,7 @@ const Navbar = (props) => {
                   Abhiyaan
                 </NavLink>
                 <NavLink
-                  to="/medical-courses/distance-class-11"
+                  to="/medical-batches/yukti-class-11-distance"
                   className="dropright-item"
                 >
                   <i
@@ -718,7 +730,7 @@ const Navbar = (props) => {
                   Yukti
                 </NavLink>
                 <NavLink
-                  to="/medical-courses/distance-class-12"
+                  to="/medical-batches/sarthak-class-12-distance"
                   className="dropright-item"
                 >
                   <i
@@ -728,7 +740,7 @@ const Navbar = (props) => {
                   Sarthak
                 </NavLink>
                 <NavLink
-                  to="/medical-courses/distance-class-13"
+                  to="/medical-batches/pragya-class-13-distance"
                   className="dropright-item"
                 >
                   <i
@@ -740,28 +752,40 @@ const Navbar = (props) => {
               </div>
               <div className="column">
                 <h3>Boards</h3>
-                <NavLink to="/boards-class-11-pcm" className="dropright-item">
+                <NavLink
+                  to="/board-batches/sammarsa-class-11-pcm"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Sammarsa
                 </NavLink>
-                <NavLink to="/boards-class-12-pcm" className="dropright-item">
+                <NavLink
+                  to="/board-batches/vikash-class-12-pcm"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Vikash
                 </NavLink>
-                <NavLink to="/boards-class-11-pcb" className="dropright-item">
+                <NavLink
+                  to="/board-batches/daksh-class-11-pcb"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}
                   ></i>
                   Daksh
                 </NavLink>
-                <NavLink to="/boards-class-12-pcb" className="dropright-item">
+                <NavLink
+                  to="/board-batches/samridhi-class-12-pcb"
+                  className="dropright-item"
+                >
                   <i
                     className="fas fa-angle-double-right"
                     style={{ color: "#f39c12", marginRight: "5px" }}

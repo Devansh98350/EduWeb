@@ -404,7 +404,7 @@ const Sidebar = () => {
                   <DropdownMenu>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/engineering-courses/engineering-class-11"
+                        to="/engineering-batches/arjuna-class-11"
                         className="dropdown-item"
                       >
                         <i
@@ -416,7 +416,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/engineering-courses/engineering-class-12"
+                        to="/engineering-batches/chaitanya-class-12"
                         className="dropdown-item"
                       >
                         <i
@@ -428,7 +428,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/engineering-courses/engineering-class-13"
+                        to="/engineering-batches/eklavya-class-13"
                         className="dropdown-item"
                       >
                         <i
@@ -451,7 +451,7 @@ const Sidebar = () => {
                   <DropdownMenu>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/medical-courses/medical-class-11"
+                        to="/medical-batches/ananta-class-11"
                         className="dropdown-item"
                       >
                         <i
@@ -463,7 +463,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/medical-courses/medical-class-12"
+                        to="/medical-batches/sudarshan-class-12"
                         className="dropdown-item"
                       >
                         <i
@@ -475,7 +475,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/medical-courses/medical-class-13"
+                        to="/medical-batches/swadhyaya-class-13"
                         className="dropdown-item"
                       >
                         <i
@@ -498,7 +498,7 @@ const Sidebar = () => {
                   <DropdownMenu>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/foundation-courses/class-06"
+                        to="/foundation-batches/aadhya-class-06"
                         className="dropdown-item"
                       >
                         <i
@@ -510,7 +510,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/foundation-courses/class-07"
+                        to="/foundation-batches/abhinav-class-07"
                         className="dropdown-item"
                       >
                         <i
@@ -522,7 +522,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/foundation-courses/class-08"
+                        to="/foundation-batches/abhyas-class-08"
                         className="dropdown-item"
                       >
                         <i
@@ -534,7 +534,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/foundation-courses/class-09"
+                        to="/foundation-batches/aarohan-class-09"
                         className="dropdown-item"
                       >
                         <i
@@ -546,7 +546,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/foundation-courses/class-10"
+                        to="/foundation-batches/atal-class-10"
                         className="dropdown-item"
                       >
                         <i
@@ -569,7 +569,7 @@ const Sidebar = () => {
                   <DropdownMenu>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/foundation-courses/distance-class-10"
+                        to="/foundation-batches/sankalp-class-10-distance"
                         className="dropdown-item"
                       >
                         <i
@@ -581,7 +581,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/engineering-courses/distance-class-11"
+                        to="/engineering-batches/utkarsh-class-11-distance"
                         className="dropdown-item"
                       >
                         <i
@@ -593,7 +593,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/engineering-courses/distance-class-12"
+                        to="/engineering-batches/lakshya-class-12-distance"
                         className="dropdown-item"
                       >
                         <i
@@ -605,7 +605,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/engineering-courses/distance-class-13"
+                        to="/engineering-batches/abhiyaan-class-13-distance"
                         className="dropdown-item"
                       >
                         <i
@@ -617,7 +617,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/medical-courses/distance-class-11"
+                        to="/medical-batches/yukti-class-11-distance"
                         className="dropdown-item"
                       >
                         <i
@@ -629,7 +629,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/medical-courses/distance-class-12"
+                        to="/medical-batches/sarthak-class-12-distance"
                         className="dropdown-item"
                       >
                         <i
@@ -641,7 +641,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/medical-courses/distance-class-13"
+                        to="/medical-batches/pragya-class-13-distance"
                         className="dropdown-item"
                       >
                         <i
@@ -664,7 +664,7 @@ const Sidebar = () => {
                   <DropdownMenu>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/boards-class-11-pcm"
+                        to="/board-batches/sammarsa-class-11-pcm"
                         className="dropdown-item"
                       >
                         <i
@@ -676,7 +676,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/boards-class-12-pcm"
+                        to="/board-batches/vikash-class-12-pcm"
                         className="dropdown-item"
                       >
                         <i
@@ -688,7 +688,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/boards-class-11-pcb"
+                        to="/board-batches/daksh-class-11-pcb"
                         className="dropdown-item"
                       >
                         <i
@@ -700,7 +700,7 @@ const Sidebar = () => {
                     </DropdownItem>
                     <DropdownItem>
                       <StyledNavLink
-                        to="/boards-class-12-pcb"
+                        to="/board-batches/samridhi-class-12-pcb"
                         className="dropdown-item"
                       >
                         <i

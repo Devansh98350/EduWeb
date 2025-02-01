@@ -121,21 +121,20 @@ const Footer = () => {
                 <Link to="/fees-structure">Fee Structure</Link>
               </p>
               <p>
-                <Link to="/why-us">Why IIT Academy</Link>
+                <Link to="/board-batches">Board Batches</Link>
               </p>
               <p>
-                <Link to="/foundation-courses">Foundation Batches</Link>
+                <Link to="/foundation-batches">Foundation Batches</Link>
               </p>
               <p>
-                <Link to="/engineering-courses">Engineering Batches</Link>
+                <Link to="/engineering-batches">Engineering Batches</Link>
               </p>
               <p>
                 <Link to="/admission-process">Admission Process</Link>
               </p>
               <p>
-                <Link to="/medical-courses">Medical Batches</Link>
+                <Link to="/medical-batches">Medical Batches</Link>
               </p>
-
               <p>
                 <Link to="/our-policy">Privacy & Policy</Link>
               </p>
@@ -150,7 +149,7 @@ const Footer = () => {
               marginTop: "5px",
             }}
           >
-            All Rights Reserved @ IIT Academy
+            All Rights Reserved @ IIT Academy 2023
           </div>
         </div>
       </div>

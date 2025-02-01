@@ -2,27 +2,25 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../Layout";
 import "./Promo.css";
-import atal from "../../../assets/popular_courses/Atal.webp";
-import aarohan from "../../../assets/popular_courses/Aarohan.webp";
-import abhyas from "../../../assets/popular_courses/Abhyas.webp";
-import abhinav from "../../../assets/popular_courses/Abhinav.webp";
-import aadhya from "../../../assets/popular_courses/Aadhya.webp";
-import sankalp from "../../../assets/popular_courses/Sankalp.webp";
+import sammarsa from "../../../assets/popular_courses/Sammarsa.webp";
+import daksh from "../../../assets/popular_courses/Daksh.webp";
+import vikash from "../../../assets/popular_courses/Vikash.webp";
+import samridhi from "../../../assets/popular_courses/Samridhi.webp";
 import Breadcrumbs from "../../Breadcrumbs";
 
-const Found = () => {
+const Board = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <Layout
-      title="Foundation Batches-IIT Academy"
+      title="Board Batches-IIT Academy"
       description="Explore IIT Academy's comprehensive foundation courses, designed to lay a strong educational base for future aspirants with detailed guidance and expert insights"
       keywords="Foundation Courses IIT Academy, Class-6, Class-7,Class-8, Class-9, Class-10, NTSE , Olympiad, 10th Boards"
     >
       <Breadcrumbs />
       <div className="course3">
-        <h1 style={{ marginBottom: "10px" }}>Foundation Batches</h1>
+        <h1 style={{ marginBottom: "10px" }}>Board Batches</h1>
         <p>
           Get a head start on your JEE and NEET preparation with our
           comprehensive foundation batches at IIT Academy. Designed for students
@@ -37,37 +35,37 @@ const Found = () => {
         </h2>
         <div className="course-row">
           <div className="card2-detail">
-            <img src={atal} alt="" className="card2-img" />
+            <img src={sammarsa} alt="" className="card2-img" />
             <div className="details2-btns">
-              <p className="details2-desc">ATAL Course</p>
+              <p className="details2-desc">SAMMARSA Course</p>
               <p className="details2-desc1">
-                (For students moving from class 9 to 10)
+                (For PCM students moving from class 10 to 11)
               </p>
-              <Link to="/foundation-batches/atal-class-10">
+              <Link to="/board-batches/sammarsa-class-11-pcm">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
           </div>
           <div className="card2-detail">
-            <img src={aarohan} alt="" className="card2-img" />
+            <img src={daksh} alt="" className="card2-img" />
             <div className="details2-btns">
-              <p className="details2-desc">AAROHAN Course</p>
+              <p className="details2-desc">DAKSH Course</p>
               <p className="details2-desc1">
-                (For students moving from class 8 to 9)
+                (For PCB students moving from class 10 to 11)
               </p>
-              <Link to="/foundation-batches/aarohan-class-09">
+              <Link to="/board-batches/daksh-class-11-pcb">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
           </div>
           <div className="card2-detail">
-            <img src={abhyas} alt="" className="card2-img" />
+            <img src={vikash} alt="" className="card2-img" />
             <div className="details2-btns">
-              <p className="details2-desc">ABHYAS Course</p>
+              <p className="details2-desc">VIKASH Course</p>
               <p className="details2-desc1">
-                (For students moving from class 7 to 8)
+                (For PCM students moving from class 11 to 12)
               </p>
-              <Link to="/foundation-batches/abhyas-class-08">
+              <Link to="/board-batches/vikash-class-12-pcm">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -76,25 +74,13 @@ const Found = () => {
 
         <div className="course-row">
           <div className="card2-detail">
-            <img src={abhinav} alt="" className="card2-img" />
+            <img src={samridhi} alt="" className="card2-img" />
             <div className="details2-btns">
-              <p className="details2-desc">ABHINAV Course</p>
+              <p className="details2-desc">SAMRIDHI Course</p>
               <p className="details2-desc1">
-                (For students moving from class 6 to 7)
+                (For PCM students moving from class 10 to 11)
               </p>
-              <Link to="/foundation-batches/abhinav-class-07">
-                <button className="details2-btn">Details</button>
-              </Link>
-            </div>
-          </div>
-          <div className="card2-detail">
-            <img src={aadhya} alt="" className="card2-img" />
-            <div className="details2-btns">
-              <p className="details2-desc">AADHYA Course</p>
-              <p className="details2-desc1">
-                (For students moving from class 5 to 6)
-              </p>
-              <Link to="/foundation-batches/aadhya-class-06">
+              <Link to="/board-batches/samridhi-class-12-pcb">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -113,7 +99,7 @@ const Found = () => {
             <button className="details3-btn">Apply Online</button>
           </Link>
         </p>
-        <h2 className="hello" style={{ textAlign: "left", fontWeight: "bold" }}>
+        {/*<h2 className="hello" style={{ textAlign: "left", fontWeight: "bold" }}>
           Distance / Online Programs
         </h2>
         <div className="course-row">
@@ -124,7 +110,7 @@ const Found = () => {
               <p className="details2-desc1">
                 (For students moving from class 9 to 10)
               </p>
-              <Link to="/foundation-batches/sankalp-class-10-distance">
+              <Link to="/foundation-courses/distance-class-10">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -150,8 +136,8 @@ const Found = () => {
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
-          </div>*/}
-        </div>
+          </div>
+        </div>*/}
         <p>
           For more details, you can call us at{" "}
           <a href="tel:9205704041">9205704041</a> or mail us at{" "}
@@ -162,4 +148,4 @@ const Found = () => {
   );
 };
 
-export default Found;
+export default Board;

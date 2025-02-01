@@ -16,7 +16,7 @@ const Eng = () => {
   }, []);
   return (
     <Layout
-      title="Engineering Course-IIT Academy"
+      title="Engineering Batches-IIT Academy"
       description="Explore IIT Academy's comprehensive engineering courses tailored to ace your engineering exams with expert guidance and unmatched preparation."
       keywords="Engineering Courses IIT Academy, JEE Main Courses, JEE Advanced Courses"
     >
@@ -46,7 +46,7 @@ const Eng = () => {
               <p className="details2-desc1">
                 (For students moving from class 10 to 11)
               </p>
-              <Link to="/engineering-courses/engineering-class-11">
+              <Link to="/engineering-batches/arjuna-class-11">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -58,7 +58,7 @@ const Eng = () => {
               <p className="details2-desc1">
                 (For students moving from class 11 to 12)
               </p>
-              <Link to="/engineering-courses/engineering-class-12">
+              <Link to="/engineering-batches/chaitanya-class-12">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -68,7 +68,7 @@ const Eng = () => {
             <div className="details2-btns">
               <p className="details2-desc">EKLAVYA Course</p>
               <p className="details2-desc1">(For 12th passed students)</p>
-              <Link to="/engineering-courses/engineering-class-13">
+              <Link to="/engineering-batches/eklavya-class-13">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -98,7 +98,7 @@ const Eng = () => {
               <p className="details2-desc1">
                 (For students moving from class 10 to 11)
               </p>
-              <Link to="/engineering-courses/distance-class-11">
+              <Link to="/engineering-batches/utkarsh-class-11-distance">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -110,7 +110,7 @@ const Eng = () => {
               <p className="details2-desc1">
                 (For students moving from class 11 to 12)
               </p>
-              <Link to="/engineering-courses/distance-class-12">
+              <Link to="/engineering-batches/lakshya-class-12-distance">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
@@ -120,7 +120,7 @@ const Eng = () => {
             <div className="details2-btns">
               <p className="details2-desc">ABHIYAAN Course</p>
               <p className="details2-desc1">(For 12th passed students)</p>
-              <Link to="/engineering-courses/distance-class-13">
+              <Link to="/engineering-batches/abhiyaan-class-13-distance">
                 <button className="details2-btn">Details</button>
               </Link>
             </div>
