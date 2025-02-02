@@ -6,6 +6,7 @@ import posts from "./Separate/Posts";
 import monoblog from "../../../assets/homepage/monoblog.png";
 import { IoIosVideocam } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa";
+import Breadcrumb from "../../Breadcrumbs";
 
 // Function to truncate the HTML description to a maximum of 5 lines
 const truncateDescription = (html) => {
@@ -22,6 +23,7 @@ const Blog = () => {
   }, []);
   return (
     <Layout>
+      <Breadcrumb />
       <div className="blog-page-second">
         <div className="blog-grid">
           {posts.map((post, index) => (

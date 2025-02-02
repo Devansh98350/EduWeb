@@ -218,7 +218,7 @@ const posts = [
         <p>Join <strong>IIT Academy</strong> for great success!</p>
   
     `,
-    link: "/blogs/essential-skills-jee-main-success",
+    link: "/blogs/10-skills-for-jee-main-success",
   },
 
   //   Fourth
@@ -455,7 +455,7 @@ const posts = [
      <p>By selecting the right resources and staying committed, you’ll be well-prepared to crack medical exams. At <strong>IIT Academy</strong>, we believe in your potential and are dedicated to helping you achieve your dreams. Stay focused, stay motivated, and let’s achieve success together!</p>
     <p>Remember, the right resources can make a significant difference in your preparation. Choose wisely, stay consistent, and you’ll be on your way to achieving your goals. Good luck!”</p>
     `,
-    link: "/blogs/medical-exam-preparations",
+    link: "/blogs/right-resource-for-medical-exam-preparations",
   },
 
   // Ninth
@@ -604,7 +604,7 @@ const posts = [
       <p><strong>IIT Academy</strong> stands out as the premier institution for IIT JEE coaching in India, offering a comprehensive and innovative approach to prepare students for success. With our expert faculty, cutting-edge teaching methods, and personalized attention, we empower students to achieve their dreams and secure a bright future.</p>
       <p> At <strong>IIT Academy</strong>, we are committed to fostering a culture of excellence, and our results speak for themselves. Join us on this journey to success, and let’s unlock your potential together!</p>
         `,
-    link: "/blogs/best-iit-jee-coaching",
+    link: "/blogs/best-jee-neet-coaching-iit-academy",
   },
 ];
 
