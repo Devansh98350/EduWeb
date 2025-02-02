@@ -179,8 +179,11 @@ function App() {
           <Route path="/admission-form" element={<Admissionform />} />
           {/*<Route path="/contact-us" element={<Contact />} />*/}
           <Route path="/careers" element={<Career />} />
-          <Route path="/job-description/:domain" element={<JobListing />} />
-          <Route path="/job-application/:domain" element={<JobApplication />} />
+          <Route path="/careers/:domain" element={<JobListing />} />
+          <Route
+            path="/careers/:domain/application-form"
+            element={<JobApplication />}
+          />
           <Route path="/internship" element={<Internship />} />
           <Route path="/brochure" element={<Brochure />} />
           <Route path="/blogs" element={<Blog />} />

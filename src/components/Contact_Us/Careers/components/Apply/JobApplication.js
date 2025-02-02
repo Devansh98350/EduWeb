@@ -21,6 +21,7 @@ import WorkEducation from "./../sections/WorkEducation";
 import VoluntaryInformation from "./../sections/VoluntaryInformation";
 import ReviewSubmit from "./../sections/ReviewSubmit";
 import ProgressBar from "./../sections/ProgressBar";
+import Breadcrumbs from "../../../../Breadcrumbs";
 
 const jobDetails = {
   "trainee-faculty": {
@@ -1759,6 +1760,9 @@ const JobApplication = () => {
         <div>{job.description}</div>
       </div>
       <div className=" bg-gray-100 py-6 flex flex-col justify-center items-center  sm:py-12">
+        <div className="w-full max-w-6xl px-4 self-start mt-[-40px]">
+          <Breadcrumbs />
+        </div>
         <ProgressBar step={currentStep} totalSteps={steps.length} />
         {/* {steps[currentStep]} */}
         {/* <div className=" max-w-7xl flex flex-col justify-center items-center"> */}

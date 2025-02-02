@@ -3,6 +3,7 @@ import Layout from "../../Layout";
 import academicJobs from "./components/Academic";
 import nonAcademicJobs from "./components/NonAcademic";
 import JobFilter from "./components/JobFilter";
+import Breadcrumbs from "../../Breadcrumbs";
 import "./Career.css";
 
 const Careers = () => {
@@ -54,6 +55,7 @@ const Careers = () => {
         description="Join IIT Academy and be a part of India's premier educational team, shaping the future of tomorrow's emerging leaders"
         keywords="Careers IIT Academy, Opportunities at IIT Academy, Full-time Role at IIT Academy, Employment IIT Academy"
       >
+        <Breadcrumbs />
         <div className="career-page">
           <p className="career-main">Careers at IIT Academy</p>
           <p className="career-heading">Working at IIT Academy</p>

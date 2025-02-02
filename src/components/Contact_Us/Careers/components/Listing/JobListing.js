@@ -12,6 +12,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faLink, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Breadcrumbs from "../../../../Breadcrumbs";
 
 const jobDetails = {
   "trainee-faculty": {
@@ -33,7 +34,7 @@ const jobDetails = {
             <h2>Trainee Faculty</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/trainee-faculty`}>
+            <Link to={`/careers/trainee-faculty/application-form`}>
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -112,6 +113,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3 style={{ color: "black", fontSize: "15px" }}>
@@ -271,7 +273,7 @@ const jobDetails = {
             <h2>Academic Content Developer</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/academic-content-developer`}>
+            <Link to={`/careers/academic-content-developer/application-form`}>
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -350,6 +352,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3 style={{ color: "black", fontSize: "15px" }}>
@@ -481,7 +484,7 @@ const jobDetails = {
             <h2>Faculty Training Manager</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/faculty-training-manager`}>
+            <Link to={`/careers/faculty-training-manager/application-form`}>
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -560,6 +563,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3 style={{ color: "black", fontSize: "15px" }}>
@@ -690,7 +694,7 @@ const jobDetails = {
             <h2>Senior Faculty JEE Physics</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/senior-faculty-jee-physics`}>
+            <Link to={`/careers/senior-faculty-jee-physics/application-form`}>
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -769,6 +773,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3 style={{ color: "black", fontSize: "15px" }}>
@@ -862,7 +867,7 @@ const jobDetails = {
             <h2>Senior Faculty JEE Maths</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/senior-faculty-jee-maths`}>
+            <Link to={`/careers/senior-faculty-jee-maths/application-form`}>
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -941,6 +946,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3 style={{ color: "black", fontSize: "15px" }}>
@@ -1034,7 +1040,7 @@ const jobDetails = {
             <h2>Senior Faculty JEE Chemistry</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/senior-faculty-jee-chemistry`}>
+            <Link to={`/careers/senior-faculty-jee-chemistry/application-form`}>
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -1114,6 +1120,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3 style={{ color: "black", fontSize: "15px" }}>
@@ -1207,7 +1214,7 @@ const jobDetails = {
             <h2>Data Analyst</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/Data Analyst`}>
+            <Link to={`/careers/data-analyst/application-form`}>
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -1286,6 +1293,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3 style={{ color: "black", fontSize: "15px" }}>
@@ -1430,7 +1438,7 @@ const jobDetails = {
             <h2>Google AdWords Specialist</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/google-adwords-specialist`}>
+            <Link to={`/careers/google-adwords-specialist/application-form`}>
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -1509,6 +1517,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3 style={{ color: "black", fontSize: "15px" }}>
@@ -1620,7 +1629,9 @@ const jobDetails = {
             <h2>Business Development Executive</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/business-development-executive`}>
+            <Link
+              to={`/careers/business-development-executive/application-form`}
+            >
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -1699,6 +1710,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3 style={{ color: "black", fontSize: "15px" }}>
@@ -1809,7 +1821,7 @@ const jobDetails = {
             <h2>Digital Marketing Manager</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/digital-marketing-manager`}>
+            <Link to={`/careers/digital-marketing-manager/application-form`}>
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -1888,6 +1900,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3 style={{ color: "black", fontSize: "15px" }}>
@@ -2026,7 +2039,7 @@ const jobDetails = {
             <h2>Front Office Executive</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/front-office-executive`}>
+            <Link to={`/careers/front-office-executive/application-form`}>
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -2105,6 +2118,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3 style={{ color: "black", fontSize: "15px" }}>
@@ -2235,7 +2249,7 @@ const jobDetails = {
             <h2>Career Counsellor</h2>
             <p>In-office Job</p>
 
-            <Link to={`/job-application/career-counsellor`}>
+            <Link to={`/careers/career-counsellor/application-form`}>
               <button>I'm interested</button>
             </Link>
             <p>Share job via:</p>
@@ -2314,6 +2328,7 @@ const jobDetails = {
             </div>
           </div>
         </div>
+        <Breadcrumbs />
         <div className="job-info-description">
           <div className="job-description">
             <h3>
@@ -2454,7 +2469,7 @@ const JobListing = () => {
       <div className="job-listing">
         {/* <h1>{job.title}</h1> */}
         <div>{job.description}</div>
-        <Link to={`/job-application/${domain}`}>
+        <Link to={`/careers/${domain}/application-form`}>
           <button className="apply-button22">I'm interested</button>
         </Link>
       </div>

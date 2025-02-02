@@ -101,16 +101,55 @@ const Footer = () => {
             </div>
             <div className="footer-col">
               <h2>Resources</h2>
+              <p>
+                <a
+                  href="https://www.resources.iitacademy.in/exams/neet"
+                  rel="noopener noreferrer"
+                >
+                  NEET
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.resources.iitacademy.in/exams/jee-main"
+                  rel="noopener noreferrer"
+                >
+                  JEE Main
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.resources.iitacademy.in"
+                  rel="noopener noreferrer"
+                >
+                  Resources
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.counselling.iitacademy.in"
+                  rel="noopener noreferrer"
+                >
+                  Counselling
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.resources.iitacademy.in/exams/jee-advanced"
+                  rel="noopener noreferrer"
+                >
+                  JEE Advanced
+                </a>
+              </p>
 
-              {/* <p>
-                <Link to="/about-iit-academy">IIT Academy</Link>
-              </p> */}
-              <p>JEE-Main 2023 Question Paper</p>
-              <p>JEE-Advanced 2023 Question Paper</p>
-              <p>NEET 2023 Question Paper</p>
-              <p>NTSE 2023 Question Paper</p>
-              <p>Boards 2023 Question Paper</p>
-              <p>NCERT Solutions</p>
+              <p>
+                <a
+                  href="https://www.internship.iitacademy.in"
+                  rel="noopener noreferrer"
+                >
+                  Internship
+                </a>
+              </p>
               <p>
                 <Link to="/careers">Careers</Link>
               </p>
