@@ -3,6 +3,7 @@ import Layout from "../../Layout";
 import { Link } from "react-router-dom";
 import { CaretDown, CaretUp } from "phosphor-react";
 import "./Faq.css";
+import Explore from "../../Batches/Common/Explore";
 
 function Question({ question }) {
   const initiallyOpen = question.id === 1 || question.id === 2;
@@ -111,31 +112,7 @@ function Faq() {
             ))}
           </div>
         </div>
-        <p style={{ width: "90%", margin: "auto", marginBottom: "10px" }}>
-          <i
-            className="fas fa-angle-double-right"
-            style={{
-              color: "#f39c12",
-              marginRight: "5px",
-            }}
-          ></i>{" "}
-          Explore More about different batches offered by IIT Academy.
-        </p>
-        <div className="all_batches">
-          {" "}
-          <Link to="/engineering-courses">
-            <button className="details4-btn">Engineering Batches</button>
-          </Link>
-          <Link to="/medical-courses">
-            <button className="details4-btn">Medical Batches</button>
-          </Link>
-          <Link to="/foundation-courses">
-            <button className="details4-btn">Foundation Batches</button>
-          </Link>
-          <Link to=" ">
-            <button className="details4-btn">Boards Batches</button>
-          </Link>
-        </div>
+        <Explore />
       </Layout>
     </>
   );

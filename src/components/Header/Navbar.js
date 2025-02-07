@@ -431,7 +431,7 @@ const Navbar = (props) => {
                   Utkarsh
                 </NavLink>
                 <NavLink
-                  to="/engineering-courses/distance-class-12"
+                  to="/engineering-batches/lakshya-class-12-distance"
                   className="dropright-item"
                 >
                   <i
