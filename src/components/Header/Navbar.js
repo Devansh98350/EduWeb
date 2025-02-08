@@ -893,7 +893,10 @@ const Navbar = (props) => {
                       </NavLink>
                       <ul className="dropdown-menu">
                         <li>
-                          <NavLink to="/about" className="dropdown-item">
+                          <NavLink
+                            to="/about-iit-academy"
+                            className="dropdown-item"
+                          >
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -915,7 +918,10 @@ const Navbar = (props) => {
                         </li>
 
                         <li>
-                          <NavLink to="/why-us" className="dropdown-item">
+                          <NavLink
+                            to="/why-iit-academy"
+                            className="dropdown-item"
+                          >
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -929,7 +935,7 @@ const Navbar = (props) => {
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
                             ></i>
-                            Our Faculty
+                            IAST
                           </NavLink>
                         </li>
                         <li>
@@ -1231,7 +1237,10 @@ const Navbar = (props) => {
                       </NavLink>
                       <ul className="dropdown-menu">
                         <li>
-                          <NavLink to="/about" className="dropdown-item">
+                          <NavLink
+                            to="/about-iit-academy"
+                            className="dropdown-item"
+                          >
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1253,7 +1262,10 @@ const Navbar = (props) => {
                         </li>
 
                         <li>
-                          <NavLink to="/why-us" className="dropdown-item">
+                          <NavLink
+                            to="/why-iit-academy"
+                            className="dropdown-item"
+                          >
                             <i
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
@@ -1267,7 +1279,7 @@ const Navbar = (props) => {
                               className="fas fa-angle-double-right"
                               style={{ color: "#f39c12", marginRight: "5px" }}
                             ></i>
-                            Our Faculty
+                            IAST
                           </NavLink>
                         </li>
                         <li>

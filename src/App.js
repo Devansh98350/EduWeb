@@ -9,7 +9,7 @@ import HomePage from "./components/Home_page/Home";
 import AboutIitAcademy from "./components/About/IIT_Academy/IIT_Academy";
 import DirectorMess from "./components/About/Welcome_message/Message";
 import WhyIitAcademy from "./components/About/Why_IIT_Academy/WhyIit";
-import Faculty from "./components/About/Faculty/Our_Faculty";
+import IAST from "./components/About/Faculty/Our_Faculty";
 import FAQ from "./components/About/FAQ/Faq";
 import Gallery from "./components/About/Gallery/Gallery";
 /*Batches*/
@@ -73,10 +73,10 @@ function App() {
           {/*<Route path=" " element={<HomePage />} />*/}
           <Route path="/" element={<HomePage />} />
           {/* About */}
-          <Route path="/about" element={<AboutIitAcademy />} />
+          <Route path="/about-iit-academy" element={<AboutIitAcademy />} />
           <Route path="/director-message" element={<DirectorMess />} />
-          <Route path="/why-us" element={<WhyIitAcademy />} />
-          <Route path="/our-faculty" element={<Faculty />} />
+          <Route path="/why-iit-academy" element={<WhyIitAcademy />} />
+          <Route path="/iit-academy-scholarship-test" element={<IAST />} />
           <Route path="/frequently-asked-questions" element={<FAQ />} />
           <Route path="/gallery" element={<Gallery />} />
           {/*Promo Batches */}

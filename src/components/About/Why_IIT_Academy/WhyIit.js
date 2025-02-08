@@ -4,6 +4,7 @@ import Layout from "../../Layout";
 import { CaretDown, CaretUp } from "phosphor-react";
 import "./WhyIit.css";
 import Explore from "../../Batches/Common/Explore";
+import Breadcrumb from "../../Breadcrumbs";
 
 function Question({ question }) {
   const initiallyOpen = question.id === 1 || question.id === 2;
@@ -138,6 +139,7 @@ function WhyIit() {
   return (
     <>
       <Layout title="Why IIT Academy" keywords="Why IIT Academy">
+        <Breadcrumb />
         <div className="container-accordian">
           <h1>Why IIT Academy?</h1>
           <div className="questions">

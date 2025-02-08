@@ -261,7 +261,10 @@ const Sidebar = () => {
             {dropdownOpen.about && (
               <DropdownMenu>
                 <DropdownItem>
-                  <StyledNavLink to="/about" className="dropdown-item">
+                  <StyledNavLink
+                    to="/about-iit-academy"
+                    className="dropdown-item"
+                  >
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
@@ -282,7 +285,10 @@ const Sidebar = () => {
                   </StyledNavLink>
                 </DropdownItem>
                 <DropdownItem>
-                  <StyledNavLink to="/why-us" className="dropdown-item">
+                  <StyledNavLink
+                    to="/why-iit-academy"
+                    className="dropdown-item"
+                  >
                     <i
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
@@ -296,7 +302,7 @@ const Sidebar = () => {
                       className="fas fa-angle-double-right"
                       style={{ color: "#f39c12", marginRight: "5px" }}
                     ></i>{" "}
-                    Our Faculty
+                    IAST
                   </StyledNavLink>
                 </DropdownItem>
                 <DropdownItem>

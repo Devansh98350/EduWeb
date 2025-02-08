@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Layout from "../../Layout";
 import "./Message.css"; // Import your CSS file
 import ceoPhoto from "../../../assets/home_page/CEO.png";
+import Breadcrumb from "../../Breadcrumbs";
 
 const Message = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const Message = () => {
         description="Founder & CEO - IIT Academy"
         keywords="CEO IIT Academy, Aditya Chaudhary, IIT Academy CEO, Founder IIT Academy, Director IIT Academy"
       >
+        <Breadcrumb />
         <div className="container">
           <div
             className="column1"

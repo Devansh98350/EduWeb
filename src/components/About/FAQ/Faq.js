@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { CaretDown, CaretUp } from "phosphor-react";
 import "./Faq.css";
 import Explore from "../../Batches/Common/Explore";
+import Breadcrumb from "../../Breadcrumbs";
 
 function Question({ question }) {
   const initiallyOpen = question.id === 1 || question.id === 2;
@@ -104,6 +105,7 @@ function Faq() {
   return (
     <>
       <Layout title="FAQ - IIT Academy">
+        <Breadcrumb />
         <div className="container-accordian">
           <h1>Frequently Asked Questions</h1>
           <div className="questions">

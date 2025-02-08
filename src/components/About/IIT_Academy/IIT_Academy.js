@@ -5,6 +5,7 @@ import Layout from "../../Layout";
 // import icon from "../assets/homepage/side-link-icon.png";
 import "./IIT_Academy.css";
 import Explore from "../../Batches/Common/Explore";
+import Breadcrumb from "../../Breadcrumbs";
 
 const IIT_Academy = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const IIT_Academy = () => {
         description="Know more about IIT Academy"
         keywords="About IIT Academy"
       >
+        <Breadcrumb />
         <div className="container">
           <div className="procedure-outer">
             <div className="procedure-wrapper">
