@@ -3,6 +3,7 @@ import Layout from "../../Layout";
 import { Query } from "../../Forms/Query_Form/Query";
 import Admission1 from "./../../Forms/Admission_Form/Admission1";
 import "./Admission_process.css";
+import Breadcrumb from "../../Breadcrumbs";
 
 const Admission_process = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const Admission_process = () => {
         description="Explore the simple and transparent admission process at IIT Academy, where your journey towards academic excellence begins with just a few easy steps."
         keywords="Admission Process IIT Academy, How to take admission in IIT Academy, How to Enroll in IIT Academy Batches"
       >
+        <Breadcrumb />
         <div className="container2">
           <div className="procedure-outer2">
             <div className="procedure-wrapper2" style={{ width: "100%" }}>

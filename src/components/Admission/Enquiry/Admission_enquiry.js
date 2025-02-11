@@ -4,6 +4,7 @@ import Layout from "../../Layout";
 import { Query } from "../../Forms/Query_Form/Query";
 import "./Admission_enquiry.css";
 import Explore from "../../Batches/Common/Explore";
+import Breadcrumb from "../../Breadcrumbs";
 
 const Admission_enquiry = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const Admission_enquiry = () => {
         description="Get personalized guidance and answers to all your queries about joining IIT Academy – your pathway to a brighter future!"
         keywords="Contact IIT Academy, Admission Enquiry IIT Academy, Helpline IIT Academy"
       >
+        <Breadcrumb />
         <div className="container">
           <div className="procedure-outer">
             <div className="procedure-wrapper">

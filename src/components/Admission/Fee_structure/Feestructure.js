@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Feestructure.css";
 import Layout from "../../Layout";
 import { HashLink } from "react-router-hash-link";
+import Breadcrumb from "../../Breadcrumbs";
 
 function Feestructure() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function Feestructure() {
         description="Explore the fee structures for every course at IIT Academy, designed to support your journey to academic excellence"
         keywords="Fees Structure IIT Academy, Course Fees IIT Academy, How much IIT Academy Courses Costs"
       >
+        <Breadcrumb />
         <section className="fee-section">
           <h1>FEE Structure</h1>
           <div className="fee-table">

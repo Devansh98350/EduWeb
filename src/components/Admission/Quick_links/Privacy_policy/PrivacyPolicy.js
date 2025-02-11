@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "../../../Layout";
 import "./PrivacyPolicy.css";
+import Breadcrumb from "../../../Breadcrumbs";
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -9,6 +10,7 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Layout title="Our Policy-IIT Academy">
+        <Breadcrumb />
         <div className="container">
           <h2 className="special">Privacy & Policy</h2>
           <div className="pap">
