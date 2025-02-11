@@ -134,6 +134,9 @@ const Footer = () => {
                 </a>
               </p>
               <p>
+                <Link to="/refund-rules">Refund Policy</Link>
+              </p>
+              <p>
                 <a
                   href="https://www.resources.iitacademy.in/exams/jee-advanced"
                   rel="noopener noreferrer"
@@ -161,6 +164,9 @@ const Footer = () => {
               </p>
               <p>
                 <Link to="/board-batches">Board Batches</Link>
+              </p>
+              <p>
+                <Link to="/terms-and-conditions">Terms & Condition</Link>
               </p>
               <p>
                 <Link to="/foundation-batches">Foundation Batches</Link>

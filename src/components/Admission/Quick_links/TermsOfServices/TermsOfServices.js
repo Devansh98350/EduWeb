@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "../../../Layout";
 import "./../Privacy_policy/PrivacyPolicy";
+import Breadcrumb from "../../../Breadcrumbs";
 
 const TermsAndCondition = () => {
   useEffect(() => {
@@ -8,6 +9,7 @@ const TermsAndCondition = () => {
   }, []);
   return (
     <Layout title="Terms and Conditions - IIT Academy">
+      <Breadcrumb />
       <div className="container">
         <h2 className="special">Terms and Conditions</h2>
         <div className="pap">

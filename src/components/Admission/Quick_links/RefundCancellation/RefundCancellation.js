@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "../../../Layout";
 import "./../Privacy_policy/PrivacyPolicy";
+import Breadcrumb from "../../../Breadcrumbs";
 
 const RefundCancellation = () => {
   useEffect(() => {
@@ -8,6 +9,7 @@ const RefundCancellation = () => {
   }, []);
   return (
     <Layout title="Refund Policy-IIT Academy">
+      <Breadcrumb />
       <div className="container">
         <h2 className="special">Refund Rules</h2>
         <div className="pap">
