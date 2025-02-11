@@ -22,7 +22,6 @@ const Message = () => {
             className="column1"
             style={{ textAlign: "justify", fontSize: "16px" }}
           >
-            <br />
             <h1 className="ceo-heading">From CEO Office</h1>
             <br />
             <div className="ceo-section">

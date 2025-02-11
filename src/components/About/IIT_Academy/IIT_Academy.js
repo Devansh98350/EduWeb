@@ -23,7 +23,9 @@ const IIT_Academy = () => {
         <div className="container">
           <div className="procedure-outer">
             <div className="procedure-wrapper">
-              <h2 className="special">About IIT Academy</h2>
+              <h2 className="special" style={{ marginTop: "-15px" }}>
+                About IIT Academy
+              </h2>
               <p>
                 IIT Academy is an innovative Ed-Tech company committed to
                 transforming the education sector. The organization's primary
