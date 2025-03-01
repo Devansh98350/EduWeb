@@ -9,7 +9,7 @@ import HomePage from "./components/Home_page/Home";
 import AboutIitAcademy from "./components/About/IIT_Academy/IIT_Academy";
 import DirectorMess from "./components/About/Welcome_message/Message";
 import WhyIitAcademy from "./components/About/Why_IIT_Academy/WhyIit";
-import IAST from "./components/About/Faculty/Our_Faculty";
+import IAST from "./components/About/IAST//Iast";
 import FAQ from "./components/About/FAQ/Faq";
 import Gallery from "./components/About/Gallery/Gallery";
 /*Batches*/
