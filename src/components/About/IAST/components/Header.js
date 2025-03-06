@@ -59,7 +59,7 @@ const Header = () => {
     >
       <div className="relative flex flex-col md:flex-row items-center justify-between w-full mt-0">
         {/* Left Section */}
-        <div className="text-white  md:text-left space-y-4 items-center justify-items-center m-5 mt-2">
+        <div className="w-full text-white  md:text-left space-y-4 items-center justify-items-center m-5 mt-2">
           <p className="text-lg text-black font-semibold">Appear in</p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-bold text-[#e2010f]">
             IIT Academy Scholarship Test (IAST)
@@ -77,8 +77,8 @@ const Header = () => {
           <p className="text-black font-semibold text-xl">
             For Students Moving to Class 10th, 11th & 12th
           </p>
-          <p className="text-3xl text-[#1e3f8d] font-semibold gap-x-1">
-            Registration Fee =<del> Rs.500</del>
+          <p className="text-2xl md:text-3xl text-[#1e3f8d] font-semibold gap-x-1">
+            Registration Fee = <del>Rs.500</del>
             <span className="text-[#e2010f]"> FREE!</span>{" "}
           </p>
           <p className="text-black text-xl font-semibold">
