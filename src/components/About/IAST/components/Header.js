@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Banner from "../../../../assets/IAST_banner.webp";
 
 const Header = () => {
   const [marginTop, setMarginTop] = useState("0px");
@@ -50,8 +51,7 @@ const Header = () => {
     <div
       className="relative flex flex-col md:flex-row items-center justify-center px-6"
       style={{
-        backgroundImage:
-          "url('https://cdn.motion.ac.in/ssp/img/most-latest/banner.webp')",
+        backgroundImage: `url(${Banner})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         marginTop: marginTop,
@@ -61,12 +61,12 @@ const Header = () => {
         {/* Left Section */}
         <div className="text-white  md:text-left space-y-4 items-center justify-items-center m-5 mt-2">
           <p className="text-lg text-black font-semibold">Appear in</p>
-          <h1 className="text-6xl text-center font-bold text-[#e2010f]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-bold text-[#e2010f]">
             IIT Academy Scholarship Test (IAST)
           </h1>
-          <div className="border leading-tight border-[#010363] border-spacing-y-48 p-2  text-black items-center justify-items-center rounded-md  transform skew-x-6 ">
+          <div className="border leading-tight border-[#010363] border-spacing-y-0 p-2  text-black items-center justify-items-center rounded-md  transform skew-x-6 ">
             <p className="font-semibold">Avail upto</p>
-            <p className="bg-[#e2010f] text-white font-bold text-4xl p-2 inline-block skew-x-0">
+            <p className="bg-[#e2010f] text-white font-bold text-2xl md:text-4xl p-2 inline-block skew-x-0">
               100% SCHOLARSHIP
             </p>
             <p className="font-semibold">on</p>
@@ -78,7 +78,7 @@ const Header = () => {
             For Students Moving to Class 10th, 11th & 12th
           </p>
           <p className="text-3xl text-[#1e3f8d] font-semibold gap-x-1">
-            Registration Fee =<del> Rs.100</del>
+            Registration Fee =<del> Rs.500</del>
             <span className="text-[#e2010f]"> FREE!</span>{" "}
           </p>
           <p className="text-black text-xl font-semibold">

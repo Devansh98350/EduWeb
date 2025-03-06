@@ -27,8 +27,8 @@ const Details = () => {
               Offline(At our centre)
             </b>
           </p>
-          <p className="m-3 text-xs">
-            Take the test at a date and time of your choice.
+          <p className="m-3 text-lg">
+            Take the test at specified date and time.
           </p>
         </div>
         <div className="flex flex-col items-center text-center border border-[#20227D] rounded-lg p-4 shadow-md">
@@ -57,7 +57,7 @@ const Details = () => {
           </p>
           <p className="text-lg">Class 10th, 11th & 12th</p>
           <p className="text-lg">
-            Registration Fee = <del>RS100</del>FREE
+            Registration Fee = <del>Rs 500 </del>FREE
           </p>
           <p className="m-[-2] text-xl text-red-500">
             (Only for LIMITED students)
