@@ -22,7 +22,7 @@ const Blog = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <Layout>
+    <Layout title="Blogs - IIT Academy" description="" keywords="">
       <Breadcrumb />
       <div className="blog-page-second">
         <div className="blog-grid">
