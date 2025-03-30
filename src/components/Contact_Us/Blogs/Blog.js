@@ -44,17 +44,20 @@ const Blog = () => {
               </div>
 
               {/* Blog description */}
-              <div className="blog-row">
+              <div className="blog-row" style={{ marginBottom: "-20px" }}>
                 <p>{truncateDescription(post.description)}</p>
               </div>
 
               {/* Blog footer with image and read more link */}
-              <div className="blog-row card-footer">
+              <div
+                className="blog-row card-footer"
+                style={{ marginBottom: "-20px" }}
+              >
                 <div className="img-and-team">
                   <div className="img-container">
                     <img src={monoblog} alt="IIT Academy Team" />
                   </div>
-                  <p>IIT Academy Team</p>
+                  <p style={{ marginTop: "20%" }}>IIT Academy Team</p>
                 </div>
                 <Link to={post.link} className="read-more">
                   Read more <FaArrowRight />
