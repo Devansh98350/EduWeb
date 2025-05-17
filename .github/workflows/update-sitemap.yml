@@ -1,0 +1,30 @@
+on:
+  push:
+    branches: [master] # Run only when pushing to main
+
+permissions:
+  contents: write
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update <lastmod> date in sitemap.xml
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          SITEMAP_PATH="public/sitemap.xml"
+          echo "Updating sitemap at $SITEMAP_PATH to use date $TODAY"
+          sed -i "s|<lastmod>.*</lastmod>|<lastmod>$TODAY</lastmod>|g" "$SITEMAP_PATH"
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add public/sitemap.xml
+          git diff --cached --quiet || git commit -m "update"
+          git push
