@@ -1,4 +1,13 @@
-import demoBlogImage from "../../../../assets/home_page/main.png";
+import Image1 from "../../../../assets/Blogs/2.png";
+import Image2 from "../../../../assets/Blogs/1.png";
+import Image3 from "../../../../assets/Blogs/3.png";
+import Image4 from "../../../../assets/Blogs/4.png";
+import Image5 from "../../../../assets/Blogs/6.png";
+import Image6 from "../../../../assets/Blogs/7.png";
+import Image7 from "../../../../assets/Blogs/5.png";
+import Image8 from "../../../../assets/Blogs/8.png";
+import Image9 from "../../../../assets/Blogs/9.png";
+import Image10 from "../../../../assets/Blogs/10.png";
 
 // const todayDate = new Date(new Date().setDate(new Date().getDate()))
 //   .toLocaleDateString("en-GB")
@@ -33,7 +42,7 @@ const posts = [
   {
     date: todayDate,
     title: "Want to ace your exams? Here’s the secret!",
-    image: demoBlogImage,
+    image: Image1,
     description: `
         <section>
           <h2>IIT Academy – “Let’s Crack It!”</h2>
@@ -70,7 +79,7 @@ const posts = [
   {
     date: yesterdayDate,
     title: "Unlock the Secrets of JEE Mains and Advanced!",
-    image: demoBlogImage,
+    image: Image2,
     description: `
   
       <p>
@@ -162,7 +171,7 @@ const posts = [
   {
     date: twoDaysAgoDate,
     title: "Unlock Your Potential: 10 Essential Skills for JEE Main Success!",
-    image: demoBlogImage,
+    image: Image3,
     description: `
    
         <p>
@@ -225,7 +234,7 @@ const posts = [
   {
     date: threeDaysAgoDate,
     title: "Effective Time Management Tips for JEE and NEET Aspirants",
-    image: demoBlogImage,
+    image: Image4,
     description: `
     
           <blockquote> <strong>“Time is a gift, use it wisely.”</strong></blockquote>
@@ -280,7 +289,7 @@ const posts = [
   {
     date: fourDaysAgoDate,
     title: "Unlock Your Dreams: Medical Colleges Entrance Exams",
-    image: demoBlogImage,
+    image: Image5,
     description: `
     
       <blockquote> <strong>“The future belongs to those who believe in the beauty of their dreams.”</strong> – Eleanor Roosevelt</blockquote>
@@ -325,7 +334,7 @@ const posts = [
   {
     date: fiveDaysAgoDate,
     title: "Crack NEET UG 2025: A Comprehensive Guide to Acing Your Mock Tests",
-    image: demoBlogImage,
+    image: Image6,
     description: `
    
       <blockquote> <strong>“Champions are made from something they have deep inside them – a desire, a dream, a vision.” </strong> – Muhammad Ali</blockquote>
@@ -373,7 +382,7 @@ const posts = [
     date: sixDaysAgoDate,
     title:
       "Unlocking the Secrets of GTSE: Why it’s a Game-Changer for Class 6th and 8th Students in NEET Preparation",
-    image: demoBlogImage,
+    image: Image7,
     description: `
        
           <blockquote><strong>“Believe in yourself, take the leap of faith and watch the universe conspire to make your dreams a reality.”</strong></blockquote>
@@ -417,7 +426,7 @@ const posts = [
   {
     date: sevenDaysAgoDate,
     title: "Choosing the Right Resources for Medical Exam Preparation",
-    image: demoBlogImage,
+    image: Image8,
     description: `
     
       <blockquote><strong>“The right tools can make all the difference in getting the job done.” </strong>– Chris Hadfield</blockquote>
@@ -463,7 +472,7 @@ const posts = [
     date: eightDaysAgoDate,
     title:
       "Avoiding Common Mistakes in JEE Exam Preparation: A Guide to Success",
-    image: demoBlogImage,
+    image: Image9,
     description: `
         <section>
         <blockquote><strong>“Believe you can and you’re halfway there.”</strong> – Theodore Roosevelt</blockquote>
@@ -543,7 +552,7 @@ const posts = [
     date: nineDaysAgoDate,
     title:
       "Unlocking Success: Why IIT Academy is the Best IIT JEE Coaching in India",
-    image: demoBlogImage,
+    image: Image10,
     description: `
         
           <p>At IIT Academy, we pride ourselves on being the premier institution for IIT JEE coaching in India. Our commitment to excellence, combined with our expertise and innovative approach, sets us apart from the rest.</p>

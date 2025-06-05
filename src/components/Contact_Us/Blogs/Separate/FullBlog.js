@@ -54,11 +54,34 @@ const FullBlog = () => {
               <h3>Recent Posts</h3>
               {recentPosts.length > 0 ? (
                 // Mapping over the recent posts to display them
+                // recentPosts.map((recentPost, index) => (
+                //   <div key={index} className="recent-post">
+                //     <img
+                //       src={recentPost.image}
+                //       alt="recent-blog"
+                //       style={{ borderRadius: "5%" }}
+                //     />
+                //     <h4>{recentPost.title}</h4>
+                //   </div>
+                // ))
                 recentPosts.map((recentPost, index) => (
-                  <div key={index} className="recent-post">
-                    <img src={recentPost.image} alt="recent-blog" />
-                    <h4>{recentPost.title}</h4>
-                  </div>
+                  <a
+                    key={index}
+                    href={recentPost.link}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <div
+                      className="recent-post"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <img
+                        src={recentPost.image}
+                        alt="recent-blog"
+                        style={{ borderRadius: "5%" }}
+                      />
+                      <h4>{recentPost.title}</h4>
+                    </div>
+                  </a>
                 ))
               ) : (
                 // Message displayed if no recent posts are available
