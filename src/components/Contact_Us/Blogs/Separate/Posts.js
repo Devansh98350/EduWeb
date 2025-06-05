@@ -9,15 +9,6 @@ import Image8 from "../../../../assets/Blogs/8.png";
 import Image9 from "../../../../assets/Blogs/9.png";
 import Image10 from "../../../../assets/Blogs/10.png";
 
-// const todayDate = new Date(new Date().setDate(new Date().getDate()))
-//   .toLocaleDateString("en-GB")
-//   .split("/")
-//   .join("-");
-// const yesterdayDate = new Date(new Date().setDate(new Date().getDate() - 1))
-//   .toLocaleDateString("en-GB")
-//   .split("/")
-//   .join("-");
-
 const getDateFormatted = (daysAgo) => {
   return new Date(new Date().setDate(new Date().getDate() - daysAgo))
     .toLocaleDateString("en-GB")
@@ -25,7 +16,6 @@ const getDateFormatted = (daysAgo) => {
     .join("-");
 };
 
-// Usage examples
 const todayDate = getDateFormatted(0);
 const yesterdayDate = getDateFormatted(1);
 const twoDaysAgoDate = getDateFormatted(2);
@@ -38,7 +28,6 @@ const eightDaysAgoDate = getDateFormatted(8);
 const nineDaysAgoDate = getDateFormatted(9);
 
 const posts = [
-  // first
   {
     date: todayDate,
     title: "Want to ace your exams? Here’s the secret!",
@@ -74,8 +63,6 @@ const posts = [
         `,
     link: "/blogs/ace-your-exams",
   },
-
-  // second
   {
     date: yesterdayDate,
     title: "Unlock the Secrets of JEE Mains and Advanced!",
@@ -166,8 +153,6 @@ const posts = [
     `,
     link: "/blogs/unlock-jee-secrets",
   },
-
-  //   Third
   {
     date: twoDaysAgoDate,
     title: "Unlock Your Potential: 10 Essential Skills for JEE Main Success!",
@@ -229,8 +214,6 @@ const posts = [
     `,
     link: "/blogs/10-skills-for-jee-main-success",
   },
-
-  //   Fourth
   {
     date: threeDaysAgoDate,
     title: "Effective Time Management Tips for JEE and NEET Aspirants",
@@ -284,8 +267,6 @@ const posts = [
         `,
     link: "/blogs/effective-time-management-tips",
   },
-
-  // Fifth
   {
     date: fourDaysAgoDate,
     title: "Unlock Your Dreams: Medical Colleges Entrance Exams",
@@ -329,8 +310,6 @@ const posts = [
     </section>`,
     link: "/blogs/medical-colleges-entrance-exams",
   },
-
-  // Sixth
   {
     date: fiveDaysAgoDate,
     title: "Crack NEET UG 2025: A Comprehensive Guide to Acing Your Mock Tests",
@@ -376,8 +355,6 @@ const posts = [
     `,
     link: "/blogs/crack-neet-ug",
   },
-
-  // Seventh
   {
     date: sixDaysAgoDate,
     title:
@@ -421,8 +398,6 @@ const posts = [
         `,
     link: "/blogs/effective-time-management-tips-gtse",
   },
-
-  // Eighth
   {
     date: sevenDaysAgoDate,
     title: "Choosing the Right Resources for Medical Exam Preparation",
@@ -466,8 +441,6 @@ const posts = [
     `,
     link: "/blogs/right-resource-for-medical-exam-preparations",
   },
-
-  // Ninth
   {
     date: eightDaysAgoDate,
     title:
@@ -546,8 +519,6 @@ const posts = [
         `,
     link: "/blogs/common-mistakes-in-jee-exam",
   },
-
-  // Tenth
   {
     date: nineDaysAgoDate,
     title:
