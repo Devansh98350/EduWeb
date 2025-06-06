@@ -1,13 +1,13 @@
-import Image1 from "../../../../assets/Blogs/2.png";
-import Image2 from "../../../../assets/Blogs/1.png";
-import Image3 from "../../../../assets/Blogs/3.png";
-import Image4 from "../../../../assets/Blogs/4.png";
-import Image5 from "../../../../assets/Blogs/6.png";
-import Image6 from "../../../../assets/Blogs/7.png";
-import Image7 from "../../../../assets/Blogs/5.png";
-import Image8 from "../../../../assets/Blogs/8.png";
-import Image9 from "../../../../assets/Blogs/9.png";
-import Image10 from "../../../../assets/Blogs/10.png";
+import Image1 from "../../../../assets/Blogs/2.webp";
+import Image2 from "../../../../assets/Blogs/1.webp";
+import Image3 from "../../../../assets/Blogs/3.webp";
+import Image4 from "../../../../assets/Blogs/4.webp";
+import Image5 from "../../../../assets/Blogs/6.webp";
+import Image6 from "../../../../assets/Blogs/7.webp";
+import Image7 from "../../../../assets/Blogs/5.webp";
+import Image8 from "../../../../assets/Blogs/8.webp";
+import Image9 from "../../../../assets/Blogs/9.webp";
+import Image10 from "../../../../assets/Blogs/10.webp";
 
 const getDateFormatted = (daysAgo) => {
   return new Date(new Date().setDate(new Date().getDate() - daysAgo))
