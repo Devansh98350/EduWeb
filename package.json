@@ -42,6 +42,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
+    "react-snap": "^1.23.0",
     "react-toastify": "^9.1.3",
     "serve": "^14.2.1",
     "slick-carousel": "^1.8.1",
@@ -52,9 +53,52 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build && npx react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "reactSnap": {
+    "inlineCss": true,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "include": [
+      "/",
+      "/careers",
+      "/about",
+      "/director-message",
+      "/why-us",
+      "/engineering-batches/arjuna-class-11",
+      "/engineering-batches/chaitanya-class-12",
+      "/engineering-batches/eklavya-class-13",
+      "/medical-batches/ananta-class-11",
+      "/medical-batches/sudarshan-class-12",
+      "/medical-batches/swadhyaya-class-13",
+      "/foundation-batches/aadhya-class-06",
+      "/foundation-batches/abhinav-class-07",
+      "/foundation-batches/abhyas-class-08",
+      "/foundation-batches/aarohan-class-09",
+      "/foundation-batches/atal-class-10",
+      "/foundation-batches/sankalp-class-10-distance",
+      "/engineering-batches/utkarsh-class-11-distance",
+      "/engineering-batches/lakshya-class-12-distance",
+      "/engineering-batches/abhiyaan-class-13-distance",
+      "/medical-batches/yukti-class-11-distance",
+      "/medical-batches/sarthak-class-12-distance",
+      "/medical-batches/pragya-class-13-distance",
+      "/board-batches/sammarsa-class-11-pcm",
+      "/board-batches/vikash-class-12-pcm",
+      "/board-batches/daksh-class-11-pcb",
+      "/board-batches/samridhi-class-12-pcb",
+      "/fees-structure",
+      "/admission-process",
+      "/admission-enquiry",
+      "/engineering-courses",
+      "/medical-courses",
+      "/foundation-courses",
+      "/blogs"
+    ]
   },
   "eslintConfig": {
     "extends": [

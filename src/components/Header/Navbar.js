@@ -807,7 +807,7 @@ const Navbar = (props) => {
             <a className="navbar-brand" href="/">
               <img
                 src={mainlogo}
-                alt=""
+                alt="IIT Academy logo"
                 style={{ height: "75px", width: "auto", marginLeft: "1vw" }}
               />
             </a>

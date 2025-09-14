@@ -236,7 +236,7 @@ const Sidebar = () => {
         <HamburgerIcon>&#9776;</HamburgerIcon>
       </MenuButton>
       <UserDetails>
-        <UserImage src={mainlogo} alt="" />
+        <UserImage src={mainlogo} alt="IIT Academy logo" />
       </UserDetails>
       {isSidebarOpen && (
         <SidebarContent>
@@ -245,7 +245,7 @@ const Sidebar = () => {
               &times;
             </CloseButton>
             <Details>
-              <Image src={mainlogo} alt="" />
+              <Image src={mainlogo} alt="IIT Academy logo" />
             </Details>
 
             <StyledNavLink to="/" exact>

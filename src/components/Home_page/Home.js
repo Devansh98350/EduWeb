@@ -48,12 +48,12 @@ const Home = () => {
         </div>
         */}
         <div className="home-img">
-          <img src={img} alt="Loading..." />
+          <img src={img} alt="IIT Academy" />
         </div>
         {/* Courses */}
         <PopularCourse />
         <div className="home-img">
-          <img src={img1} alt="Loading..." />
+          <img src={img1} alt="IIT Academy Scholarship Test" />
         </div>
         {/* Testimonial */}
         <Testimonials />
