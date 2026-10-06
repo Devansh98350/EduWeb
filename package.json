@@ -53,7 +53,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env CI=false GENERATE_SOURCEMAP=false react-scripts build && npx react-snap",
+    "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build && npx react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
