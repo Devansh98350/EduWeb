@@ -3,7 +3,7 @@ User-agent: *
 Disallow:
 
 # Sitemap to help search engines index pages more effectively
-Sitemap: https://www.iitacademy.in/sitemap.xml
+Sitemap: https://www.iitacademy.org.in/sitemap.xml
 
 # Allow specific content types (useful if your site has images, videos, etc.)
 User-agent: Googlebot-Image
