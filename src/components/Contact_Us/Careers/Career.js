@@ -127,8 +127,8 @@ const Careers = () => {
           ;
           <p className="career-description" style={{ fontSize: "1.2em" }}>
             For any issues, mail us at{" "}
-            <a href="mailto:info@iitacademy.in">info@iitacademy.in</a> or call
-            us at <a href="tel:9205704041">9205704041</a>.
+            <a href="mailto:info@iitacademy.org.in">info@iitacademy.org.in</a>{" "}
+            or call us at <a href="tel:9205704041">9205704041</a>.
           </p>
         </div>
       </Layout>

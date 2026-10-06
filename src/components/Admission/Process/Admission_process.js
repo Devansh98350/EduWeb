@@ -82,7 +82,10 @@ const Admission_process = () => {
               </p>
               <p style={{ marginLeft: "5%", marginRight: "5%" }}>
                 <strong>Email:</strong>
-                <a href="mailto:info@iitacademy.in"> info@iitacademy.in</a>
+                <a href="mailto:info@iitacademy.org.in">
+                  {" "}
+                  info@iitacademy.org.in
+                </a>
               </p>
               <p style={{ marginLeft: "5%", marginRight: "5%" }}>
                 <strong>Corporate Office:</strong> [Sobha Sadan, Veer Kunwar

@@ -30,7 +30,10 @@ const Footer = () => {
                 </p>
                 <p>
                   Email:-
-                  <a href="mailto:info@iitacademy.in"> info@iitacademy.in</a>
+                  <a href="mailto:info@iitacademy.org.in">
+                    {" "}
+                    info@iitacademy.org.in
+                  </a>
                 </p>
                 <p>
                   Ph:-
@@ -70,7 +73,7 @@ const Footer = () => {
                     />
                   </a>{" "}
                   <a
-                    href="mailto:admin@iitacademy.in"
+                    href="mailto:info@iitacademy.org.in"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -103,7 +106,7 @@ const Footer = () => {
               <h2>Resources</h2>
               <p>
                 <a
-                  href="https://www.resources.iitacademy.in/exams/neet"
+                  href="https://www.resources.iitacademy.org.in/exams/neet"
                   rel="noopener noreferrer"
                 >
                   NEET
@@ -111,7 +114,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  href="https://www.resources.iitacademy.in/exams/jee-main"
+                  href="https://www.resources.iitacademy.org.in/exams/jee-main"
                   rel="noopener noreferrer"
                 >
                   JEE Main
@@ -119,7 +122,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  href="https://www.resources.iitacademy.in"
+                  href="https://www.resources.iitacademy.org.in"
                   rel="noopener noreferrer"
                 >
                   Resources
@@ -127,7 +130,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  href="https://www.counselling.iitacademy.in"
+                  href="https://www.counselling.iitacademy.org.in"
                   rel="noopener noreferrer"
                 >
                   Counselling
@@ -138,7 +141,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  href="https://www.resources.iitacademy.in/exams/jee-advanced"
+                  href="https://www.resources.iitacademy.org.in/exams/jee-advanced"
                   rel="noopener noreferrer"
                 >
                   JEE Advanced
@@ -147,7 +150,7 @@ const Footer = () => {
 
               <p>
                 <a
-                  href="https://www.internship.iitacademy.in"
+                  href="https://www.internship.iitacademy.org.in"
                   rel="noopener noreferrer"
                 >
                   Internship

@@ -246,7 +246,11 @@ const PrivacyPolicy = () => {
               If you have previously agreed to us using your personal
               information for direct contact purposes, you may change your mind
               at any time by writing to or emailing us at
-              <a href="mailto:info@iitacademy.in"> info@iitacademy.in</a> .
+              <a href="mailto:info@iitacademy.org.in">
+                {" "}
+                info@iitacademy.org.in
+              </a>{" "}
+              .
             </p>
             <p>
               We will not sell, distribute your personal information to third

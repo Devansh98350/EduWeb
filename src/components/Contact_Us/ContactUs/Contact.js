@@ -55,7 +55,7 @@ const Contact = () => {
               </div>
               <div className="contact-info">
                 <p>1234567890</p>
-                <p>info@iitacademy.in</p>
+                <p>info@iitacademy.org.in</p>
               </div>
             </div>
 

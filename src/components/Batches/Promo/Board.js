@@ -141,7 +141,7 @@ const Board = () => {
         <p>
           For more details, you can call us at{" "}
           <a href="tel:9205704041">9205704041</a> or mail us at{" "}
-          <a href="mailto:info@iitacademy.in">info@iitacademy.in</a>
+          <a href="mailto:info@iitacademy.org.in">info@iitacademy.org.in</a>
         </p>
       </div>
     </Layout>
